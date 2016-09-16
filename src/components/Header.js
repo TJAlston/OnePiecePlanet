@@ -5,7 +5,7 @@ class Header extends Component {
 
   render () {
     return <div>
-      <h1>Hello, World!</h1>
+      <img className='header1' src="http://ib2.huluim.com/show_key_art/2138?size=1600x600&region=US" alt='header1' />
     </div>
   }
 }
