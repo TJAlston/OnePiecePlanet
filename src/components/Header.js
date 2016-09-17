@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import '../styles/screen.sass'
-import { Link } from react-router
+import { Link } from 'react-router'
 
 class Header extends Component {
 
   render () {
     return <div>
-      <img className='header1' src="http://ib2.huluim.com/show_key_art/2138?size=1600x600&region=US" alt='header1' />
+      <img className='header1' src='https://secure.static.tumblr.com/e4a7d250b9b6a278cb662f43c37c8a29/qsbynrx/tmOn1rcsx/tumblr_static_header.jpg' alt='header1' />
       <nav>
           <ul>
             <li><Link className='noUnders' to='/Home'>Home</Link></li>
@@ -15,7 +15,7 @@ class Header extends Component {
             <li><Link className='noUnders' to='/Anime'>Anime</Link></li>
             <li><Link className='noUnders' to='/Manga'>Manga</Link></li>
           </ul>
-        </nav
+        </nav>
     </div>
   }
 }

@@ -1,5 +1,27 @@
 import React from 'react'
 import { render } from 'react-dom'
-import App from './components/App'
+import { Router, Route, browserHistory } from 'react-router'
 
-render(<App />, document.getElementById('root'))
+import {
+  App,
+  Home,
+  Anime,
+  Characters,
+  Manga,
+  DevilFruit
+} from './components'
+
+import './styles/screen.sass'
+
+const root = (
+  <Router history={browserHistory}>
+      <Route path='/' component={App} />
+      <Route path='/Home' component={Home} />
+      <Route path='/Anime' component={Anime} />
+      <Route path='/Characters' component={Characters} />
+      <Route path='/Manga' component={Manga} />
+      <Route path='/DevilFruit' component={DevilFruit} />
+  </Router>
+)
+
+render(root, document.getElementById('root'))
