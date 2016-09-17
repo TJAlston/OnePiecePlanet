@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import '../styles/screen.sass'
+import Header from './Header'
 
 class Home extends Component {
 
   render () {
     return <div>
-      <h1>Hello, World!</h1>
+      <main>
+        <Header />
+      </main>
     </div>
   }
 }

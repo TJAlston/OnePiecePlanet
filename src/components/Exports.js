@@ -1,0 +1,5 @@
+export App from './Home'
+export Resume from './DevilFruit'
+export Portfolio from './Characters'
+export Anime from 'Anime'
+export Manga from './Manga'
