@@ -8,7 +8,7 @@ class DevilFruit extends Component {
     return <div>
       <main>
         <Header />
-        <h1>Hello, World!</h1>
+        <h1>DEVIL FRUITS</h1>
       </main>
     </div>
   }

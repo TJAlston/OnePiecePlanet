@@ -8,6 +8,7 @@ class Manga extends Component {
     return <div>
       <main>
         <Header />
+        <h1>Manga</h1>
       </main>
     </div>
   }

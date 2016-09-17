@@ -2,16 +2,16 @@ import React, { Component } from 'react'
 import '../styles/screen.sass'
 import Header from './Header'
 
-class Anime extends Component {
+class Games extends Component {
 
   render () {
     return <div>
       <main>
         <Header />
-        <h1>Anime</h1>
+        <h1>One Piece Games</h1>
       </main>
     </div>
   }
 }
 
-export default Anime
+export default Games

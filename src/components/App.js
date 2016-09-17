@@ -7,9 +7,9 @@ class App extends Component {
   render () {
     return <div>
       <main>
-        <img className='titlePageArt' />
           <h1>ONE PIECE PLANET</h1>
-          <Link className='HomeButton' to ='/Home' >HOME PAGE LINK</Link>
+          <Link className='HomeButton' to ='/Home'>HOME PAGE LINK</Link>
+          <div id='titleImage' />
       </main>
     </div>
   }
