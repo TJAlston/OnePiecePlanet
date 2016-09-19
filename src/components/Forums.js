@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../styles/screen.sass'
 import Header from './Header'
+import Footer from './Footer'
 
 class Forums extends Component {
 
@@ -13,6 +14,7 @@ class Forums extends Component {
         <a href='http://opforum.net/'>ONE PIECE FORUM</a>
         </div>
       </main>
+    <Footer />
     </div>
   }
 }

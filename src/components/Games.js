@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../styles/screen.sass'
 import Header from './Header'
+import Footer from './Footer'
 
 class Games extends Component {
 
@@ -19,9 +20,10 @@ class Games extends Component {
         </div>
         <div className='gameGallery3'>
           <div className='game5'>GAME 5</div>
-          <div className='game6'>GAME 6</div>  
+          <div className='game6'>GAME 6</div>
         </div>
       </main>
+    <Footer />
     </div>
   }
 }

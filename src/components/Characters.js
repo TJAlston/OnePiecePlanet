@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../styles/screen.sass'
 import Header from './Header'
+import Footer from './Footer'
 
 class Characters extends Component {
 
@@ -10,6 +11,7 @@ class Characters extends Component {
       <main>
         <h1>Characters</h1>
       </main>
+    <Footer />
     </div>
   }
 }
