@@ -5,12 +5,9 @@ import { Link } from 'react-router'
 class App extends Component {
 
   render () {
-    return <div>
-      <main>
+    return <div className='title'>
           <h1>ONE PIECE PLANET</h1>
           <Link className='HomeButton' to ='/Home'>HOME PAGE LINK</Link>
-          <div id='titleImage' />
-      </main>
     </div>
   }
 }

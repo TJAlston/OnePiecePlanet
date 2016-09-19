@@ -6,7 +6,7 @@ class Header extends Component {
 
   render () {
     return <div>
-      <img className='header1' src='https://secure.static.tumblr.com/e4a7d250b9b6a278cb662f43c37c8a29/qsbynrx/tmOn1rcsx/tumblr_static_header.jpg' alt='header1' />
+      <img className='header1' src='http://66.media.tumblr.com/a215ef83293db672b3ac04fd96043885/tumblr_nnisl1lHPh1r2hgd5o4_500.gif' alt='header1' />
       <nav>
           <ul id='noDots'>
             <li><Link className='noUnders' to='/Home'>Home</Link></li>
@@ -15,6 +15,7 @@ class Header extends Component {
             <li><Link className='noUnders' to='/Anime'>Anime</Link></li>
             <li><Link className='noUnders' to='/Manga'>Manga</Link></li>
             <li><Link className='noUnders' to='/Games'>Games</Link></li>
+            {/* World Government, pirate crews, forums, movies */}
           </ul>
         </nav>
     </div>
