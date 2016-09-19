@@ -12,7 +12,7 @@ class DevilFruit extends Component {
         <h1>DEVIL FRUITS</h1>
         <div className='devilFruits'>
           <div className='devilFruitImage' />
-          <h3> History of Devil Fruits </h3>
+          <h2> History of Devil Fruits </h2>
           <div className='devilFruitBio'>
           <p>Devil Fruits are said to be the fruits of the Sea Devil and that the secret to their power is hidden in the Grand Line. Because encounters with them are rare (especially outside the Grand Line), a number of rumors about them have risen, making it difficult to tell whether some things are fact or fiction. The average person knows nothing or very little about what they are or what they do; this especially applies to people in isolated countries, even within the Grand Line, such as those of Amazon Lily and Wano Country, and even Princess Shirahoshi of Fishman Island, as none of them know about Devil Fruits, instead believing the powers bestowed to be curses or sorcery. Because of their power, if sold they can expect to fetch well over <img className='Beli' src='http://i59.tinypic.com/2k4sk.jpg' />100,000,000 and Devil Fruit users themselves are sold at market prices as slaves. Of course, individual Fruits each have their differences in price, dependent on the powers bestowed, as the Ope Ope no Mi is worth <img className='Beli' src='http://i59.tinypic.com/2k4sk.jpg' />5,000,000,000 in the black market. There are more than 100 types of Devil Fruit. </p>
 
