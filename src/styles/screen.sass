@@ -16,9 +16,9 @@ $design-font: 'Aguafina Script', cursive
   text-align: center
 
 @mixin borderColors($width: 5px)
-  border-top: $width solid grey
+  border-top: $width solid rgb(173, 172, 171)
   border-bottom: $width solid rgb(88, 88, 88)
-  border-left: $width solid grey
+  border-left: $width solid rgb(173, 172, 171)
   border-right: $width solid rgb(88, 88, 88)
 
 html
@@ -46,13 +46,16 @@ h1
   justify-content: center
   text-transform: uppercase
   font-family: $design-font
-  font-size: 90px
+  font-size: 100px
   letter-spacing: 15px
   margin-top: 0
   margin-bottom: -25px
   color: rgb(52, 53, 57)
   text-shadow: 2px 2px grey
   @include mobile
+  font-family: 'One Piece'
+  margin-bottom: 20px
+  margin-top: 10px
 
 h2
   margin: 0
@@ -64,6 +67,18 @@ h2
   font-size: 35px
   text-shadow: 2px 2px grey
 
+
+h4
+  margin: 0
+  padding: 0
+  margin-top: -100px
+  font-family: 'One Piece'
+  font-size: 15em
+  text-align: center
+  color: rgb(46, 139, 198)
+  text-shadow: 5px 5px black
+
+//Header/Navigation Bar
 nav
   margin: 0
   margin-top: -5px
@@ -73,12 +88,14 @@ nav
   align-content: center
   background-color: rgb(159, 170, 170)
   align-content: space-between
+  padding-right: 25px
 
 .header1
   border-bottom: 5px solid grey
   height: 300px
   width: 100vw
 
+// Titile Page
 .title
   @include mobile
   display: flex
@@ -93,6 +110,12 @@ nav
   overflow: hidden
   text-decoration: none
 
+.powerup
+  width: 800px
+  height: 1000px
+  margin-top: -50px
+  padding-bottom: 100px
+
 .oplogo
   @include mobile
   margin: 0
@@ -103,6 +126,8 @@ nav
   justify-content: center
   align-content: center
 
+
+//Home Page
 #noDots
   margin: 0
   display: flex
@@ -152,6 +177,7 @@ nav
   margin-bottom: 50px
   margin-top: -50px
 
+//Games Page
 .gamesHome
   @include borderColors
   @include mobile
@@ -224,15 +250,17 @@ nav
   width: 500px
   @include borderColors
 
+//Forums Page
 .forumLink
   @include borderColors
-  padding: 0
-  margin: 0
+  background-image: url('https://lh5.googleusercontent.com/-XDxTArVn76Q/Uxwiskp2AFI/AAAAAAAAAJE/WRAWUShLDrM/w2048-h1784/Luffy_Flag___One_Piece_by_Sanji_Devastador.png')
+  background-size: contain
+  background-repeat: no-repeat
   display: flex
+  margin-left: 275px
+  line-height: 100px
   text-align: center
   justify-content: center
-  align-items: center
-  text-decoration: none
   background-color: grey
   color: white
   font-weight: bolder
@@ -241,58 +269,13 @@ nav
   font-size: 15px
   font-family: $design-font
   letter-spacing: 10px
-
-footer
-  padding-right: 175px
-  margin-top: 25px
-  display: flex
-  flex-direction: row
-  height: 100px
-  align-items: baseline
-  background-color: rgb(163, 179, 228)
-  position: absolute
-  width: 100vw
-  justify-content: space-between
-  border-top: 5px solid rgb(159, 170, 170)
-
-.resources
-  display: flex
-  flex-direction: column
-
-.api
-  display: flex
-  flex-direction: column
-
-.credits
-  display: flex
-  flex-direction: column
-
-h3
   text-transform: uppercase
-
-.copy
-    color: white
-    font-size: 20px
-    font-weight: bolder
-    display: flex
-    align-self: baseline
-
-h4
-  margin: 0
-  padding: 0
-  margin-top: -100px
   font-family: 'One Piece'
-  font-size: 15em
-  text-align: center
-  color: rgb(46, 139, 198)
-  text-shadow: 5px 5px black
 
-.powerup
-  width: 800px
-  height: 1000px
-  margin-top: -50px
-  padding-bottom: 100px
+.forumLink2
+    text-decoration: none
 
+//Character Page
 .characterLayout
   display: flex
   flex-direction: column
@@ -320,7 +303,10 @@ h4
 .characterBio
   @include borderColors
   background-color: rgba(246, 240, 209, 0.5)
+  margin-top: 10px
 
+
+//Devil Fruit Page
 .devilFruits
   display: flex
   flex-direction: column
@@ -342,3 +328,44 @@ h4
 .devilFruitBio
   @include borderColors
   background-color: rgba(246, 240, 209, 0.5)
+
+.Beli
+  height: 20px
+  width: 20px
+
+//Footer Page
+footer
+  bottom: 0
+  align-self: baseline
+  padding-right: 175px
+  margin-top: 25px
+  display: flex
+  flex-direction: row
+  height: 100px
+  align-items: baseline
+  background-color: rgb(163, 179, 228)
+  width: 100vw
+  justify-content: space-between
+  border-top: 5px solid rgb(159, 170, 170)
+
+.resources
+  display: flex
+  flex-direction: column
+
+.api
+  display: flex
+  flex-direction: column
+
+.credits
+  display: flex
+  flex-direction: column
+
+h3
+  text-transform: uppercase
+
+.copy
+    color: white
+    font-size: 20px
+    font-weight: bolder
+    display: flex
+    align-self: baseline

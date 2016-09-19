@@ -10,7 +10,9 @@ class Forums extends Component {
     <Header />
       <main>
         <h1>Forums</h1>
-        <a className='forumLink' href='http://opforum.net/'>ONE PIECE FORUM</a>
+        <div className='forumLink'>
+        <a className='forumLink2' href='http://opforum.net/'>ONE PIECE FORUM</a>
+        </div>
       </main>
     <Footer />
     </div>
