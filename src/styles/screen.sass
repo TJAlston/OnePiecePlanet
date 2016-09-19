@@ -4,9 +4,14 @@ $base-text-size: 16px
 $base-font-family: sans-serif
 $design-font: 'Aguafina Script', cursive
 
+// @font-face
+//     font-family: 'OnePiece'
+//     src: url('./onepiecefont.ttf')
+//     font-weight: bold
+
 @mixin mobile
-  max-height: 90%
-  max-width: 90%
+  max-height: 100%
+  max-width: 100%
   justify-content: center
   align-items: center
   text-align: center
@@ -22,29 +27,35 @@ html
 
 body
   @include font-smoothing(on)
+  @include mobile
   margin: 0
   font: $base-text-size / 1 $base-font-family
   background-image: url('http://wallpapercave.com/wp/wQub3px.jpg')
+  background-attachment: fixed
   background-repeat: no-repeat
-  background-size: cover
+  height: 100vh
+  width: 100vw
+  overflow-x: hidden
 
 main
   position: static
   overflow: hidden
   padding-left: 100px
   padding-right: 100px
+  @include mobile
 
 h1
   text-align: center
   justify-content: center
   text-transform: uppercase
   font-family: $design-font
-  font-size: 100px
+  font-size: 90px
   letter-spacing: 15px
   margin-top: 0
   margin-bottom: -25px
   color: rgb(52, 53, 57)
   text-shadow: 2px 2px grey
+  @include mobile
 
 h2
   margin: 0
@@ -58,12 +69,13 @@ h2
 
 nav
   margin: 0
+  margin-top: -5px
   padding: 0
-  @include mobile
   font-weight: bolder
-  letter-spacing: 10px
-  justify-content: space-around
+  justify-content: space-between
   align-content: center
+  background-color: rgb(159, 170, 170)
+  align-content: space-between
 
 .header1
   border-bottom: 5px solid grey
@@ -71,11 +83,23 @@ nav
   width: 100vw
 
 .title
-  background-image: url('http://img05.deviantart.net/eb84/i/2011/355/9/b/wallpaper_of_one_piece_by_g_1103-d4jrdxq.png')
+  display: flex
+  margin: 0
+  padding: 0
+  padding-bottom: 50px
+  flex-direction: column
+  justify-content: center
+  align-items: center
   background-size: cover
   width: 100vw
   height: 100vh
   overflow: hidden
+
+.oplogo
+  height: 500px
+  width: 1000px
+  justify-content: center
+  align-content: center
 
 .HomeButton
   margin: 0
@@ -209,6 +233,7 @@ nav
   @include borderColors
 
 .forumLink
+  @include borderColors
   padding: 0
   margin: 0
   display: flex
@@ -216,7 +241,6 @@ nav
   justify-content: center
   align-items: center
   text-decoration: none
-  border: 2px solid black
   background-color: grey
   color: white
   font-weight: bolder
@@ -227,14 +251,15 @@ nav
   letter-spacing: 10px
 
 footer
-    display: flex
-    flex-direction: row
-    height: 100px
-    align-items: baseline
-    background-color: rgb(200, 209, 236)
-    position: absolute
-    width: 100vw
-    justify-content: space-between
+  padding-right: 175px
+  display: flex
+  flex-direction: row
+  height: 100px
+  align-items: baseline
+  background-color: rgb(200, 209, 236)
+  position: absolute
+  width: 100vw
+  justify-content: space-between
 
 .resources
   display: flex
@@ -251,7 +276,23 @@ footer
 h3
   text-transform: uppercase
 
-// .copyright
-//     color: white
-//     font-size: 20px
-//     font-weight: bolder
+.copy
+    color: white
+    font-size: 20px
+    font-weight: bolder
+    display: flex
+    align-self: baseline
+
+h4
+  margin: 0
+  padding: 0
+  margin-top: -100px
+  font-family: 'One Piece'
+  font-size: 200px
+  text-align: center
+  color: rgb(32, 114, 166)
+  text-shadow: 5px 5px 5px black
+
+.luffypowerup
+  width: 300px
+  height: 300px
