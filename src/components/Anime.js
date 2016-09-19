@@ -6,8 +6,8 @@ class Anime extends Component {
 
   render () {
     return <div>
+    <Header />
       <main>
-        <Header />
         <h1>Anime</h1>
       </main>
     </div>

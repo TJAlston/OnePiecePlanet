@@ -23,18 +23,46 @@ body
   @include font-smoothing(on)
   margin: 0
   font: $base-text-size / 1 $base-font-family
-  background-image: url('https://t4.ftcdn.net/jpg/00/90/97/03/240_F_90970368_jWglEgubEqsm5JOTeMQo7ftMk0bfEvSo.jpg')
+
+main
+  background-image: url('http://wallpapercave.com/wp/wQub3px.jpg')
   background-repeat: no-repeat
   background-size: cover
+  position: static
+  overflow: hidden
+  padding-left: 100px
+  padding-right: 100px
 
 h1
   text-align: center
   justify-content: center
   text-transform: uppercase
+  font-family: 'Aguafina Script', cursive
+  font-size: 100px
+  letter-spacing: 15px
+  margin-top: 0
+  margin-bottom: -25px
+  color: rgb(52, 53, 57)
+  text-shadow: 2px 2px grey
+
+h2
+  margin: 0
+  padding-top: 10px
+  font-family: 'Aguafina Script', cursive
+  color: rgb(52, 53, 57)
+  text-align: center
+  letter-spacing: 15px
+  font-size: 35px
+  text-shadow: 2px 2px grey
 
 nav
+  margin: 0
+  padding: 0
   @include mobile
+  font-weight: bolder
+  letter-spacing: 10px
   justify-content: space-around
+  align-content: center
 
 .header1
   border-bottom: 5px solid grey
@@ -97,6 +125,7 @@ nav
   @include mobile
   height: 500px
   width: 600px
+  margin-bottom: 50px
 
 .devilFruitHome
   @include borderColors
@@ -111,3 +140,75 @@ nav
   @include mobile
   height: 200px
   width: 250px
+
+.gameGallery1
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding-bottom: 25px
+
+.gameGallery2
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding-bottom: 25px
+
+.gameGallery3
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding-bottom: 25px
+
+.game1
+  background-image: url('http://kurld.com/images/wallpapers/image-one-piece/image-one-piece-7.png')
+  background-size: cover
+  background-repeat: no-repeat
+  height: 300px
+  width: 500px
+  @include borderColors
+
+.game2
+  background-image: url('http://kurld.com/images/wallpapers/image-one-piece/image-one-piece-7.png')
+  background-size: cover
+  background-repeat: no-repeat
+  height: 300px
+  width: 500px
+  @include borderColors
+
+.game3
+  background-image: url('http://kurld.com/images/wallpapers/image-one-piece/image-one-piece-7.png')
+  background-size: cover
+  background-repeat: no-repeat
+  height: 300px
+  width: 500px
+  @include borderColors
+
+.game4
+  background-image: url('http://kurld.com/images/wallpapers/image-one-piece/image-one-piece-7.png')
+  background-size: cover
+  background-repeat: no-repeat
+  height: 300px
+  width: 500px
+  @include borderColors
+
+.game5
+  background-image: url('http://kurld.com/images/wallpapers/image-one-piece/image-one-piece-7.png')
+  background-size: cover
+  background-repeat: no-repeat
+  height: 300px
+  width: 500px
+  @include borderColors
+
+.game6
+  background-image: url('http://kurld.com/images/wallpapers/image-one-piece/image-one-piece-7.png')
+  background-size: cover
+  background-repeat: no-repeat
+  height: 300px
+  width: 500px
+  @include borderColors
+
+.forumLink
+    text-align: center
+    align-content: center
+    border: 2px solid black
+    height: 100px

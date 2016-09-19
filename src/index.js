@@ -9,7 +9,8 @@ import {
   Characters,
   Manga,
   DevilFruit,
-  Games
+  Games,
+  Forums
 } from './components'
 
 import './styles/screen.sass'
@@ -23,6 +24,7 @@ const root = (
       <Route path='/Manga' component={Manga} />
       <Route path='/DevilFruit' component={DevilFruit} />
       <Route path='/Games' component={Games} />
+      <Route path='/Forums' component={Forums} />
   </Router>
 )
 

@@ -15,7 +15,8 @@ class Header extends Component {
             <li><Link className='noUnders' to='/Anime'>Anime</Link></li>
             <li><Link className='noUnders' to='/Manga'>Manga</Link></li>
             <li><Link className='noUnders' to='/Games'>Games</Link></li>
-            {/* World Government, pirate crews, forums, movies */}
+            <li><Link className='noUnders' to='/Forums'>Forums</Link></li>
+            {/* World Government, pirate crews, movies */}
           </ul>
         </nav>
     </div>

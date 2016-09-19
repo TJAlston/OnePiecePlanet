@@ -6,8 +6,8 @@ class DevilFruit extends Component {
 
   render () {
     return <div>
+    <Header />
       <main>
-        <Header />
         <h1>DEVIL FRUITS</h1>
       </main>
     </div>

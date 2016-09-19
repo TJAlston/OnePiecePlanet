@@ -6,8 +6,8 @@ class Characters extends Component {
 
   render () {
     return <div>
+      <Header />
       <main>
-        <Header />
         <h1>Characters</h1>
       </main>
     </div>
