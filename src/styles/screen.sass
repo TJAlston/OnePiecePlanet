@@ -2,6 +2,7 @@
 
 $base-text-size: 16px
 $base-font-family: sans-serif
+$design-font: 'Aguafina Script', cursive
 
 @mixin mobile
   max-height: 90%
@@ -37,7 +38,7 @@ h1
   text-align: center
   justify-content: center
   text-transform: uppercase
-  font-family: 'Aguafina Script', cursive
+  font-family: $design-font
   font-size: 100px
   letter-spacing: 15px
   margin-top: 0
@@ -48,7 +49,7 @@ h1
 h2
   margin: 0
   padding-top: 10px
-  font-family: 'Aguafina Script', cursive
+  font-family: $design-font
   color: rgb(52, 53, 57)
   text-align: center
   letter-spacing: 15px
@@ -208,18 +209,28 @@ nav
   @include borderColors
 
 .forumLink
-    text-align: center
-    align-content: center
-    flex-direction: row
-    border: 2px solid black
-    height: 100px
-    width: 200px
-    font-size: 20px
+  padding: 0
+  margin: 0
+  display: flex
+  text-align: center
+  justify-content: center
+  align-items: center
+  text-decoration: none
+  border: 2px solid black
+  background-color: grey
+  color: white
+  font-weight: bolder
+  height: 100px
+  width: 250px
+  font-size: 15px
+  font-family: $design-font
+  letter-spacing: 10px
 
 footer
     display: flex
     flex-direction: row
     background-color: rgb(200, 209, 236)
+    position: absolute
 
 .copyright
       color: white
