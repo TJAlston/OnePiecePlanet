@@ -3,6 +3,13 @@
 $base-text-size: 16px
 $base-font-family: sans-serif
 
+@mixin mobile
+  max-height: 90%
+  max-width: 90%
+  justify-content: center
+  align-items: center
+  text-align: center
+
 @mixin borderColors($width: 5px)
   border-top: $width solid grey
   border-bottom: $width solid rgb(88, 88, 88)
@@ -13,17 +20,21 @@ html
   text-size-adjust: 100%
 
 body
-  display: flex
-  flex-wrap: wrap
   @include font-smoothing(on)
   margin: 0
   font: $base-text-size / 1 $base-font-family
-  background-color: rgb(241, 248, 251)
+  background-image: url('https://t4.ftcdn.net/jpg/00/90/97/03/240_F_90970368_jWglEgubEqsm5JOTeMQo7ftMk0bfEvSo.jpg')
+  background-repeat: no-repeat
+  background-size: cover
 
 h1
-  justify-content: center
   text-align: center
+  justify-content: center
   text-transform: uppercase
+
+nav
+  @include mobile
+  justify-content: space-around
 
 .header1
   border-bottom: 5px solid grey
@@ -66,22 +77,37 @@ h1
   text-transform: uppercase
 
 .homePage
-    margin-left: 20px
-    margin-right: 20px
-    display: flex
-    flex-direction: row
+  margin-left: 100px
+  margin-right: 100px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  justify-content: space-around
+
+.p
+  @include mobile
+
+.sideLinks
+  display: flex
+  flex-direction: column
 
 .characterImageHome
   @include borderColors
-  height: 400px
-  width: 500px
+  @include mobile
+  height: 500px
+  width: 600px
 
 .devilFruitHome
   @include borderColors
+  @include mobile
   height: 200px
-  width: 200px
+  width: 250px
+  margin-bottom: 50px
+  margin-top: -50px
 
 .gamesHome
   @include borderColors
+  @include mobile
   height: 200px
-  width: 200px
+  width: 250px
