@@ -5,6 +5,7 @@ $base-font-family: sans-serif
 $design-font: 'Aguafina Script', cursive
 $a-tags: 'a, a:active, a:hover, a:visited'
 $a-tags-hover: 'a:active, a:hover'
+$black: rgb(52, 53, 57)
 
 #{$a-tags}
   color: rgba(26, 27, 28, 0.94)
@@ -62,7 +63,7 @@ h1
   letter-spacing: 15px
   margin-top: 0
   margin-bottom: -25px
-  color: rgb(52, 53, 57)
+  color: $black
   text-shadow: 2px 2px grey
   @include mobile
   font-family: 'One Piece'
@@ -73,7 +74,7 @@ h2
   margin: 0
   padding-top: 10px
   font-family: $design-font
-  color: rgb(52, 53, 57)
+  color: $black
   text-align: center
   letter-spacing: 15px
   font-size: 35px
@@ -105,6 +106,7 @@ nav
   background-color: rgb(159, 170, 170)
   align-content: space-between
   padding-right: 25px
+  color: $black
 
 .header1
   border-bottom: 5px solid grey
@@ -268,28 +270,27 @@ nav
 
 //Forums Page
 .forumLink
-  @include borderColors
-  background-image: url('https://lh5.googleusercontent.com/-XDxTArVn76Q/Uxwiskp2AFI/AAAAAAAAAJE/WRAWUShLDrM/w2048-h1784/Luffy_Flag___One_Piece_by_Sanji_Devastador.png')
-  background-size: contain
-  background-repeat: no-repeat
   display: flex
-  margin-left: 275px
-  line-height: 100px
-  text-align: center
-  justify-content: center
-  background-color: grey
-  color: white
+  flex-direction: column
+  align-items: center
+  font-family: 'One Piece'
+  font-size: 30px
   font-weight: bolder
-  height: 100px
-  width: 250px
-  font-size: 15px
-  font-family: $design-font
   letter-spacing: 10px
   text-transform: uppercase
-  font-family: 'One Piece'
+  color: $black
 
 .forumLink2
-    text-decoration: none
+  @include borderColors
+  text-decoration: none
+  background-image: url('https://lh5.googleusercontent.com/-XDxTArVn76Q/Uxwiskp2AFI/AAAAAAAAAJE/WRAWUShLDrM/w2048-h1784/Luffy_Flag___One_Piece_by_Sanji_Devastador.png')
+  background-size: contain
+  background-position: center
+  background-repeat: no-repeat
+  display: flex
+  background-color: grey
+  height: 100px
+  width: 200px
 
 //Character Page
 .characterLayout
@@ -349,43 +350,6 @@ nav
   height: 20px
   width: 20px
 
-//Footer Page
-footer
-  bottom: 0
-  align-self: baseline
-  padding-right: 175px
-  margin-top: 25px
-  display: flex
-  flex-direction: row
-  height: 100px
-  align-items: baseline
-  background-color: rgb(163, 179, 228)
-  width: 100vw
-  justify-content: space-between
-  border-top: 5px solid rgb(159, 170, 170)
-
-.resources
-  display: flex
-  flex-direction: column
-
-.api
-  display: flex
-  flex-direction: column
-
-.credits
-  display: flex
-  flex-direction: column
-
-h3
-  text-transform: uppercase
-
-.copy
-  color: white
-  font-size: 20px
-  font-weight: bolder
-  display: flex
-  align-self: baseline
-
 // Manga Page
 .chapterList
   display: flex
@@ -399,7 +363,6 @@ h3
   background-color: rgba(180, 49, 7, 0.5)
   height: 125px
   width: 500px
-
 
 .mangaSection
   display: flex
@@ -457,3 +420,40 @@ h3
   @include borderColors
   background-image: url('http://2.bp.blogspot.com/--H41P4bhcN4/V5ohIH14fyI/AAAAAAAAZl8/Bh88HtCPP9AtQ4bWnJNRBlQfehTOzA-_gCCo/s0/000.png')
   @include mangaGallery
+
+
+//Footer Page
+footer
+  bottom: 0
+  padding: 10px
+  align-self: baseline
+  margin-top: 25px
+  display: flex
+  flex-direction: row
+  height: 100px
+  align-items: baseline
+  background-color: rgb(163, 179, 228)
+  justify-content: space-between
+  border-top: 5px solid rgb(159, 170, 170)
+
+.resources
+  display: flex
+  flex-direction: column
+
+.api
+  display: flex
+  flex-direction: column
+
+.credits
+  display: flex
+  flex-direction: column
+
+h3
+  text-transform: uppercase
+
+.copy
+  color: white
+  font-size: 20px
+  font-weight: bolder
+  display: flex
+  align-self: baseline
