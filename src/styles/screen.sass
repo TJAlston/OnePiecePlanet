@@ -3,6 +3,27 @@
 $base-text-size: 20px
 $base-font-family: sans-serif
 $design-font: 'Aguafina Script', cursive
+$a-tags: 'a, a:active, a:hover, a:visited'
+$a-tags-hover: 'a:active, a:hover'
+
+#{$a-tags}
+  color: black
+  text-decoration: none
+
+#{$a-tags-hover}
+  color: blue
+
+@mixin borderColors($width: 5px)
+  border-top: $width solid rgb(173, 172, 171)
+  border-bottom: $width solid rgb(88, 88, 88)
+  border-left: $width solid rgb(173, 172, 171)
+  border-right: $width solid rgb(88, 88, 88)
+
+@mixin mangaGallery
+  background-position: center
+  height: 500px
+  width: 325px
+  background-size: cover
 
 @mixin mobile
   max-height: 100%
@@ -11,11 +32,6 @@ $design-font: 'Aguafina Script', cursive
   align-items: center
   text-align: center
 
-@mixin borderColors($width: 5px)
-  border-top: $width solid rgb(173, 172, 171)
-  border-bottom: $width solid rgb(88, 88, 88)
-  border-left: $width solid rgb(173, 172, 171)
-  border-right: $width solid rgb(88, 88, 88)
 
 html
   text-size-adjust: 100%
@@ -66,6 +82,7 @@ h2
 h3
   align-content: center
   font-size: 15px
+  margin-top: -25px
 
 h4
   margin: 0
@@ -166,7 +183,7 @@ nav
   @include mobile
   height: 500px
   width: 600px
-  margin-bottom: 50px
+  margin-bottom: 75px
 
 .devilFruitHome
   @include borderColors
@@ -363,8 +380,71 @@ h3
   text-transform: uppercase
 
 .copy
-    color: white
-    font-size: 20px
-    font-weight: bolder
-    display: flex
-    align-self: baseline
+  color: white
+  font-size: 20px
+  font-weight: bolder
+  display: flex
+  align-self: baseline
+
+// Manga Page
+.chapterList
+  @include borderColors
+  text-decoration: none
+  width: 50%
+
+.mangaSection
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.mangaRow1
+  margin: 20px 20px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.mangaRow2
+  margin: 20px 20px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+
+//chapter 839
+.recent1
+  @include borderColors
+  background-image: url('https://cdn.opbforums.com/manga/One%20Piece/839/1.png')
+  @include mangaGallery
+
+//chapter 838
+.recent2
+  @include borderColors
+  background-image: url('http://www.thebitbag.com/wp-content/uploads/2016/09/One-Piece-838-Shanks.png')
+  @include mangaGallery
+
+//chapter 837
+.recent3
+  @include borderColors
+  background-image: url('https://2.bp.blogspot.com/-jlfLb2Ht2Xw/V78UKP_hsTI/AAAAAAAAA0A/kyLx3X7YHdQP1HgwbGDdKJvdqXxa1X-sQCLcB/s1600/01.jpg')
+  @include mangaGallery
+
+//chapter 836
+.recent4
+  @include borderColors
+  background-image: url('http://www.dzparks.com/uploads/7/6/2/0/76206817/354476293.png?554')
+  @include mangaGallery
+
+//no image
+.recent5
+  @include borderColors
+  background-image: url('https://s-media-cache-ak0.pinimg.com/236x/9c/f2/26/9cf226fda95baf021db01e145be7b149.jpg')
+  @include mangaGallery
+  text-decoration: none
+  font-weight: bolder
+  color: black
+
+//chapter 834
+.recent6
+  @include borderColors
+  background-image: url('http://2.bp.blogspot.com/--H41P4bhcN4/V5ohIH14fyI/AAAAAAAAZl8/Bh88HtCPP9AtQ4bWnJNRBlQfehTOzA-_gCCo/s0/000.png')
+  @include mangaGallery
