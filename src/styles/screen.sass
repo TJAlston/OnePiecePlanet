@@ -7,7 +7,7 @@ $a-tags: 'a, a:active, a:hover, a:visited'
 $a-tags-hover: 'a:active, a:hover'
 
 #{$a-tags}
-  color: black
+  color: rgba(26, 27, 28, 0.94)
   text-decoration: none
 
 #{$a-tags-hover}
@@ -87,7 +87,7 @@ h3
 h4
   margin: 0
   padding: 0
-  margin-top: -100px
+  margin-top: -150px
   font-family: 'One Piece'
   font-size: 15em
   text-align: center
@@ -129,13 +129,13 @@ nav
 .powerup
   width: 800px
   height: 1000px
-  margin-top: -50px
+  margin-top: -100px
   padding-bottom: 100px
 
 .oplogo
   @include mobile
-  margin: 0
   padding: 0
+  margin-top: 50px
   margin-bottom: -50px
   height: 500px
   width: 800px
@@ -388,9 +388,12 @@ h3
 
 // Manga Page
 .chapterList
+  display: flex
   @include borderColors
   text-decoration: none
   width: 50%
+  align-self: center
+  background-color: rgba(180, 49, 7, 0.5)
 
 .mangaSection
   display: flex
