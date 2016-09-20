@@ -20,6 +20,11 @@ $black: rgb(52, 53, 57)
   border-left: $width solid rgb(173, 172, 171)
   border-right: $width solid rgb(88, 88, 88)
 
+@mixin columnz
+  display: flex
+  flex-direction: column
+  align-items: center
+
 @mixin mangaGallery
   background-position: center
   height: 500px
@@ -84,6 +89,7 @@ h3
   align-content: center
   font-size: 15px
   margin-top: -25px
+  text-transform: uppercase
 
 h4
   margin: 0
@@ -113,16 +119,14 @@ nav
   height: 300px
   width: 100vw
 
-// Titile Page
+// Title Page
 .title
   @include mobile
-  display: flex
+  @include columnz
   margin: 0
   padding: 0
   padding-bottom: 30px
-  flex-direction: column
   justify-content: center
-  align-items: center
   width: 100vw
   height: 100vh
   overflow: hidden
@@ -161,6 +165,7 @@ nav
   font-size: 35px
 
 .homePage
+  @include columnz
   margin-left: 100px
   margin-right: 100px
   display: flex
@@ -172,13 +177,31 @@ nav
 .homeIntro
   @include borderColors
   background-color: rgba(246, 240, 209, 0.5)
+//
+// .p
+//   @include mobile
+.homePage
+  @include columnz
 
-.p
-  @include mobile
+.homePhotos
+  padding: 0
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
 
 .sideLinks
-  display: flex
-  flex-direction: column
+  @include columnz
+
+.homeImage
+  @include columnz
+  padding-right: 50px
+
+.sideImage1
+  @include columnz
+  padding-bottom: 60px
+
+.sideImage2
+  @include columnz
 
 .characterImageHome
   @include borderColors
@@ -192,8 +215,6 @@ nav
   @include mobile
   height: 200px
   width: 250px
-  margin-bottom: 50px
-  margin-top: -50px
 
 //Games Page
 .gamesHome
@@ -270,9 +291,7 @@ nav
 
 //Forums Page
 .forumLink
-  display: flex
-  flex-direction: column
-  align-items: center
+  @include columnz
   font-family: 'One Piece'
   font-size: 30px
   font-weight: bolder
@@ -294,9 +313,7 @@ nav
 
 //Character Page
 .characterLayout
-  display: flex
-  flex-direction: column
-  align-items: center
+  @include columnz
 
 .characterImage
   @include borderColors
@@ -325,10 +342,8 @@ nav
 
 //Devil Fruit Page
 .devilFruits
-  display: flex
-  flex-direction: column
+  @include columnz
   justify-content: center
-  align-items: center
 
 .devilFruitImage
   @include borderColors
@@ -350,11 +365,37 @@ nav
   height: 20px
   width: 20px
 
+// ANIME PAGE
+.videos
+  @include columnz
+  font-weight: bolder
+
+.video1
+  margin: 20px
+  @include columnz
+
+.video2
+  margin: 20px
+  @include columnz
+
+.video3
+  margin: 20px
+  @include columnz
+
+.chapterList
+  @include columnz
+
+.hulu
+  @include borderColors
+  justify-content: center
+  align-self: center
+  background-color: rgba(180, 49, 7, 0.5)
+  height: 125px
+  width: 500px
+
 // Manga Page
 .chapterList
-  display: flex
-  flex-direction: column
-  align-items: center
+  @include columnz
 
 .zingBox
   @include borderColors
@@ -437,19 +478,13 @@ footer
   border-top: 5px solid rgb(159, 170, 170)
 
 .resources
-  display: flex
-  flex-direction: column
+  @include columnz
 
 .api
-  display: flex
-  flex-direction: column
+  @include columnz
 
 .credits
-  display: flex
-  flex-direction: column
-
-h3
-  text-transform: uppercase
+  @include columnz
 
 .copy
   color: white

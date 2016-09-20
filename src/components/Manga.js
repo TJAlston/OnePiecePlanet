@@ -10,11 +10,6 @@ class Manga extends Component {
       <Header />
         <main>
           <h1>Manga</h1>
-          <div className='chapterList'>
-            <a className='zingBox' href='http://www.zingbox.me/mangaDetail/8168?bookName=One%20Piece'>
-            <h2>Complete List of Chapters Here</h2>
-            </a>
-          </div>
           <div className='mangaSection'>
             <div className='mangaRow1'>
               <a className='recent1' href='http://www.zingbox.me/storyRead/8168?chapterId=191338&flag=2&randomKey=89428835' />
@@ -26,6 +21,11 @@ class Manga extends Component {
               <a className='recent5' href='http://www.zingbox.me/storyRead/8168?chapterId=186472&flag=2&randomKey=59024230'>NO COVER ART AVAILABLE</a>
               <a className='recent6' href='http://www.zingbox.me/storyRead/8168?chapterId=185612&flag=2&randomKey=51418313' />
             </div>
+          </div>
+          <div className='chapterList'>
+            <a className='zingBox' href='http://www.zingbox.me/mangaDetail/8168?bookName=One%20Piece'>
+            <h2>Complete List of Chapters Here</h2>
+            </a>
           </div>
         </main>
       <Footer />
