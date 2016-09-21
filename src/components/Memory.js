@@ -92,9 +92,12 @@ class Memory extends React.Component {
     } else {
       return <div>
         <h1>MEMORY</h1>
-        <h4 className='youwin'> YOU WIN!!! </h4>
-        <Footer />
+        <div className='youWin'>
+          <h4> YOU WIN!!! </h4>
+          <button onClick={this.reset} className='resetButton'>
+          PLAY AGAIN</button>
         </div>
+      </div>
     }
   }
 }
