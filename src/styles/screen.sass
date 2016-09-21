@@ -25,6 +25,12 @@ $black: rgb(52, 53, 57)
   flex-direction: column
   align-items: center
 
+@mixin gameBg
+  background-size: cover
+  background-repeat: no-repeat
+  height: 300px
+  width: 500px
+
 @mixin mangaGallery
   background-position: center
   height: 500px
@@ -47,7 +53,7 @@ body
   @include mobile
   margin: 0
   font: $base-text-size / 1 $base-font-family
-  background-image: url('http://static.wixstatic.com/media/711265_92f0cfc64c4f4b41a9e2d3f0aa175e3c.jpg')
+  background-image: url('../images/oppbkgd.jpg')
   background-attachment: fixed
   background-repeat: no-repeat
   background-size: cover
@@ -80,10 +86,11 @@ h2
   padding-top: 10px
   font-family: $design-font
   color: $black
+  font-weight: bold
   text-align: center
   letter-spacing: 15px
   font-size: 35px
-  text-shadow: 2px 2px grey
+  text-shadow: 2px 2px 2px white
 
 h3
   align-content: center
@@ -100,6 +107,19 @@ h4
   text-align: center
   color: rgb(46, 139, 198)
   text-shadow: 5px 5px black
+
+h5
+  margin: 0
+  display: flex
+  padding-top: 55px
+  font-family: $design-font
+  color: $black
+  font-weight: bold
+  letter-spacing: 15px
+  font-size: 30px
+  text-shadow: 2px 2px 2px white
+  width: 500px
+  height: 200px
 
 //Header/Navigation Bar
 nav
@@ -177,13 +197,16 @@ nav
 .homeIntro
   @include borderColors
   background-color: rgba(246, 240, 209, 0.5)
-//
-// .p
-//   @include mobile
+
 .homePage
   @include columnz
 
 .homePhotos
+  font-family: 'One Piece'
+  font-size: 50px
+  font-weight: bolder
+  color: white
+  text-shadow: 5px 5px 5px black
   padding: 0
   display: flex
   flex-direction: row
@@ -242,51 +265,33 @@ nav
   padding-bottom: 25px
 
 .game1
-  background-image: url('http://4.bp.blogspot.com/-BxC2ApZYD4M/Uh8LymWXQ3I/AAAAAAAAABs/ishlPrvu4R0/s1600/2a65286fa50ef880dc5bd407f61fe164.jpg')
-  background-size: cover
-  background-repeat: no-repeat
-  height: 300px
-  width: 500px
+  background-image: url('../images/fill_in_img.jpg')
+  @include gameBg
   @include borderColors
 
 .game2
-  background-image: url('http://4.bp.blogspot.com/-BxC2ApZYD4M/Uh8LymWXQ3I/AAAAAAAAABs/ishlPrvu4R0/s1600/2a65286fa50ef880dc5bd407f61fe164.jpg')
-  background-size: cover
-  background-repeat: no-repeat
-  height: 300px
-  width: 500px
+  background-image: url('../images/fill_in_img.jpg')
+  @include gameBg
   @include borderColors
 
 .game3
-  background-image: url('http://4.bp.blogspot.com/-BxC2ApZYD4M/Uh8LymWXQ3I/AAAAAAAAABs/ishlPrvu4R0/s1600/2a65286fa50ef880dc5bd407f61fe164.jpg')
-  background-size: cover
-  background-repeat: no-repeat
-  height: 300px
-  width: 500px
+  background-image: url('../images/fill_in_img.jpg')
+  @include gameBg
   @include borderColors
 
 .game4
-  background-image: url('http://4.bp.blogspot.com/-BxC2ApZYD4M/Uh8LymWXQ3I/AAAAAAAAABs/ishlPrvu4R0/s1600/2a65286fa50ef880dc5bd407f61fe164.jpg')
-  background-size: cover
-  background-repeat: no-repeat
-  height: 300px
-  width: 500px
+  background-image: url('../images/fill_in_img.jpg')
+  @include gameBg
   @include borderColors
 
 .game5
-  background-image: url('http://4.bp.blogspot.com/-BxC2ApZYD4M/Uh8LymWXQ3I/AAAAAAAAABs/ishlPrvu4R0/s1600/2a65286fa50ef880dc5bd407f61fe164.jpg')
-  background-size: cover
-  background-repeat: no-repeat
-  height: 300px
-  width: 500px
+  background-image: url('../images/fill_in_img.jpg')
+  @include gameBg
   @include borderColors
 
 .game6
-  background-image: url('http://4.bp.blogspot.com/-BxC2ApZYD4M/Uh8LymWXQ3I/AAAAAAAAABs/ishlPrvu4R0/s1600/2a65286fa50ef880dc5bd407f61fe164.jpg')
-  background-size: cover
-  background-repeat: no-repeat
-  height: 300px
-  width: 500px
+  background-image: url('../images/fill_in_img.jpg')
+  @include gameBg
   @include borderColors
 
 //Forums Page
@@ -302,7 +307,7 @@ nav
 .forumLink2
   @include borderColors
   text-decoration: none
-  background-image: url('https://lh5.googleusercontent.com/-XDxTArVn76Q/Uxwiskp2AFI/AAAAAAAAAJE/WRAWUShLDrM/w2048-h1784/Luffy_Flag___One_Piece_by_Sanji_Devastador.png')
+  background-image: url('../images/strawhatlogo.png')
   background-size: contain
   background-position: center
   background-repeat: no-repeat
@@ -318,7 +323,7 @@ nav
 .characterImage
   @include borderColors
   padding: 20px
-  background-image: url('http://67.media.tumblr.com/69e0ddd4fe787e7141eab2744e93f897/tumblr_ns0iacmDM81upo8sfo2_500.gif')
+  background-image: url('../images/chopper1.gif')
   background-repeat: no-repeat
   background-size: cover
   justify-content: center
@@ -350,7 +355,7 @@ nav
   margin: 0
   padding: 0
   justify-content: center
-  background-image: url('http://g01.a.alicdn.com/kf/HTB1tLrxKpXXXXa5XFXXq6xXFXXX4/Anime-font-b-One-b-font-font-b-Piece-b-font-font-b-Devil-b-font.jpg')
+  background-image: url('../images/devilfruitimg.jpg')
   background-repeat: no-repeat
   background-size: cover
   justify-content: center
@@ -385,25 +390,16 @@ nav
 .chapterList
   @include columnz
 
-.hulu
-  @include borderColors
-  justify-content: center
-  align-self: center
-  background-color: rgba(180, 49, 7, 0.5)
-  height: 125px
-  width: 500px
-
 // Manga Page
 .chapterList
   @include columnz
-
-.zingBox
-  @include borderColors
+  background-image: url('../images/scroll.gif')
+  background-size: contain
+  background-position: center
+  background-repeat: no-repeat
   justify-content: center
-  align-self: center
-  background-color: rgba(180, 49, 7, 0.5)
-  height: 125px
-  width: 500px
+  height: 225px
+  width: 700px
 
 .mangaSection
   display: flex
@@ -426,31 +422,31 @@ nav
 //chapter 839
 .recent1
   @include borderColors
-  background-image: url('https://cdn.opbforums.com/manga/One%20Piece/839/1.png')
+  background-image: url('../images/chapter839.png')
   @include mangaGallery
 
 //chapter 838
 .recent2
   @include borderColors
-  background-image: url('http://www.thebitbag.com/wp-content/uploads/2016/09/One-Piece-838-Shanks.png')
+  background-image: url('../images/chapter838.png')
   @include mangaGallery
 
 //chapter 837
 .recent3
   @include borderColors
-  background-image: url('https://2.bp.blogspot.com/-jlfLb2Ht2Xw/V78UKP_hsTI/AAAAAAAAA0A/kyLx3X7YHdQP1HgwbGDdKJvdqXxa1X-sQCLcB/s1600/01.jpg')
+  background-image: url('../images/chapter837.jpg')
   @include mangaGallery
 
 //chapter 836
 .recent4
   @include borderColors
-  background-image: url('http://www.dzparks.com/uploads/7/6/2/0/76206817/354476293.png?554')
+  background-image: url('../images/chapter836.png')
   @include mangaGallery
 
 //no image
 .recent5
   @include borderColors
-  background-image: url('https://s-media-cache-ak0.pinimg.com/236x/9c/f2/26/9cf226fda95baf021db01e145be7b149.jpg')
+  background-image: url('../images/404error.jpg')
   @include mangaGallery
   text-decoration: none
   font-weight: bolder
@@ -459,7 +455,7 @@ nav
 //chapter 834
 .recent6
   @include borderColors
-  background-image: url('http://2.bp.blogspot.com/--H41P4bhcN4/V5ohIH14fyI/AAAAAAAAZl8/Bh88HtCPP9AtQ4bWnJNRBlQfehTOzA-_gCCo/s0/000.png')
+  background-image: url('../images/chapter834.jpg')
   @include mangaGallery
 
 

@@ -23,8 +23,8 @@ class Manga extends Component {
             </div>
           </div>
           <div className='chapterList'>
-            <a className='zingBox' href='http://www.zingbox.me/mangaDetail/8168?bookName=One%20Piece'>
-            <h2>Complete List of Chapters Here</h2>
+            <a href='http://www.zingbox.me/mangaDetail/8168?bookName=One%20Piece'>
+            <h5>Complete List of Chapters Here </h5>
             </a>
           </div>
         </main>
