@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import '../styles/screen.sass'
 import Header from './Header'
 import Footer from './Footer'
+import { Link } from 'react-router'
+
 
 class Games extends Component {
 
@@ -11,7 +13,7 @@ class Games extends Component {
       <main>
         <h1>One Piece Games</h1>
         <div className='gameGallery1'>
-          <div className='game1'>GAME 1</div>
+          <Link className='game1' to='/Memory'>Memory Game</Link>
           <div className='game2'>GAME 2</div>
         </div>
         <div className='gameGallery2'>

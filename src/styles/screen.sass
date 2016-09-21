@@ -466,3 +466,48 @@ footer
   font-weight: bolder
   display: flex
   align-self: baseline
+
+//Memory game
+.memoryBoard
+  padding: 20px
+  height: 800px
+  width: 1000px
+  align-items: center
+  background-color: rgba(177, 80, 21, 0.5)
+  border-top: 5px solid rgb(182, 40, 2)
+  border-bottom: 5px solid rgba(103, 10, 10, 1)
+  border-left: 5px solid rgb(182, 40, 2)
+  border-right: 5px solid rgba(103, 10, 10, 1)
+  background-repeat: no-repeat
+  text-align: center
+  justify-content: center
+
+.card
+  margin: 5px
+  border: solid 3px rgb(198, 232, 233)
+    border-radius: 2px
+  height: 250px
+  width: 150px
+  text-align: center
+  margin-bottom: 5px
+  background-size: cover
+  border: 2px solid black
+
+  &.up
+    background-color: rgb(223, 224, 221)
+    background-size: cover
+
+.youwin
+  padding-top: 100px
+  justify-content: center
+  text-align: center
+  align-self: center
+
+.memoryGame
+  @include columnz
+  align-content: center
+
+.resetButton
+  background-image: url('http://is2.mzstatic.com/image/thumb/Purple5/v4/ff/e8/e1/ffe8e19d-cac3-1aa4-9f79-c827036fb215/mzl.balclcui.png/0x0ss-85.jpg')
+  height: 200px
+  width: 200px
