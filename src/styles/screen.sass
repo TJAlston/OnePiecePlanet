@@ -37,6 +37,11 @@ $black: rgb(52, 53, 57)
   width: 325px
   background-size: cover
 
+@mixin rowsp
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
 html
   text-size-adjust: 100%
 
@@ -146,7 +151,7 @@ nav
 
 .powerup
   width: 800px
-  height: 1000px
+  height: 1000px !important
   margin-top: -100px
   padding-bottom: 100px
 
@@ -163,10 +168,8 @@ nav
 //Home Page
 #noDots
   margin: 0
-  display: flex
-  flex-direction: row
+  @include rowsp
   list-style-type: none
-  justify-content: space-between
   font-weight: bold
 
 .noUnders
@@ -235,21 +238,15 @@ nav
   width: 250px
 
 .gameGallery1
-  display: flex
-  flex-direction: row
-  justify-content: space-between
+  @include rowsp
   padding-bottom: 25px
 
 .gameGallery2
-  display: flex
-  flex-direction: row
-  justify-content: space-between
+  @include rowsp
   padding-bottom: 25px
 
 .gameGallery3
-  display: flex
-  flex-direction: row
-  justify-content: space-between
+  @include rowsp
   padding-bottom: 25px
 
 .game1
@@ -346,7 +343,6 @@ nav
   background-image: url('../images/devilfruitimg.jpg')
   background-repeat: no-repeat
   background-size: cover
-  justify-content: center
   width: 500px
   height: 500px
 
@@ -395,15 +391,11 @@ nav
 
 .mangaRow1
   margin: 20px 20px
-  display: flex
-  flex-direction: row
-  justify-content: space-between
+  @include rowsp
 
 .mangaRow2
   margin: 20px 20px
-  display: flex
-  flex-direction: row
-  justify-content: space-between
+  @include rowsp
 
 
 //chapter 839
@@ -438,6 +430,7 @@ nav
   text-decoration: none
   font-weight: bolder
   color: black
+  text-align: center
 
 //chapter 834
 .recent6
@@ -448,16 +441,14 @@ nav
 
 //Footer Page
 footer
+  @include rowsp
   bottom: 0
   padding: 10px
   align-self: baseline
   margin-top: 25px
-  display: flex
-  flex-direction: row
   height: 100px
   align-items: baseline
   background-color: rgb(163, 179, 228)
-  justify-content: space-between
   border-top: 5px solid rgb(159, 170, 170)
 
 .resources
