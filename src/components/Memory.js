@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/screen.sass'
 import Card from './Card'
 import Header from './Header'
+import Footer from './Footer'
 
 const SHOW_TIME = 1500
 
@@ -29,12 +30,6 @@ class Memory extends React.Component {
         'http://pm1.narvii.com/5867/7b4c1a0200a881c757b0393833813cf1d1f367d1_hq.jpg',
         'http://pm1.narvii.com/5867/d0bacd9de992dc995f27149f925b8449d171b362_hq.jpg',
         'http://pm1.narvii.com/5867/d0bacd9de992dc995f27149f925b8449d171b362_hq.jpg'
-        // '../images/chapter834.jpg',
-        // '../images/chapter834.jpg',
-        // '../images/chapter834.jpg',
-        // '../images/chapter834.jpg',
-        // '../images/chapter834.jpg',
-        // '../images/chapter834.jpg'
       ],
       matched: [],
       turned: [],
@@ -70,6 +65,10 @@ class Memory extends React.Component {
     }
   }
 
+  reset = () => {
+    window.location.reload()
+  }
+
   render () {
     if (!this.state.win) {
 
@@ -86,13 +85,15 @@ class Memory extends React.Component {
           <main className='memoryBoard'>
             {cards}
           </main>
-          <input type='resetButton' value='PLAY AGAIN!' onClick='window.location.reload()' />
+          <button onClick={this.reset} className='resetButton'>PLAY AGAIN</button>
         </div>
+        <Footer />
       </div>
     } else {
       return <div>
         <h1>MEMORY</h1>
         <h4 className='youwin'> YOU WIN!!! </h4>
+        <Footer />
         </div>
     }
   }
