@@ -13,7 +13,7 @@ class Games extends Component {
         <h1>One Piece Games</h1>
         <div className='gameGallery1'>
           <Link className='game1' to='/Memory'>Memory Game</Link>
-          <Link className='game2'>GAME 2</Link>
+          <Link className='game2'>GAME </Link>
         </div>
         <div className='gameGallery2'>
           <div className='game3'>GAME 3</div>
@@ -24,7 +24,7 @@ class Games extends Component {
           <div className='game6'>GAME 6</div>
         </div>
       </main>
-     <Footer />
+    <Footer />
     </div>
   }
 }
