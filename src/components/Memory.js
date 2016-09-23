@@ -80,24 +80,26 @@ class Memory extends React.Component {
       })
       return <div>
         <Header />
-        <div className='memoryGame'>
-          <h1>MEMORY</h1>
-          <main className='memoryBoard'>
-            {cards}
-          </main>
-          <button onClick={this.reset} className='resetButton'>PLAY AGAIN</button>
-        </div>
+          <div className='memoryGame'>
+            <h1>MEMORY</h1>
+            <main className='memoryBoard'>
+              {cards}
+            </main>
+            <button onClick={this.reset} className='resetButton'>PLAY AGAIN</button>
+          </div>
         <Footer />
       </div>
     } else {
       return <div>
+      <Header />
         <h1>MEMORY</h1>
         <div className='youWin'>
           <h4> YOU WIN!!! </h4>
           <button onClick={this.reset} className='resetButton'>
           PLAY AGAIN</button>
         </div>
-      </div>
+      <Footer />
+    </div>
     }
   }
 }

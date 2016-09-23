@@ -2,8 +2,31 @@ import React, { Component } from 'react'
 import '../styles/screen.sass'
 import Header from './Header'
 import Footer from './Footer'
+// import AUTH from './auth3'
+// import 'whatwg-fetch'
+// const API_URL = 'https://beoderp.herokuapp.com/items?access_token=TJetta'
+// const TOKEN = 'TJetta'
 
 class Characters extends Component {
+  // constructor () {
+  //   super()
+  //   this.state = {
+  //     characters: []
+  //   }
+  // }
+  // _goToHome = () => {
+  //   window.location.hash = '/'
+  // }
+  //
+  // _getCharacter = (character) => {
+  //   window.fetch(`http://onepiece.wikia.com/wiki/v1/public/characters?name=${character}&${AUTH}`)
+  //     .then(res => res.json())
+  //     .then(json => this.setState({ characters: this.state.characters.concat(json.data.results[0]) }))
+  // }
+  //
+  // componentDidMount () {
+  //   this.props.characters.forEach(this._getCharacter)
+  // }
 
   render () {
     return <div>
