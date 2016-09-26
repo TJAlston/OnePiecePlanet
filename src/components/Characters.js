@@ -19,17 +19,16 @@ class Characters extends Component {
   }
 
   render () {
+    console.log(this.state.characters)
     return <div>
       <Header />
       <main>
       {/* <h1>{this.props.title}</h1> */}
-      {this.state.characters.map((character, i) => {
-       return <h1 key={i}>{character.title}</h1>
-       {/* <div className='photo' />
-       <div className='characterBio'>
-        <h3 key={i}>{character.snippet}</h3>
-       </div> */}
-      })}
+      <h1>{this.state.characters[0].title}</h1>
+        <div className='photo'></div>
+        <div className='characterBio'>
+        <h5>{this.state.characters[0].snippet}</h5>
+         </div>
         {/* <h1>Characters</h1>
         <div className='characterLayout'>
           <div className='characterImage' />

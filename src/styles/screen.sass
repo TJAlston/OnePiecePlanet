@@ -46,8 +46,6 @@ html
   text-size-adjust: 100%
 
 body
-  width: 100vw
-  height: 100vh
   @include font-smoothing(on)
   margin: 0
   font: $base-text-size / 1 $base-font-family
@@ -178,11 +176,15 @@ nav
   padding-bottom: 100px
 
 .oplogo
-  height: 500px
-  width: 750px
+  margin-top: 100px
+  padding: 0
+  height: 250px
+  width: 700px
   justify-content: center
-  align-content: center
 
+.titleh4
+  margin-top: 10px
+  margin-bottom: -10px
 
 //Home Page
 #noDots
@@ -216,21 +218,24 @@ nav
 
 .homePhotos
   font-family: 'One Piece'
+  width: 850px
+  height: 700px
   font-size: 50px
   font-weight: bolder
   color: white
   text-shadow: 5px 5px 5px black
+  margin-top: -25px
   padding: 0
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
+  @include rowsp
+
+.bigPhoto
+    @include columnz
+    align-self: center
 
 .sideLinks
   @include columnz
-
-.homeImage
-  @include columnz
-  padding-right: 50px
+  justify-content: flex-end
+  align-self: center
 
 .sideImage1
   @include columnz
@@ -249,6 +254,91 @@ nav
   @include borderColors
   height: 200px
   width: 250px
+
+.css-slideshow
+  display: flex
+  max-width: 495px
+  height: 370px
+  justify-content: flex-start
+  align-content: center
+  @include columnz
+
+.css-slideshow figure
+  margin: 0
+  max-width: 495px
+  height: 370px
+  background: #000
+  position: absolute
+  @include borderColors
+
+.css-slideshow img
+  box-shadow: 0 0 2px #666
+
+.css-slideshow figcaption
+  position: absolute
+  top: 0
+  color: #fff
+  background: rgba(0,0,0, .3)
+  font-size: .8em
+  padding: 8px 12px
+  opacity: 0
+  transition: opacity .5s
+
+.css-slideshow:hover figure figcaption
+  transition: opacity .5s
+  opacity: 1
+
+.css-slideshow-attr
+  max-width: 495px
+  text-align: right
+  font-size: .7em
+  color: white
+
+.css-slideshow-attr a
+  color: #666
+
+// .css-slideshow figure
+//   opacity:0
+
+figure:nth-child(1)
+  animation: xfade 48s 42s infinite
+
+figure:nth-child(2)
+  animation: xfade 48s 36s infinite
+
+figure:nth-child(3)
+  animation: xfade 48s 30s infinite
+
+figure:nth-child(4)
+  animation: xfade 48s 24s infinite
+
+figure:nth-child(5)
+  animation: xfade 48s 18s infinite
+
+figure:nth-child(6)
+  animation: xfade 48s 12s infinite
+
+figure:nth-child(7)
+  animation: xfade 48s 6s infinite
+
+figure:nth-child(8)
+  animation: xfade 48s 0s infinite
+
+@keyframes xfade
+  0%
+    opacity: 1
+
+  10.5%
+    opacity: 1
+
+  12.5%
+    opacity: 0
+
+  98%
+    opacity: 0
+
+  100%
+    opacity: 1
 
 //Games Page
 .gamesHome
