@@ -201,32 +201,31 @@ nav
 
 .homePage
   @include columnz
-  margin-left: 100px
-  margin-right: 100px
-  display: flex
   flex-wrap: wrap
   justify-content: center
-  align-items: center
   justify-content: space-around
+  margin-left: 100px
+  margin-right: 100px
 
 .homeIntro
   @include borderColors
   background-color: rgba(246, 240, 209, 0.5)
 
-.homePage
-  @include columnz
-
 .homePhotos
+  margin-left: 100px
   font-family: 'One Piece'
-  width: 850px
+  width: 900px
   height: 700px
   font-size: 50px
   font-weight: bolder
   color: white
   text-shadow: 5px 5px 5px black
   margin-top: -25px
-  padding: 0
   @include rowsp
+  justify-content: space-between
+  padding-left: 20px
+  padding-right: 20px
+
 
 .bigPhoto
     @include columnz
@@ -265,8 +264,8 @@ nav
 
 .css-slideshow figure
   margin: 0
-  max-width: 495px
-  height: 370px
+  max-width: 555px
+  height: 470px
   background: #000
   position: absolute
   @include borderColors
@@ -289,7 +288,7 @@ nav
   opacity: 1
 
 .css-slideshow-attr
-  max-width: 495px
+  max-width: 555px
   text-align: right
   font-size: .7em
   color: white
