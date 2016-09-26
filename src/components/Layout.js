@@ -10,8 +10,8 @@ class Layout extends Component {
     children: React.PropTypes.element
   }
 
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.state = {
       searchQuery: '',
       searchResults: characterInfo.items.slice(0, 3)
@@ -32,7 +32,7 @@ class Layout extends Component {
 
   performSearch (query) {
     return characterInfo.items.filter((item) => {
-      return item.title.match(query)
+      return item.title.toLowerCase().match(query.toLowerCase())
     })
   }
 

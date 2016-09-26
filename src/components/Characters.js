@@ -7,12 +7,17 @@ class Characters extends Component {
 
   render () {
     const characters = this.props.searchResults.map((character, index) => {
-      <h1>{characters.title}</h1>
-      {/* <div className='photo'>
-      <div className='characterBio'>
-        <h5>{character.snippet}</h5>
-      </div> */}
+      return (
+        <div key={index}>
+          <h1>{character.title}</h1>
+          <div className='characterBio'>
+            <h5>{character.snippet}</h5>
+            <img src={character.image} />
+          </div>
+        </div>
+      )
     })
+
     return <main>
       {characters}
     </main>

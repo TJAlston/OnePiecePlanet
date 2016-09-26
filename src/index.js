@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, Route, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 
 import {
   App,
@@ -19,8 +19,8 @@ import './styles/screen.sass'
 
 const root = (
   <Router history={browserHistory}>
-    <Route path='/' component={Layout}>
-      <Route component={App} />
+    <Route path='/' component={App} />
+    <Route component={Layout}>
       <Route path='/Home' component={Home} />
       <Route path='/Anime' component={Anime} />
       <Route path='/Characters' component={Characters} />
