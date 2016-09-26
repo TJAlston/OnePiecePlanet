@@ -4,6 +4,11 @@ import { Link } from 'react-router'
 
 class Header extends Component {
 
+  static propTypes = {
+    searchables: React.PropTypes.array,
+    setResults: React.PropTypes.func
+  }
+
   render () {
     return <div>
       <Link to='/Home'><img className='header1' src='http://66.media.tumblr.com/a215ef83293db672b3ac04fd96043885/tumblr_nnisl1lHPh1r2hgd5o4_500.gif' alt='header1' /></Link>
@@ -19,7 +24,7 @@ class Header extends Component {
             {/* World Government, pirate crews, movies */}
           </ul>
         </nav>
-        <input id='Search' value='search' /><button id='submit'>submit</button>
+        <input id='Search' /><button id='submit'>submit</button>
     </div>
   }
 }

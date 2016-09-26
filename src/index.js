@@ -7,6 +7,7 @@ import {
   Home,
   Anime,
   Characters,
+  Layout,
   Manga,
   DevilFruit,
   Games,
@@ -18,7 +19,8 @@ import './styles/screen.sass'
 
 const root = (
   <Router history={browserHistory}>
-      <Route path='/' component={App} />
+    <Route path='/' component={Layout}>
+      <Route component={App} />
       <Route path='/Home' component={Home} />
       <Route path='/Anime' component={Anime} />
       <Route path='/Characters' component={Characters} />
@@ -27,6 +29,7 @@ const root = (
       <Route path='/Games' component={Games} />
       <Route path='/Forums' component={Forums} />
       <Route path='/Memory' component={Memory} />
+    </Route>
   </Router>
 )
 

@@ -16,31 +16,18 @@ class Home extends Component {
             CHARACTERS
             <Link to='/Characters'>
             <div className='css-slideshow'>
-          	<figure>
-          		<img src='https://65.media.tumblr.com/f04675400f59bae8a0a1beb2b4a513bf/tumblr_o5ets7OX0v1t45pbyo1_500.jpg' alt='class-header-semantics' width='555' height='470' className='alignnone size-full wp-image-179' /><figcaption>THE WORSE GENERATION</figcaption>
-          	</figure>
-          	<figure>
-          		<img src='http://static.zerochan.net/Heart.Pirates.full.1390926.jpg' width='555' height='470' className='alignnone size-large wp-image-178' /><figcaption>THE HEART PIRATES</figcaption>
-          	</figure>
-          	<figure>
-          		<img src='http://images6.fanpop.com/image/photos/36400000/One-Piece-image-one-piece-36443357-500-350.jpg' width='555' height='470' className='alignnone size-full wp-image-177' /><figcaption>THE REVOLUTIONARY ARMY</figcaption>
-          	</figure>
-          	<figure>
-          		<img src='http://i63.tinypic.com/29m3dx1.jpg' alt='class-header-multimedia' width='555' height='470' className='alignnone size-large wp-image-175' /><figcaption>RED HAIR PIRATES</figcaption>
-          	</figure>
-          	<figure>
-          		<img src='http://static.zerochan.net/Whitebeard.Pirates.full.727158.jpg' alt='class-header-3d' width='555' height='470' className='alignnone size-large wp-image-174' /><figcaption>WHITEBEARD PIRATES</figcaption>
-          	</figure>
-            <figure>
-          		<img src='http://images4.fanpop.com/image/photos/23900000/Warning-Marine-Admiral-one-piece-charaters-23967636-1024-768.jpg' width='555' height='470' className='alignnone size-full wp-image-172' /><figcaption> THE WORLD GOVERNMENT</figcaption>
-          	</figure>
-            <figure>
-          		<img src='http://onepiecepodcast.com/wp-content/uploads/2015/01/Gol-D-Roger-810x456.jpg' width='555' height='470' className='alignnone size-large wp-image-176' /><figcaption>ROGERS PIRATES </figcaption>
-          	</figure>
-            <figure>
-          		<img src='https://s-media-cache-ak0.pinimg.com/736x/f5/3e/1b/f53e1b4511d67a8fe0be876aad925c2f.jpg' alt='class-header-performance' width='555' height='470' className='alignnone size-large wp-image-173' />
-              <figcaption>STRAW HAT PIRATES</figcaption>
-          	</figure>
+            <figure> <img src='https://65.media.tumblr.com/f04675400f59bae8a0a1beb2b4a513bf/tumblr_o5ets7OX0v1t45pbyo1_500.jpg' alt='class-header-semantics' width='555' height='470' className='alignnone size-full wp-image-179' /><figcaption>THE WORSE GENERATION</figcaption>
+            </figure>
+            <figure><img src='http://static.zerochan.net/Heart.Pirates.full.1390926.jpg' width='555' height='470' className='alignnone size-large wp-image-178' /><figcaption>THE HEART PIRATES</figcaption></figure>
+            <figure><img src='http://images6.fanpop.com/image/photos/36400000/One-Piece-image-one-piece-36443357-500-350.jpg' width='555' height='470' className='alignnone size-full wp-image-177' /><figcaption>THE REVOLUTIONARY ARMY</figcaption></figure>
+            <figure><img src='http://i63.tinypic.com/29m3dx1.jpg' alt='class-header-multimedia' width='555' height='470' className='alignnone size-large wp-image-175' /><figcaption>RED HAIR PIRATES</figcaption>
+            </figure><figure><img src='http://static.zerochan.net/Whitebeard.Pirates.full.727158.jpg' alt='class-header-3d' width='555' height='470' className='alignnone size-large wp-image-174' /><figcaption>WHITEBEARD PIRATES</figcaption>
+            </figure>
+            <figure><img src='http://images4.fanpop.com/image/photos/23900000/Warning-Marine-Admiral-one-piece-charaters-23967636-1024-768.jpg' width='555' height='470' className='alignnone size-full wp-image-172' /><figcaption> THE WORLD GOVERNMENT</figcaption></figure>
+            <figure><img src='http://onepiecepodcast.com/wp-content/uploads/2015/01/Gol-D-Roger-810x456.jpg' width='555' height='470' className='alignnone size-large wp-image-176' /><figcaption>ROGERS PIRATES </figcaption></figure>
+            <figure><img src='https://s-media-cache-ak0.pinimg.com/736x/f5/3e/1b/f53e1b4511d67a8fe0be876aad925c2f.jpg' alt='class-header-performance' width='555' height='470' className='alignnone size-large wp-image-173' />
+            <figcaption>STRAW HAT PIRATES</figcaption>
+            </figure>
             </div>
             <p className='css-slideshow-attr'>hover on image for pirate crew names</p>
               </Link>
