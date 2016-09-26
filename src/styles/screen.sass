@@ -398,6 +398,30 @@ figure:nth-child(8)
   width: 200px
 
 //Character Page
+
+.bioPage
+  @include columnz
+
+.bioImage
+  @include borderColors
+  height: 25vw
+  width: 35vw
+
+.bio
+  @include borderColors
+  word-wrap: break-word
+  overflow: auto
+  background-color: rgba(246, 240, 209, 0.5)
+  margin-top: 10px
+  font-family: 'helvetica'
+  font-size: 1em
+  letter-spacing: normal
+  width: 80vw
+  height: 50vh
+
+.characterBio
+  @include columnz
+
 .characterLayout
   @include columnz
 
@@ -419,11 +443,6 @@ figure:nth-child(8)
   font-family: 'One Piece'
   font-size: 60px
   color: rgb(31, 32, 33)
-
-.characterBio
-  @include borderColors
-  background-color: rgba(246, 240, 209, 0.5)
-  margin-top: 10px
 
 
 //Devil Fruit Page

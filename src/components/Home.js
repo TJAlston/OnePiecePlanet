@@ -8,7 +8,6 @@ class Home extends Component {
 
   render () {
     return <div>
-    <Header />
       <main className='homePage'>
         <h1>HOME PAGE</h1>
         <div className='homePhotos'>
@@ -54,7 +53,6 @@ class Home extends Component {
         <p>In this website, you'll be able to explore characters, read manga, watch up-to-date One Piece epsiodes and play games made by me.  Enjoy Your One Piece Planet Experience!</p>
         </div>
       </main>
-    <Footer />
     </div>
   }
 }
