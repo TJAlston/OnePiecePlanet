@@ -24,7 +24,7 @@ class Header extends Component {
             {/* World Government, pirate crews, movies */}
           </ul>
         </nav>
-        <input id='Search' /><button id='submit'>submit</button>
+      <input id='Search' /><button id='submit'>submit</button>
     </div>
   }
 }

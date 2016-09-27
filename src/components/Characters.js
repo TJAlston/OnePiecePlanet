@@ -12,7 +12,9 @@ class Characters extends Component {
           <h1>{character.title}</h1>
           <div className='characterBio'>
           <img className='bioImage' src={character.image} />
-            <h5 className='bio'>{character.snippet}</h5>
+            <div className='bio'>{character.snippet.split('\n\n').map((text) => {
+              return <p>{text}</p>
+            })}</div>
           </div>
         </div>
       )
