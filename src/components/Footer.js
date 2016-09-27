@@ -14,6 +14,7 @@ class Footer extends Component {
       </div>
       <div className='credits'>
         <h3>Credits:</h3>
+        <p>Eiichiro Oda/Shueisha, Toei Animation. Licensed by FUN</p>
       </div>
       <div className='copy'>
       &#169;2016 Tameka J. Alston
