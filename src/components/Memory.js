@@ -1,8 +1,6 @@
 import React from 'react'
 import '../styles/screen.sass'
 import Card from './Card'
-import Header from './Header'
-import Footer from './Footer'
 
 const SHOW_TIME = 1500
 
@@ -79,7 +77,6 @@ class Memory extends React.Component {
          />
       })
       return <div>
-        <Header />
           <div className='memoryGame'>
             <h1>MEMORY</h1>
             <main className='memoryBoard'>
@@ -87,18 +84,15 @@ class Memory extends React.Component {
             </main>
             <button onClick={this.reset} className='resetButton'>PLAY AGAIN</button>
           </div>
-        <Footer />
       </div>
     } else {
       return <div>
-      <Header />
         <h1>MEMORY</h1>
         <div className='youWin'>
           <h4> YOU WIN!!! </h4>
           <button onClick={this.reset} className='resetButton'>
           PLAY AGAIN</button>
         </div>
-      <Footer />
     </div>
     }
   }
