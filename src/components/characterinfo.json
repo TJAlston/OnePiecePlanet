@@ -1,146 +1,150 @@
 {
-  "total": 3504,
-  "batches": 701,
-  "currentBatch": "1",
-  "next": 6,
   "items": [
     {
       "id": 1670,
       "title": "Gol D. Roger",
       "url": "http://onepiece.wikia.com/wiki/Gol_D._Roger",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "known to most as Gold Roger, was the Pirate King, captain of the Roger Pirates, and owner of the legendary treasure known as 'One Piece'.He was also the lover of Portgas D. Rouge and biological father of Portgas D. Ace. Born in Loguetown, Roger was famed as the man who did what no one thought possible - conquering the Grand Line. It would seem that he had been around for some time, considering that Brook refers to him as a rookie, more than 50 years before the current storyline. Before he formed his crew, he met Silvers Rayleigh, a young man who was living on a ship he had stolen after his house had burnt down. Roger said that it was a fated meeting and asked Rayleigh to join him. / Unavoidable FateEdit / Twenty-six years before the start of the story, Roger came down with an incurable disease. He decided to pitch one last journey with his crew into the Grand Line. Upon reaching the lighthouse at Reverse Mountain, at the entrance of the Grand Line, he recruited Crocus as his doctor to keep him alive for 3 years before the completion of his journey. / Their journey took them to Skypiea and later Water 7, where the shipwright Tom built them a ship called the Oro Jackson.[20] / Two of the most powerful opponents Roger faced on his journey were Vice Admiral Monkey D. Garp and the pirate Edward 'Whitebeard' Newgate. The former is said to have cornered him many times on the journey,[32] and the latter was the closest rival to his title. It is said that Whitebeard was the only one capable of matching Roger in combat.",
-      "image": "http://cfile10.uf.tistory.com/original/1561C04C50C981DA0806CE"
+      "snippet": "Known to most as Gold Roger, was the Pirate King, captain of the Roger Pirates, and owner of the legendary treasure known as 'One Piece'.He was also the lover of Portgas D. Rouge and biological father of Portgas D. Ace. Born in Loguetown, Roger was famed as the man who did what no one thought possible - conquering the Grand Line. It would seem that he had been around for some time, considering that Brook refers to him as a rookie, more than 50 years before the current storyline. Before he formed his crew, he met Silvers Rayleigh, a young man who was living on a ship he had stolen after his house had burnt down. Roger said that it was a fated meeting and asked Rayleigh to join him. \n Unavoidable FateEdit \nTwenty-six years before the start of the story, Roger came down with an incurable disease. He decided to pitch one last journey with his crew into the Grand Line. Upon reaching the lighthouse at Reverse Mountain, at the entrance of the Grand Line, he recruited Crocus as his doctor to keep him alive for 3 years before the completion of his journey. \n Their journey took them to Skypiea and later Water 7, where the shipwright Tom built them a ship called the Oro Jackson. \n Two of the most powerful opponents Roger faced on his journey were Vice Admiral Monkey D. Garp and the pirate Edward 'Whitebeard' Newgate. The former is said to have cornered him many times on the journey, and the latter was the closest rival to his title. It is said that Whitebeard was the only one capable of matching Roger in combat.",
+      "image": "http://pa1.narvii.com/5801/301aa213ee14a31c8fec7f89b3062024c8950dcb_hq.gif"
     },
     {
       "id": 1444,
       "title": "Monkey D. Luffy",
       "url": "http://onepiece.wikia.com/wiki/Monkey_D._Luffy",
-      "ns": 0,
-      "quality": 99,
       "snippet": "Monkey D. Luffy, also known as Straw Hat Luffy and commonly as Straw Hat, is the main protagonist of the anime and manga, One Piece. He is the son of Monkey D. Dragon, the grandson of Monkey D. Garp, the adoptive brother of Portgas D. Ace and Sabo, and the foster son of Curly Dadan. Luffy is a pirate and his lifelong dream is to become the Pirate King by finding the legendary treasure left behind by the late Pirate King, Gol D. Roger. He believes that being Pirate King means having the most freedom in the world. He has eaten the Gomu Gomu no Mi, which gives the consumer's body the properties of rubber. As the founder and captain of the Straw Hat Pirates, he is the first member of the crew, as well as one of its top three fighters.",
-      "image": "https://upload.wikimedia.org/wikipedia/en/c/cb/Monkey_D_Luffy.png"
+      "image": "https://s-media-cache-ak0.pinimg.com/originals/70/d5/61/70d561a22158372e0ed1a78067bab724.gif"
     },
     {
       "id": 1439,
       "title": "Straw Hat Pirates",
       "url": "http://onepiece.wikia.com/wiki/Straw_Hat_Pirates",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "The Straw Hat Pirates are a pirate crew that originated from the East Blue, but have various members from different areas. They are the main focus and protagonists of the anime and manga One Piece, and are led by the main protagonist, Monkey D. Luffy. The 'Straw Hats' are named after Luffy's signature hat that was given to him by Red-Haired Shanks, and are first referred to as the Straw Hat Pirates by Smoker in Alabasta. The crew sailed on the Going Merry, their first official Straw Hat ship, up until the Water 7 Arc. After the Enies Lobby Arc, they obtain a new ship called the Thousand Sunny. The Straw Hats currently consist of nine members whose combined bounties equal Beli1,570,000,100[1]. Following the events on the Sabaody Archipelago, all nine members were separated from one another. For two years, they trained in relatively isolated locations, becoming stronger for the sake of helping each other. They then reunited and have since become an active and massive force in the New World."
+      "snippet": "The Straw Hat Pirates are a pirate crew that originated from the East Blue, but have various members from different areas. They are the main focus and protagonists of the anime and manga One Piece, and are led by the main protagonist, Monkey D. Luffy. The 'Straw Hats' are named after Luffy's signature hat that was given to him by Red-Haired Shanks, and are first referred to as the Straw Hat Pirates by Smoker in Alabasta. The crew sailed on the Going Merry, their first official Straw Hat ship, up until the Water 7 Arc. After the Enies Lobby Arc, they obtain a new ship called the Thousand Sunny. The Straw Hats currently consist of nine members whose combined bounties equal Beli1,570,000,100[1]. Following the events on the Sabaody Archipelago, all nine members were separated from one another. For two years, they trained in relatively isolated locations, becoming stronger for the sake of helping each other. They then reunited and have since become an active and massive force in the New World.",
+      "image": "https://k46.kn3.net/taringa/7/C/D/A/6/5/-HakiDelRey-/231.gif"
     },
     {
       "id": 1520,
       "title": "Roronoa Zoro",
       "url": "http://onepiece.wikia.com/wiki/Roronoa_Zoro",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "also known as 'Pirate Hunter' Zoro, is a pirate and a former bounty hunter. He was the first member to join the Straw Hat Pirates, and, to date, is considered the largest threat and most dangerous member in the crew after Luffy. His fame as a master swordsman and his great strength, along with the actions of his captain, sometimes led others to believe he was the true captain of the crew.[11][12] He is one of the top three fighters in the crew alongside Luffy and Sanji, and his dream is to become the greatest swordsman in the world.[13] Zoro is regarded as one of twelve pirates who are referred to as the 'Worst Generation' (formerly known as the 'Eleven Supernovas'"
+      "snippet": "Also known as 'Pirate Hunter' Zoro, is a pirate and a former bounty hunter. He was the first member to join the Straw Hat Pirates, and, to date, is considered the largest threat and most dangerous member in the crew after Luffy. His fame as a master swordsman and his great strength, along with the actions of his captain, sometimes led others to believe he was the true captain of the crew.[11][12] He is one of the top three fighters in the crew alongside Luffy and Sanji, and his dream is to become the greatest swordsman in the world.[13] Zoro is regarded as one of twelve pirates who are referred to as the 'Worst Generation' (formerly known as the 'Eleven Supernovas'",
+      "image": "http://i.makeagif.com/media/7-15-2015/bvMin0.gif"
     },
     {
       "id": 1621,
       "title": "Sanji",
       "url": "http://onepiece.wikia.com/wiki/Sanji",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "'Black Leg' Sanji,[1] born under the given name Vinsmoke Sanji (ヴィンスモーク・サンジ Vinsumōku Sanji?)[9], is a pirate and the cook of the Straw Hat Pirates, the former sous chef of Baratie, and the third son of the Vinsmoke Family,[10] making him a prince of the Germa Kingdom. He is officially the fifth member of the crew and the fourth to join, doing so at the end of the Baratie Arc. Since he was born in North Blue, he is the first Straw Hat not to originate from East Blue. He is one of the Monster Trio in the crew alongside Luffy and Zoro. His dream is to find the rumored All Blue, which is where East Blue, West Blue, North Blue, and South Blue meet along with their wildlife, a chef's paradise. He has a bounty of Beli177,000,000, which is only valid if captured alive,[11] per the request of his father."
+      "snippet": "'Black Leg' Sanji, born under the given name Vinsmoke Sanji, is a pirate and the cook of the Straw Hat Pirates, the former sous chef of Baratie, and the third son of the Vinsmoke Family, making him a prince of the Germa Kingdom. He is officially the fifth member of the crew and the fourth to join, doing so at the end of the Baratie Arc. Since he was born in North Blue, he is the first Straw Hat not to originate from East Blue. He is one of the Monster Trio in the crew alongside Luffy and Zoro. His dream is to find the rumored All Blue, which is where East Blue, West Blue, North Blue, and South Blue meet along with their wildlife, a chef's paradise. He has a bounty of Beli177,000,000, which is only valid if captured alive, per the request of his father.",
+      "image": "https://31.media.tumblr.com/ec39bc721fad92f3af90bb6282c3849f/tumblr_inline_ncn7jlPy0q1t1mz7v.gif"
     },
     {
       "id": 1630,
       "title": "Usopp",
       "url": "http://onepiece.wikia.com/wiki/Usopp",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "'God' Usopp is the sniper of the Straw Hat Pirates, and the former captain of the Usopp Pirates. When Usopp was first introduced, he was often (comically) labeled as the 'Liar' of the Straw Hat Pirates, due to the 'Uso' (うそ) in his name meaning 'lie' or 'falsehood'. He was born in Syrup Village, and was first mentioned by Yasopp, his father. He was officially the third (unofficially fourth) member of the crew, and the third to join, and, including Nami and Robin, also the third to rejoin, doing so at the end of the Post-Enies Lobby Arc. His original bounty of Beli30,000,000 was credited to his alias and alter-ego 'Sogeking'. He is also considered one of the 'weak' trio of the crew, along with Nami and Chopper. After awakening Kenbunshoku Haki, he became the fourth member of the Straw Hat crew to demonstrate and use a form of Haki. His current bounty, Beli200,000,000, is a huge jump from his original, due to his role as 'God' for saving all those toy slaves in Doflamingo's underground trades; this takes him from the third lowest bounty of the crew to the third highest, jumping past the previous holder, Nico Robin."
+      "snippet": "'God' Usopp is the sniper of the Straw Hat Pirates, and the former captain of the Usopp Pirates. When Usopp was first introduced, he was often (comically) labeled as the 'Liar' of the Straw Hat Pirates, due to the 'Uso' (うそ) in his name meaning 'lie' or 'falsehood'. He was born in Syrup Village, and was first mentioned by Yasopp, his father. He was officially the third (unofficially fourth) member of the crew, and the third to join, and, including Nami and Robin, also the third to rejoin, doing so at the end of the Post-Enies Lobby Arc. His original bounty of Beli30,000,000 was credited to his alias and alter-ego 'Sogeking'. He is also considered one of the 'weak' trio of the crew, along with Nami and Chopper. After awakening Kenbunshoku Haki, he became the fourth member of the Straw Hat crew to demonstrate and use a form of Haki. His current bounty, Beli200,000,000, is a huge jump from his original, due to his role as 'God' for saving all those toy slaves in Doflamingo's underground trades; this takes him from the third lowest bounty of the crew to the third highest, jumping past the previous holder, Nico Robin.",
+      "image":"http://stream1.gifsoup.com/view1/3141728/usopp-vs-perona-o.gif"
     },
     {
       "id": 1626,
       "title": "Tony Tony Chopper",
       "url": "http://onepiece.wikia.com/wiki/Tony_Tony_Chopper",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "Also known as 'Cotton Candy Lover' Chopper, is the doctor of the Straw Hat Pirates. Chopper is a reindeer that ate a Devil Fruit called the Hito Hito no Mi. He came from Drum Island where he learned how to be a doctor, which also makes him the only member of the Straw Hat Pirates who was born on the Grand Line. He is the sixth member of the crew and the fifth to join Luffy, as well as being the youngest member on board. He has a bounty of Beli100 due to being mistaken for the crew's pet."
+      "snippet": "Also known as 'Cotton Candy Lover' Chopper, is the doctor of the Straw Hat Pirates. Chopper is a reindeer that ate a Devil Fruit called the Hito Hito no Mi. He came from Drum Island where he learned how to be a doctor, which also makes him the only member of the Straw Hat Pirates who was born on the Grand Line. He is the sixth member of the crew and the fifth to join Luffy, as well as being the youngest member on board. He has a bounty of Beli100 due to being mistaken for the crew's pet.",
+      "image": "http://data.whicdn.com/images/37112521/large.gif"
     },
     {
       "id": 1584,
       "title": "Nami",
       "url": "http://onepiece.wikia.com/wiki/Nami",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "'Cat Burglar' Nami is a pirate and the navigator of the Straw Hat Pirates. She was the third member of the crew and the second to join, doing so during the Orange Town Arc.[11] Later, she left and betrayed the crew during the Baratie Arc, but rejoined at the end of the Arlong Park Arc, after her past and true intentions were revealed.[12] She has a bounty of Beli66,000,000."
+      "snippet": "'Cat Burglar' Nami is a pirate and the navigator of the Straw Hat Pirates. She was the third member of the crew and the second to join, doing so during the Orange Town Arc.[11] Later, she left and betrayed the crew during the Baratie Arc, but rejoined at the end of the Arlong Park Arc, after her past and true intentions were revealed. She has a bounty of Beli66,000,000.",
+      "image":"http://pa1.narvii.com/5928/97f8266d3b9c00d01a2566d984d588aa3925f0d3_hq.gif"
     },
     {
       "id": 1558,
       "title": "Nico Robin",
       "url": "http://onepiece.wikia.com/wiki/Nico_Robin",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "also known by her epithet 'Devil Child', is the archaeologist of the Straw Hat Pirates. She was originally introduced as the vice president of Baroque Works and secondary antagonist of the Alabasta Saga, known as Miss All Sunday, before joining the Straw Hats. She is the seventh member of the crew, the sixth to join, and like Nami, is the second to rejoin, doing so near the end of the Enies Lobby Arc. Robin is also the first member to have once been an antagonist. She ate the Hana Hana no Mi. During the Post-War arc, she became involved with the Revolutionaries for two years. Her dream is to find the Rio Poneglyph which tells the true history. She currently holds a bounty of Beli130,000,000"
+      "snippet": "Also known by her epithet 'Devil Child', is the archaeologist of the Straw Hat Pirates. She was originally introduced as the vice president of Baroque Works and secondary antagonist of the Alabasta Saga, known as Miss All Sunday, before joining the Straw Hats. She is the seventh member of the crew, the sixth to join, and like Nami, is the second to rejoin, doing so near the end of the Enies Lobby Arc. Robin is also the first member to have once been an antagonist. She ate the Hana Hana no Mi. During the Post-War arc, she became involved with the Revolutionaries for two years. Her dream is to find the Rio Poneglyph which tells the true history. She currently holds a bounty of Beli130,000,000.",
+      "image": "https://66.media.tumblr.com/d0e7ff14d40e3e126552b0141dc98d53/tumblr_nlka2jo6rM1rbtyq6o4_500.gif"
     },
     {
       "id": 4866,
       "title": "Brook",
       "url": "http://onepiece.wikia.com/wiki/Brook",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "Soul King\" Brook is the musician of the Straw Hat Pirates. He is a skeleton that the Straw Hats found on board of a ghost ship after drifting into the Florian Triangle. He is a Devil Fruit user who ate the Yomi Yomi no Mi, and is undead, having&hellip;"
+      "snippet": "Soul King\" Brook is the musician of the Straw Hat Pirates. He is a skeleton that the Straw Hats found on board of a ghost ship after drifting into the Florian Triangle. He is a Devil Fruit user who ate the Yomi Yomi no Mi, and is undead, having been brought back into a pseudo-immortal state because of its powers. He is the ninth member of the Straw Hat crew, and the ninth to join Luffy's crew, as well as being the oldest member on board. He is also one of the two swordsmen onboard their current ship, with the other being Roronoa Zoro. He fills the role of the long-awaited musician that Luffy had wanted for his crew ever since his journey began. He currently has a bounty of Beli83,000,000.",
+      "image":"http://pa1.narvii.com/5809/0ff87a2a73577567c89e5a96dfde5f20151591a1_hq.gif"
     },
     {
       "id": 1959,
       "title": "Franky",
       "url": "http://onepiece.wikia.com/wiki/Franky",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "'Iron Man' Franky is the shipwright for the Straw Hat Pirates. A cyborg from Water 7, he was originally the leader of the Franky Family, a group of ship dismantlers. He is originally from South Blue, but left 32 years ago as a four-year-old."
+      "snippet": "'Iron Man' Franky is the shipwright for the Straw Hat Pirates. A cyborg from Water 7, he was originally the leader of the Franky Family, a group of ship dismantlers. He is originally from South Blue, but left 32 years ago as a four-year-old. He was originally named 'Cutty Flam' until he threw away his original name for his nickname per the request of Iceburg to hide his identity.",
+      "image":"https://lh3.googleusercontent.com/-I4pCOhfKAHs/VlsmcOJbAmI/AAAAAAAAT0A/wWDz-WkE_CQ/w800-h800/franky_punch_by_tristtrist-d5udwoa.gif"
     },
     {
       "id": 1666,
       "title": "Revolutionary Army",
       "url": "http://onepiece.wikia.com/wiki/Revolutionary_Army",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "The Revolutionary Army is a powerful military organization led by Monkey D. Dragon. They are fighting against the World Government and what it stands for."
+      "snippet": "The Revolutionary Army is a powerful military organization led by Monkey D. Dragon. They are fighting against the World Government and what it stands for.",
+      "image":"http://images6.fanpop.com/image/photos/36400000/One-Piece-image-one-piece-36443357-500-350.jpg"
     },
     {
       "id": 8606,
       "title": "Heart Pirates",
       "url": "http://onepiece.wikia.com/wiki/Heart_Pirates",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "The Heart Pirates are an infamous and notable rookie pirate crew introduced on Sabaody Archipelago around the time the Straw Hat Pirates arrived there two years ago. Their captain, Trafalgar D. Water Law, is a member of The Worst Generation and a former Shichibukai. They are currently in an alliance with the Straw Hat Pirates, Kozuki Family, and Mink Tribe with the goal of taking down Kaido of the Yonko"
+      "snippet": "The Heart Pirates are an infamous and notable rookie pirate crew introduced on Sabaody Archipelago around the time the Straw Hat Pirates arrived there two years ago. Their captain, Trafalgar D. Water Law, is a member of The Worst Generation and a former Shichibukai. They are currently in an alliance with the Straw Hat Pirates, Kozuki Family, and Mink Tribe with the goal of taking down Kaido of the Yonko.",
+      "image":"https://secure.static.tumblr.com/8d2c91fb63a8680daada4fc2f2e1600f/3xdx5dt/SLbnonkfi/tumblr_static_tumblr_static_4prrys82wrcws8c0w0cs8c44k_640.jpg"
     },
     {
       "id": 3752,
       "title": "Whitebeard Pirates",
       "url": "http://onepiece.wikia.com/wiki/Whitebeard_Pirates",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "The Whitebeard Pirates were formerly one of the strongest pirate crews in the world, as their captain, Whitebeard, was the only pirate to have ever been a match for the Pirate King, Gol D. Roger, in a fight. Whitebeard's crew is segmented into divisions, instead of all under their captain's direct command. The crew has multiple subordinate crews operating in the New World. Following the deaths of Whitebeard and Ace, the remaining members of the crew engaged the Blackbeard Pirates in the Payback War, which ended with the Blackbeard Pirates brutally defeating them, followed by conquering their former territories, with their captain usurping Whitebeard's position in the Yonko. As a result, the crew has lost most of its power and influence. After the timeskip, it is revealed that the remaining crew members and subordinate crews are being hunted down by the Shichibukai Edward Weevil and his mother Bakkin, who self-proclaim themselves as their captain's biological son and lover, to gain his fortune."
+      "snippet": "The Whitebeard Pirates were formerly one of the strongest pirate crews in the world, as their captain, Whitebeard, was the only pirate to have ever been a match for the Pirate King, Gol D. Roger, in a fight. Whitebeard's crew is segmented into divisions, instead of all under their captain's direct command. The crew has multiple subordinate crews operating in the New World. Following the deaths of Whitebeard and Ace, the remaining members of the crew engaged the Blackbeard Pirates in the Payback War, which ended with the Blackbeard Pirates brutally defeating them, followed by conquering their former territories, with their captain usurping Whitebeard's position in the Yonko. As a result, the crew has lost most of its power and influence. After the timeskip, it is revealed that the remaining crew members and subordinate crews are being hunted down by the Shichibukai Edward Weevil and his mother Bakkin, who self-proclaim themselves as their captain's biological son and lover, to gain his fortune.",
+      "image":"http://vignette2.wikia.nocookie.net/onepiece/images/3/36/The_Whitebeard_Pirates.png/revision/latest?cb=20130420223044"
     },
     {
       "id": 1668,
       "title": "Red Hair Pirates",
       "url": "http://onepiece.wikia.com/wiki/Red_Hair_Pirates",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "he Red Hair Pirates is a strong crew ruling in the New World, led by their captain, Red-Haired Shanks, who is one of the Yonko. This crew is responsible for influencing two of the Straw Hat Pirates to become pirates, Monkey D. Luffy and Usopp."
+      "snippet": "The Red Hair Pirates is a strong crew ruling in the New World, led by their captain, Red-Haired Shanks, who is one of the Yonko. This crew is responsible for influencing two of the Straw Hat Pirates to become pirates, Monkey D. Luffy and Usopp.",
+      "image":"http://vignette1.wikia.nocookie.net/onepiece/images/b/b6/Red_Hair_Pirates_at_Marineford.png/revision/latest?cb=20130224092433"
     },
     {
       "id": 207309,
       "title": "Worst Generation",
       "url": "http://onepiece.wikia.com/wiki/Worst_Generation",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "The Worst Generation is a term that refers to the eleven top rookie pirates, with bounties over Beli100,000,000 who arrived in the Sabaody Archipelago before the Whitebeard War (whom are denoted as the Eleven Supernovas (11人の超新星 Jūichinin no Chōshinsei?)[1]), along with the Yonko, Blackbeard. They are known as such, since most of the major conflicts that have occurred during their rookie year and after the Battle of Marineford seem to revolve around them. As is the case, they are regarded as 'problem children' who appeared between the end of the Golden Age of Pirates and the beginning of the New Age."
+      "snippet": "The Worst Generation is a term that refers to the eleven top rookie pirates, with bounties over Beli100,000,000 who arrived in the Sabaody Archipelago before the Whitebeard War (whom are denoted as the Eleven Supernovas, along with the Yonko, Blackbeard. They are known as such, since most of the major conflicts that have occurred during their rookie year and after the Battle of Marineford seem to revolve around them. As is the case, they are regarded as 'problem children' who appeared between the end of the Golden Age of Pirates and the beginning of the New Age.",
+      "image":"https://myanimelist.cdn-dena.com/s/common/uploaded_files/1446997155-a9b80ccac16d2455f98244e5f0ebe256.jpeg"
     },
     {
       "id": 1664,
       "title": "World Government",
       "url": "http://onepiece.wikia.com/wiki/World_Government",
-      "ns": 0,
-      "quality": 99,
-      "snippet": "The World Government is a political organization comprised of the majority of the world at large, ruled by the Gorosei. It was established 800 years ago. The Marines serve as their primary military organization, headed by the Fleet Admiral, while the Cipher Pol operate behind the scenes, either through sabotage, reconnaissance, spying, espionage and/or assassination; their most powerful enemies are largely pirates and revolutionaries. The Commander-in-Chief oversees both the Marines and Cipher Pol as well as the Shichibukai, at least officially, and is second only to the Gorosei. Impel Down serves as the World Government's maximum-security prison. Collectively serving as the most prominent antagonists in the series, the World Government is largely portrayed as a corrupt entity, particularly through the pitiless use of their absolute justice doctrine and the depravity of the aristocratic World Nobles."
+      "snippet": "The World Government is a political organization comprised of the majority of the world at large, ruled by the Gorosei. It was established 800 years ago. The Marines serve as their primary military organization, headed by the Fleet Admiral, while the Cipher Pol operate behind the scenes, either through sabotage, reconnaissance, spying, espionage and/or assassination; their most powerful enemies are largely pirates and revolutionaries. The Commander-in-Chief oversees both the Marines and Cipher Pol as well as the Shichibukai, at least officially, and is second only to the Gorosei. Impel Down serves as the World Government's maximum-security prison. Collectively serving as the most prominent antagonists in the series, the World Government is largely portrayed as a corrupt entity, particularly through the pitiless use of their absolute justice doctrine and the depravity of the aristocratic World Nobles.",
+      "image":"http://vignette1.wikia.nocookie.net/onepiece/images/1/17/The_Admirals_use_Haki.png/revision/latest?cb=20130926151924"
+    },
+    {
+      "id": 1617,
+      "title": "Shanks",
+      "url": "http://onepiece.wikia.com/wiki/Shanks",
+      "snippet": "Commonly known as \"Red Hair\", is the captain of the Red Hair Pirates and one of the Yonko. He is also a former member of the legendary Roger Pirates, the only group to successfully conquer the Grand Line. He is the pirate who inspired Luffy to go on his journey as a pirate. He found the Gomu Gomu no Mi that was accidentally eaten by Luffy.",
+      "image":"http://data.whicdn.com/images/47065005/large.gif"
+    },
+    {
+      "id": 8693,
+      "title": "Silvers Rayleigh",
+      "url": "http://onepiece.wikia.com/wiki/Silvers_Rayleigh",
+      "snippet": "Silvers Rayleigh, also known as the \"Dark King\", is the former first mate of the Roger Pirates, known as the \"Right Hand of the Pirate King\". He became a coating mechanic in Sabaody Archipelago at some point after Roger died and the crew was disbanded. He served as Luffy's mentor in the use of Haki during the two year timeskip. He is also the husband of Shakuyaku.",
+      "image":"https://media.giphy.com/media/GN0QMY5JdhZtu/giphy.gif"
+    },
+    {
+      "id": 2935,
+      "title": "Crocus",
+      "url": "http://onepiece.wikia.com/wiki/Crocus",
+      "snippet": "Crocus is a doctor and the caretaker of the whale Laboon as well as the overseer of the Twin Capes Lighthouse that guides ships coming down from Reverse Mountain into the Grand Line. Though he was a lighthouse keeper for most of his life, he spent three years as a doctor serving as a part of Gol D. Roger's crew.",
+      "image":"http://vignette3.wikia.nocookie.net/onepiece/images/0/00/Crocus_50_Years_Ago.png/revision/latest?cb=20130622160323"
+    },
+    {
+      "id": 1689,
+      "title": "Buggy",
+      "url": "http://onepiece.wikia.com/wiki/Buggy",
+      "snippet": "Buggy the Star Clown is the captain of the Buggy Pirates as well as the co-leader of the Buggyand Alvida Alliance, and a former apprentice of the Roger Pirates. Shortly after the Battle of Marineford, he became a member of the Shichibukai and and the leader of the pirate dispatch organization \"Buggy's Delivery\". He is the main antagonist of the Orange Town Arc and can be considered the secondary antagonist of the Loguetown Arc. He has since become a highly recurring character in the series."
     }
   ]
 }
