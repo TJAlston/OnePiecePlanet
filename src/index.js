@@ -12,7 +12,8 @@ import {
   DevilFruit,
   Games,
   Forums,
-  Memory
+  Memory,
+  PKExecution
 } from './components'
 
 import './styles/screen.sass'
@@ -29,6 +30,7 @@ const root = (
       <Route path='/Games' component={Games} />
       <Route path='/Forums' component={Forums} />
       <Route path='/Memory' component={Memory} />
+      <Route path='/PKExecution' component={PKExecution} />
     </Route>
   </Router>
 )
