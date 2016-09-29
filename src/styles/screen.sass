@@ -484,8 +484,24 @@ figure:nth-child(8)
   margin: 20px
   @include columnz
 
+.video4
+  margin: 20px
+  @include columnz
+
 // Manga Page
 .chapterList
+  @include columnz
+  margin: 0
+  background-image: url('../images/scroll.gif')
+  background-size: contain
+  background-position: center
+  background-repeat: no-repeat
+  text-align: center
+  justify-content: center
+  height: 500px
+  width: 600px
+
+.chapterList2
   @include columnz
   background-image: url('../images/scroll.gif')
   background-size: contain
@@ -493,6 +509,10 @@ figure:nth-child(8)
   background-repeat: no-repeat
   text-align: center
   justify-content: center
+  height: 500px
+  width: 600px
+  margin-top: -100px
+  margin-left: 250px
 
 .mangaSection
   display: flex
