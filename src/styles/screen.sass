@@ -123,13 +123,14 @@ h5
 
 //Header/Navigation Bar
 nav
+  display: flex
+  flex-wrap: wrap
   margin: 0
   margin-top: -5px
   padding: 10px
   font-weight: bolder
   justify-content: space-between
   background-color: rgb(159, 170, 170)
-  align-content: space-between
   color: $black
 
 .header1
@@ -213,12 +214,6 @@ nav
   justify-content: center
   justify-content: space-around
 
-.homeIntro
-  @include borderColors
-  background-color: $brown
-  padding: 15px
-  width: 90vw
-
 .homePhotos
   display: flex
   flex-wrap: wrap
@@ -232,14 +227,11 @@ nav
   margin-top: -25px
   @include rowsp
   justify-content: space-between
-  border: 3px solid red
+  margin-bottom: 25px
 
 .bigPhoto
-  // @include columnz
-  // justify-content: flex-start
-//   align-self: center
-//   margin-top: -75px
-//   width: 75vw
+  @include columnz
+  width: 50%
 
 .sideLinks
   border: 2px solid black
@@ -300,6 +292,11 @@ nav
   opacity: 1
 
 
+.homeIntro
+  @include borderColors
+  background-color: $brown
+  padding: 15px
+  width: 90vw
 // .css-slideshow figure
 //   opacity:0
 
@@ -400,8 +397,8 @@ figure:nth-child(8)
 
 .bioImage
   @include borderColors
-  height: 30vw
-  width: 45vw
+  height: 100%
+  width: 100%
 
 .bio
   padding: 15px
@@ -443,6 +440,10 @@ figure:nth-child(8)
 
 
 //Devil Fruit Page
+.DV
+  display: flex
+  justify-content: center
+
 .devilFruits
   @include columnz
   justify-content: center
@@ -461,6 +462,7 @@ figure:nth-child(8)
 .devilFruitBio
   @include borderColors
   background-color: rgba(246, 240, 209, 0.5)
+  width: 95vw
 
 .Beli
   height: 20px
@@ -580,7 +582,7 @@ footer
   @include rowsp
   height: 15vh
   bottom: 0
-  padding-top: 25px
+  padding: 25px
   align-self: baseline
   margin-top: 25px
   columns: 2
@@ -592,11 +594,13 @@ footer
   @include columnz
   line-height: 5%
   font-size: 12px
+  padding-top: 15px
 
 .credits
   @include columnz
   line-height: 5%
   font-size: 12px
+  padding-top: 15px
 
 .copy
   color: white

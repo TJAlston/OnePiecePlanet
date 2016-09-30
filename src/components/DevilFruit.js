@@ -4,7 +4,7 @@ import '../styles/screen.sass'
 class DevilFruit extends Component {
 
   render () {
-    return <div>
+    return <div className='DV'>
       <main>
         <h1>DEVIL FRUITS</h1>
         <div className='devilFruits'>
