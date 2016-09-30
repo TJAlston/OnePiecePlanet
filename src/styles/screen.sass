@@ -6,6 +6,11 @@ $design-font: 'Aguafina Script', cursive
 $a-tags: 'a, a:active, a:hover, a:visited'
 $a-tags-hover: 'a:active, a:hover'
 $black: rgb(52, 53, 57)
+$brown: rgba(227, 196, 144, 0.84)
+
+@font-face
+  font-family: 'One Piece'
+  src: url('../onepiecefont.ttf') format('truetype')
 
 #{$a-tags}
   color: rgba(26, 27, 28, 0.94)
@@ -49,7 +54,7 @@ body
   @include font-smoothing(on)
   margin: 0
   font: $base-text-size / 1 $base-font-family
-  background-image: url('../images/oppbkgd.jpg')
+  background-image: url('../images/oppbkgd.png')
   background-attachment: fixed
   background-repeat: no-repeat
   background-size: cover
@@ -66,6 +71,7 @@ h1
   text-transform: uppercase
   font-family: $design-font
   font-size: 100px
+  width: 100vw
   letter-spacing: 15px
   margin-top: 0
   margin-bottom: -25px
@@ -119,13 +125,11 @@ h5
 nav
   margin: 0
   margin-top: -5px
-  padding: 0
+  padding: 10px
   font-weight: bolder
   justify-content: space-between
-  align-content: center
   background-color: rgb(159, 170, 170)
   align-content: space-between
-  padding-right: 25px
   color: $black
 
 .header1
@@ -211,13 +215,16 @@ nav
 
 .homeIntro
   @include borderColors
-  background-color: rgba(246, 240, 209, 0.5)
+  background-color: $brown
+  padding: 15px
+  width: 90vw
 
 .homePhotos
-  margin-left: 100px
+  display: flex
+  flex-wrap: wrap
   font-family: 'One Piece'
-  width: 60vw
-  height: 700px
+  width: 80vw
+  height: 80vh
   font-size: 50px
   font-weight: bolder
   color: white
@@ -225,23 +232,25 @@ nav
   margin-top: -25px
   @include rowsp
   justify-content: space-between
-  padding-left: 20px
-  padding-right: 20px
-
+  border: 3px solid red
 
 .bigPhoto
-    @include columnz
-    align-self: center
-    margin-top: -75px
+  // @include columnz
+  // justify-content: flex-start
+//   align-self: center
+//   margin-top: -75px
+//   width: 75vw
 
 .sideLinks
+  border: 2px solid black
   @include columnz
   justify-content: flex-end
+  padding-top: 20px
   align-self: center
 
 .sideImage1
   @include columnz
-  padding-bottom: 60px
+  padding-bottom: 25px
 
 .sideImage2
   @include columnz
@@ -395,11 +404,11 @@ figure:nth-child(8)
   width: 45vw
 
 .bio
-  padding: 10px
+  padding: 15px
   @include borderColors
   word-wrap: break-word
   overflow: auto
-  background-color: rgba(246, 240, 209, 0.5)
+  background-color: $brown
   margin-top: 25px
   font-family: 'helvetica'
   font-size: 1em
@@ -477,6 +486,7 @@ figure:nth-child(8)
 // Episode 757
 .video1
   margin: 20px
+  width: 50%
   @include columnz
 
 // Episode 756
@@ -511,6 +521,7 @@ figure:nth-child(8)
 
 .mangaSection
   display: flex
+  flex-wrap: wrap
   flex-direction: column
   justify-content: space-between
 
@@ -567,9 +578,9 @@ figure:nth-child(8)
 //Footer Page
 footer
   @include rowsp
-  height: 10vh
+  height: 15vh
   bottom: 0
-  padding: 25px
+  padding-top: 25px
   align-self: baseline
   margin-top: 25px
   columns: 2
@@ -650,5 +661,11 @@ footer
 .hangman
   @include columnz
   justify-content: space-between
+  align-self: center
   height: 100vh
   width: 100vw
+  padding: 20px n
+
+.Word
+  // width: 50vw
+  font-size: 10px

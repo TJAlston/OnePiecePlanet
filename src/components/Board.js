@@ -44,11 +44,11 @@ class AlphaLetter extends Component {
 
 class Hangman extends Component {
   render () {
-    return <img src={this.props.image} height='200' width='600'/>
+    return <img src={this.props.image} height='200' width='600' />
   }
 }
 Hangman.propTypes = {
   image: React.PropTypes.string.isRequired
 }
 
- export default Board
+export default Board

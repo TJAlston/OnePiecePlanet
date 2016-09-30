@@ -3,6 +3,9 @@ import Word from './Word'
 import '../styles/game.sass'
 import Board from './Board'
 import words from './words.json'
+// import Lose from "./Lose"
+// import Win from "./Win"
+
 class PKExecution extends Component {
 
   constructor () {
@@ -19,6 +22,10 @@ class PKExecution extends Component {
     let choice = words[Math.floor(Math.random() * words.length)]
     this.setState({solution: choice})
     console.log(this.state.solution)
+  }
+
+  reset = () => {
+    window.location.reload()
   }
 
   onPlay = (letter) => {
@@ -53,6 +60,26 @@ class PKExecution extends Component {
     })
   }
   render () {
+    let hangImage
+    if (this.state.currentScreen === 'game') {
+        switch (this.state.currentNumWrongGuesses) {
+          case 1: hangImage = <Hangman image='http://www.gifmania.co.uk/Animated-Letters-Animated-Gifs/Animated-Infant-Letters/Toy-Letters-Alphabet/toy-letters-n-letter-17141.gif' />
+            break
+          case 2: hangImage = <Hangman image='http://www.gifmania.co.uk/Animated-Letters-Animated-Gifs/Animated-Infant-Letters/Toy-Letters-Alphabet/toy-letters-n-letter-17141.gif' />
+            break
+          case 3: hangImage = <Hangman image='http://www.gifmania.co.uk/Animated-Letters-Animated-Gifs/Animated-Infant-Letters/Toy-Letters-Alphabet/toy-letters-n-letter-17141.gif' />
+            break
+          case 4: hangImage = <Hangman image='http://www.gifmania.co.uk/Animated-Letters-Animated-Gifs/Animated-Infant-Letters/Toy-Letters-Alphabet/toy-letters-n-letter-17141.gif' />
+            break
+          case 5: hangImage = <Hangman image='http://www.gifmania.co.uk/Animated-Letters-Animated-Gifs/Animated-Infant-Letters/Toy-Letters-Alphabet/toy-letters-n-letter-17141.gif' />
+            break
+          case 6: hangImage = <Hangman image='http://www.gifmania.co.uk/Animated-Letters-Animated-Gifs/Animated-Infant-Letters/Toy-Letters-Alphabet/toy-letters-n-letter-17141.gif' />
+            break
+          case 7: hangImage = <Hangman image='http://www.gifmania.co.uk/Animated-Letters-Animated-Gifs/Animated-Infant-Letters/Toy-Letters-Alphabet/toy-letters-n-letter-17141.gif' />
+            break
+          default: hangImage = <Hangman  image='https://i.ytimg.com/vi/mgX-wtO_ys8/maxresdefault.jpg' />
+        }
+    }
     return <div className='hangman'>
       <h1>HANGMAN</h1>
       <Word solution={this.state.solution} used={this.state.used} />

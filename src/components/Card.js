@@ -13,8 +13,8 @@ class Card extends React.Component {
       case 'down': return <img src='https://s-media-cache-ak0.pinimg.com/236x/ca/15/b9/ca15b9664fc26349dc1c9c6982b24df9.jpg' onClick={this.handleClick} className={`card ${direction}`} />
       break
       default:  return <img src='https://s-media-cache-ak0.pinimg.com/236x/ca/15/b9/ca15b9664fc26349dc1c9c6982b24df9.jpg' onClick={this.handleClick} className={`card ${direction}`} />
+    }
   }
-}
 }
 
 export default Card

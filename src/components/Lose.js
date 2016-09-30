@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../styles/game.sass'
 
 class Lose extends Component {
+
   reset = () => {
     window.location.reload()
   }
