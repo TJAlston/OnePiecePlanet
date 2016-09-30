@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(134);
+	module.exports = __webpack_require__(143);
 
 
 /***/ },
@@ -304,7 +304,7 @@
 
 	'use strict';
 
-	var emptyFunction = __webpack_require__(13);
+	var emptyFunction = __webpack_require__(12);
 
 	/**
 	 * Similar to invariant but only logs a warning if the condition is not met.
@@ -410,7 +410,7 @@
 
 	'use strict';
 
-	module.exports = __webpack_require__(202);
+	module.exports = __webpack_require__(211);
 
 
 /***/ },
@@ -521,8 +521,8 @@
 
 	var _prodInvariant = __webpack_require__(4);
 
-	var DOMProperty = __webpack_require__(28);
-	var ReactDOMComponentFlags = __webpack_require__(102);
+	var DOMProperty = __webpack_require__(26);
+	var ReactDOMComponentFlags = __webpack_require__(106);
 
 	var invariant = __webpack_require__(2);
 
@@ -746,7 +746,7 @@
 	exports.default = routerWarning;
 	exports._resetWarned = _resetWarned;
 
-	var _warning = __webpack_require__(264);
+	var _warning = __webpack_require__(272);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -855,7 +855,7 @@
 	var debugTool = null;
 
 	if (process.env.NODE_ENV !== 'production') {
-	  var ReactDebugTool = __webpack_require__(223);
+	  var ReactDebugTool = __webpack_require__(232);
 	  debugTool = ReactDebugTool;
 	}
 
@@ -864,32 +864,6 @@
 
 /***/ },
 /* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(135);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(263)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./screen.sass", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./screen.sass");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 13 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -932,7 +906,7 @@
 	module.exports = emptyFunction;
 
 /***/ },
-/* 14 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -1280,7 +1254,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 15 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -1475,14 +1449,6 @@
 	  var source = null;
 
 	  if (config != null) {
-	    if (process.env.NODE_ENV !== 'production') {
-	      process.env.NODE_ENV !== 'production' ? warning(
-	      /* eslint-disable no-proto */
-	      config.__proto__ == null || config.__proto__ === Object.prototype,
-	      /* eslint-enable no-proto */
-	      'React.createElement(...): Expected props argument to be a plain object. ' + 'Properties defined in its prototype chain will be ignored.') : void 0;
-	    }
-
 	    if (hasValidRef(config)) {
 	      ref = config.ref;
 	    }
@@ -1583,14 +1549,6 @@
 	  var owner = element._owner;
 
 	  if (config != null) {
-	    if (process.env.NODE_ENV !== 'production') {
-	      process.env.NODE_ENV !== 'production' ? warning(
-	      /* eslint-disable no-proto */
-	      config.__proto__ == null || config.__proto__ === Object.prototype,
-	      /* eslint-enable no-proto */
-	      'React.cloneElement(...): Expected props argument to be a plain object. ' + 'Properties defined in its prototype chain will be ignored.') : void 0;
-	    }
-
 	    if (hasValidRef(config)) {
 	      // Silently steal the ref from the parent.
 	      ref = config.ref;
@@ -1648,6 +1606,32 @@
 
 	module.exports = ReactElement;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(145);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(127)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./screen.sass", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./screen.sass");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
 
 /***/ },
 /* 16 */
@@ -1736,11 +1720,11 @@
 	var _prodInvariant = __webpack_require__(4),
 	    _assign = __webpack_require__(6);
 
-	var CallbackQueue = __webpack_require__(98);
-	var PooledClass = __webpack_require__(25);
-	var ReactFeatureFlags = __webpack_require__(106);
-	var ReactReconciler = __webpack_require__(33);
-	var Transaction = __webpack_require__(40);
+	var CallbackQueue = __webpack_require__(102);
+	var PooledClass = __webpack_require__(23);
+	var ReactFeatureFlags = __webpack_require__(110);
+	var ReactReconciler = __webpack_require__(31);
+	var Transaction = __webpack_require__(37);
 
 	var invariant = __webpack_require__(2);
 
@@ -1990,7 +1974,7 @@
 
 	'use strict';
 
-	var keyMirror = __webpack_require__(41);
+	var keyMirror = __webpack_require__(38);
 
 	var PropagationPhases = keyMirror({ bubbled: null, captured: null });
 
@@ -2130,9 +2114,9 @@
 
 	var _assign = __webpack_require__(6);
 
-	var PooledClass = __webpack_require__(25);
+	var PooledClass = __webpack_require__(23);
 
-	var emptyFunction = __webpack_require__(13);
+	var emptyFunction = __webpack_require__(12);
 	var warning = __webpack_require__(3);
 
 	var didWarnForAddedNewProperty = false;
@@ -2230,7 +2214,8 @@
 
 	    if (event.preventDefault) {
 	      event.preventDefault();
-	    } else {
+	    } else if (typeof event.returnValue !== 'unknown') {
+	      // eslint-disable-line valid-typeof
 	      event.returnValue = false;
 	    }
 	    this.isDefaultPrevented = emptyFunction.thatReturnsTrue;
@@ -2386,220 +2371,6 @@
 
 /***/ },
 /* 21 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(5);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	__webpack_require__(12);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Footer = function (_Component) {
-	  _inherits(Footer, _Component);
-
-	  function Footer() {
-	    _classCallCheck(this, Footer);
-
-	    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-	  }
-
-	  _createClass(Footer, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'footer',
-	          null,
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'resources' },
-	            _react2.default.createElement(
-	              'h3',
-	              null,
-	              'Resources:'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'api' },
-	            _react2.default.createElement(
-	              'h3',
-	              null,
-	              'API Links:'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'credits' },
-	            _react2.default.createElement(
-	              'h3',
-	              null,
-	              'Credits:'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'copy' },
-	            '©2016 Tameka J. Alston'
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Footer;
-	}(_react.Component);
-
-	exports.default = Footer;
-
-/***/ },
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(5);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	__webpack_require__(12);
-
-	var _reactRouter = __webpack_require__(35);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Header = function (_Component) {
-	  _inherits(Header, _Component);
-
-	  function Header() {
-	    _classCallCheck(this, Header);
-
-	    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
-	  }
-
-	  _createClass(Header, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/Home' },
-	          _react2.default.createElement('img', { className: 'header1', src: 'http://66.media.tumblr.com/a215ef83293db672b3ac04fd96043885/tumblr_nnisl1lHPh1r2hgd5o4_500.gif', alt: 'header1' })
-	        ),
-	        _react2.default.createElement(
-	          'nav',
-	          null,
-	          _react2.default.createElement(
-	            'ul',
-	            { id: 'noDots' },
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { className: 'noUnders', to: '/Home' },
-	                'Home'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { className: 'noUnders', to: '/Characters' },
-	                'Characters'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { className: 'noUnders', to: '/DevilFruit' },
-	                'Devil Fruits'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { className: 'noUnders', to: '/Anime' },
-	                'Anime'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { className: 'noUnders', to: '/Manga' },
-	                'Manga'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { className: 'noUnders', to: '/Games' },
-	                'Games'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { className: 'noUnders', to: '/Forums' },
-	                'Forums'
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Header;
-	}(_react.Component);
-
-	exports.default = Header;
-
-/***/ },
-/* 23 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2638,7 +2409,7 @@
 	module.exports = keyOf;
 
 /***/ },
-/* 24 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2736,7 +2507,7 @@
 	}
 
 /***/ },
-/* 25 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -2863,7 +2634,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 26 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -2916,7 +2687,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 27 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2953,7 +2724,7 @@
 	var routes = exports.routes = oneOfType([route, arrayOf(route)]);
 
 /***/ },
-/* 28 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -3165,13 +2936,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 29 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "a16411e87bfc8bee8a114979af5b1f6c.jpg";
-
-/***/ },
-/* 30 */
+/* 27 */
 /***/ function(module, exports) {
 
 	/**
@@ -3207,7 +2972,7 @@
 	};
 
 /***/ },
-/* 31 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -3425,7 +3190,168 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 32 */
+/* 29 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+	exports.createMemoryHistory = exports.hashHistory = exports.browserHistory = exports.applyRouterMiddleware = exports.formatPattern = exports.useRouterHistory = exports.match = exports.routerShape = exports.locationShape = exports.PropTypes = exports.RoutingContext = exports.RouterContext = exports.createRoutes = exports.useRoutes = exports.RouteContext = exports.Lifecycle = exports.History = exports.Route = exports.Redirect = exports.IndexRoute = exports.IndexRedirect = exports.withRouter = exports.IndexLink = exports.Link = exports.Router = undefined;
+
+	var _RouteUtils = __webpack_require__(22);
+
+	Object.defineProperty(exports, 'createRoutes', {
+	  enumerable: true,
+	  get: function get() {
+	    return _RouteUtils.createRoutes;
+	  }
+	});
+
+	var _PropTypes2 = __webpack_require__(58);
+
+	Object.defineProperty(exports, 'locationShape', {
+	  enumerable: true,
+	  get: function get() {
+	    return _PropTypes2.locationShape;
+	  }
+	});
+	Object.defineProperty(exports, 'routerShape', {
+	  enumerable: true,
+	  get: function get() {
+	    return _PropTypes2.routerShape;
+	  }
+	});
+
+	var _PatternUtils = __webpack_require__(28);
+
+	Object.defineProperty(exports, 'formatPattern', {
+	  enumerable: true,
+	  get: function get() {
+	    return _PatternUtils.formatPattern;
+	  }
+	});
+
+	var _Router2 = __webpack_require__(188);
+
+	var _Router3 = _interopRequireDefault(_Router2);
+
+	var _Link2 = __webpack_require__(94);
+
+	var _Link3 = _interopRequireDefault(_Link2);
+
+	var _IndexLink2 = __webpack_require__(182);
+
+	var _IndexLink3 = _interopRequireDefault(_IndexLink2);
+
+	var _withRouter2 = __webpack_require__(201);
+
+	var _withRouter3 = _interopRequireDefault(_withRouter2);
+
+	var _IndexRedirect2 = __webpack_require__(183);
+
+	var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
+
+	var _IndexRoute2 = __webpack_require__(184);
+
+	var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
+
+	var _Redirect2 = __webpack_require__(95);
+
+	var _Redirect3 = _interopRequireDefault(_Redirect2);
+
+	var _Route2 = __webpack_require__(186);
+
+	var _Route3 = _interopRequireDefault(_Route2);
+
+	var _History2 = __webpack_require__(181);
+
+	var _History3 = _interopRequireDefault(_History2);
+
+	var _Lifecycle2 = __webpack_require__(185);
+
+	var _Lifecycle3 = _interopRequireDefault(_Lifecycle2);
+
+	var _RouteContext2 = __webpack_require__(187);
+
+	var _RouteContext3 = _interopRequireDefault(_RouteContext2);
+
+	var _useRoutes2 = __webpack_require__(200);
+
+	var _useRoutes3 = _interopRequireDefault(_useRoutes2);
+
+	var _RouterContext2 = __webpack_require__(41);
+
+	var _RouterContext3 = _interopRequireDefault(_RouterContext2);
+
+	var _RoutingContext2 = __webpack_require__(189);
+
+	var _RoutingContext3 = _interopRequireDefault(_RoutingContext2);
+
+	var _PropTypes3 = _interopRequireDefault(_PropTypes2);
+
+	var _match2 = __webpack_require__(198);
+
+	var _match3 = _interopRequireDefault(_match2);
+
+	var _useRouterHistory2 = __webpack_require__(100);
+
+	var _useRouterHistory3 = _interopRequireDefault(_useRouterHistory2);
+
+	var _applyRouterMiddleware2 = __webpack_require__(191);
+
+	var _applyRouterMiddleware3 = _interopRequireDefault(_applyRouterMiddleware2);
+
+	var _browserHistory2 = __webpack_require__(192);
+
+	var _browserHistory3 = _interopRequireDefault(_browserHistory2);
+
+	var _hashHistory2 = __webpack_require__(196);
+
+	var _hashHistory3 = _interopRequireDefault(_hashHistory2);
+
+	var _createMemoryHistory2 = __webpack_require__(97);
+
+	var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.Router = _Router3.default; /* components */
+
+	exports.Link = _Link3.default;
+	exports.IndexLink = _IndexLink3.default;
+	exports.withRouter = _withRouter3.default;
+
+	/* components (configuration) */
+
+	exports.IndexRedirect = _IndexRedirect3.default;
+	exports.IndexRoute = _IndexRoute3.default;
+	exports.Redirect = _Redirect3.default;
+	exports.Route = _Route3.default;
+
+	/* mixins */
+
+	exports.History = _History3.default;
+	exports.Lifecycle = _Lifecycle3.default;
+	exports.RouteContext = _RouteContext3.default;
+
+	/* utils */
+
+	exports.useRoutes = _useRoutes3.default;
+	exports.RouterContext = _RouterContext3.default;
+	exports.RoutingContext = _RoutingContext3.default;
+	exports.PropTypes = _PropTypes3.default;
+	exports.match = _match3.default;
+	exports.useRouterHistory = _useRouterHistory3.default;
+	exports.applyRouterMiddleware = _applyRouterMiddleware3.default;
+
+	/* histories */
+
+	exports.browserHistory = _browserHistory3.default;
+	exports.hashHistory = _hashHistory3.default;
+	exports.createMemoryHistory = _createMemoryHistory3.default;
+
+/***/ },
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -3442,10 +3368,10 @@
 	'use strict';
 
 	var DOMNamespaces = __webpack_require__(61);
-	var setInnerHTML = __webpack_require__(52);
+	var setInnerHTML = __webpack_require__(49);
 
 	var createMicrosoftUnsafeLocalFunction = __webpack_require__(73);
-	var setTextContent = __webpack_require__(122);
+	var setTextContent = __webpack_require__(126);
 
 	var ELEMENT_NODE_TYPE = 1;
 	var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
@@ -3548,7 +3474,7 @@
 	module.exports = DOMLazyTree;
 
 /***/ },
-/* 33 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -3564,7 +3490,7 @@
 
 	'use strict';
 
-	var ReactRef = __webpack_require__(236);
+	var ReactRef = __webpack_require__(245);
 	var ReactInstrumentation = __webpack_require__(11);
 
 	var warning = __webpack_require__(3);
@@ -3722,7 +3648,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 34 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -3747,168 +3673,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 35 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	exports.__esModule = true;
-	exports.createMemoryHistory = exports.hashHistory = exports.browserHistory = exports.applyRouterMiddleware = exports.formatPattern = exports.useRouterHistory = exports.match = exports.routerShape = exports.locationShape = exports.PropTypes = exports.RoutingContext = exports.RouterContext = exports.createRoutes = exports.useRoutes = exports.RouteContext = exports.Lifecycle = exports.History = exports.Route = exports.Redirect = exports.IndexRoute = exports.IndexRedirect = exports.withRouter = exports.IndexLink = exports.Link = exports.Router = undefined;
-
-	var _RouteUtils = __webpack_require__(24);
-
-	Object.defineProperty(exports, 'createRoutes', {
-	  enumerable: true,
-	  get: function get() {
-	    return _RouteUtils.createRoutes;
-	  }
-	});
-
-	var _PropTypes2 = __webpack_require__(58);
-
-	Object.defineProperty(exports, 'locationShape', {
-	  enumerable: true,
-	  get: function get() {
-	    return _PropTypes2.locationShape;
-	  }
-	});
-	Object.defineProperty(exports, 'routerShape', {
-	  enumerable: true,
-	  get: function get() {
-	    return _PropTypes2.routerShape;
-	  }
-	});
-
-	var _PatternUtils = __webpack_require__(31);
-
-	Object.defineProperty(exports, 'formatPattern', {
-	  enumerable: true,
-	  get: function get() {
-	    return _PatternUtils.formatPattern;
-	  }
-	});
-
-	var _Router2 = __webpack_require__(179);
-
-	var _Router3 = _interopRequireDefault(_Router2);
-
-	var _Link2 = __webpack_require__(90);
-
-	var _Link3 = _interopRequireDefault(_Link2);
-
-	var _IndexLink2 = __webpack_require__(173);
-
-	var _IndexLink3 = _interopRequireDefault(_IndexLink2);
-
-	var _withRouter2 = __webpack_require__(192);
-
-	var _withRouter3 = _interopRequireDefault(_withRouter2);
-
-	var _IndexRedirect2 = __webpack_require__(174);
-
-	var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
-
-	var _IndexRoute2 = __webpack_require__(175);
-
-	var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
-
-	var _Redirect2 = __webpack_require__(91);
-
-	var _Redirect3 = _interopRequireDefault(_Redirect2);
-
-	var _Route2 = __webpack_require__(177);
-
-	var _Route3 = _interopRequireDefault(_Route2);
-
-	var _History2 = __webpack_require__(172);
-
-	var _History3 = _interopRequireDefault(_History2);
-
-	var _Lifecycle2 = __webpack_require__(176);
-
-	var _Lifecycle3 = _interopRequireDefault(_Lifecycle2);
-
-	var _RouteContext2 = __webpack_require__(178);
-
-	var _RouteContext3 = _interopRequireDefault(_RouteContext2);
-
-	var _useRoutes2 = __webpack_require__(191);
-
-	var _useRoutes3 = _interopRequireDefault(_useRoutes2);
-
-	var _RouterContext2 = __webpack_require__(44);
-
-	var _RouterContext3 = _interopRequireDefault(_RouterContext2);
-
-	var _RoutingContext2 = __webpack_require__(180);
-
-	var _RoutingContext3 = _interopRequireDefault(_RoutingContext2);
-
-	var _PropTypes3 = _interopRequireDefault(_PropTypes2);
-
-	var _match2 = __webpack_require__(189);
-
-	var _match3 = _interopRequireDefault(_match2);
-
-	var _useRouterHistory2 = __webpack_require__(96);
-
-	var _useRouterHistory3 = _interopRequireDefault(_useRouterHistory2);
-
-	var _applyRouterMiddleware2 = __webpack_require__(182);
-
-	var _applyRouterMiddleware3 = _interopRequireDefault(_applyRouterMiddleware2);
-
-	var _browserHistory2 = __webpack_require__(183);
-
-	var _browserHistory3 = _interopRequireDefault(_browserHistory2);
-
-	var _hashHistory2 = __webpack_require__(187);
-
-	var _hashHistory3 = _interopRequireDefault(_hashHistory2);
-
-	var _createMemoryHistory2 = __webpack_require__(93);
-
-	var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.Router = _Router3.default; /* components */
-
-	exports.Link = _Link3.default;
-	exports.IndexLink = _IndexLink3.default;
-	exports.withRouter = _withRouter3.default;
-
-	/* components (configuration) */
-
-	exports.IndexRedirect = _IndexRedirect3.default;
-	exports.IndexRoute = _IndexRoute3.default;
-	exports.Redirect = _Redirect3.default;
-	exports.Route = _Route3.default;
-
-	/* mixins */
-
-	exports.History = _History3.default;
-	exports.Lifecycle = _Lifecycle3.default;
-	exports.RouteContext = _RouteContext3.default;
-
-	/* utils */
-
-	exports.useRoutes = _useRoutes3.default;
-	exports.RouterContext = _RouterContext3.default;
-	exports.RoutingContext = _RoutingContext3.default;
-	exports.PropTypes = _PropTypes3.default;
-	exports.match = _match3.default;
-	exports.useRouterHistory = _useRouterHistory3.default;
-	exports.applyRouterMiddleware = _applyRouterMiddleware3.default;
-
-	/* histories */
-
-	exports.browserHistory = _browserHistory3.default;
-	exports.hashHistory = _hashHistory3.default;
-	exports.createMemoryHistory = _createMemoryHistory3.default;
-
-/***/ },
-/* 36 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -3926,12 +3691,12 @@
 
 	var _prodInvariant = __webpack_require__(4);
 
-	var EventPluginRegistry = __webpack_require__(47);
+	var EventPluginRegistry = __webpack_require__(44);
 	var EventPluginUtils = __webpack_require__(62);
 	var ReactErrorUtils = __webpack_require__(67);
 
-	var accumulateInto = __webpack_require__(115);
-	var forEachAccumulated = __webpack_require__(117);
+	var accumulateInto = __webpack_require__(119);
+	var forEachAccumulated = __webpack_require__(121);
 	var invariant = __webpack_require__(2);
 
 	/**
@@ -4165,7 +3930,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 37 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -4182,11 +3947,11 @@
 	'use strict';
 
 	var EventConstants = __webpack_require__(18);
-	var EventPluginHub = __webpack_require__(36);
+	var EventPluginHub = __webpack_require__(33);
 	var EventPluginUtils = __webpack_require__(62);
 
-	var accumulateInto = __webpack_require__(115);
-	var forEachAccumulated = __webpack_require__(117);
+	var accumulateInto = __webpack_require__(119);
+	var forEachAccumulated = __webpack_require__(121);
 	var warning = __webpack_require__(3);
 
 	var PropagationPhases = EventConstants.PropagationPhases;
@@ -4308,7 +4073,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 38 */
+/* 35 */
 /***/ function(module, exports) {
 
 	/**
@@ -4361,7 +4126,7 @@
 	module.exports = ReactInstanceMap;
 
 /***/ },
-/* 39 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4425,7 +4190,7 @@
 	module.exports = SyntheticUIEvent;
 
 /***/ },
-/* 40 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -4664,7 +4429,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 41 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -4717,7 +4482,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 42 */
+/* 39 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -4727,7 +4492,7 @@
 	exports.canUseDOM = canUseDOM;
 
 /***/ },
-/* 43 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -4742,13 +4507,13 @@
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _queryString = __webpack_require__(169);
+	var _queryString = __webpack_require__(177);
 
 	var _runTransitionHook = __webpack_require__(56);
 
 	var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 
-	var _PathUtils = __webpack_require__(26);
+	var _PathUtils = __webpack_require__(24);
 
 	var _deprecate = __webpack_require__(55);
 
@@ -4909,7 +4674,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 44 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -4928,15 +4693,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _deprecateObjectProperties = __webpack_require__(45);
+	var _deprecateObjectProperties = __webpack_require__(42);
 
 	var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 
-	var _getRouteParams = __webpack_require__(186);
+	var _getRouteParams = __webpack_require__(195);
 
 	var _getRouteParams2 = _interopRequireDefault(_getRouteParams);
 
-	var _RouteUtils = __webpack_require__(24);
+	var _RouteUtils = __webpack_require__(22);
 
 	var _routerWarning = __webpack_require__(9);
 
@@ -5071,7 +4836,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 45 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -5152,7 +4917,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 46 */
+/* 43 */
 /***/ function(module, exports) {
 
 	/**
@@ -5207,7 +4972,7 @@
 	module.exports = DisabledInputUtils;
 
 /***/ },
-/* 47 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -5460,7 +5225,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 48 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5479,11 +5244,11 @@
 	var _assign = __webpack_require__(6);
 
 	var EventConstants = __webpack_require__(18);
-	var EventPluginRegistry = __webpack_require__(47);
-	var ReactEventEmitterMixin = __webpack_require__(226);
-	var ViewportMetrics = __webpack_require__(114);
+	var EventPluginRegistry = __webpack_require__(44);
+	var ReactEventEmitterMixin = __webpack_require__(235);
+	var ViewportMetrics = __webpack_require__(118);
 
-	var getVendorPrefixedEventName = __webpack_require__(258);
+	var getVendorPrefixedEventName = __webpack_require__(267);
 	var isEventSupported = __webpack_require__(78);
 
 	/**
@@ -5756,6 +5521,19 @@
 	  },
 
 	  /**
+	   * Protect against document.createEvent() returning null
+	   * Some popup blocker extensions appear to do this:
+	   * https://github.com/facebook/react/issues/6887
+	   */
+	  supportsEventPageXY: function () {
+	    if (!document.createEvent) {
+	      return false;
+	    }
+	    var ev = document.createEvent('MouseEvent');
+	    return ev != null && 'pageX' in ev;
+	  },
+
+	  /**
 	   * Listens to window scroll and resize events. We cache scroll values so that
 	   * application code can access them without triggering reflows.
 	   *
@@ -5768,7 +5546,7 @@
 	   */
 	  ensureScrollValueMonitoring: function () {
 	    if (hasEventPageXY === undefined) {
-	      hasEventPageXY = document.createEvent && 'pageX' in document.createEvent('MouseEvent');
+	      hasEventPageXY = ReactBrowserEventEmitter.supportsEventPageXY();
 	    }
 	    if (!hasEventPageXY && !isMonitoringScrollValue) {
 	      var refresh = ViewportMetrics.refreshScrollValues;
@@ -5782,7 +5560,7 @@
 	module.exports = ReactBrowserEventEmitter;
 
 /***/ },
-/* 49 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5798,7 +5576,7 @@
 
 	'use strict';
 
-	var keyMirror = __webpack_require__(41);
+	var keyMirror = __webpack_require__(38);
 
 	var ReactPropTypeLocations = keyMirror({
 	  prop: null,
@@ -5809,7 +5587,7 @@
 	module.exports = ReactPropTypeLocations;
 
 /***/ },
-/* 50 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5825,8 +5603,8 @@
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(39);
-	var ViewportMetrics = __webpack_require__(114);
+	var SyntheticUIEvent = __webpack_require__(36);
+	var ViewportMetrics = __webpack_require__(118);
 
 	var getEventModifierState = __webpack_require__(75);
 
@@ -5886,7 +5664,7 @@
 	module.exports = SyntheticMouseEvent;
 
 /***/ },
-/* 51 */
+/* 48 */
 /***/ function(module, exports) {
 
 	/**
@@ -6014,7 +5792,7 @@
 	module.exports = escapeTextContentForBrowser;
 
 /***/ },
-/* 52 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6056,9 +5834,9 @@
 	  if (node.namespaceURI === DOMNamespaces.svg && !('innerHTML' in node)) {
 	    reusableSVGContainer = reusableSVGContainer || document.createElement('div');
 	    reusableSVGContainer.innerHTML = '<svg>' + html + '</svg>';
-	    var newNodes = reusableSVGContainer.firstChild.childNodes;
-	    for (var i = 0; i < newNodes.length; i++) {
-	      node.appendChild(newNodes[i]);
+	    var svgNode = reusableSVGContainer.firstChild;
+	    while (svgNode.firstChild) {
+	      node.appendChild(svgNode.firstChild);
 	    }
 	  } else {
 	    node.innerHTML = html;
@@ -6115,6 +5893,289 @@
 	}
 
 	module.exports = setInnerHTML;
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(144);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(127)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./game.sass", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./game.sass");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 51 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(15);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Footer = function (_Component) {
+	  _inherits(Footer, _Component);
+
+	  function Footer() {
+	    _classCallCheck(this, Footer);
+
+	    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+	  }
+
+	  _createClass(Footer, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'footer',
+	          null,
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'resources' },
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Resources:'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://onepiece.wikia.com/wiki/Main_Page' },
+	                'One Piece Wiki'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://www.zingbox.me/' },
+	                'ZingBox.Me'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://www.funimation.com/' },
+	                'Funimation'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'credits' },
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Credits:'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Eiichiro Oda/Shueisha'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Toei Animatio'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Licensed by FUN'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'copy' },
+	            '©2016 Tameka J. Alston'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Footer;
+	}(_react.Component);
+
+	exports.default = Footer;
+
+/***/ },
+/* 52 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(15);
+
+	var _reactRouter = __webpack_require__(29);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Header = function (_Component) {
+	  _inherits(Header, _Component);
+
+	  function Header() {
+	    _classCallCheck(this, Header);
+
+	    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+	  }
+
+	  _createClass(Header, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/Home' },
+	          _react2.default.createElement('img', { className: 'header1', src: 'http://66.media.tumblr.com/a215ef83293db672b3ac04fd96043885/tumblr_nnisl1lHPh1r2hgd5o4_500.gif', alt: 'header1' })
+	        ),
+	        _react2.default.createElement(
+	          'nav',
+	          null,
+	          _react2.default.createElement(
+	            'ul',
+	            { id: 'noDots' },
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { className: 'noUnders', to: '/Home' },
+	                'Home'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { className: 'noUnders', to: '/Characters' },
+	                'Characters'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { className: 'noUnders', to: '/DevilFruit' },
+	                'Devil Fruits'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { className: 'noUnders', to: '/Anime' },
+	                'Anime'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { className: 'noUnders', to: '/Manga' },
+	                'Manga'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { className: 'noUnders', to: '/Games' },
+	                'Games'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { className: 'noUnders', to: '/Forums' },
+	                'Forums'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement('input', { id: 'Search' }),
+	        _react2.default.createElement(
+	          'button',
+	          { id: 'submit' },
+	          'submit'
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Header;
+	}(_react.Component);
+
+	Header.propTypes = {
+	  searchables: _react2.default.PropTypes.array,
+	  setResults: _react2.default.PropTypes.func
+	};
+	exports.default = Header;
 
 /***/ },
 /* 53 */
@@ -6426,11 +6487,11 @@
 
 	var _react = __webpack_require__(5);
 
-	var _deprecateObjectProperties = __webpack_require__(45);
+	var _deprecateObjectProperties = __webpack_require__(42);
 
 	var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 
-	var _InternalPropTypes = __webpack_require__(27);
+	var _InternalPropTypes = __webpack_require__(25);
 
 	var InternalPropTypes = _interopRequireWildcard(_InternalPropTypes);
 
@@ -6538,21 +6599,21 @@
 
 	var _routerWarning2 = _interopRequireDefault(_routerWarning);
 
-	var _computeChangedRoutes2 = __webpack_require__(184);
+	var _computeChangedRoutes2 = __webpack_require__(193);
 
 	var _computeChangedRoutes3 = _interopRequireDefault(_computeChangedRoutes2);
 
-	var _TransitionUtils = __webpack_require__(181);
+	var _TransitionUtils = __webpack_require__(190);
 
-	var _isActive2 = __webpack_require__(188);
+	var _isActive2 = __webpack_require__(197);
 
 	var _isActive3 = _interopRequireDefault(_isActive2);
 
-	var _getComponents = __webpack_require__(185);
+	var _getComponents = __webpack_require__(194);
 
 	var _getComponents2 = _interopRequireDefault(_getComponents);
 
-	var _matchRoutes = __webpack_require__(190);
+	var _matchRoutes = __webpack_require__(199);
 
 	var _matchRoutes2 = _interopRequireDefault(_matchRoutes);
 
@@ -6847,15 +6908,15 @@
 
 	'use strict';
 
-	var DOMLazyTree = __webpack_require__(32);
-	var Danger = __webpack_require__(197);
-	var ReactMultiChildUpdateTypes = __webpack_require__(110);
+	var DOMLazyTree = __webpack_require__(30);
+	var Danger = __webpack_require__(206);
+	var ReactMultiChildUpdateTypes = __webpack_require__(114);
 	var ReactDOMComponentTree = __webpack_require__(7);
 	var ReactInstrumentation = __webpack_require__(11);
 
 	var createMicrosoftUnsafeLocalFunction = __webpack_require__(73);
-	var setInnerHTML = __webpack_require__(52);
-	var setTextContent = __webpack_require__(122);
+	var setInnerHTML = __webpack_require__(49);
+	var setTextContent = __webpack_require__(126);
 
 	function getNodeAfter(parentNode, node) {
 	  // Special case for text components, which return [open, close] comments
@@ -7373,8 +7434,8 @@
 
 	var _prodInvariant = __webpack_require__(4);
 
-	var ReactPropTypes = __webpack_require__(112);
-	var ReactPropTypeLocations = __webpack_require__(49);
+	var ReactPropTypes = __webpack_require__(116);
+	var ReactPropTypeLocations = __webpack_require__(46);
 	var ReactPropTypesSecret = __webpack_require__(70);
 
 	var invariant = __webpack_require__(2);
@@ -7518,7 +7579,7 @@
 	var ReactNoopUpdateQueue = __webpack_require__(68);
 
 	var canDefineProperty = __webpack_require__(72);
-	var emptyObject = __webpack_require__(34);
+	var emptyObject = __webpack_require__(32);
 	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(3);
 
@@ -7926,7 +7987,7 @@
 	var _prodInvariant = __webpack_require__(4);
 
 	var ReactCurrentOwner = __webpack_require__(19);
-	var ReactInstanceMap = __webpack_require__(38);
+	var ReactInstanceMap = __webpack_require__(35);
 	var ReactInstrumentation = __webpack_require__(11);
 	var ReactUpdates = __webpack_require__(17);
 
@@ -8526,7 +8587,7 @@
 	var _prodInvariant = __webpack_require__(4);
 
 	var ReactCurrentOwner = __webpack_require__(19);
-	var ReactElement = __webpack_require__(15);
+	var ReactElement = __webpack_require__(14);
 
 	var getIteratorFn = __webpack_require__(77);
 	var invariant = __webpack_require__(2);
@@ -8698,7 +8759,7 @@
 
 	var _assign = __webpack_require__(6);
 
-	var emptyFunction = __webpack_require__(13);
+	var emptyFunction = __webpack_require__(12);
 	var warning = __webpack_require__(3);
 
 	var validateDOMNesting = emptyFunction;
@@ -8972,10 +9033,15 @@
 
 	  var didWarn = {};
 
-	  validateDOMNesting = function (childTag, childInstance, ancestorInfo) {
+	  validateDOMNesting = function (childTag, childText, childInstance, ancestorInfo) {
 	    ancestorInfo = ancestorInfo || emptyAncestorInfo;
 	    var parentInfo = ancestorInfo.current;
 	    var parentTag = parentInfo && parentInfo.tag;
+
+	    if (childText != null) {
+	      process.env.NODE_ENV !== 'production' ? warning(childTag == null, 'validateDOMNesting: when childText is passed, childTag should be null') : void 0;
+	      childTag = '#text';
+	    }
 
 	    var invalidParent = isTagValidWithParent(childTag, parentTag) ? null : parentInfo;
 	    var invalidAncestor = invalidParent ? null : findInvalidAncestorForTag(childTag, ancestorInfo);
@@ -9024,7 +9090,15 @@
 	      didWarn[warnKey] = true;
 
 	      var tagDisplayName = childTag;
-	      if (childTag !== '#text') {
+	      var whitespaceInfo = '';
+	      if (childTag === '#text') {
+	        if (/\S/.test(childText)) {
+	          tagDisplayName = 'Text nodes';
+	        } else {
+	          tagDisplayName = 'Whitespace text nodes';
+	          whitespaceInfo = ' Make sure you don\'t have any extra whitespace between tags on ' + 'each line of your source code.';
+	        }
+	      } else {
 	        tagDisplayName = '<' + childTag + '>';
 	      }
 
@@ -9033,7 +9107,7 @@
 	        if (ancestorTag === 'table' && childTag === 'tr') {
 	          info += ' Add a <tbody> to your code to match the DOM tree generated by ' + 'the browser.';
 	        }
-	        process.env.NODE_ENV !== 'production' ? warning(false, 'validateDOMNesting(...): %s cannot appear as a child of <%s>. ' + 'See %s.%s', tagDisplayName, ancestorTag, ownerInfo, info) : void 0;
+	        process.env.NODE_ENV !== 'production' ? warning(false, 'validateDOMNesting(...): %s cannot appear as a child of <%s>.%s ' + 'See %s.%s', tagDisplayName, ancestorTag, whitespaceInfo, ownerInfo, info) : void 0;
 	      } else {
 	        process.env.NODE_ENV !== 'production' ? warning(false, 'validateDOMNesting(...): %s cannot appear as a descendant of ' + '<%s>. See %s.', tagDisplayName, ancestorTag, ownerInfo) : void 0;
 	      }
@@ -9058,6 +9132,141 @@
 /* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.PKExecution = exports.Memory = exports.Forums = exports.Games = exports.Manga = exports.Footer = exports.Header = exports.Layout = exports.Anime = exports.Characters = exports.DevilFruit = exports.Home = exports.App = undefined;
+
+	var _App2 = __webpack_require__(129);
+
+	var _App3 = _interopRequireDefault(_App2);
+
+	var _Home2 = __webpack_require__(136);
+
+	var _Home3 = _interopRequireDefault(_Home2);
+
+	var _DevilFruit2 = __webpack_require__(133);
+
+	var _DevilFruit3 = _interopRequireDefault(_DevilFruit2);
+
+	var _Characters2 = __webpack_require__(132);
+
+	var _Characters3 = _interopRequireDefault(_Characters2);
+
+	var _Anime2 = __webpack_require__(128);
+
+	var _Anime3 = _interopRequireDefault(_Anime2);
+
+	var _Layout2 = __webpack_require__(137);
+
+	var _Layout3 = _interopRequireDefault(_Layout2);
+
+	var _Header2 = __webpack_require__(52);
+
+	var _Header3 = _interopRequireDefault(_Header2);
+
+	var _Footer2 = __webpack_require__(51);
+
+	var _Footer3 = _interopRequireDefault(_Footer2);
+
+	var _Manga2 = __webpack_require__(139);
+
+	var _Manga3 = _interopRequireDefault(_Manga2);
+
+	var _Games2 = __webpack_require__(135);
+
+	var _Games3 = _interopRequireDefault(_Games2);
+
+	var _Forums2 = __webpack_require__(134);
+
+	var _Forums3 = _interopRequireDefault(_Forums2);
+
+	var _Memory2 = __webpack_require__(140);
+
+	var _Memory3 = _interopRequireDefault(_Memory2);
+
+	var _PKExecution2 = __webpack_require__(141);
+
+	var _PKExecution3 = _interopRequireDefault(_PKExecution2);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.App = _App3.default;
+	exports.Home = _Home3.default;
+	exports.DevilFruit = _DevilFruit3.default;
+	exports.Characters = _Characters3.default;
+	exports.Anime = _Anime3.default;
+	exports.Layout = _Layout3.default;
+	exports.Header = _Header3.default;
+	exports.Footer = _Footer3.default;
+	exports.Manga = _Manga3.default;
+	exports.Games = _Games3.default;
+	exports.Forums = _Forums3.default;
+	exports.Memory = _Memory3.default;
+	exports.PKExecution = _PKExecution3.default;
+
+/***/ },
+/* 83 */
+/***/ function(module, exports) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	// css base code, injected by the css-loader
+	module.exports = function() {
+		var list = [];
+
+		// return the list of modules as css string
+		list.toString = function toString() {
+			var result = [];
+			for(var i = 0; i < this.length; i++) {
+				var item = this[i];
+				if(item[2]) {
+					result.push("@media " + item[2] + "{" + item[1] + "}");
+				} else {
+					result.push(item[1]);
+				}
+			}
+			return result.join("");
+		};
+
+		// import a list of modules into the list
+		list.i = function(modules, mediaQuery) {
+			if(typeof modules === "string")
+				modules = [[null, modules, ""]];
+			var alreadyImportedModules = {};
+			for(var i = 0; i < this.length; i++) {
+				var id = this[i][0];
+				if(typeof id === "number")
+					alreadyImportedModules[id] = true;
+			}
+			for(i = 0; i < modules.length; i++) {
+				var item = modules[i];
+				// skip already imported module
+				// this implementation is not 100% perfect for weird media query combinations
+				//  when a module is imported multiple times with different media queries.
+				//  I hope this will never occur (Hey this way we have smaller bundles)
+				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+					if(mediaQuery && !item[2]) {
+						item[2] = mediaQuery;
+					} else if(mediaQuery) {
+						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+					}
+					list.push(item);
+				}
+			}
+		};
+		return list;
+	};
+
+
+/***/ },
+/* 84 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
 	/**
@@ -9078,7 +9287,7 @@
 	 * @typechecks
 	 */
 
-	var emptyFunction = __webpack_require__(13);
+	var emptyFunction = __webpack_require__(12);
 
 	/**
 	 * Upstream version of event listener. Does not take into account specific
@@ -9144,7 +9353,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 83 */
+/* 85 */
 /***/ function(module, exports) {
 
 	/**
@@ -9175,7 +9384,7 @@
 	module.exports = focusNode;
 
 /***/ },
-/* 84 */
+/* 86 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -9214,7 +9423,19 @@
 	module.exports = getActiveElement;
 
 /***/ },
-/* 85 */
+/* 87 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a16411e87bfc8bee8a114979af5b1f6c.jpg";
+
+/***/ },
+/* 88 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "f79e53992bb4112b3134275684575cb7.gif";
+
+/***/ },
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/*eslint-disable no-empty */
@@ -9293,7 +9514,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 86 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -9308,11 +9529,11 @@
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
-	var _ExecutionEnvironment = __webpack_require__(42);
+	var _ExecutionEnvironment = __webpack_require__(39);
 
 	var _DOMUtils = __webpack_require__(54);
 
-	var _createHistory = __webpack_require__(88);
+	var _createHistory = __webpack_require__(92);
 
 	var _createHistory2 = _interopRequireDefault(_createHistory);
 
@@ -9339,7 +9560,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 87 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -9358,17 +9579,17 @@
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
-	var _Actions = __webpack_require__(30);
+	var _Actions = __webpack_require__(27);
 
-	var _PathUtils = __webpack_require__(26);
+	var _PathUtils = __webpack_require__(24);
 
-	var _ExecutionEnvironment = __webpack_require__(42);
+	var _ExecutionEnvironment = __webpack_require__(39);
 
 	var _DOMUtils = __webpack_require__(54);
 
-	var _DOMStateStorage = __webpack_require__(85);
+	var _DOMStateStorage = __webpack_require__(89);
 
-	var _createDOMHistory = __webpack_require__(86);
+	var _createDOMHistory = __webpack_require__(90);
 
 	var _createDOMHistory2 = _interopRequireDefault(_createDOMHistory);
 
@@ -9591,7 +9812,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 88 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -9606,17 +9827,17 @@
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _deepEqual = __webpack_require__(137);
+	var _deepEqual = __webpack_require__(146);
 
 	var _deepEqual2 = _interopRequireDefault(_deepEqual);
 
-	var _PathUtils = __webpack_require__(26);
+	var _PathUtils = __webpack_require__(24);
 
-	var _AsyncUtils = __webpack_require__(165);
+	var _AsyncUtils = __webpack_require__(173);
 
-	var _Actions = __webpack_require__(30);
+	var _Actions = __webpack_require__(27);
 
-	var _createLocation2 = __webpack_require__(167);
+	var _createLocation2 = __webpack_require__(175);
 
 	var _createLocation3 = _interopRequireDefault(_createLocation2);
 
@@ -9885,7 +10106,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 89 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -9900,9 +10121,9 @@
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _ExecutionEnvironment = __webpack_require__(42);
+	var _ExecutionEnvironment = __webpack_require__(39);
 
-	var _PathUtils = __webpack_require__(26);
+	var _PathUtils = __webpack_require__(24);
 
 	var _runTransitionHook = __webpack_require__(56);
 
@@ -10049,7 +10270,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 90 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -10231,7 +10452,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 91 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -10246,11 +10467,11 @@
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
-	var _RouteUtils = __webpack_require__(24);
+	var _RouteUtils = __webpack_require__(22);
 
-	var _PatternUtils = __webpack_require__(31);
+	var _PatternUtils = __webpack_require__(28);
 
-	var _InternalPropTypes = __webpack_require__(27);
+	var _InternalPropTypes = __webpack_require__(25);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10339,7 +10560,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 92 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -10351,7 +10572,7 @@
 	exports.createRouterObject = createRouterObject;
 	exports.createRoutingHistory = createRoutingHistory;
 
-	var _deprecateObjectProperties = __webpack_require__(45);
+	var _deprecateObjectProperties = __webpack_require__(42);
 
 	var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 
@@ -10377,7 +10598,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 93 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10385,15 +10606,15 @@
 	exports.__esModule = true;
 	exports.default = createMemoryHistory;
 
-	var _useQueries = __webpack_require__(43);
+	var _useQueries = __webpack_require__(40);
 
 	var _useQueries2 = _interopRequireDefault(_useQueries);
 
-	var _useBasename = __webpack_require__(89);
+	var _useBasename = __webpack_require__(93);
 
 	var _useBasename2 = _interopRequireDefault(_useBasename);
 
-	var _createMemoryHistory = __webpack_require__(168);
+	var _createMemoryHistory = __webpack_require__(176);
 
 	var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 
@@ -10414,7 +10635,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 94 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10427,7 +10648,7 @@
 	  return history;
 	};
 
-	var _useRouterHistory = __webpack_require__(96);
+	var _useRouterHistory = __webpack_require__(100);
 
 	var _useRouterHistory2 = _interopRequireDefault(_useRouterHistory);
 
@@ -10438,7 +10659,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 95 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -10449,7 +10670,7 @@
 
 	exports.default = makeStateWithLocation;
 
-	var _deprecateObjectProperties = __webpack_require__(45);
+	var _deprecateObjectProperties = __webpack_require__(42);
 
 	var _routerWarning = __webpack_require__(9);
 
@@ -10493,7 +10714,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 96 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10501,11 +10722,11 @@
 	exports.__esModule = true;
 	exports.default = useRouterHistory;
 
-	var _useQueries = __webpack_require__(43);
+	var _useQueries = __webpack_require__(40);
 
 	var _useQueries2 = _interopRequireDefault(_useQueries);
 
-	var _useBasename = __webpack_require__(89);
+	var _useBasename = __webpack_require__(93);
 
 	var _useBasename2 = _interopRequireDefault(_useBasename);
 
@@ -10521,7 +10742,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 97 */
+/* 101 */
 /***/ function(module, exports) {
 
 	/**
@@ -10674,7 +10895,7 @@
 	module.exports = CSSProperty;
 
 /***/ },
-/* 98 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -10693,7 +10914,7 @@
 	var _prodInvariant = __webpack_require__(4),
 	    _assign = __webpack_require__(6);
 
-	var PooledClass = __webpack_require__(25);
+	var PooledClass = __webpack_require__(23);
 
 	var invariant = __webpack_require__(2);
 
@@ -10786,7 +11007,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 99 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -10802,11 +11023,11 @@
 
 	'use strict';
 
-	var DOMProperty = __webpack_require__(28);
+	var DOMProperty = __webpack_require__(26);
 	var ReactDOMComponentTree = __webpack_require__(7);
 	var ReactInstrumentation = __webpack_require__(11);
 
-	var quoteAttributeValueForBrowser = __webpack_require__(260);
+	var quoteAttributeValueForBrowser = __webpack_require__(269);
 	var warning = __webpack_require__(3);
 
 	var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -11013,7 +11234,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 100 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11029,10 +11250,10 @@
 
 	'use strict';
 
-	var PooledClass = __webpack_require__(25);
-	var ReactElement = __webpack_require__(15);
+	var PooledClass = __webpack_require__(23);
+	var ReactElement = __webpack_require__(14);
 
-	var emptyFunction = __webpack_require__(13);
+	var emptyFunction = __webpack_require__(12);
 	var traverseAllChildren = __webpack_require__(80);
 
 	var twoArgumentPooler = PooledClass.twoArgumentPooler;
@@ -11209,7 +11430,7 @@
 	module.exports = ReactChildren;
 
 /***/ },
-/* 101 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -11229,15 +11450,15 @@
 	    _assign = __webpack_require__(6);
 
 	var ReactComponent = __webpack_require__(65);
-	var ReactElement = __webpack_require__(15);
-	var ReactPropTypeLocations = __webpack_require__(49);
+	var ReactElement = __webpack_require__(14);
+	var ReactPropTypeLocations = __webpack_require__(46);
 	var ReactPropTypeLocationNames = __webpack_require__(69);
 	var ReactNoopUpdateQueue = __webpack_require__(68);
 
-	var emptyObject = __webpack_require__(34);
+	var emptyObject = __webpack_require__(32);
 	var invariant = __webpack_require__(2);
-	var keyMirror = __webpack_require__(41);
-	var keyOf = __webpack_require__(23);
+	var keyMirror = __webpack_require__(38);
+	var keyOf = __webpack_require__(21);
 	var warning = __webpack_require__(3);
 
 	var MIXINS_KEY = keyOf({ mixins: null });
@@ -11947,7 +12168,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 102 */
+/* 106 */
 /***/ function(module, exports) {
 
 	/**
@@ -11970,7 +12191,7 @@
 	module.exports = ReactDOMComponentFlags;
 
 /***/ },
-/* 103 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -11988,7 +12209,7 @@
 
 	var _assign = __webpack_require__(6);
 
-	var DisabledInputUtils = __webpack_require__(46);
+	var DisabledInputUtils = __webpack_require__(43);
 	var LinkedValueUtils = __webpack_require__(64);
 	var ReactDOMComponentTree = __webpack_require__(7);
 	var ReactUpdates = __webpack_require__(17);
@@ -12177,7 +12398,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 104 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -12201,11 +12422,11 @@
 	'use strict';
 
 	var ReactCurrentOwner = __webpack_require__(19);
-	var ReactComponentTreeHook = __webpack_require__(14);
-	var ReactElement = __webpack_require__(15);
-	var ReactPropTypeLocations = __webpack_require__(49);
+	var ReactComponentTreeHook = __webpack_require__(13);
+	var ReactElement = __webpack_require__(14);
+	var ReactPropTypeLocations = __webpack_require__(46);
 
-	var checkReactTypeSpec = __webpack_require__(116);
+	var checkReactTypeSpec = __webpack_require__(120);
 
 	var canDefineProperty = __webpack_require__(72);
 	var getIteratorFn = __webpack_require__(77);
@@ -12411,7 +12632,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 105 */
+/* 109 */
 /***/ function(module, exports) {
 
 	/**
@@ -12446,7 +12667,7 @@
 	module.exports = ReactEmptyComponent;
 
 /***/ },
-/* 106 */
+/* 110 */
 /***/ function(module, exports) {
 
 	/**
@@ -12473,7 +12694,7 @@
 	module.exports = ReactFeatureFlags;
 
 /***/ },
-/* 107 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -12555,7 +12776,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 108 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12571,11 +12792,11 @@
 
 	'use strict';
 
-	var ReactDOMSelection = __webpack_require__(218);
+	var ReactDOMSelection = __webpack_require__(227);
 
-	var containsNode = __webpack_require__(142);
-	var focusNode = __webpack_require__(83);
-	var getActiveElement = __webpack_require__(84);
+	var containsNode = __webpack_require__(151);
+	var focusNode = __webpack_require__(85);
+	var getActiveElement = __webpack_require__(86);
 
 	function isInDocument(node) {
 	  return containsNode(document.documentElement, node);
@@ -12684,7 +12905,7 @@
 	module.exports = ReactInputSelection;
 
 /***/ },
-/* 109 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -12702,26 +12923,26 @@
 
 	var _prodInvariant = __webpack_require__(4);
 
-	var DOMLazyTree = __webpack_require__(32);
-	var DOMProperty = __webpack_require__(28);
-	var ReactBrowserEventEmitter = __webpack_require__(48);
+	var DOMLazyTree = __webpack_require__(30);
+	var DOMProperty = __webpack_require__(26);
+	var ReactBrowserEventEmitter = __webpack_require__(45);
 	var ReactCurrentOwner = __webpack_require__(19);
 	var ReactDOMComponentTree = __webpack_require__(7);
-	var ReactDOMContainerInfo = __webpack_require__(210);
-	var ReactDOMFeatureFlags = __webpack_require__(213);
-	var ReactElement = __webpack_require__(15);
-	var ReactFeatureFlags = __webpack_require__(106);
-	var ReactInstanceMap = __webpack_require__(38);
+	var ReactDOMContainerInfo = __webpack_require__(219);
+	var ReactDOMFeatureFlags = __webpack_require__(222);
+	var ReactElement = __webpack_require__(14);
+	var ReactFeatureFlags = __webpack_require__(110);
+	var ReactInstanceMap = __webpack_require__(35);
 	var ReactInstrumentation = __webpack_require__(11);
-	var ReactMarkupChecksum = __webpack_require__(231);
-	var ReactReconciler = __webpack_require__(33);
+	var ReactMarkupChecksum = __webpack_require__(240);
+	var ReactReconciler = __webpack_require__(31);
 	var ReactUpdateQueue = __webpack_require__(71);
 	var ReactUpdates = __webpack_require__(17);
 
-	var emptyObject = __webpack_require__(34);
-	var instantiateReactComponent = __webpack_require__(120);
+	var emptyObject = __webpack_require__(32);
+	var instantiateReactComponent = __webpack_require__(124);
 	var invariant = __webpack_require__(2);
-	var setInnerHTML = __webpack_require__(52);
+	var setInnerHTML = __webpack_require__(49);
 	var shouldUpdateReactComponent = __webpack_require__(79);
 	var warning = __webpack_require__(3);
 
@@ -13224,7 +13445,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 110 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13240,7 +13461,7 @@
 
 	'use strict';
 
-	var keyMirror = __webpack_require__(41);
+	var keyMirror = __webpack_require__(38);
 
 	/**
 	 * When a component's children are updated, a series of update configuration
@@ -13261,7 +13482,7 @@
 	module.exports = ReactMultiChildUpdateTypes;
 
 /***/ },
-/* 111 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -13280,7 +13501,7 @@
 
 	var _prodInvariant = __webpack_require__(4);
 
-	var ReactElement = __webpack_require__(15);
+	var ReactElement = __webpack_require__(14);
 
 	var invariant = __webpack_require__(2);
 
@@ -13307,7 +13528,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 112 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -13323,11 +13544,11 @@
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(15);
+	var ReactElement = __webpack_require__(14);
 	var ReactPropTypeLocationNames = __webpack_require__(69);
 	var ReactPropTypesSecret = __webpack_require__(70);
 
-	var emptyFunction = __webpack_require__(13);
+	var emptyFunction = __webpack_require__(12);
 	var getIteratorFn = __webpack_require__(77);
 	var warning = __webpack_require__(3);
 
@@ -13744,7 +13965,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 113 */
+/* 117 */
 /***/ function(module, exports) {
 
 	/**
@@ -13760,10 +13981,10 @@
 
 	'use strict';
 
-	module.exports = '15.3.1';
+	module.exports = '15.3.2';
 
 /***/ },
-/* 114 */
+/* 118 */
 /***/ function(module, exports) {
 
 	/**
@@ -13795,7 +14016,7 @@
 	module.exports = ViewportMetrics;
 
 /***/ },
-/* 115 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -13859,7 +14080,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 116 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -13891,7 +14112,7 @@
 	  // https://github.com/facebook/react/issues/7240
 	  // Remove the inline requires when we don't need them anymore:
 	  // https://github.com/facebook/react/pull/7178
-	  ReactComponentTreeHook = __webpack_require__(14);
+	  ReactComponentTreeHook = __webpack_require__(13);
 	}
 
 	var loggedTypeFailures = {};
@@ -13933,7 +14154,7 @@
 
 	        if (process.env.NODE_ENV !== 'production') {
 	          if (!ReactComponentTreeHook) {
-	            ReactComponentTreeHook = __webpack_require__(14);
+	            ReactComponentTreeHook = __webpack_require__(13);
 	          }
 	          if (debugID !== null) {
 	            componentStackInfo = ReactComponentTreeHook.getStackAddendumByID(debugID);
@@ -13952,7 +14173,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 117 */
+/* 121 */
 /***/ function(module, exports) {
 
 	/**
@@ -13988,7 +14209,7 @@
 	module.exports = forEachAccumulated;
 
 /***/ },
-/* 118 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14004,7 +14225,7 @@
 
 	'use strict';
 
-	var ReactNodeTypes = __webpack_require__(111);
+	var ReactNodeTypes = __webpack_require__(115);
 
 	function getHostComponentFromComposite(inst) {
 	  var type;
@@ -14023,7 +14244,7 @@
 	module.exports = getHostComponentFromComposite;
 
 /***/ },
-/* 119 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14061,7 +14282,7 @@
 	module.exports = getTextContentAccessor;
 
 /***/ },
-/* 120 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -14080,9 +14301,9 @@
 	var _prodInvariant = __webpack_require__(4),
 	    _assign = __webpack_require__(6);
 
-	var ReactCompositeComponent = __webpack_require__(206);
-	var ReactEmptyComponent = __webpack_require__(105);
-	var ReactHostComponent = __webpack_require__(107);
+	var ReactCompositeComponent = __webpack_require__(215);
+	var ReactEmptyComponent = __webpack_require__(109);
+	var ReactHostComponent = __webpack_require__(111);
 
 	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(3);
@@ -14186,7 +14407,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 121 */
+/* 125 */
 /***/ function(module, exports) {
 
 	/**
@@ -14242,7 +14463,7 @@
 	module.exports = isTextInputElement;
 
 /***/ },
-/* 122 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14259,8 +14480,8 @@
 	'use strict';
 
 	var ExecutionEnvironment = __webpack_require__(8);
-	var escapeTextContentForBrowser = __webpack_require__(51);
-	var setInnerHTML = __webpack_require__(52);
+	var escapeTextContentForBrowser = __webpack_require__(48);
+	var setInnerHTML = __webpack_require__(49);
 
 	/**
 	 * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -14295,7 +14516,259 @@
 	module.exports = setTextContent;
 
 /***/ },
-/* 123 */
+/* 127 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	var stylesInDom = {},
+		memoize = function(fn) {
+			var memo;
+			return function () {
+				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+				return memo;
+			};
+		},
+		isOldIE = memoize(function() {
+			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+		}),
+		getHeadElement = memoize(function () {
+			return document.head || document.getElementsByTagName("head")[0];
+		}),
+		singletonElement = null,
+		singletonCounter = 0,
+		styleElementsInsertedAtTop = [];
+
+	module.exports = function(list, options) {
+		if(false) {
+			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+		}
+
+		options = options || {};
+		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+		// tags it will allow on a page
+		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
+
+		// By default, add <style> tags to the bottom of <head>.
+		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
+
+		var styles = listToStyles(list);
+		addStylesToDom(styles, options);
+
+		return function update(newList) {
+			var mayRemove = [];
+			for(var i = 0; i < styles.length; i++) {
+				var item = styles[i];
+				var domStyle = stylesInDom[item.id];
+				domStyle.refs--;
+				mayRemove.push(domStyle);
+			}
+			if(newList) {
+				var newStyles = listToStyles(newList);
+				addStylesToDom(newStyles, options);
+			}
+			for(var i = 0; i < mayRemove.length; i++) {
+				var domStyle = mayRemove[i];
+				if(domStyle.refs === 0) {
+					for(var j = 0; j < domStyle.parts.length; j++)
+						domStyle.parts[j]();
+					delete stylesInDom[domStyle.id];
+				}
+			}
+		};
+	}
+
+	function addStylesToDom(styles, options) {
+		for(var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+			if(domStyle) {
+				domStyle.refs++;
+				for(var j = 0; j < domStyle.parts.length; j++) {
+					domStyle.parts[j](item.parts[j]);
+				}
+				for(; j < item.parts.length; j++) {
+					domStyle.parts.push(addStyle(item.parts[j], options));
+				}
+			} else {
+				var parts = [];
+				for(var j = 0; j < item.parts.length; j++) {
+					parts.push(addStyle(item.parts[j], options));
+				}
+				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+			}
+		}
+	}
+
+	function listToStyles(list) {
+		var styles = [];
+		var newStyles = {};
+		for(var i = 0; i < list.length; i++) {
+			var item = list[i];
+			var id = item[0];
+			var css = item[1];
+			var media = item[2];
+			var sourceMap = item[3];
+			var part = {css: css, media: media, sourceMap: sourceMap};
+			if(!newStyles[id])
+				styles.push(newStyles[id] = {id: id, parts: [part]});
+			else
+				newStyles[id].parts.push(part);
+		}
+		return styles;
+	}
+
+	function insertStyleElement(options, styleElement) {
+		var head = getHeadElement();
+		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
+		if (options.insertAt === "top") {
+			if(!lastStyleElementInsertedAtTop) {
+				head.insertBefore(styleElement, head.firstChild);
+			} else if(lastStyleElementInsertedAtTop.nextSibling) {
+				head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
+			} else {
+				head.appendChild(styleElement);
+			}
+			styleElementsInsertedAtTop.push(styleElement);
+		} else if (options.insertAt === "bottom") {
+			head.appendChild(styleElement);
+		} else {
+			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
+		}
+	}
+
+	function removeStyleElement(styleElement) {
+		styleElement.parentNode.removeChild(styleElement);
+		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
+		if(idx >= 0) {
+			styleElementsInsertedAtTop.splice(idx, 1);
+		}
+	}
+
+	function createStyleElement(options) {
+		var styleElement = document.createElement("style");
+		styleElement.type = "text/css";
+		insertStyleElement(options, styleElement);
+		return styleElement;
+	}
+
+	function createLinkElement(options) {
+		var linkElement = document.createElement("link");
+		linkElement.rel = "stylesheet";
+		insertStyleElement(options, linkElement);
+		return linkElement;
+	}
+
+	function addStyle(obj, options) {
+		var styleElement, update, remove;
+
+		if (options.singleton) {
+			var styleIndex = singletonCounter++;
+			styleElement = singletonElement || (singletonElement = createStyleElement(options));
+			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
+			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
+		} else if(obj.sourceMap &&
+			typeof URL === "function" &&
+			typeof URL.createObjectURL === "function" &&
+			typeof URL.revokeObjectURL === "function" &&
+			typeof Blob === "function" &&
+			typeof btoa === "function") {
+			styleElement = createLinkElement(options);
+			update = updateLink.bind(null, styleElement);
+			remove = function() {
+				removeStyleElement(styleElement);
+				if(styleElement.href)
+					URL.revokeObjectURL(styleElement.href);
+			};
+		} else {
+			styleElement = createStyleElement(options);
+			update = applyToTag.bind(null, styleElement);
+			remove = function() {
+				removeStyleElement(styleElement);
+			};
+		}
+
+		update(obj);
+
+		return function updateStyle(newObj) {
+			if(newObj) {
+				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
+					return;
+				update(obj = newObj);
+			} else {
+				remove();
+			}
+		};
+	}
+
+	var replaceText = (function () {
+		var textStore = [];
+
+		return function (index, replacement) {
+			textStore[index] = replacement;
+			return textStore.filter(Boolean).join('\n');
+		};
+	})();
+
+	function applyToSingletonTag(styleElement, index, remove, obj) {
+		var css = remove ? "" : obj.css;
+
+		if (styleElement.styleSheet) {
+			styleElement.styleSheet.cssText = replaceText(index, css);
+		} else {
+			var cssNode = document.createTextNode(css);
+			var childNodes = styleElement.childNodes;
+			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
+			if (childNodes.length) {
+				styleElement.insertBefore(cssNode, childNodes[index]);
+			} else {
+				styleElement.appendChild(cssNode);
+			}
+		}
+	}
+
+	function applyToTag(styleElement, obj) {
+		var css = obj.css;
+		var media = obj.media;
+
+		if(media) {
+			styleElement.setAttribute("media", media)
+		}
+
+		if(styleElement.styleSheet) {
+			styleElement.styleSheet.cssText = css;
+		} else {
+			while(styleElement.firstChild) {
+				styleElement.removeChild(styleElement.firstChild);
+			}
+			styleElement.appendChild(document.createTextNode(css));
+		}
+	}
+
+	function updateLink(linkElement, obj) {
+		var css = obj.css;
+		var sourceMap = obj.sourceMap;
+
+		if(sourceMap) {
+			// http://stackoverflow.com/a/26603875
+			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+		}
+
+		var blob = new Blob([css], { type: "text/css" });
+
+		var oldSrc = linkElement.href;
+
+		linkElement.href = URL.createObjectURL(blob);
+
+		if(oldSrc)
+			URL.revokeObjectURL(oldSrc);
+	}
+
+
+/***/ },
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14310,15 +14783,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(12);
-
-	var _Header = __webpack_require__(22);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	var _Footer = __webpack_require__(21);
-
-	var _Footer2 = _interopRequireDefault(_Footer);
+	__webpack_require__(15);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14343,7 +14808,6 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Header2.default, null),
 	        _react2.default.createElement(
 	          'main',
 	          null,
@@ -14358,37 +14822,42 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'video1' },
+	              'EPISODE 757',
+	              _react2.default.createElement('iframe', { width: '500', height: '288', src: 'http://www.hulu.com/embed.html?eid=-w7jqpfkr9kpgq9ptollcq&partner=funimation&url=http%3A%2F%2Fwww.hulu.com%2Fwatch%2F986263', scrolling: 'no', allowFullScreen: true })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'video2' },
 	              'EPISODE 756',
 	              _react2.default.createElement('iframe', { width: '500', height: '288', src: 'http://www.hulu.com/embed.html?eid=btznonsuogmz0awhehnjia&partner=funimation&url=http%3A%2F%2Fonepieceofficial.com%2Fvideos.aspx', scrolling: 'no', allowFullScreen: true })
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'video2' },
+	              { className: 'video3' },
 	              'EPISODE 755',
 	              _react2.default.createElement('iframe', { width: '500', height: '288', src: 'http://www.hulu.com/embed.html?eid=ey7esovrjarvoelg1uwc0g&partner=funimation&url=http%3A%2F%2Fwww.onepieceofficial.com%2Fvideos.aspx%3F%26v%3D9022', scrolling: 'no', allowFullScreen: true })
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'video3' },
+	              { className: 'video4' },
 	              'EPISODE 754',
 	              _react2.default.createElement('iframe', { width: '500', height: '288', src: 'http://www.hulu.com/embed.html?eid=ujocuthazsye2s-bqcqb1g&partner=funimation&url=http%3A%2F%2Fwww.onepieceofficial.com%2Fvideos.aspx%3F%26v%3D9021', scrolling: 'no', allowFullScreen: true })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'chapterList' },
+	            ),
 	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://www.hulu.com/one-piece' },
+	              'div',
+	              { className: 'chapterList' },
 	              _react2.default.createElement(
-	                'h5',
-	                null,
-	                'Complete List of Episodes Here'
+	                'a',
+	                { href: 'http://www.hulu.com/one-piece' },
+	                _react2.default.createElement(
+	                  'h5',
+	                  null,
+	                  'Complete List of Episodes Here'
+	                )
 	              )
 	            )
 	          )
-	        ),
-	        _react2.default.createElement(_Footer2.default, null)
+	        )
 	      );
 	    }
 	  }]);
@@ -14399,7 +14868,7 @@
 	exports.default = Anime;
 
 /***/ },
-/* 124 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14414,9 +14883,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(12);
+	__webpack_require__(15);
 
-	var _reactRouter = __webpack_require__(35);
+	var _reactRouter = __webpack_require__(29);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14445,13 +14914,7 @@
 	        _react2.default.createElement(
 	          _reactRouter.Link,
 	          { className: 'title', to: '/Home' },
-	          _react2.default.createElement('img', { className: 'oplogo', src: 'http://i.imgur.com/sm7UQom.png' }),
-	          ' ',
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            'PLANET'
-	          ),
+	          _react2.default.createElement('img', { className: 'oplogo', src: 'https://raw.githubusercontent.com/TJAlston/OnePiecePlanet/master/src/images/onepiecelogo1.png' }),
 	          _react2.default.createElement('img', { className: 'powerup', src: 'http://38.media.tumblr.com/c5f1df280fa287943dad93af323d37ed/tumblr_nvs2d9mdfI1s31fzzo1_500.gif' })
 	        )
 	      );
@@ -14464,7 +14927,144 @@
 	exports.default = App;
 
 /***/ },
-/* 125 */
+/* 130 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(50);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Board = function (_Component) {
+	  _inherits(Board, _Component);
+
+	  function Board() {
+	    _classCallCheck(this, Board);
+
+	    return _possibleConstructorReturn(this, (Board.__proto__ || Object.getPrototypeOf(Board)).apply(this, arguments));
+	  }
+
+	  _createClass(Board, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'Board' },
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'ONLY SIX CHANCES'
+	        ),
+	        _react2.default.createElement(Alphabet, { onPlay: this.props.onPlay })
+	      );
+	    }
+	  }]);
+
+	  return Board;
+	}(_react.Component);
+
+	var Alphabet = function (_Component2) {
+	  _inherits(Alphabet, _Component2);
+
+	  function Alphabet() {
+	    _classCallCheck(this, Alphabet);
+
+	    return _possibleConstructorReturn(this, (Alphabet.__proto__ || Object.getPrototypeOf(Alphabet)).apply(this, arguments));
+	  }
+
+	  _createClass(Alphabet, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(AlphaLetter, { character: 'A', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'B', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'C', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'D', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'E', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'F', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'G', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'H', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'I', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'J', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'K', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'L', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'M', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'N', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'O', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'P', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'Q', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'R', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'S', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'T', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'U', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'V', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'W', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'X', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'Y', onPlay: this.props.onPlay }),
+	        _react2.default.createElement(AlphaLetter, { character: 'Z', onPlay: this.props.onPlay })
+	      );
+	    }
+	  }]);
+
+	  return Alphabet;
+	}(_react.Component);
+
+	var AlphaLetter = function (_Component3) {
+	  _inherits(AlphaLetter, _Component3);
+
+	  function AlphaLetter() {
+	    _classCallCheck(this, AlphaLetter);
+
+	    var _this3 = _possibleConstructorReturn(this, (AlphaLetter.__proto__ || Object.getPrototypeOf(AlphaLetter)).call(this));
+
+	    _this3.handleClick = function () {
+	      _this3.props.onPlay(_this3.props.character);
+	      _this3.setState({ used: true });
+	    };
+
+	    _this3.state = {
+	      used: false
+	    };
+	    return _this3;
+	  }
+
+	  _createClass(AlphaLetter, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'button',
+	        { disabled: this.state.used, onClick: this.handleClick },
+	        this.props.character
+	      );
+	    }
+	  }]);
+
+	  return AlphaLetter;
+	}(_react.Component);
+
+	exports.default = Board;
+
+/***/ },
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14529,7 +15129,7 @@
 	exports.default = Card;
 
 /***/ },
-/* 126 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14543,16 +15143,6 @@
 	var _react = __webpack_require__(5);
 
 	var _react2 = _interopRequireDefault(_react);
-
-	__webpack_require__(12);
-
-	var _Header = __webpack_require__(22);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	var _Footer = __webpack_require__(21);
-
-	var _Footer2 = _interopRequireDefault(_Footer);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14566,57 +15156,56 @@
 	  _inherits(Characters, _Component);
 
 	  function Characters() {
+	    var _ref;
+
+	    var _temp, _this, _ret;
+
 	    _classCallCheck(this, Characters);
 
-	    return _possibleConstructorReturn(this, (Characters.__proto__ || Object.getPrototypeOf(Characters)).apply(this, arguments));
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Characters.__proto__ || Object.getPrototypeOf(Characters)).call.apply(_ref, [this].concat(args))), _this), _this._goToHome = function () {
+	      window.location.hash = '/Home';
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
 	  }
 
 	  _createClass(Characters, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_Header2.default, null),
-	        _react2.default.createElement(
-	          'main',
-	          null,
+	      var characters = this.props.searchResults.map(function (character, index) {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: 'bioPage', key: index },
 	          _react2.default.createElement(
 	            'h1',
 	            null,
-	            'Characters'
+	            character.title
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'characterLayout' },
-	            _react2.default.createElement('div', { className: 'characterImage' }),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'characterName' },
-	              'Tony Tony Chopper'
-	            ),
+	            { className: 'characterBio' },
+	            _react2.default.createElement('img', { className: 'bioImage', src: character.image }),
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'characterBio' },
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-	              )
+	              { className: 'bio' },
+	              character.snippet.split('\n\n').map(function (text) {
+	                return _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  text
+	                );
+	              })
 	            )
 	          )
-	        ),
-	        _react2.default.createElement(_Footer2.default, null)
+	        );
+	      });
+
+	      return _react2.default.createElement(
+	        'main',
+	        null,
+	        characters
 	      );
 	    }
 	  }]);
@@ -14627,7 +15216,7 @@
 	exports.default = Characters;
 
 /***/ },
-/* 127 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14642,15 +15231,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(12);
-
-	var _Header = __webpack_require__(22);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	var _Footer = __webpack_require__(21);
-
-	var _Footer2 = _interopRequireDefault(_Footer);
+	__webpack_require__(15);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14675,7 +15256,6 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Header2.default, null),
 	        _react2.default.createElement(
 	          'main',
 	          null,
@@ -14743,8 +15323,7 @@
 	              )
 	            )
 	          )
-	        ),
-	        _react2.default.createElement(_Footer2.default, null)
+	        )
 	      );
 	    }
 	  }]);
@@ -14755,7 +15334,7 @@
 	exports.default = DevilFruit;
 
 /***/ },
-/* 128 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14770,15 +15349,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(12);
-
-	var _Header = __webpack_require__(22);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	var _Footer = __webpack_require__(21);
-
-	var _Footer2 = _interopRequireDefault(_Footer);
+	__webpack_require__(15);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14803,7 +15374,6 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Header2.default, null),
 	        _react2.default.createElement(
 	          'main',
 	          null,
@@ -14818,8 +15388,7 @@
 	            'ONE PIECE FORUM',
 	            _react2.default.createElement('a', { className: 'forumLink2', href: 'http://opforum.net/' })
 	          )
-	        ),
-	        _react2.default.createElement(_Footer2.default, null)
+	        )
 	      );
 	    }
 	  }]);
@@ -14830,7 +15399,7 @@
 	exports.default = Forums;
 
 /***/ },
-/* 129 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14845,17 +15414,17 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(12);
+	__webpack_require__(15);
 
-	var _Header = __webpack_require__(22);
+	var _Header = __webpack_require__(52);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Footer = __webpack_require__(21);
+	var _Footer = __webpack_require__(51);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _reactRouter = __webpack_require__(35);
+	var _reactRouter = __webpack_require__(29);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14878,61 +15447,27 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
+	        'main',
 	        null,
-	        _react2.default.createElement(_Header2.default, null),
 	        _react2.default.createElement(
-	          'main',
+	          'h1',
 	          null,
-	          _react2.default.createElement(
-	            'h1',
-	            null,
-	            'One Piece Games'
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'gameGallery1' },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { className: 'game1', to: '/Memory' },
-	              'Memory Game'
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'game2' },
-	              'GAME 2'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'gameGallery2' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'game3' },
-	              'GAME 3'
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'game4' },
-	              'GAME 4'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'gameGallery3' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'game5' },
-	              'GAME 5'
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'game6' },
-	              'GAME 6'
-	            )
-	          )
+	          'One Piece Games'
 	        ),
-	        _react2.default.createElement(_Footer2.default, null)
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'gameGallery1' },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { className: 'game1', to: '/Memory' },
+	            'Memory Game'
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { className: 'game2', to: 'PKExecution' },
+	            'Pirate King Execution '
+	          )
+	        )
 	      );
 	    }
 	  }]);
@@ -14943,7 +15478,7 @@
 	exports.default = Games;
 
 /***/ },
-/* 130 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14958,17 +15493,17 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(12);
+	__webpack_require__(15);
 
-	var _Header = __webpack_require__(22);
+	var _Header = __webpack_require__(52);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Footer = __webpack_require__(21);
+	var _Footer = __webpack_require__(51);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _reactRouter = __webpack_require__(35);
+	var _reactRouter = __webpack_require__(29);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14993,7 +15528,6 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Header2.default, null),
 	        _react2.default.createElement(
 	          'main',
 	          { className: 'homePage' },
@@ -15007,12 +15541,96 @@
 	            { className: 'homePhotos' },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'homeImage' },
+	              { className: 'bigPhoto' },
 	              'CHARACTERS',
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: '/Characters' },
-	                _react2.default.createElement('img', { className: 'characterImageHome', src: 'https://s-media-cache-ak0.pinimg.com/736x/f5/3e/1b/f53e1b4511d67a8fe0be876aad925c2f.jpg', alt: 'strawhats' })
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'css-slideshow' },
+	                  _react2.default.createElement(
+	                    'figure',
+	                    null,
+	                    ' ',
+	                    _react2.default.createElement('img', { src: 'https://65.media.tumblr.com/f04675400f59bae8a0a1beb2b4a513bf/tumblr_o5ets7OX0v1t45pbyo1_500.jpg', alt: 'class-header-semantics', width: '555', height: '430', className: 'alignnone size-full wp-image-179' }),
+	                    _react2.default.createElement(
+	                      'figcaption',
+	                      null,
+	                      'THE WORSE GENERATION'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'figure',
+	                    null,
+	                    _react2.default.createElement('img', { src: 'http://static.zerochan.net/Heart.Pirates.full.1390926.jpg', width: '555', height: '430', className: 'alignnone size-large wp-image-178' }),
+	                    _react2.default.createElement(
+	                      'figcaption',
+	                      null,
+	                      'THE HEART PIRATES'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'figure',
+	                    null,
+	                    _react2.default.createElement('img', { src: 'http://images6.fanpop.com/image/photos/36400000/One-Piece-image-one-piece-36443357-500-350.jpg', width: '555', height: '430', className: 'alignnone size-full wp-image-177' }),
+	                    _react2.default.createElement(
+	                      'figcaption',
+	                      null,
+	                      'THE REVOLUTIONARY ARMY'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'figure',
+	                    null,
+	                    _react2.default.createElement('img', { src: 'http://i63.tinypic.com/29m3dx1.jpg', alt: 'class-header-multimedia', width: '555', height: '430', className: 'alignnone size-large wp-image-175' }),
+	                    _react2.default.createElement(
+	                      'figcaption',
+	                      null,
+	                      'RED HAIR PIRATES'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'figure',
+	                    null,
+	                    _react2.default.createElement('img', { src: 'http://static.zerochan.net/Whitebeard.Pirates.full.727158.jpg', alt: 'class-header-3d', width: '555', height: '430', className: 'alignnone size-large wp-image-174' }),
+	                    _react2.default.createElement(
+	                      'figcaption',
+	                      null,
+	                      'WHITEBEARD PIRATES'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'figure',
+	                    null,
+	                    _react2.default.createElement('img', { src: 'http://images4.fanpop.com/image/photos/23900000/Warning-Marine-Admiral-one-piece-charaters-23967636-1024-768.jpg', width: '555', height: '430', className: 'alignnone size-full wp-image-172' }),
+	                    _react2.default.createElement(
+	                      'figcaption',
+	                      null,
+	                      ' THE WORLD GOVERNMENT'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'figure',
+	                    null,
+	                    _react2.default.createElement('img', { src: 'http://onepiecepodcast.com/wp-content/uploads/2015/01/Gol-D-Roger-810x456.jpg', width: '555', height: '430', className: 'alignnone size-large wp-image-176' }),
+	                    _react2.default.createElement(
+	                      'figcaption',
+	                      null,
+	                      'ROGERS PIRATES '
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'figure',
+	                    null,
+	                    _react2.default.createElement('img', { src: 'https://s-media-cache-ak0.pinimg.com/736x/f5/3e/1b/f53e1b4511d67a8fe0be876aad925c2f.jpg', alt: 'class-header-performance', width: '555', height: '430', className: 'alignnone size-large wp-image-173' }),
+	                    _react2.default.createElement(
+	                      'figcaption',
+	                      null,
+	                      'STRAW HAT PIRATES'
+	                    )
+	                  )
+	                )
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -15051,21 +15669,30 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+	              'This is my Ultimate Fan Site of my favorite Anime One Piece that was created by ',
+	              _react2.default.createElement(
+	                'a',
+	                { className: 'author', href: 'https://en.wikipedia.org/wiki/Eiichiro_Oda' },
+	                _react2.default.createElement(
+	                  'u',
+	                  null,
+	                  'Eiichiro Oda'
+	                )
+	              ),
+	              '. With over 345 million copies in circulation worldwide, One Piece is the best-selling manga series of all time. The series\' popularity resulted in him being named one of the manga artists that changed the history of manga.'
 	            ),
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+	              'The One Piece Saga has been serialized in Shueisha\'s Weekly Shōnen Jump magazine since July 19, 1997, with the chapters collected into eighty-two tankōbon volumes to date. One Piece follows the adventures of Monkey D. Luffy, a young man whose body gained the properties of rubber after unintentionally eating a Devil Fruit. With his diverse crew of pirates, named the Straw Hat Pirates, Luffy explores the Grand Line in search of the world\'s ultimate treasure known as "One Piece" in order to become the next King of the Pirates..'
 	            ),
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+	              'In this website, you\'ll be able to explore characters, read manga, watch up-to-date One Piece episodes and play games made by me.  Enjoy Your One Piece Planet Experience!'
 	            )
 	          )
-	        ),
-	        _react2.default.createElement(_Footer2.default, null)
+	        )
 	      );
 	    }
 	  }]);
@@ -15076,7 +15703,182 @@
 	exports.default = Home;
 
 /***/ },
-/* 131 */
+/* 137 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(29);
+
+	var _ = __webpack_require__(82);
+
+	var _characterinfo = __webpack_require__(179);
+
+	var _characterinfo2 = _interopRequireDefault(_characterinfo);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Layout = function (_Component) {
+	  _inherits(Layout, _Component);
+
+	  function Layout(props) {
+	    _classCallCheck(this, Layout);
+
+	    var _this = _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).call(this, props));
+
+	    _this.updateSearch = function (event) {
+	      var query = event.target.value;
+	      _this.setState({
+	        searchQuery: query,
+	        searchResults: _this.performSearch(query)
+	      });
+	    };
+
+	    _this.submitSearch = function () {
+	      _reactRouter.browserHistory.push('/Characters');
+	    };
+
+	    _this.state = {
+	      searchQuery: '',
+	      searchResults: _characterinfo2.default.items.slice(0, 3)
+	    };
+	    return _this;
+	  }
+
+	  _createClass(Layout, [{
+	    key: 'performSearch',
+	    value: function performSearch(query) {
+	      return _characterinfo2.default.items.filter(function (item) {
+	        return item.title.toLowerCase().match(query.toLowerCase());
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'header',
+	          null,
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/Home' },
+	            _react2.default.createElement('img', { className: 'header1', src: 'http://66.media.tumblr.com/a215ef83293db672b3ac04fd96043885/tumblr_nnisl1lHPh1r2hgd5o4_500.gif', alt: 'header1' }),
+	            ' '
+	          ),
+	          _react2.default.createElement(
+	            'nav',
+	            null,
+	            _react2.default.createElement(
+	              'ul',
+	              { id: 'noDots' },
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { className: 'noUnders', to: '/Home' },
+	                  'Home'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { className: 'noUnders', to: '/Characters' },
+	                  'Characters'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { className: 'noUnders', to: '/DevilFruit' },
+	                  'Devil Fruits'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { className: 'noUnders', to: '/Anime' },
+	                  'Anime'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { className: 'noUnders', to: '/Manga' },
+	                  'Manga'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { className: 'noUnders', to: '/Games' },
+	                  'Games'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { className: 'noUnders', to: '/Forums' },
+	                  'Forums'
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement('input', { id: 'Search', onChange: this.updateSearch, value: this.state.searchQuery }),
+	          _react2.default.createElement(
+	            'button',
+	            { id: 'submit', onClick: this.submitSearch },
+	            'submit'
+	          )
+	        ),
+	        _react2.default.cloneElement(this.props.children, _extends({}, this.state)),
+	        _react2.default.createElement(_.Footer, null)
+	      );
+	    }
+	  }]);
+
+	  return Layout;
+	}(_react.Component);
+
+	Layout.propTypes = {
+	  children: _react2.default.PropTypes.element
+	};
+	exports.default = Layout;
+
+/***/ },
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15091,15 +15893,62 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(12);
+	__webpack_require__(50);
 
-	var _Header = __webpack_require__(22);
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var _Header2 = _interopRequireDefault(_Header);
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var _Footer = __webpack_require__(21);
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-	var _Footer2 = _interopRequireDefault(_Footer);
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Letter = function (_Component) {
+	  _inherits(Letter, _Component);
+
+	  function Letter() {
+	    _classCallCheck(this, Letter);
+
+	    return _possibleConstructorReturn(this, (Letter.__proto__ || Object.getPrototypeOf(Letter)).apply(this, arguments));
+	  }
+
+	  _createClass(Letter, [{
+	    key: 'render',
+	    value: function render() {
+	      var cx = ['Letter'];
+	      if (this.props.revealed) {
+	        cx.push('revealed');
+	      }
+	      return _react2.default.createElement(
+	        'span',
+	        { className: cx.join(' ') },
+	        this.props.value
+	      );
+	    }
+	  }]);
+
+	  return Letter;
+	}(_react.Component);
+
+	exports.default = Letter;
+
+/***/ },
+/* 139 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(15);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15124,7 +15973,6 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Header2.default, null),
 	        _react2.default.createElement(
 	          'main',
 	          null,
@@ -15139,25 +15987,21 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'mangaRow1' },
-	              _react2.default.createElement('a', { className: 'recent1', href: 'http://www.zingbox.me/storyRead/8168?chapterId=191338&flag=2&randomKey=89428835' }),
-	              _react2.default.createElement('a', { className: 'recent2', href: 'http://www.zingbox.me/storyRead/8168?chapterId=189583&flag=2&randomKey=41857309' }),
-	              _react2.default.createElement('a', { className: 'recent3', href: 'http://www.zingbox.me/storyRead/8168?chapterId=188874&flag=2&randomKey=88825099' })
+	              _react2.default.createElement('a', { className: 'recent1', href: 'http://www.zingbox.me/manga/One%20Piece/8168/960689/2/192915/chapter841' }),
+	              _react2.default.createElement('a', { className: 'recent2', href: 'http://www.zingbox.me/manga/One%20Piece/8168/95045980/2/191961/chapter840' }),
+	              _react2.default.createElement('a', { className: 'recent3', href: 'http://www.zingbox.me/storyRead/8168?chapterId=191338&flag=2&randomKey=89428835' })
 	            ),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'mangaRow2' },
-	              _react2.default.createElement('a', { className: 'recent4', href: 'http://www.zingbox.me/storyRead/8168?chapterId=188053&flag=2&randomKey=7720666' }),
-	              _react2.default.createElement(
-	                'a',
-	                { className: 'recent5', href: 'http://www.zingbox.me/storyRead/8168?chapterId=186472&flag=2&randomKey=59024230' },
-	                'NO COVER ART AVAILABLE'
-	              ),
-	              _react2.default.createElement('a', { className: 'recent6', href: 'http://www.zingbox.me/storyRead/8168?chapterId=185612&flag=2&randomKey=51418313' })
+	              _react2.default.createElement('a', { className: 'recent4', href: 'http://www.zingbox.me/storyRead/8168?chapterId=189583&flag=2&randomKey=41857309' }),
+	              _react2.default.createElement('a', { className: 'recent5', href: 'http://www.zingbox.me/storyRead/8168?chapterId=188874&flag=2&randomKey=88825099' }),
+	              _react2.default.createElement('a', { className: 'recent6', href: 'http://www.zingbox.me/storyRead/8168?chapterId=188053&flag=2&randomKey=7720666' })
 	            )
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'chapterList' },
+	            { className: 'chapterList2' },
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'http://www.zingbox.me/mangaDetail/8168?bookName=One%20Piece' },
@@ -15168,8 +16012,7 @@
 	              )
 	            )
 	          )
-	        ),
-	        _react2.default.createElement(_Footer2.default, null)
+	        )
 	      );
 	    }
 	  }]);
@@ -15180,7 +16023,7 @@
 	exports.default = Manga;
 
 /***/ },
-/* 132 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15195,19 +16038,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(12);
+	__webpack_require__(15);
 
-	var _Card = __webpack_require__(125);
+	var _Card = __webpack_require__(131);
 
 	var _Card2 = _interopRequireDefault(_Card);
-
-	var _Header = __webpack_require__(22);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	var _Footer = __webpack_require__(21);
-
-	var _Footer2 = _interopRequireDefault(_Footer);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15291,7 +16126,6 @@
 	        return _react2.default.createElement(
 	          'div',
 	          null,
-	          _react2.default.createElement(_Header2.default, null),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'memoryGame' },
@@ -15310,8 +16144,7 @@
 	              { onClick: this.reset, className: 'resetButton' },
 	              'PLAY AGAIN'
 	            )
-	          ),
-	          _react2.default.createElement(_Footer2.default, null)
+	          )
 	        );
 	      } else {
 	        return _react2.default.createElement(
@@ -15347,7 +16180,7 @@
 	exports.default = Memory;
 
 /***/ },
-/* 133 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15355,58 +16188,181 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.Memory = exports.Forums = exports.Games = exports.Manga = exports.Anime = exports.Characters = exports.DevilFruit = exports.Home = exports.App = undefined;
 
-	var _App2 = __webpack_require__(124);
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _App3 = _interopRequireDefault(_App2);
+	var _react = __webpack_require__(5);
 
-	var _Home2 = __webpack_require__(130);
+	var _react2 = _interopRequireDefault(_react);
 
-	var _Home3 = _interopRequireDefault(_Home2);
+	var _Word = __webpack_require__(142);
 
-	var _DevilFruit2 = __webpack_require__(127);
+	var _Word2 = _interopRequireDefault(_Word);
 
-	var _DevilFruit3 = _interopRequireDefault(_DevilFruit2);
+	__webpack_require__(50);
 
-	var _Characters2 = __webpack_require__(126);
+	var _Board = __webpack_require__(130);
 
-	var _Characters3 = _interopRequireDefault(_Characters2);
-
-	var _Anime2 = __webpack_require__(123);
-
-	var _Anime3 = _interopRequireDefault(_Anime2);
-
-	var _Manga2 = __webpack_require__(131);
-
-	var _Manga3 = _interopRequireDefault(_Manga2);
-
-	var _Games2 = __webpack_require__(129);
-
-	var _Games3 = _interopRequireDefault(_Games2);
-
-	var _Forums2 = __webpack_require__(128);
-
-	var _Forums3 = _interopRequireDefault(_Forums2);
-
-	var _Memory2 = __webpack_require__(132);
-
-	var _Memory3 = _interopRequireDefault(_Memory2);
+	var _Board2 = _interopRequireDefault(_Board);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.App = _App3.default;
-	exports.Home = _Home3.default;
-	exports.DevilFruit = _DevilFruit3.default;
-	exports.Characters = _Characters3.default;
-	exports.Anime = _Anime3.default;
-	exports.Manga = _Manga3.default;
-	exports.Games = _Games3.default;
-	exports.Forums = _Forums3.default;
-	exports.Memory = _Memory3.default;
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var PKExecution = function (_Component) {
+	  _inherits(PKExecution, _Component);
+
+	  function PKExecution() {
+	    _classCallCheck(this, PKExecution);
+
+	    var _this = _possibleConstructorReturn(this, (PKExecution.__proto__ || Object.getPrototypeOf(PKExecution)).call(this));
+
+	    _this.onPlay = function (character) {
+
+	      _this.state.used.push(character);
+	      for (var i = 0; i < _this.state.solution.length; i++) {
+	        if (character === _this.state.solution[i]) {
+	          _this.state.matched.push(character);
+	          if (_this.state.matched.length === _this.state.solution.length) {
+	            return _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                'h1',
+	                null,
+	                'MEMORY'
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'youWin' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  null,
+	                  ' YOU WIN!!! '
+	                ),
+	                _react2.default.createElement(
+	                  'button',
+	                  { onClick: _this.reset, className: 'resetButton' },
+	                  'PLAY AGAIN'
+	                )
+	              )
+	            );
+	          }
+	        }
+	      }
+	      if (_this.state.used.length >= 8) {
+	        alert('You Lose');
+	      }
+	      _this.setState({
+	        used: _this.state.used
+	      });
+	    };
+
+	    _this.state = {
+	      solution: 'PIRATES',
+	      used: [],
+	      matched: []
+	    };
+	    return _this;
+	  }
+
+	  _createClass(PKExecution, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'App' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'HANGMAN'
+	        ),
+	        _react2.default.createElement(_Word2.default, { solution: this.state.solution, used: this.state.used }),
+	        _react2.default.createElement(_Board2.default, { onPlay: this.onPlay }),
+	        _react2.default.createElement(
+	          'button',
+	          { onClick: this.reset, className: 'resetButton' },
+	          'PLAY AGAIN'
+	        )
+	      );
+	    }
+	  }]);
+
+	  return PKExecution;
+	}(_react.Component);
+
+	exports.default = PKExecution;
 
 /***/ },
-/* 134 */
+/* 142 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Letter = __webpack_require__(138);
+
+	var _Letter2 = _interopRequireDefault(_Letter);
+
+	__webpack_require__(50);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Word = function (_Component) {
+	  _inherits(Word, _Component);
+
+	  function Word() {
+	    _classCallCheck(this, Word);
+
+	    return _possibleConstructorReturn(this, (Word.__proto__ || Object.getPrototypeOf(Word)).apply(this, arguments));
+	  }
+
+	  _createClass(Word, [{
+	    key: 'render',
+	    value: function render() {
+	      var _this2 = this;
+
+	      var letters = this.props.solution.split('').map(function (letter, index) {
+	        var isFound = _this2.props.used.find(function (used) {
+	          return used === letter;
+	        }) !== undefined;
+	        return _react2.default.createElement(_Letter2.default, { value: letter, revealed: isFound, key: index });
+	      });
+
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'Word' },
+	        letters
+	      );
+	    }
+	  }]);
+
+	  return Word;
+	}(_react.Component);
+
+	exports.default = Word;
+
+/***/ },
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15415,13 +16371,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(171);
+	var _reactDom = __webpack_require__(180);
 
-	var _reactRouter = __webpack_require__(35);
+	var _reactRouter = __webpack_require__(29);
 
-	var _components = __webpack_require__(133);
+	var _components = __webpack_require__(82);
 
-	__webpack_require__(12);
+	__webpack_require__(15);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15429,95 +16385,58 @@
 	  _reactRouter.Router,
 	  { history: _reactRouter.browserHistory },
 	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _components.App }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/Home', component: _components.Home }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/Anime', component: _components.Anime }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/Characters', component: _components.Characters }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/Manga', component: _components.Manga }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/DevilFruit', component: _components.DevilFruit }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/Games', component: _components.Games }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/Forums', component: _components.Forums }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/Memory', component: _components.Memory })
+	  _react2.default.createElement(
+	    _reactRouter.Route,
+	    { component: _components.Layout },
+	    _react2.default.createElement(_reactRouter.Route, { path: '/Home', component: _components.Home }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/Anime', component: _components.Anime }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/Characters', component: _components.Characters }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/Manga', component: _components.Manga }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/DevilFruit', component: _components.DevilFruit }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/Games', component: _components.Games }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/Forums', component: _components.Forums }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/Memory', component: _components.Memory }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/PKExecution', component: _components.PKExecution })
+	  )
 	);
 
 	(0, _reactDom.render)(root, document.getElementById('root'));
 
 /***/ },
-/* 135 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(136)();
+	exports = module.exports = __webpack_require__(83)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "a, a:active, a:hover, a:visited {\n  color: rgba(26, 27, 28, 0.94);\n  text-decoration: none; }\n\na:active, a:hover {\n  color: blue; }\n\nhtml {\n  text-size-adjust: 100%; }\n\nbody {\n  width: 100vw;\n  height: 100vh;\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-font-smoothing: antialiased;\n  margin: 0;\n  font: 20px sans-serif;\n  background-image: url(" + __webpack_require__(162) + ");\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  background-size: cover;\n  overflow-x: hidden; }\n\nmain {\n  overflow: hidden;\n  padding-left: 100px;\n  padding-right: 100px; }\n\nh1 {\n  text-align: center;\n  justify-content: center;\n  text-transform: uppercase;\n  font-family: \"Aguafina Script\", cursive;\n  font-size: 100px;\n  letter-spacing: 15px;\n  margin-top: 0;\n  margin-bottom: -25px;\n  color: #343539;\n  text-shadow: 2px 2px grey;\n  font-family: 'One Piece';\n  margin-bottom: 20px;\n  margin-top: 10px; }\n\nh2 {\n  margin: 0;\n  padding-top: 10px;\n  font-family: \"Aguafina Script\", cursive;\n  color: #343539;\n  font-weight: bold;\n  text-align: center;\n  letter-spacing: 15px;\n  font-size: 35px;\n  text-shadow: 2px 2px 2px white; }\n\nh3 {\n  align-content: center;\n  font-size: 15px;\n  margin-top: -25px;\n  text-transform: uppercase; }\n\nh4 {\n  margin: 0;\n  padding: 0;\n  margin-top: -150px;\n  font-family: 'One Piece';\n  font-size: 15em;\n  text-align: center;\n  color: #2e8bc6;\n  text-shadow: 5px 5px black; }\n\nh5 {\n  margin: 0;\n  display: flex;\n  padding-top: 55px;\n  font-family: \"Aguafina Script\", cursive;\n  color: #343539;\n  font-weight: bold;\n  letter-spacing: 15px;\n  font-size: 30px;\n  text-shadow: 2px 2px 2px white;\n  width: 500px;\n  height: 200px; }\n\nnav {\n  margin: 0;\n  margin-top: -5px;\n  padding: 0;\n  font-weight: bolder;\n  justify-content: space-between;\n  align-content: center;\n  background-color: #9faaaa;\n  align-content: space-between;\n  padding-right: 25px;\n  color: #343539; }\n\n.header1 {\n  margin-top: -50px;\n  border-bottom: 5px solid grey;\n  height: 50vh;\n  width: 100vw; }\n\n.title {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  padding: 0;\n  padding-bottom: 30px;\n  justify-content: center;\n  width: 100vw;\n  height: 100vh;\n  overflow: hidden;\n  text-decoration: none; }\n\n.powerup {\n  width: 800px;\n  height: 1000px !important;\n  margin-top: -100px;\n  padding-bottom: 100px; }\n\n.oplogo {\n  padding: 0;\n  margin-top: 50px;\n  margin-bottom: -50px;\n  height: 500px;\n  width: 800px;\n  justify-content: center;\n  align-content: center; }\n\n#noDots {\n  margin: 0;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  list-style-type: none;\n  font-weight: bold; }\n\n.noUnders {\n  text-decoration: none;\n  text-transform: uppercase;\n  font-family: 'One Piece';\n  font-size: 35px; }\n\n.homePage {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-left: 100px;\n  margin-right: 100px;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  justify-content: space-around; }\n\n.homeIntro {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(246, 240, 209, 0.5); }\n\n.homePage {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.homePhotos {\n  font-family: 'One Piece';\n  font-size: 50px;\n  font-weight: bolder;\n  color: white;\n  text-shadow: 5px 5px 5px black;\n  padding: 0;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap; }\n\n.sideLinks {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.homeImage {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding-right: 50px; }\n\n.sideImage1 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding-bottom: 60px; }\n\n.sideImage2 {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterImageHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 500px;\n  width: 600px;\n  margin-bottom: 75px; }\n\n.devilFruitHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 200px;\n  width: 250px; }\n\n.gamesHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 200px;\n  width: 250px; }\n\n.gameGallery1 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-bottom: 25px; }\n\n.gameGallery2 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-bottom: 25px; }\n\n.gameGallery3 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-bottom: 25px; }\n\n.game1 {\n  background-image: url(" + __webpack_require__(29) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 500px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.game2 {\n  background-image: url(" + __webpack_require__(29) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 500px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.game3 {\n  background-image: url(" + __webpack_require__(29) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 500px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.game4 {\n  background-image: url(" + __webpack_require__(29) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 500px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.game5 {\n  background-image: url(" + __webpack_require__(29) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 500px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.game6 {\n  background-image: url(" + __webpack_require__(29) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 500px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.forumLink {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-family: 'One Piece';\n  font-size: 30px;\n  font-weight: bolder;\n  letter-spacing: 10px;\n  text-transform: uppercase;\n  color: #343539; }\n\n.forumLink2 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  text-decoration: none;\n  background-image: url(" + __webpack_require__(164) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  display: flex;\n  background-color: grey;\n  height: 100px;\n  width: 200px; }\n\n.characterLayout {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  padding: 20px;\n  background-image: url(" + __webpack_require__(160) + ");\n  background-repeat: no-repeat;\n  background-size: cover;\n  justify-content: center;\n  width: 50vw;\n  height: 300px; }\n\n.characterName {\n  margin: 0;\n  padding: 0;\n  text-align: justify;\n  font-weight: bolder;\n  font-family: 'One Piece';\n  font-size: 60px;\n  color: #1f2021; }\n\n.characterBio {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(246, 240, 209, 0.5);\n  margin-top: 10px; }\n\n.devilFruits {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n\n.devilFruitImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  margin: 0;\n  padding: 0;\n  justify-content: center;\n  background-image: url(" + __webpack_require__(161) + ");\n  background-repeat: no-repeat;\n  background-size: cover;\n  width: 500px;\n  height: 500px; }\n\n.devilFruitBio {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(246, 240, 209, 0.5); }\n\n.Beli {\n  height: 20px;\n  width: 20px; }\n\n.videos {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-weight: bolder; }\n\n.video1 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video2 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video3 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.chapterList {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.chapterList {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-image: url(" + __webpack_require__(163) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center; }\n\n.mangaSection {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between; }\n\n.mangaRow1 {\n  margin: 20px 20px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.mangaRow2 {\n  margin: 20px 20px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.recent1 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(159) + ");\n  background-position: center;\n  height: 500px;\n  width: 325px;\n  background-size: cover; }\n\n.recent2 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(158) + ");\n  background-position: center;\n  height: 500px;\n  width: 325px;\n  background-size: cover; }\n\n.recent3 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(157) + ");\n  background-position: center;\n  height: 500px;\n  width: 325px;\n  background-size: cover; }\n\n.recent4 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(156) + ");\n  background-position: center;\n  height: 500px;\n  width: 325px;\n  background-size: cover; }\n\n.recent5 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(154) + ");\n  background-position: center;\n  height: 500px;\n  width: 325px;\n  background-size: cover;\n  text-decoration: none;\n  font-weight: bolder;\n  color: black;\n  text-align: center; }\n\n.recent6 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(155) + ");\n  background-position: center;\n  height: 500px;\n  width: 325px;\n  background-size: cover; }\n\nfooter {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  bottom: 0;\n  padding: 10px;\n  align-self: baseline;\n  margin-top: 25px;\n  height: 100px;\n  align-items: baseline;\n  background-color: #a3b3e4;\n  border-top: 5px solid #9faaaa; }\n\n.resources {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.api {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.credits {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.copy {\n  color: white;\n  font-size: 20px;\n  font-weight: bolder;\n  display: flex;\n  align-self: baseline; }\n\n.memoryBoard {\n  padding: 20px;\n  height: 800px;\n  width: 1000px;\n  align-items: center;\n  background-color: rgba(177, 80, 21, 0.5);\n  border-top: 5px solid #b62802;\n  border-bottom: 5px solid #670a0a;\n  border-left: 5px solid #b62802;\n  border-right: 5px solid #670a0a;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center; }\n\n.card {\n  margin: 5px;\n  border: solid 3px #c6e8e9;\n    border-border-radius: 2px;\n  height: 250px;\n  width: 150px;\n  text-align: center;\n  margin-bottom: 5px;\n  background-size: cover;\n  border: 2px solid black; }\n  .card.up {\n    background-color: #dfe0dd;\n    background-size: cover; }\n\n.youWin {\n  padding-top: 100px;\n  justify-content: center;\n  text-align: center;\n  align-self: center; }\n\n.memoryGame {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  align-content: center; }\n\n.resetButton {\n  padding-top: 105px;\n  background-image: url(\"http://is2.mzstatic.com/image/thumb/Purple5/v4/ff/e8/e1/ffe8e19d-cac3-1aa4-9f79-c827036fb215/mzl.balclcui.png/0x0ss-85.jpg\");\n  height: 200px;\n  width: 200px;\n  background-size: cover;\n  border-radius: 50px;\n  color: red;\n  text-shadow: 3px 3px 3px white;\n  font-weight: bolder;\n  font-size: 30px; }\n", ""]);
+	exports.push([module.id, ".App {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  width: 100vw; }\n\n.Board {\n  justify-content: center;\n  align-items: center;\n  margin-top: -75px; }\n\n.Letter {\n  display: inline-block;\n  width: 1em;\n  text-align: center;\n  border-bottom: 10px solid grey;\n  color: transparent;\n  margin: 0 0.05em;\n  font-family: 'One Piece';\n  font-size: 3em; }\n\n.Word {\n  font-size: 2em;\n  font-family: 'One Piece';\n  margin-top: -225px;\n  color: #791524; }\n\n.Letter.revealed {\n  color: inherit; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 136 */
-/***/ function(module, exports) {
+/* 145 */
+/***/ function(module, exports, __webpack_require__) {
 
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
+	exports = module.exports = __webpack_require__(83)();
+	// imports
 
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
 
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
+	// module
+	exports.push([module.id, "a, a:active, a:hover, a:visited {\n  color: rgba(26, 27, 28, 0.94);\n  text-decoration: none; }\n\na:active, a:hover {\n  color: blue; }\n\nhtml {\n  text-size-adjust: 100%; }\n\nbody {\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-font-smoothing: antialiased;\n  margin: 0;\n  font: 20px sans-serif;\n  background-image: url(" + __webpack_require__(171) + ");\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  background-size: cover;\n  overflow-x: hidden; }\n\nmain {\n  overflow: hidden;\n  padding-left: 100px;\n  padding-right: 100px; }\n\nh1 {\n  text-align: center;\n  justify-content: center;\n  text-transform: uppercase;\n  font-family: \"Aguafina Script\", cursive;\n  font-size: 100px;\n  letter-spacing: 15px;\n  margin-top: 0;\n  margin-bottom: -25px;\n  color: #343539;\n  text-shadow: 2px 2px grey;\n  font-family: 'One Piece';\n  margin-bottom: 20px;\n  margin-top: 10px; }\n\nh2 {\n  margin: 0;\n  padding-top: 10px;\n  font-family: \"Aguafina Script\", cursive;\n  color: #343539;\n  font-weight: bold;\n  text-align: center;\n  letter-spacing: 15px;\n  font-size: 35px;\n  text-shadow: 2px 2px 2px white; }\n\nh3 {\n  align-content: center;\n  font-size: 15px;\n  margin-top: -25px;\n  text-transform: uppercase; }\n\nh4 {\n  margin: 0;\n  padding: 0;\n  margin-top: -150px;\n  font-family: 'One Piece';\n  font-size: 12em;\n  text-align: center;\n  color: #2e8bc6;\n  text-shadow: 5px 5px black; }\n\nh5 {\n  margin: 0;\n  display: flex;\n  padding-top: 55px;\n  font-family: \"Aguafina Script\", cursive;\n  color: #343539;\n  font-weight: bold;\n  letter-spacing: 15px;\n  font-size: 30px;\n  text-shadow: 2px 2px 2px white;\n  width: 500px;\n  height: 200px; }\n\nnav {\n  margin: 0;\n  margin-top: -5px;\n  padding: 0;\n  font-weight: bolder;\n  justify-content: space-between;\n  align-content: center;\n  background-color: #9faaaa;\n  align-content: space-between;\n  padding-right: 25px;\n  color: #343539; }\n\n.header1 {\n  margin-top: -50px;\n  border-bottom: 5px solid grey;\n  height: 50vh;\n  width: 100vw; }\n\n.colHeader {\n  display: flex;\n  flex-direction: row; }\n\n#Search {\n  margin: 0;\n  padding: 0;\n  width: 300px;\n  height: 23px;\n  font-family: 'One Piece';\n  color: grey;\n  font-size: 1em;\n  font-weight: bolder; }\n\n#submit {\n  width: 80px;\n  height: 25px;\n  font-family: 'One Piece';\n  color: #1e1e1f;\n  font-size: 1em;\n  font-weight: bolder;\n  text-transform: uppercase; }\n\n.title {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  padding-top: 50px;\n  padding-bottom: 80px;\n  justify-content: center;\n  overflow: hidden;\n  text-decoration: none; }\n\n.powerup {\n  display: flex;\n  justify-content: space-between;\n  margin: 0;\n  padding: 0;\n  width: 50vw;\n  height: 50vh;\n  position: relative;\n  margin-top: 200px; }\n\n.oplogo {\n  padding: 20px;\n  height: 80vh;\n  width: 50vw;\n  justify-content: center;\n  align-content: center;\n  border: 2px sollid black;\n  position: absolute; }\n\n.titleh4 {\n  margin-top: 10px;\n  margin-bottom: -10px; }\n\n#noDots {\n  margin: 0;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  list-style-type: none;\n  font-weight: bold; }\n\n.noUnders {\n  text-decoration: none;\n  text-transform: uppercase;\n  font-family: 'One Piece';\n  font-size: 35px; }\n\n.homePage {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  flex-wrap: wrap;\n  justify-content: center;\n  justify-content: space-around; }\n\n.homeIntro {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(246, 240, 209, 0.5); }\n\n.homePhotos {\n  margin-left: 100px;\n  font-family: 'One Piece';\n  width: 60vw;\n  height: 700px;\n  font-size: 50px;\n  font-weight: bolder;\n  color: white;\n  text-shadow: 5px 5px 5px black;\n  margin-top: -25px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  justify-content: space-between;\n  padding-left: 20px;\n  padding-right: 20px; }\n\n.bigPhoto {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  align-self: center;\n  margin-top: -75px; }\n\n.sideLinks {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  align-self: center; }\n\n.sideImage1 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding-bottom: 60px; }\n\n.sideImage2 {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterImageHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 500px;\n  width: 600px;\n  margin-bottom: 75px; }\n\n.devilFruitHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 200px;\n  width: 250px; }\n\n.css-slideshow {\n  display: flex;\n  max-width: 495px;\n  height: 370px;\n  justify-content: flex-start;\n  align-content: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.css-slideshow figure {\n  margin: 0;\n  max-width: 555px;\n  height: 430px;\n  background: #000;\n  position: absolute;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.css-slideshow img {\n  box-shadow: 0 0 2px #666; }\n\n.css-slideshow figcaption {\n  position: absolute;\n  top: 0;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.3);\n  font-size: .8em;\n  padding: 8px 12px;\n  opacity: 0;\n  transition: opacity .5s; }\n\n.css-slideshow:hover figure figcaption {\n  transition: opacity .5s;\n  opacity: 1; }\n\nfigure:nth-child(1) {\n  animation: xfade 48s 42s infinite; }\n\nfigure:nth-child(2) {\n  animation: xfade 48s 36s infinite; }\n\nfigure:nth-child(3) {\n  animation: xfade 48s 30s infinite; }\n\nfigure:nth-child(4) {\n  animation: xfade 48s 24s infinite; }\n\nfigure:nth-child(5) {\n  animation: xfade 48s 18s infinite; }\n\nfigure:nth-child(6) {\n  animation: xfade 48s 12s infinite; }\n\nfigure:nth-child(7) {\n  animation: xfade 48s 6s infinite; }\n\nfigure:nth-child(8) {\n  animation: xfade 48s 0s infinite; }\n\n@keyframes xfade {\n  0% {\n    opacity: 1; }\n  10.5% {\n    opacity: 1; }\n  12.5% {\n    opacity: 0; }\n  98% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n.gamesHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 200px;\n  width: 250px; }\n\n.gameGallery1 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-bottom: 25px; }\n\n.gameGallery2 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-bottom: 25px; }\n\n.gameGallery3 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-bottom: 25px; }\n\n.game1 {\n  background-image: url(" + __webpack_require__(87) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 500px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.game2 {\n  background-image: url(" + __webpack_require__(87) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 500px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.forumLink {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-family: 'One Piece';\n  font-size: 30px;\n  font-weight: bolder;\n  letter-spacing: 10px;\n  text-transform: uppercase;\n  color: #343539; }\n\n.forumLink2 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  text-decoration: none;\n  background-image: url(" + __webpack_require__(172) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  display: flex;\n  background-color: grey;\n  height: 100px;\n  width: 200px; }\n\n.bioPage {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.bioImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 30vw;\n  width: 45vw; }\n\n.bio {\n  padding: 10px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  word-wrap: break-word;\n  overflow: auto;\n  background-color: rgba(246, 240, 209, 0.5);\n  margin-top: 25px;\n  font-family: 'helvetica';\n  font-size: 1em;\n  letter-spacing: normal;\n  width: 80vw;\n  height: 50vh; }\n\n.characterBio {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterLayout {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  padding: 20px;\n  background-image: url(" + __webpack_require__(169) + ");\n  background-repeat: no-repeat;\n  background-size: cover;\n  justify-content: center;\n  width: 50vw;\n  height: 300px; }\n\n.characterName {\n  margin: 0;\n  padding: 0;\n  text-align: justify;\n  font-weight: bolder;\n  font-family: 'One Piece';\n  font-size: 60px;\n  color: #1f2021; }\n\n.devilFruits {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n\n.devilFruitImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  margin: 0;\n  padding: 0;\n  justify-content: center;\n  background-image: url(" + __webpack_require__(170) + ");\n  background-repeat: no-repeat;\n  background-size: cover;\n  width: 500px;\n  height: 500px; }\n\n.devilFruitBio {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(246, 240, 209, 0.5); }\n\n.Beli {\n  height: 20px;\n  width: 20px; }\n\n.chapterList {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  background-image: url(" + __webpack_require__(88) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center;\n  height: 500px;\n  width: 600px; }\n\n.videos {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-weight: bolder; }\n\n.video1 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video2 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video3 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video4 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.chapterList2 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-image: url(" + __webpack_require__(88) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center;\n  height: 500px;\n  width: 600px;\n  margin-top: -100px;\n  margin-left: 300px; }\n\n.mangaSection {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between; }\n\n.mangaRow1 {\n  margin: 20px 20px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.mangaRow2 {\n  margin: 20px 20px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.recent1 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(168) + ");\n  background-position: center;\n  height: 500px;\n  width: 325px;\n  background-size: cover; }\n\n.recent2 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(167) + ");\n  background-position: center;\n  height: 500px;\n  width: 325px;\n  background-size: cover; }\n\n.recent3 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(166) + ");\n  background-position: center;\n  height: 500px;\n  width: 325px;\n  background-size: cover; }\n\n.recent4 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(165) + ");\n  background-position: center;\n  height: 500px;\n  width: 325px;\n  background-size: cover; }\n\n.recent5 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(164) + ");\n  background-position: center;\n  height: 500px;\n  width: 325px;\n  background-size: cover;\n  text-decoration: none;\n  font-weight: bolder;\n  color: black;\n  text-align: center; }\n\n.recent6 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(163) + ");\n  background-position: center;\n  height: 500px;\n  width: 325px;\n  background-size: cover; }\n\nfooter {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  height: 10vh;\n  bottom: 0;\n  padding: 25px;\n  align-self: baseline;\n  margin-top: 25px;\n  columns: 2;\n  background-color: #a3b3e4;\n  border-top: 5px solid #9faaaa; }\n\n.resources {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  line-height: 5%;\n  font-size: 12px; }\n\n.credits {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  line-height: 5%;\n  font-size: 12px; }\n\n.copy {\n  color: white;\n  font-size: 20px;\n  font-weight: bolder;\n  display: flex;\n  align-self: baseline; }\n\n.memoryBoard {\n  padding: 20px;\n  height: 800px;\n  width: 1000px;\n  align-items: center;\n  background-color: rgba(177, 80, 21, 0.5);\n  border-top: 5px solid #b62802;\n  border-bottom: 5px solid #670a0a;\n  border-left: 5px solid #b62802;\n  border-right: 5px solid #670a0a;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center; }\n\n.card {\n  margin: 5px;\n  border: solid 3px #c6e8e9;\n    border-border-radius: 2px;\n  height: 250px;\n  width: 150px;\n  text-align: center;\n  margin-bottom: 5px;\n  background-size: cover;\n  border: 2px solid black; }\n  .card.up {\n    background-color: #dfe0dd;\n    background-size: cover; }\n\n.youWin {\n  padding-top: 100px;\n  justify-content: center;\n  text-align: center;\n  align-self: center; }\n\n.memoryGame {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  align-content: center; }\n\n.resetButton {\n  padding-top: 105px;\n  background-image: url(\"http://is2.mzstatic.com/image/thumb/Purple5/v4/ff/e8/e1/ffe8e19d-cac3-1aa4-9f79-c827036fb215/mzl.balclcui.png/0x0ss-85.jpg\");\n  height: 200px;\n  width: 200px;\n  background-size: cover;\n  border-radius: 50px;\n  color: red;\n  text-shadow: 3px 3px 3px white;\n  font-weight: bolder;\n  font-size: 30px; }\n", ""]);
+
+	// exports
 
 
 /***/ },
-/* 137 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pSlice = Array.prototype.slice;
-	var objectKeys = __webpack_require__(139);
-	var isArguments = __webpack_require__(138);
+	var objectKeys = __webpack_require__(148);
+	var isArguments = __webpack_require__(147);
 
 	var deepEqual = module.exports = function (actual, expected, opts) {
 	  if (!opts) opts = {};
@@ -15612,7 +16531,7 @@
 
 
 /***/ },
-/* 138 */
+/* 147 */
 /***/ function(module, exports) {
 
 	var supportsArgumentsClass = (function(){
@@ -15638,7 +16557,7 @@
 
 
 /***/ },
-/* 139 */
+/* 148 */
 /***/ function(module, exports) {
 
 	exports = module.exports = typeof Object.keys === 'function'
@@ -15653,7 +16572,7 @@
 
 
 /***/ },
-/* 140 */
+/* 149 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -15689,7 +16608,7 @@
 	module.exports = camelize;
 
 /***/ },
-/* 141 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -15705,7 +16624,7 @@
 
 	'use strict';
 
-	var camelize = __webpack_require__(140);
+	var camelize = __webpack_require__(149);
 
 	var msPattern = /^-ms-/;
 
@@ -15733,7 +16652,7 @@
 	module.exports = camelizeStyleName;
 
 /***/ },
-/* 142 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15749,7 +16668,7 @@
 	 * 
 	 */
 
-	var isTextNode = __webpack_require__(150);
+	var isTextNode = __webpack_require__(159);
 
 	/*eslint-disable no-bitwise */
 
@@ -15777,7 +16696,7 @@
 	module.exports = containsNode;
 
 /***/ },
-/* 143 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -15909,7 +16828,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 144 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -15929,8 +16848,8 @@
 
 	var ExecutionEnvironment = __webpack_require__(8);
 
-	var createArrayFromMixed = __webpack_require__(143);
-	var getMarkupWrap = __webpack_require__(145);
+	var createArrayFromMixed = __webpack_require__(152);
+	var getMarkupWrap = __webpack_require__(154);
 	var invariant = __webpack_require__(2);
 
 	/**
@@ -15998,7 +16917,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 145 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -16098,7 +17017,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 146 */
+/* 155 */
 /***/ function(module, exports) {
 
 	/**
@@ -16141,7 +17060,7 @@
 	module.exports = getUnboundedScrollPosition;
 
 /***/ },
-/* 147 */
+/* 156 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16178,7 +17097,7 @@
 	module.exports = hyphenate;
 
 /***/ },
-/* 148 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16194,7 +17113,7 @@
 
 	'use strict';
 
-	var hyphenate = __webpack_require__(147);
+	var hyphenate = __webpack_require__(156);
 
 	var msPattern = /^ms-/;
 
@@ -16221,7 +17140,7 @@
 	module.exports = hyphenateStyleName;
 
 /***/ },
-/* 149 */
+/* 158 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16248,7 +17167,7 @@
 	module.exports = isNode;
 
 /***/ },
-/* 150 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16264,7 +17183,7 @@
 	 * @typechecks
 	 */
 
-	var isNode = __webpack_require__(149);
+	var isNode = __webpack_require__(158);
 
 	/**
 	 * @param {*} object The object to check.
@@ -16277,7 +17196,7 @@
 	module.exports = isTextNode;
 
 /***/ },
-/* 151 */
+/* 160 */
 /***/ function(module, exports) {
 
 	/**
@@ -16311,7 +17230,7 @@
 	module.exports = memoizeStringOnly;
 
 /***/ },
-/* 152 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16338,7 +17257,7 @@
 	module.exports = performance || {};
 
 /***/ },
-/* 153 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16354,7 +17273,7 @@
 	 * @typechecks
 	 */
 
-	var performance = __webpack_require__(152);
+	var performance = __webpack_require__(161);
 
 	var performanceNow;
 
@@ -16376,73 +17295,67 @@
 	module.exports = performanceNow;
 
 /***/ },
-/* 154 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "0acef1042b2f60289a3ebad2d28d6f00.jpg";
-
-/***/ },
-/* 155 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "261ae8db04569b7378b26494f30f2442.jpg";
-
-/***/ },
-/* 156 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d56f6884385c9035390e849e7e10f1e5.png";
 
 /***/ },
-/* 157 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "156048bfc7f8122f63a0b46b6d127db8.jpg";
 
 /***/ },
-/* 158 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9baf297c595ef2eb0be73d819fd6aeeb.png";
 
 /***/ },
-/* 159 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "34cd0cf54d0d8a896eeeb2de5db74a70.png";
 
 /***/ },
-/* 160 */
+/* 167 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "81d891eaa42446fc5be9c5057c427794.jpg";
+
+/***/ },
+/* 168 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "d7089ce7e47716e66cfa39baf94226ac.jpg";
+
+/***/ },
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "7435ae1af9a4f0e1deaad82356fdb459.gif";
 
 /***/ },
-/* 161 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "e572776d1fad6db4be81c390d6b88430.jpg";
 
 /***/ },
-/* 162 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "6ca7d5a3a62f0e9dabd86c63dbb3e977.jpg";
 
 /***/ },
-/* 163 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "f79e53992bb4112b3134275684575cb7.gif";
-
-/***/ },
-/* 164 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a3fb884ebd65cf9c8424fa559c2cdce2.png";
 
 /***/ },
-/* 165 */
+/* 173 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16505,7 +17418,7 @@
 	}
 
 /***/ },
-/* 166 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -16520,17 +17433,17 @@
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
-	var _Actions = __webpack_require__(30);
+	var _Actions = __webpack_require__(27);
 
-	var _PathUtils = __webpack_require__(26);
+	var _PathUtils = __webpack_require__(24);
 
-	var _ExecutionEnvironment = __webpack_require__(42);
+	var _ExecutionEnvironment = __webpack_require__(39);
 
 	var _DOMUtils = __webpack_require__(54);
 
-	var _DOMStateStorage = __webpack_require__(85);
+	var _DOMStateStorage = __webpack_require__(89);
 
-	var _createDOMHistory = __webpack_require__(86);
+	var _createDOMHistory = __webpack_require__(90);
 
 	var _createDOMHistory2 = _interopRequireDefault(_createDOMHistory);
 
@@ -16691,7 +17604,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 167 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -16706,9 +17619,9 @@
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _Actions = __webpack_require__(30);
+	var _Actions = __webpack_require__(27);
 
-	var _PathUtils = __webpack_require__(26);
+	var _PathUtils = __webpack_require__(24);
 
 	function createLocation() {
 	  var location = arguments.length <= 0 || arguments[0] === undefined ? '/' : arguments[0];
@@ -16748,7 +17661,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 168 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -16767,11 +17680,11 @@
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
-	var _PathUtils = __webpack_require__(26);
+	var _PathUtils = __webpack_require__(24);
 
-	var _Actions = __webpack_require__(30);
+	var _Actions = __webpack_require__(27);
 
-	var _createHistory = __webpack_require__(88);
+	var _createHistory = __webpack_require__(92);
 
 	var _createHistory2 = _interopRequireDefault(_createHistory);
 
@@ -16908,11 +17821,11 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 169 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strictUriEncode = __webpack_require__(262);
+	var strictUriEncode = __webpack_require__(271);
 
 	exports.extract = function (str) {
 		return str.split('?')[1] || '';
@@ -16980,7 +17893,7 @@
 
 
 /***/ },
-/* 170 */
+/* 178 */
 /***/ function(module, exports) {
 
 	/**
@@ -17036,16 +17949,631 @@
 
 
 /***/ },
-/* 171 */
+/* 179 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"items": [
+			{
+				"title": "Gol D. Roger \n\n \"Pirate King\"",
+				"url": "http://onepiece.wikia.com/wiki/Gol_D._Roger",
+				"snippet": "Known to most as Gold Roger, was the Pirate King, captain of the Roger Pirates, and owner of the legendary treasure known as 'One Piece'.He was also the lover of Portgas D. Rouge and biological father of Portgas D. Ace. \n\nBorn in Loguetown, Roger was famed as the man who did what no one thought possible - conquering the Grand Line. It would seem that he had been around for some time, considering that Brook refers to him as a rookie, more than 50 years before the current storyline. Before he formed his crew, he met Silvers Rayleigh, a young man who was living on a ship he had stolen after his house had burnt down. Roger said that it was a fated meeting and asked Rayleigh to join him. \n\n Unavoidable Fate \n\nTwenty-six years before the start of the story, Roger came down with an incurable disease. He decided to pitch one last journey with his crew into the Grand Line. Upon reaching the lighthouse at Reverse Mountain, at the entrance of the Grand Line, he recruited Crocus as his doctor to keep him alive for 3 years before the completion of his journey. Their journey took them to Skypiea and later Water 7, where the shipwright Tom built them a ship called the Oro Jackson. \n\n Two of the most powerful opponents Roger faced on his journey were Vice Admiral Monkey D. Garp and the pirate Edward 'Whitebeard' Newgate. The former is said to have cornered him many times on the journey, and the latter was the closest rival to his title. It is said that Whitebeard was the only one capable of matching Roger in combat.",
+				"image": "http://onepiecegt.it/files//gallerie/tv/Ep_000/078.jpg"
+			},
+			{
+				"title": "Monkey D. Luffy",
+				"url": "http://onepiece.wikia.com/wiki/Monkey_D._Luffy",
+				"snippet": "Monkey D. Luffy, also known as Straw Hat Luffy and commonly as Straw Hat, is the main protagonist of the anime and manga, One Piece. He is the son of Monkey D. Dragon, the grandson of Monkey D. Garp, the adoptive brother of Portgas D. Ace and Sabo, and the foster son of Curly Dadan. Luffy is a pirate and his lifelong dream is to become the Pirate King by finding the legendary treasure left behind by the late Pirate King, Gol D. Roger. He believes that being Pirate King means having the most freedom in the world. \n\nHe has eaten the Gomu Gomu no Mi, which gives the consumer's body the properties of rubber. As the founder and captain of the Straw Hat Pirates, he is the first member of the crew, as well as one of its top three fighters.",
+				"image": "https://s-media-cache-ak0.pinimg.com/originals/70/d5/61/70d561a22158372e0ed1a78067bab724.gif"
+			},
+			{
+				"title": "Straw Hat Pirates",
+				"url": "http://onepiece.wikia.com/wiki/Straw_Hat_Pirates",
+				"snippet": "The Straw Hat Pirates are a pirate crew that originated from the East Blue, but have various members from different areas. They are the main focus and protagonists of the anime and manga One Piece, and are led by the main protagonist, Monkey D. Luffy. The 'Straw Hats' are named after Luffy's signature hat that was given to him by Red-Haired Shanks, and are first referred to as the Straw Hat Pirates by Smoker in Alabasta. \n\nThe crew sailed on the Going Merry, their first official Straw Hat ship, up until the Water 7 Arc. After the Enies Lobby Arc, they obtain a new ship called the Thousand Sunny. The Straw Hats currently consist of nine members whose combined bounties equal Beli1,570,000,100. Following the events on the Sabaody Archipelago, all nine members were separated from one another. For two years, they trained in relatively isolated locations, becoming stronger for the sake of helping each other. They then reunited and have since become an active and massive force in the New World.",
+				"image": "https://k46.kn3.net/taringa/7/C/D/A/6/5/-HakiDelRey-/231.gif"
+			},
+			{
+				"title": "Roronoa Zoro",
+				"url": "http://onepiece.wikia.com/wiki/Roronoa_Zoro",
+				"snippet": "Also known as 'Pirate Hunter' Zoro, is a pirate and a former bounty hunter. He was the first member to join the Straw Hat Pirates, and, to date, is considered the largest threat and most dangerous member in the crew after Luffy. His fame as a master swordsman and his great strength, along with the actions of his captain, sometimes led others to believe he was the true captain of the crew. He is one of the top three fighters in the crew alongside Luffy and Sanji, and his dream is to become the greatest swordsman in the world. Zoro is regarded as one of twelve pirates who are referred to as the 'Worst Generation' (formerly known as the 'Eleven Supernovas')",
+				"image": "http://i.makeagif.com/media/7-15-2015/bvMin0.gif"
+			},
+			{
+				"title": "Sanji",
+				"url": "http://onepiece.wikia.com/wiki/Sanji",
+				"snippet": "'Black Leg' Sanji, born under the given name Vinsmoke Sanji, is a pirate and the cook of the Straw Hat Pirates, the former sous chef of Baratie, and the third son of the Vinsmoke Family, making him a prince of the Germa Kingdom. He is officially the fifth member of the crew and the fourth to join, doing so at the end of the Baratie Arc. \n\nSince he was born in North Blue, he is the first Straw Hat not to originate from East Blue. He is one of the Monster Trio in the crew alongside Luffy and Zoro. His dream is to find the rumored All Blue, which is where East Blue, West Blue, North Blue, and South Blue meet along with their wildlife, a chef's paradise. He has a bounty of Beli177,000,000, which is only valid if captured alive, per the request of his father.",
+				"image": "https://31.media.tumblr.com/ec39bc721fad92f3af90bb6282c3849f/tumblr_inline_ncn7jlPy0q1t1mz7v.gif"
+			},
+			{
+				"title": "Usopp",
+				"url": "http://onepiece.wikia.com/wiki/Usopp",
+				"snippet": "'God' Usopp is the sniper of the Straw Hat Pirates, and the former captain of the Usopp Pirates. When Usopp was first introduced, he was often (comically) labeled as the 'Liar' of the Straw Hat Pirates, due to the 'Uso' (うそ) in his name meaning 'lie' or 'falsehood'. He was born in Syrup Village, and was first mentioned by Yasopp, his father. He was officially the third (unofficially fourth) member of the crew, and the third to join, and, including Nami and Robin, also the third to rejoin, doing so at the end of the Post-Enies Lobby Arc. \n\nHis original bounty of Beli30,000,000 was credited to his alias and alter-ego 'Sogeking'. He is also considered one of the 'weak' trio of the crew, along with Nami and Chopper. After awakening Kenbunshoku Haki, he became the fourth member of the Straw Hat crew to demonstrate and use a form of Haki. His current bounty, Beli200,000,000, is a huge jump from his original, due to his role as 'God' for saving all those toy slaves in Doflamingo's underground trades; this takes him from the third lowest bounty of the crew to the third highest, jumping past the previous holder, Nico Robin.",
+				"image": "http://stream1.gifsoup.com/view1/3141728/usopp-vs-perona-o.gif"
+			},
+			{
+				"title": "Tony Tony Chopper",
+				"url": "http://onepiece.wikia.com/wiki/Tony_Tony_Chopper",
+				"snippet": "Also known as 'Cotton Candy Lover' Chopper, is the doctor of the Straw Hat Pirates. Chopper is a reindeer that ate a Devil Fruit called the Hito Hito no Mi. He came from Drum Island where he learned how to be a doctor, which also makes him the only member of the Straw Hat Pirates who was born on the Grand Line. He is the sixth member of the crew and the fifth to join Luffy, as well as being the youngest member on board. He has a bounty of Beli100 due to being mistaken for the crew's pet.",
+				"image": "http://data.whicdn.com/images/37112521/large.gif"
+			},
+			{
+				"title": "Nami",
+				"url": "http://onepiece.wikia.com/wiki/Nami",
+				"snippet": "'Cat Burglar' Nami is a pirate and the navigator of the Straw Hat Pirates. She was the third member of the crew and the second to join, doing so during the Orange Town Arc. Later, she left and betrayed the crew during the Baratie Arc, but rejoined at the end of the Arlong Park Arc, after her past and true intentions were revealed. She has a bounty of Beli66,000,000.",
+				"image": "http://pa1.narvii.com/5928/97f8266d3b9c00d01a2566d984d588aa3925f0d3_hq.gif"
+			},
+			{
+				"title": "Nico Robin",
+				"url": "http://onepiece.wikia.com/wiki/Nico_Robin",
+				"snippet": "Also known by her epithet 'Devil Child', is the archaeologist of the Straw Hat Pirates. She was originally introduced as the vice president of Baroque Works and secondary antagonist of the Alabasta Saga, known as Miss All Sunday, before joining the Straw Hats. She is the seventh member of the crew, the sixth to join, and like Nami, is the second to rejoin, doing so near the end of the Enies Lobby Arc. \n\nRobin is also the first member to have once been an antagonist. She ate the Hana Hana no Mi. During the Post-War arc, she became involved with the Revolutionaries for two years. Her dream is to find the Rio Poneglyph which tells the true history. She currently holds a bounty of Beli130,000,000.",
+				"image": "https://66.media.tumblr.com/d0e7ff14d40e3e126552b0141dc98d53/tumblr_nlka2jo6rM1rbtyq6o4_500.gif"
+			},
+			{
+				"title": "Brook",
+				"url": "http://onepiece.wikia.com/wiki/Brook",
+				"snippet": "Soul King\" Brook is the musician of the Straw Hat Pirates. He is a skeleton that the Straw Hats found on board of a ghost ship after drifting into the Florian Triangle. He is a Devil Fruit user who ate the Yomi Yomi no Mi, and is undead, having been brought back into a pseudo-immortal state because of its powers. He is the ninth member of the Straw Hat crew, and the ninth to join Luffy's crew, as well as being the oldest member on board. He is also one of the two swordsmen onboard their current ship, with the other being Roronoa Zoro. He fills the role of the long-awaited musician that Luffy had wanted for his crew ever since his journey began. He currently has a bounty of Beli83,000,000.",
+				"image": "http://pa1.narvii.com/5809/0ff87a2a73577567c89e5a96dfde5f20151591a1_hq.gif"
+			},
+			{
+				"title": "Franky",
+				"url": "http://onepiece.wikia.com/wiki/Franky",
+				"snippet": "'Iron Man' Franky is the shipwright for the Straw Hat Pirates. A cyborg from Water 7, he was originally the leader of the Franky Family, a group of ship dismantlers. He is originally from South Blue, but left 32 years ago as a four-year-old. He was originally named 'Cutty Flam' until he threw away his original name for his nickname per the request of Iceburg to hide his identity.",
+				"image": "https://lh3.googleusercontent.com/-I4pCOhfKAHs/VlsmcOJbAmI/AAAAAAAAT0A/wWDz-WkE_CQ/w800-h800/franky_punch_by_tristtrist-d5udwoa.gif"
+			},
+			{
+				"title": "Revolutionary Army",
+				"url": "http://onepiece.wikia.com/wiki/Revolutionary_Army",
+				"snippet": "The Revolutionary Army is a powerful military organization led by Monkey D. Dragon. They are fighting against the World Government and what it stands for.",
+				"image": "http://images6.fanpop.com/image/photos/36400000/One-Piece-image-one-piece-36443357-500-350.jpg"
+			},
+			{
+				"title": "Heart Pirates",
+				"url": "http://onepiece.wikia.com/wiki/Heart_Pirates",
+				"snippet": "The Heart Pirates are an infamous and notable rookie pirate crew introduced on Sabaody Archipelago around the time the Straw Hat Pirates arrived there two years ago. Their captain, Trafalgar D. Water Law, is a member of The Worst Generation and a former Shichibukai. They are currently in an alliance with the Straw Hat Pirates, Kozuki Family, and Mink Tribe with the goal of taking down Kaido of the Yonko.",
+				"image": "https://secure.static.tumblr.com/8d2c91fb63a8680daada4fc2f2e1600f/3xdx5dt/SLbnonkfi/tumblr_static_tumblr_static_4prrys82wrcws8c0w0cs8c44k_640.jpg"
+			},
+			{
+				"title": "Whitebeard Pirates",
+				"url": "http://onepiece.wikia.com/wiki/Whitebeard_Pirates",
+				"snippet": "The Whitebeard Pirates were formerly one of the strongest pirate crews in the world, as their captain, Whitebeard, was the only pirate to have ever been a match for the Pirate King, Gol D. Roger, in a fight. Whitebeard's crew is segmented into divisions, instead of all under their captain's direct command. The crew has multiple subordinate crews operating in the New World. Following the deaths of Whitebeard and Ace, the remaining members of the crew engaged the Blackbeard Pirates in the Payback War, which ended with the Blackbeard Pirates brutally defeating them, followed by conquering their former territories, with their captain usurping Whitebeard's position in the Yonko. As a result, the crew has lost most of its power and influence. \n\nAfter the timeskip, it is revealed that the remaining crew members and subordinate crews are being hunted down by the Shichibukai Edward Weevil and his mother Bakkin, who self-proclaim themselves as their captain's biological son and lover, to gain his fortune.",
+				"image": "http://static.zerochan.net/Whitebeard.Pirates.full.1753467.jpg"
+			},
+			{
+				"title": "Red Hair Pirates",
+				"url": "http://onepiece.wikia.com/wiki/Red_Hair_Pirates",
+				"snippet": "The Red Hair Pirates is a strong crew ruling in the New World, led by their captain, Red-Haired Shanks, who is one of the Yonko. This crew is responsible for influencing two of the Straw Hat Pirates to become pirates, Monkey D. Luffy and Usopp.",
+				"image": "http://4.bp.blogspot.com/-z5eyJ9rSaGw/TVnxd7eJqDI/AAAAAAAAFMg/jMVI0OhI4S0/s1600/red%2Bhair%2Bpirates%2B2.jpg"
+			},
+			{
+				"title": "Roger Pirates",
+				"url": "http://onepiece.wikia.com/wiki/Roger_Pirates",
+				"snippet": "The Roger Pirates were the crew of the late Pirate King, Gol D. Roger, and was supposedly the only crew to ever reach Raftel, the end of the New World in the Grand Line. They encountered Vice Admiral Garp on several occasions  and were strong rivals to the Whitebeard Pirates.\n\n This was the crew that traveled around the Grand Line together and the things they did were part of legends. They made it as far as Skypiea and the end of the Grand Line, Raftel, on their ship the Oro Jackson. Roger was one of the most famous figures of his day, while the name of their first mate, Silvers Rayleigh, is widely known and famed as well.\n\nIronically, only the captain and the first mate seem to have been remembered while the rest of the crew have apparently faded out of memory, all save those still active like Shanks and Buggy. The first introduction to their crew comes from Buggy, who recalls his days with Shanks as a cabin boy in their crew. Their captain, Roger, is the first character introduced in the series.",
+				"image": "http://www.onepiecepaper.com/wp-content/uploads/2016/09/rogerpirates-810x456.jpg"
+			},
+			{
+				"title": "Worst Generation",
+				"url": "http://onepiece.wikia.com/wiki/Worst_Generation",
+				"snippet": "The Worst Generation is a term that refers to the eleven top rookie pirates, with bounties over Beli100,000,000 who arrived in the Sabaody Archipelago before the Whitebeard War (whom are denoted as the Eleven Supernovas, along with the Yonko, Blackbeard. They are known as such, since most of the major conflicts that have occurred during their rookie year and after the Battle of Marineford seem to revolve around them. As is the case, they are regarded as 'problem children' who appeared between the end of the Golden Age of Pirates and the beginning of the New Age.",
+				"image": "https://myanimelist.cdn-dena.com/s/common/uploaded_files/1446997155-a9b80ccac16d2455f98244e5f0ebe256.jpeg"
+			},
+			{
+				"title": "World Government",
+				"url": "http://onepiece.wikia.com/wiki/World_Government",
+				"snippet": "The World Government is a political organization comprised of the majority of the world at large, ruled by the Gorosei. It was established 800 years ago. The Marines serve as their primary military organization, headed by the Fleet Admiral, while the Cipher Pol operate behind the scenes, either through sabotage, reconnaissance, spying, espionage and/or assassination; their most powerful enemies are largely pirates and revolutionaries. The Commander-in-Chief oversees both the Marines and Cipher Pol as well as the Shichibukai, at least officially, and is second only to the Gorosei. Impel Down serves as the World Government's maximum-security prison. \n\nCollectively serving as the most prominent antagonists in the series, the World Government is largely portrayed as a corrupt entity, particularly through the pitiless use of their absolute justice doctrine and the depravity of the aristocratic World Nobles.",
+				"image": "http://vignette1.wikia.nocookie.net/onepiece/images/1/17/The_Admirals_use_Haki.png/revision/latest?cb=20130926151924"
+			},
+			{
+				"title": "Shanks",
+				"url": "http://onepiece.wikia.com/wiki/Shanks",
+				"snippet": "Commonly known as \"Red Hair\", is the captain of the Red Hair Pirates and one of the Yonko. He is also a former member of the legendary Roger Pirates, the only group to successfully conquer the Grand Line. He is the pirate who inspired Luffy to go on his journey as a pirate. He found the Gomu Gomu no Mi that was accidentally eaten by Luffy.",
+				"image": "http://data.whicdn.com/images/47065005/large.gif"
+			},
+			{
+				"title": "Silvers Rayleigh",
+				"url": "http://onepiece.wikia.com/wiki/Silvers_Rayleigh",
+				"snippet": "Silvers Rayleigh, also known as the \"Dark King\", is the former first mate of the Roger Pirates, known as the \"Right Hand of the Pirate King\". He became a coating mechanic in Sabaody Archipelago at some point after Roger died and the crew was disbanded. He served as Luffy's mentor in the use of Haki during the two year timeskip. He is also the husband of Shakuyaku.",
+				"image": "https://media.giphy.com/media/GN0QMY5JdhZtu/giphy.gif"
+			},
+			{
+				"title": "Crocus",
+				"url": "http://onepiece.wikia.com/wiki/Crocus",
+				"snippet": "Crocus is a doctor and the caretaker of the whale Laboon as well as the overseer of the Twin Capes Lighthouse that guides ships coming down from Reverse Mountain into the Grand Line. Though he was a lighthouse keeper for most of his life, he spent three years as a doctor serving as a part of Gol D. Roger's crew.",
+				"image": "http://onepiece-treasurecruise.com/en/wp-content/uploads/c0587.png"
+			},
+			{
+				"title": "Buggy",
+				"url": "http://onepiece.wikia.com/wiki/Buggy",
+				"snippet": "Buggy the Star Clown is the captain of the Buggy Pirates as well as the co-leader of the Buggyand Alvida Alliance, and a former apprentice of the Roger Pirates. Shortly after the Battle of Marineford, he became a member of the Shichibukai and and the leader of the pirate dispatch organization \"Buggy's Delivery\". He is the main antagonist of the Orange Town Arc and can be considered the secondary antagonist of the Loguetown Arc. He has since become a highly recurring character in the series.",
+				"image": "http://pa1.narvii.com/5801/5c1897add38e6c08aca80c745112799e59138aab_hq.gif"
+			},
+			{
+				"title": "Inuarashi",
+				"url": "http://onepiece.wikia.com/wiki/Inuarashi",
+				"snippet": "Duke Inuarashi is a canine mink and one of the two rulers of the Mokomo Dukedom, dubbed the \"Ruler of Day\" as he rules over the Mokomo Dukedom from 6:00 AM to 6:00 PM. He and Nekomamushi serve as retainers for the Kozuki Family of Wano Country. Alongside Nekomamushi, he was once a member of the Whitebeard Pirates and Roger Pirates, serving under Kozuki Oden. Pedro has claimed he and Nekomamushi must not be allowed to die because \"the world is waiting for them\"",
+				"image": "https://pbs.twimg.com/media/CrWcTQ_UkAArljm.jpg"
+			},
+			{
+				"title": "Nekomamushi",
+				"url": "http://onepiece.wikia.com/wiki/Nekomamushi",
+				"snippet": "Master Nekomamushi is a feline mink and the guardian of the Whale Forest on Zou, dubbed the \"Ruler of Night\" as he rules over the Mokomo Dukedom from 6:00 PM to 6:00 AM. He and Inuarashi serve as retainers for the Kozuki Family of Wano Country Alongside Inuarashi, he was once a member of the Whitebeard Pirates and Roger Pirates, serving under Kozuki Oden. Pedro has claimed that he and Inuarashi must not be allowed to die because \"the world is waiting for them\"",
+				"image": "https://65.media.tumblr.com/f5fbec6753efd3fd1986ac1def74eb36/tumblr_obj3jz2z7n1t45pbyo1_500.jpg"
+			},
+			{
+				"title": "Monkey D. Dragon",
+				"url": "http://onepiece.wikia.com/wiki/Monkey_D._Dragon",
+				"snippet": "Monkey D. Dragon, commonly known simply as \"Dragon the Revolutionary\", is the father of the Straw Hat Pirates Captain Monkey D. Luffy and the son of the Marines hero Monkey D. Garp. He is the infamous leader and founder of the Revolutionary Army who has been attempting to overthrow the World Government. He is the World Government's greatest enemy, and is the most dangerous and most wanted man in the world",
+				"image": "http://pa1.narvii.com/5634/afa7cf2ba53e703cb3bad504d8d6dcd5dd43bbb7_hq.gif"
+			},
+			{
+				"title": "Monkey D. Garp",
+				"url": "http://onepiece.wikia.com/wiki/Monkey_D._Garp",
+				"snippet": "Monkey D. Garp is a Marine vice admiral. He is the father of the infamous Revolutionary Army leader Monkey D. Dragon,the paternal grandfather of Straw Hat Pirates Captain Monkey D. Luffy, and the adoptive grandfather of the late Portgas D. Ace. He took charge of both Coby and Helmeppo's training. \n\nAfter the war, he became a Marine Instructor to train new recruits, though still retaining the rank of vice admiral. Garp is one of the major figures, along with Sengoku, Shiki, and Whitebeard, from the times when the \"Pirate King\" was still alive.",
+				"image": "http://images6.fanpop.com/image/photos/36300000/Monkey-D-Luffy-image-monkey-d-luffy-36384673-500-269.gif"
+			},
+			{
+				"title": "Portgas D. Ace",
+				"url": "http://onepiece.wikia.com/wiki/Portgas_D._Ace",
+				"snippet": "Portgas D. Ace, born as Gol D. Ace and nicknamed \"Fire Fist\" Ace, was the adopted older brother of Luffy and Sabo, and son of the late Pirate King, Gol D. Roger and his lover, Portgas D. Rouge. He was adopted by Monkey D. Garp as wished by Roger to him before his birth. Ace was the 2nd division commander of the Whitebeard Pirates and one-time captain of the Spade Pirates.  \n\nHunted by the World Government for his lineage, Ace was captured and sentenced to death, which resulted in the Battle of Marineford in an all out clash of powers. Ace was freed, but he sacrificed his life to protect his younger brother from Akainu. His death ultimately proved to be the catalyst leading to Luffy to train for two years to become strong enough to protect his friends, paving the way for the second half of the series.",
+				"image": "http://static.tumblr.com/7hzmuq3/pO3m5yspg/ace__26_.gif"
+			},
+			{
+				"title": "Portgas D. Rouge",
+				"url": "http://onepiece.wikia.com/wiki/Portgas_D._Rouge",
+				"snippet": "Portgas D. Rouge was Ace's mother and Gol D. Roger's lover. She was living on Baterilla in South Blue when she was pregnant with Ace before Roger died. She held her pregnancy for twenty months through sheer willpower in order to deceive the world of Ace's connection to the Pirate King. When the child was finally born, Rouge held him in her arms and named him \"Gol D. Ace\". The result of holding Ace for so long however led to her death from exhaustion after giving birth.",
+				"image": "https://lalabratinella.files.wordpress.com/2015/05/tumblr_n6xhu2hucq1ssbae2o1_500.gif"
+			},
+			{
+				"title": "Sabo",
+				"url": "http://onepiece.wikia.com/wiki/Sabo",
+				"snippet": "Sabo is the Revolutionary Army's chief of staff, recognized as the \"No. 2\" of the entire organization, ranking directly under Monkey D. Dragon himself. Next to being the sworn brother of Monkey D. Luffy and Portgas D. Ace, he is of noble descent, the son of Outlook III, as well as via his parents the adopted brother of Stelly, the current king of the Goa Kingdom, whom Sabo has never recognized as such. \n\n At a very young age, Sabo ran away from his noble parents in the Goa Kingdom to live alone in the kingdom's Gray Terminal, and he met and befriended Ace not long after. Five years later (12 before the present storyline), the two became friends with Luffy as well, and the three came to consider themselves \"brothers\", swearing an oath of brotherhood over sake. They also shared the dream to set out to sea as pirates and achieve freedom, Sabo initially planning to do so at age 17. However, after having escaped his parents once more not long after they had caught him and taken him away from his adoptive brothers, Sabo did then already set sail, on his own, but his boat was destroyed by some Celestial Dragon moments later. \n\nHaving been believed to have died from this, Sabo had in truth survived due to Dragon saving him, and he thus joined the Revolutionaries. He had lost most of his memories from that point forward but regained them upon learning of Ace's death at Marineford.",
+				"image": "http://38.media.tumblr.com/4a7f8bb252b2c6e5207da165f6213fd2/tumblr_nmcdweIn811r7zf0fo1_500.gif"
+			},
+			{
+				"title": "Coby",
+				"url": "http://onepiece.wikia.com/wiki/Coby",
+				"snippet": "Coby is a Marine captain who trained together with Helmeppo under Vice Admiral Garp's supervision. He was formerly an involuntary cabin boy for the Alvida Pirates until he was liberated by Luffy, and was one of the first people Luffy befriended on his travels.",
+				"image": "https://lh3.googleusercontent.com/-x5xI4bu08To/VfgB2CdnP0I/AAAAAAAAAE0/jtuMV-97MTs/w800-h800/3202324773_1_16_JRBN8Ak5.gif"
+			},
+			{
+				"title": "Helmeppo",
+				"url": "http://onepiece.wikia.com/wiki/Helmeppo",
+				"snippet": "Lieutenant Commander Helmeppo is a Marine officer and Morgan's son. Once a spoiled child who took advantage of his father's status, he is now a Marine Lieutenant Commander who trained with Coby under Vice Admiral Garp. Due to his actions when he was first introduced, he can be considered a minor antagonist of the Romance Dawn Arc.",
+				"image": "https://rei.animecharactersdatabase.com/uploads/chars/5537-1823889150.png"
+			},
+			{
+				"title": "Gorosei",
+				"url": "http://onepiece.wikia.com/wiki/Gorosei",
+				"snippet": "The Gorosei (literally meaning \"Five Elder Stars\") are the heads of the World Government, and as such, they essentially rule the entire world. They are the five men who rule above the Marines, Cipher Pol, and the ones who made a pact with the Shichibukai, making them one of the main antagonists of the series. So far, none of their names have been revealed.",
+				"image": "http://i.ytimg.com/vi/8Vzo4gsvpb4/maxresdefault.jpg"
+			},
+			{
+				"title": "Shichibukai",
+				"url": "http://onepiece.wikia.com/wiki/Shichibukai",
+				"snippet": "The Shichibukai, the full title being Oka Shichibukai (王下七武海 Ōka Shichibukai?, literally meaning \"Royal Seven Military Seas\"), are seven powerful and notorious pirates who have allied themselves with the World Government.[",
+				"image": "https://myanimelist.cdn-dena.com/s/common/uploaded_files/1446581188-ba7bd7f68e3ac987e1c59805491ca0a9.jpeg"
+			},
+			{
+				"title": "World Noble",
+				"url": "http://onepiece.wikia.com/wiki/World_Noble",
+				"snippet": "The World Nobles, also known as the Celestial Dragons (天竜人 Tenryūbito?, literally meaning \"Heavenly Dragon Folk\"), are the descendants of nineteen of the Twenty Kings who established what is now known as the World Government. The World Nobles — specifically those of Roswald's family — are considered the main antagonists of the Sabaody Archipelago Arc.",
+				"image": "http://img1.wikia.nocookie.net/__cb20090706175832/onepiece/es/images/3/3d/800px-Tenryuubito_Silhouette.jpg"
+			},
+			{
+				"title": "Beasts Pirates",
+				"url": "http://onepiece.wikia.com/wiki/Beasts_Pirates",
+				"snippet": "The Beasts Pirates are a powerful pirate crew ruling in the New World, led by Kaido of the Yonko. They are currently in Wano Country, and serve as one of the main antagonist group of the Zou Arc, and one the central antagonist groups of the Yonko Saga.",
+				"image": "https://i.ytimg.com/vi/vepwyf4CTkA/maxresdefault.jpg"
+			},
+			{
+				"title": "Kaido",
+				"url": "http://onepiece.wikia.com/wiki/Kaido",
+				"snippet": "Kaido of the Beasts is the captain of the Beasts Pirates and one of the Yonko, the third to be mentioned by name, and the last one to debut; he is also known as the \"Strongest Creature in the World\". He and his crew currently occupy Wano Country. He is one of the central antagonists of the Dressrosa Saga and the Yonko Saga, being first referred to by Monkey D. Garp in Water 7 and then directly mentioned by Gekko Moriah shortly after he obtained Monkey D. Luffy's shadow; his  title of Yonko was revealed just after the Straw Hat Pirates defeated Moriah.",
+				"image": "https://49.media.tumblr.com/3fe2ac8852db4ada12b177c6dd7030ba/tumblr_o6hm1un7bB1toqmlao9_r2_250.gif"
+			},
+			{
+				"title": "Jack",
+				"url": "http://onepiece.wikia.com/wiki/Jack",
+				"snippet": "Jack the Drought is a prominent member of the Beasts Pirates, one of the three Disasters who are Kaido's right-hand men, and the captain of the Mammoth. He also has ties with the Underworld. Due to his actions, he is the main antagonist of the Zou Arc and is one of the central antagonists of the Yonko Saga. He was first briefly mentioned when being notified of Caesar Clown's capture by viewers of Caesar's broadcast of the Punk Hazard incident.",
+				"image": "https://i.ytimg.com/vi/UzeAa9ZSQlE/maxresdefault.jpg"
+			},
+			{
+				"title": "Yonko",
+				"url": "http://onepiece.wikia.com/wiki/Yonko",
+				"snippet": "The Yonko are the four most notorious and most powerful pirate captains in the world, but are neither allies nor enemies of one another, preferring to remain autonomous under most circumstances. These four individually reside within the second half of the Grand Line (known as the \"New World\"), exerting impressive influence and control over dozens of other pirate crews and self-governing islands. In the decisive Battle of Marineford, Whitebeard, one of the Yonko, met his end towards the climax of the Whitebeard War. Blackbeard, his killer, subsequently usurped his position. Shanks, another member of the Yonko, arbitrated a ceasefire to end the aforementioned war.",
+				"image": "https://s-media-cache-ak0.pinimg.com/564x/e2/cc/02/e2cc023cd6e443618f45018ee048d0c9.jpg"
+			},
+			{
+				"title": "Marshall D. Teach Blackbeard",
+				"url": "http://onepiece.wikia.com/wiki/Marshall_D._Teach",
+				"snippet": "Marshall D. Teach, also known as Blackbeard, is the admiral of the Blackbeard Pirates and one of the Yonko. He started out his pirate career as a member of the Whitebeard Pirates' 2nd division, until he murdered Thatch, the 4th division commander, for the Yami Yami no Mi and defected. \n\nPrior to the two-year timeskip, he briefly held the position of Shichibukai after handing Ace over to the Marines, before resigning upon returning from Impel Down with Level Six prisoners. Due to his actions, he can be considered the tertiary antagonist of Impel Down Arc, and one of the main antagonists of the Marineford Arc, the Summit War Saga, and the remainder of the series overall.",
+				"image": "http://pa1.narvii.com/6126/25076253e2bfc310f62f67f2704516941ffe514e_hq.gif"
+			},
+			{
+				"title": "Donquixote Doflamingo",
+				"url": "http://onepiece.wikia.com/wiki/Donquixote_Doflamingo",
+				"snippet": "Donquixote Doflamingo, nicknamed \"Heavenly Yaksha\", was the captain of the Donquixote Pirates, a former member of the Shichibukai with a frozen bounty of Beli340,000,000, the former most influential underworld broker under the codename \"Joker\", and is a former World Noble of the Donquixote Family descent. He is the first son of the late Donquixote Homing and the older brother of the late Rosinante, both of whom he killed out of feeling betrayed by them. Doflamingo became the king of Dressrosa after taking the throne from Riku Dold III eight years before the start of the series; he ruled the country tyrannically until he was stripped of his positions as a Shichibukai and king after he was defeated by Monkey D. Luffy near the end of the Dressrosa Arc, being arrested alongside most of his crew members by Admiral Fujitora.  \n\nHe is a major antagonist in the Marineford Arc where he took part in the Battle of Marineford and sided with the Marines, along with most of the other Shichibukai, and the main antagonist of the Dressrosa Arc and the Dressrosa Saga as a whole, being the impetus for the entirety of the saga's events.",
+				"image": "http://www.chuing.net/zboard/revol_getimg.php?id=mone1&no=98363&num=2&fc=eef8726fd53ed8d80e21c7f1590b22df"
+			},
+			{
+				"title": "Donquixote Rosinante",
+				"url": "http://onepiece.wikia.com/wiki/Donquixote_Rosinante",
+				"snippet": "Donquixote Rosinante was formerly a World Noble of the Donquixote Family descent, as the second son of Donquixote Homing and the younger brother of Donquixote Doflamingo. After his family lost their status as Celestial Dragons and became pariahs, Rosinante became an Elite Officer of the Donquixote Pirates, serving under Doflamingo under the codename Corazon.  The truth, however, was that he was a Marine Commander, working undercover in order to stop Doflamingo. He was found out by the former Corazon, Vergo, and was executed by Doflamingo 13 years ago.",
+				"image": "https://media.giphy.com/media/3o85xkXogkA7wLsOe4/giphy.gif"
+			},
+			{
+				"title": "Trafalgar D. Water Law",
+				"url": "http://onepiece.wikia.com/wiki/Trafalgar_D._Water_Law",
+				"snippet": "Trafalgar D. Water Law, more commonly known as just Trafalgar Law and by his epithet as the \"Surgeon of Death\", is the captain and doctor of the Heart Pirates, a pirate crew from North Blue. On top of being one of twelve pirates who are referred to as the \"Worst Generation\" (formerly known as the \"Eleven Supernovas\"), he became one of the Shichibukai during the timeskip, but his position was revoked for allying with the Straw Hat Pirates and bringing down Donquixote Doflamingo. Law, like many other pirates, dreams of finding the One Piece. \n\nDuring the timeskip, his bounty increased from Beli200,000,000 to Beli440,000,000, before it was frozen. After he was expelled from the Shichibukai, Law's bounty was raised to Beli500,000,000.",
+				"image": "http://pa1.narvii.com/5844/6f0d25756be0b4cc4b08cf75f4633972863f42fd_hq.gif"
+			},
+			{
+				"title": "Edward Newgate Whitebeard",
+				"url": "http://onepiece.wikia.com/wiki/Edward_Newgate",
+				"snippet": "Edward Newgate, more commonly known as \"Whitebeard\", was the captain of the Whitebeard Pirates and was known as \"The Strongest Man in the World\" and \"The Man closest to One Piece\" after Gol D. Roger's death. He was a member of the Yonko that ruled over the New World until his death during the Battle of Marineford.",
+				"image": "http://data.whicdn.com/images/48160050/large.gif"
+			},
+			{
+				"title": "Caesar Clown",
+				"url": "http://onepiece.wikia.com/wiki/Caesar_Clown",
+				"snippet": "Caesar Clown, who was referred to as \"Master\" by his subordinates, is a famed scientist, a former colleague of Vegapunk, the main antagonist of the Punk Hazard Arc, and the first main antagonist the Straw Hats face in the New World. He is the leading expert on chemical weapons of mass destruction and has a bounty of Beli300,000,000 on his head. \n\nDuring the Dressrosa Arc, Donquixote Doflamingo declared Caesar to be his direct subordinate, meaning Caesar is a de facto member of the Donquixote Pirates, and thus protected from the law. Upon Doflamingo's defeat and arrest, this protection is lost, and Caesar's criminal status is once again operational in full. After a period as a hostage of the Straw Hat-Heart Pirate Alliance, he is currently in the custody of Big Mom, after Capone Bege was sent to retrieve and escort both him and Sanji to Whole Cake Island.",
+				"image": "https://67.media.tumblr.com/6e01fc20f450eb6b5be5ae31f2e2f540/tumblr_mpjygbCy7t1r6hwd2o1_500.gif"
+			},
+			{
+				"title": "Jinbe",
+				"url": "http://onepiece.wikia.com/wiki/Jinbe",
+				"snippet": "\"Knight of the Sea\" Jinbe is a whale shark fishman, the second captain of the Sun Pirates after Fisher Tiger, and a former Shichibukai, who attained the position eleven years ago. His name was first mentioned by Yosaku, when he was explaining about the Shichibukai. However, he is formally introduced much later, during the Impel Down Arc. He renounced his Shichibukai title at the Battle of Marineford, allying himself with the Whitebeard Pirates. \n\nDuring the war, he befriended Monkey D. Luffy, and later allied with him and his crew to prevent the New Fishman Pirates' coup d'état against the Neptune Royal Family and the Ryugu Kingdom. He was even invited to join the Straw Hat Pirates, but declined due to having unfinished business of still being affiliated with Big Mom; however, he promised that once he was ready, he would return to Luffy again and request to join his crew. Jinbe's first bounty was Beli76,000,000. Eventually, his bounty raised to Beli250,000,000. After he resigned from the Shichibukai, his bounty has been raised to over Beli400,000,000.",
+				"image": "http://pa1.narvii.com/6110/6e73114a1457ab8159fa83e3875c2dd62d584b6e_hq.gif"
+			},
+			{
+				"title": "Kin'emon",
+				"url": "http://onepiece.wikia.com/wiki/Kin%27emon",
+				"snippet": "\"Foxfire Kin'emon\" is a samurai from Wano Country whom the Straw Hat Pirates found in various pieces at Punk Hazard. He is a retainer of the Kozuki Family. He posed as Momonosuke's father after Kozuki Oden's death.",
+				"image": "http://i.imgur.com/o6MRt2u.gif"
+			},
+			{
+				"title": "Kozuki Momonosuke",
+				"url": "http://onepiece.wikia.com/wiki/Kozuki_Momonosuke",
+				"snippet": "Kozuki Momonosuke is an inhabitant of Wano Country and the son of the late daimyo of the Kozuki Family, Kozuki Oden. He ended up on Punk Hazard after stowing away on a ship. He was first mentioned when Kin'emon told Sanji that he came to Punk Hazard to rescue his \"son\". His given name was revealed when the samurai was asking if the captive children in the Biscuits Room had seen him, and the clan name revealed when Kin'emon spoke of the child's true heritage. \n\nIn his first appearance, Momonosuke was seen in his full animal form, an Eastern dragon with a long, pink, slender body. This form has yellow eyes, horns, and scales along his back. In his human form, his appearance matches the stereotype of all samurai found in ancient Japan, with a topknot and the top of his head shaven. As a child, Momonosuke is quite short. Kin'emon used his Devil Fruit ability to give him a pink kimono with peach designs on it, matching his name (\"momo\" means \"peach\" in Japanese.) He also wears a red scarf, a purple obi, and a pair of geta.",
+				"image": "https://67.media.tumblr.com/8fb299aa2e95ce216affb2728052956b/tumblr_mxtyt0Plgf1rr37qoo1_500.gif"
+			},
+			{
+				"title": "Curly Dadan",
+				"url": "http://onepiece.wikia.com/wiki/Curly_Dadan",
+				"snippet": "Curly Dadan is a friend of Monkey D. Garp and the foster mother of Portgas D. Ace and Monkey D. Luffy. Garp entrusted her to take care of Ace shortly after the boy's birth. Later, Garp also left Luffy in Dadan's care. She took care of Sabo too when he moved in. Dadan lives on Mt. Colubo near Foosha Village. She is the Mt. Colubo mountain bandit boss of the Dadan Family and a wanted criminal. Dadan was first mentioned in the Post-Enies Lobby Arc, when Woop Slap read about Luffy and the Straw Hat Pirates waging war on the World Government.",
+				"image": "http://66.media.tumblr.com/1daabdd18addb97c61109d593e86d0d9/tumblr_nlhs9coC9q1tjy6spo6_500.gif"
+			},
+			{
+				"title": "Kanjuro",
+				"url": "http://onepiece.wikia.com/wiki/Kanjuro",
+				"snippet": "\"Evening Shower\" Kanjuro is a samurai from Wano Country. He is a retainer of the Kozuki Family and Kin'emon's fellow samurai who was captured by Doflamingo's crew. Kanjuro ate a Paramecia-class Devil Fruit that allows him to turn anything that is drawn into a three-dimensional real object, or even a living organism by saying \"Appear\". Creations also have the same abilities as the originals, such as a bird's ability to fly, or food being edible (although according to Kin'emon it hurts his stomach). This also allows him to affect his own body, as he hid inside a wall as a drawing to avoid detection. \n\nDue to his lack of knowledge about Devil Fruits, he calls his ability \"sorcery\". The fruit's powers can also work in reverse, causing the animation to revert to its inanimate 2D form if it comes in contact with a flat surface. Kanjuro can also order the drawing to return to its inanimate form.",
+				"image": "https://49.media.tumblr.com/74ef6a229ebdb251833dee0312cf34ed/tumblr_nnsyd0sPrN1tuzodbo3_500.gif"
+			},
+			{
+				"title": "Borsalino",
+				"url": "http://onepiece.wikia.com/wiki/Borsalino",
+				"snippet": "Borsalino, more commonly known by his alias Kizaru, is an admiral in the Marines. He was first mentioned by Robin during the initial encounter with Aokiji. Because of his actions, Kizaru can be considered the secondary antagonist of the Sabaody Archipelago Arc and one of the major antagonists of the Marineford Arc. After Aokiji resigned from the marines and Akainu was promoted to Fleet Admiral, Kizaru is the only remaining admiral from the previous trio.",
+				"image": "http://67.media.tumblr.com/ab8329d3bfe1126d86294d745e4f01c5/tumblr_moyjm8iIZj1qbmhdio3_500.gif"
+			},
+			{
+				"title": "Issho",
+				"url": "http://onepiece.wikia.com/wiki/Issho",
+				"snippet": "Issho alias Fujitora is a Marine admiral. He was, during the two-year timeskip, conscripted to fill one of the two admiral position vacancies following Kuzan leaving the Marines and Sakazuki becoming fleet admiral, whilst Ryokugyu filled the other.Issho was first mentioned by Sakazuki when the latter was first discussing plans to deal with Monkey D. Luffy and Trafalgar Law. \n\nHis following mission and actions on Dressrosa made him the secondary antagonist of the Dressrosa Arc. Much like Kuzan, Issho is strongly against the Marines' dogma of \"Absolute Justice\" and extremely vocal in his opposition of it. His disgust with the corruption and evil in the world is such that he has intentionally blinded himself many years ago so as to avoid ever seeing it again. He particularly holds strong disdain for the Shichibukai system, longing to disestablish it, and after learning about the horrific atrocities comitted by Donquixote Doflamingo of the Shichibukai in Dressrosa, Issho formally apologized to King Riku and his citizens on behalf of the Marines, thus angering Sakazuki and risking his admiral position.",
+				"image": "http://pa1.narvii.com/6149/5c34a57a96830ed6ae98941cff18ccf43f145f73_hq.gif"
+			},
+			{
+				"title": "Kuzan",
+				"url": "http://onepiece.wikia.com/wiki/Kuzan",
+				"snippet": "Kuzan, better known by his epithet Aokiji, is a former Marine admiral and the first one to be revealed. He was nominated by Sengoku for the position of fleet admiral. However, after losing the position to Sakazuki, he resigned from the Marines and affiliated himself with the Blackbeard Pirates. He is a minor antagonist of the Long Ring Long Land Arc, and along with the other Marines, he is one of the major antagonists of the Marineford Arc.",
+				"image": "http://pa1.narvii.com/6137/97b5a81a540d9cdaca1377378557442e465b9342_hq.gif"
+			},
+			{
+				"title": "Sakazuki",
+				"url": "http://onepiece.wikia.com/wiki/Sakazuki",
+				"snippet": "Sakazuki, commonly known by his alias Akainu, is the current fleet admiral of the Marines, succeeding the previous fleet admiral, Sengoku. During the first half of the series, he was one of the three admirals, and the last one to be fully revealed. He ascended to the position of fleet admiral after defeating Kuzan in a ten-day duel that left Punk Hazard in its current state. One of his first decisions was to relocate the Marine Headquarters into the New World in preparation for the New Pirate Age.In the manga, he was first mentioned by Nico Robin during the initial encounter with Aokiji. In the anime, he was mentioned earlier by Vice Admiral Jonathan during the anime-only G-8 Arc, which aired after Akainu had been revealed in the manga.\n\nBecause of his actions, Akainu was one of the main antagonists of the Marineford Arc and after his promotion, he became one of the main antagonists of the series. Sakazuki is a strident follower of Absolute Justice, to the point where his extremism prompted an equally high-ranking colleague to resign from the Marines. He believes that a person's heritage is a reflection of how big of a threat they pose - a belief which caused him to target Portgas D. Ace and Monkey D. Luffy during the Battle of Marineford for the purpose of purging their \"bad blood\", which ultimately led him to personally kill Ace and attempt to kill Luffy, which he failed to do - managing only to leave a massive scar on his chest",
+				"image": "http://25.media.tumblr.com/tumblr_m4uw34BPU01r18y5qo1_500.gif"
+			},
+			{
+				"title": "Sengoku",
+				"url": "http://onepiece.wikia.com/wiki/Sengoku",
+				"snippet": "Sengoku the Buddha was the fleet admiral of the Marines pre-timeskip. He was the successor of Kong and the predecessor of Sakazuki. He was also one of the major figures along with Whitebeard, Shiki, and Monkey D. Garp during the times when Gol D. Roger was still alive, and still continues to be in the present, even after his resignation from the Marines. Sometime during the timeskip, he became an Inspector General. He raised Donquixote Rosinante like his own son. Due to his actions and his position in the Marines, he is one of the main antagonists of the Marineford Arc.",
+				"image": "http://media.tumblr.com/tumblr_m5nvdhCXSP1qlkggu.gif"
+			},
+			{
+				"title": "Dracule Mihawk",
+				"url": "http://onepiece.wikia.com/wiki/Dracule_Mihawk",
+				"snippet": "Dracule \"Hawk Eyes\" Mihawk is a member of the Shichibukai and the first one to be revealed in the series. He is also the current holder of the title, \"Greatest Swordsman in the World\". Mihawk served as Roronoa Zoro's swordsmanship master during the two-year timeskip. He is also a major antagonist in the Marineford Arc where he took part in the Battle of Marineford and sided with the Marines, along with most of the other Shichibukai.",
+				"image": "http://66.media.tumblr.com/tumblr_mdela2uNVU1rxvxai.gif"
+			},
+			{
+				"title": "Boa Hancock",
+				"url": "http://onepiece.wikia.com/wiki/Boa_Hancock",
+				"snippet": "\"Pirate Empress\" Boa Hancock is the captain of the Kuja Pirates and the only female member of the Shichibukai. She is the current empress, known as the the \"Snake Princess\", of Amazon Lily and rules over the Kuja tribe with her two younger Gorgon sisters, Boa Sandersonia and Boa Marigold. She is the main antagonist of the Amazon Lily Arc. She was first mentioned by the Risky Brothers at the end of the Thriller Bark Arc when comparing her legendary beauty to the beauty of mermaids. She is considered by many to be the most beautiful woman in the world.",
+				"image": "https://lh3.googleusercontent.com/-KZidFRH9bgQ/V8n67C70llI/AAAAAAAALKU/UXohVvNPZ3sl5EWeXZobBdxXEVUhBfDRwCJoC/w800-h800/aeffa366827d2167f6da32f00ce36dc58b0529d6_hq.gif"
+			},
+			{
+				"title": "Edward Weevil",
+				"url": "http://onepiece.wikia.com/wiki/Edward_Weevil",
+				"snippet": "Edward Weevil, or \"Whitebeard Jr.\", is the self-proclaimed son of Edward Newgate and one of the Shichibukai. His mother is Miss Bakkin, the self-proclaimed lover of Newgate. He was first mentioned by Commodore Brannew in a discussion of the current Shichibukai ranks to several high-ranking Marine officers, but was not explicitly named until after Donquixote Doflamingo's defeat.",
+				"image": "http://vignette2.wikia.nocookie.net/onepiece/images/b/be/Edward_Weevil_Anime_Infobox.png/revision/latest?cb=20160818215009&path-prefix=pt"
+			},
+			{
+				"title": "Crocodile",
+				"url": "http://onepiece.wikia.com/wiki/Crocodile",
+				"snippet": "Sir Crocodile is the former president of the mysterious crime syndicate Baroque Works and the main antagonist of the Alabasta Saga. He is one of the longest running and most noteworthy primary adversaries of the series, as he was the first enemy to hand Luffy a complete and utter defeat, as well as one of only two who has defeated Luffy more than once. He was originally introduced as a Shichibukai but was later stripped of his title after attempting to take control of the desert kingdom Alabasta. Thanks to Luffy, he managed to escape from Impel Down and went to Marineford to participate in the war; after that, he and Daz Bones decided to head out to the New World.",
+				"image": "http://data1.whicdn.com/images/48081437/large.gif"
+			},
+			{
+				"title": "Gekko Moriah",
+				"url": "http://onepiece.wikia.com/wiki/Gekko_Moriah",
+				"snippet": "Gekko Moriah was a member of the Shichibukai who resided on the largest ship in the world, Thriller Bark. His former bounty is Beli320,000,000. He is also the main antagonist of the Thriller Bark Saga who stole the shadows of Brook and various other beings with the power of the Kage Kage no Mi. He is also a major antagonist in the Marineford Arc where he took part in the Battle of Marineford and sided with the Marines, along with most of the other Shichibukai. Upon the war's end, he was stripped of his title and was to be eliminated by Donquixote Doflamingo, but managed to escape before he was killed, leaving Moriah's overall status unknown.",
+				"image": "http://pa1.narvii.com/5746/a60c75d1f14344197bd8d71814bb91399ce6bc71_hq.gif"
+			},
+			{
+				"title": "Smoker",
+				"url": "http://onepiece.wikia.com/wiki/Smoker",
+				"snippet": "Smoker the White Hunter is a Marine officer stationed at the G-5 base. He was first introduced as a captain in Loguetown, where he made it his mission to capture Luffy, and was later promoted to the rank of commodore, due to the events in Alabasta. At some point during the timeskip, he was promoted to the rank of vice admiral. Due to his actions against Luffy at Loguetown, Smoker can be considered as the main antagonist of Loguetown Arc.",
+				"image": "http://pa1.narvii.com/5832/ef2bbd31f8c93e9158e964745ef5c14ce94a84e5_hq.gif"
+			},
+			{
+				"title": "Bartholomew Kuma",
+				"url": "http://onepiece.wikia.com/wiki/Bartholomew_Kuma",
+				"snippet": "Bartholomew Kuma is a Shichibukai, formerly a Revolutionary with a bounty of Beli296,000,000. He was once feared as an extremely vicious pirate, earning himself the title, \"Tyrant\". He is a type of cyborg called \"Pacifista\" developed by Dr. Vegapunk. Once Vegapunk finished his modifications on Kuma, the Shichibukai was converted into the first complete Pacifista cyborg, with the serial PX-0, and figuratively died in the process. \n\nHe is also a major antagonist in the Marineford Arc where he took part in the Battle of Marineford and sided with the Marines, along with most of the other Shichibukai.",
+				"image": "http://pa1.narvii.com/5704/359308ab1ef67ab39e8138d5d7e3c5698cc76f88_hq.gif"
+			},
+			{
+				"title": "Emporio Ivankov",
+				"url": "http://onepiece.wikia.com/wiki/Emporio_Ivankov",
+				"snippet": "Emporio Ivankov, or Iva for short, is the \"Queen\" of the Kamabakka Kingdom, known as \"Okama King\" and a \"Miracle Person\", and is one of the commanders of the Revolutionary Army. \n\nHe was formerly a prisoner of Impel Down kept in Level 5, living in a secret \"Okama Paradise\" in level 5.5, but has since returned to his post as Queen of Kamabakka Kingdom. He challenged Sanji to defeat his 99 masters of Newkama Kenpo for the secret of the \"attack cuisine\" and a boat, during the two year timeskip.",
+				"image": "http://66.media.tumblr.com/01ec282a3b78c4c72a5968e2e06ab801/tumblr_n7v93wnIRm1s57tgdo4_500.gif"
+			},
+			{
+				"title": "Inazuma",
+				"url": "http://onepiece.wikia.com/wiki/Inazuma",
+				"snippet": "Inazuma is a Revolutionary, originally from South Blue, and an okama who serves under Emporio Ivankov. Because of Ivankov's gender changing powers, Inazuma has appeared both as a man and as a woman.\n\nWhile Inazuma's appearance is different depending on his current gender, Inazuma's basic appearance is the same for both genders. Inazuma has clothes and hair that is orange on one side and is white on the other side. On top of Inazuma's forehead, there is a distinct lightning bolt shaped scar that goes over Inazuma's right eye. Usually Inazuma is seen with a glass of wine being held in his left hand, and sporting a particular pose, even while fighting, and even continues to hold the wine glass while using his Devil Fruit ability.\n\nAs a man, Inazuma has his glasses on regularly. His jaw and body are also quite rectangular in shape. As a woman, Inazuma wears her glasses on top of her forehead, her jaw and body are also more rounded in shape, and the scar seems to move more towards the right side of her head.\n\n He also has a noticeable habit of keeping his free hand out and flat besides him despite gender. It should also be noted that Inazuma is one of the few (if not the only) okama to be depicted in a relatively normal manner without any of the excessively flamboyant characteristics or Drag Queen dressing and make up (or actually, no make-up at all), prevalent amongst okamas in One Piece. ",
+				"image": "http://i.makeagif.com/media/5-16-2016/BOaB7O.gif"
+			},
+			{
+				"title": "Big Mom Pirates",
+				"url": "http://onepiece.wikia.com/wiki/Big_Mom_Pirates",
+				"snippet": "The Big Mom Pirates are a powerful pirate crew captained by Charlotte Linlin, one of the Yonko, and they are in control of the powerful nation of Totto Land, with their base of operations being Whole Cake Island. \n\nAlong with the Vinsmoke Family and their organization, the Big Mom Pirates serve as one of the main antagonist groups of the Totto Land Arc, and of the larger Yonko Saga.",
+				"image": "http://3.bp.blogspot.com/-2CuXezQuYEk/UjHfpHpRgTI/AAAAAAAABE0/1Bct8SEjS6E/s1600/Big+Mom+flag.gif"
+			},
+			{
+				"title": "Charlotte Linlin",
+				"url": "http://onepiece.wikia.com/wiki/Charlotte_Purin",
+				"snippet": "Charlotte Linlin, more widely known as Big Mom, is the captain of the Big Mom Pirates and the only female member of the Yonko. She is the matriarch of the Charlotte Family, which makes up the infrastructure of her crew, including herself and her dozens of children. She also rules over Totto Land as its queen, allegedly seeking to form it into an utopia where all the world's races can live together without experiencing discrimination or segregation. \n\nShe was the last Yonko to be named; her epithet was first mentioned just after the Battle of Marineford by Eustass Kid and her real name by Pappug on Fishman Island. Along with the Vinsmoke Family, she and her crew form the central antagonist groups in the Totto Land Arc.",
+				"image": "https://65.media.tumblr.com/tumblr_md31xldmZE1r2sqylo2_500.gif"
+			},
+			{
+				"title": "Yasopp",
+				"url": "http://onepiece.wikia.com/wiki/Yasopp",
+				"snippet": "Yasopp is the sniper of the Red Hair Pirates. He is the father of Usopp and the husband of Banchina.\n\nHe shares many personality traits with his son, including being able to encourage the rest of his crew to join in with his fun. He is very proud of his son, Usopp, to the point where he would often talk about his son over and over again to Luffy, which led Luffy to recognize Usopp on sight from Yasopp's stories alone. During his time in Luffy's village, Yasopp felt close to Luffy because he is the same age as his son whom he left at home.",
+				"image": "http://40.media.tumblr.com/513546bc66b0a606a9b2697f00029192/tumblr_inline_nnacsjeoam1rrzcub_540.png"
+			},
+			{
+				"title": "Grand Line",
+				"url": "http://onepiece.wikia.com/wiki/Grand_Line",
+				"snippet": "The Grand Line is the ocean current that is surrounded by the Calm Belts and follows an imaginary line that runs from north-west to south-east across the middle of the world and perpendicular to the Red Line. The Red Line is a vast continent that circles the globe from north-east to south-west. These two lines divide the rest of the Blue Sea into the Blues: North Blue, East Blue, West Blue, and South Blue.\n\n This stretch of ocean is said to be the most dangerous place in the world, and is commonly referred to as the Pirates' Graveyard by people from the four Blues because of this reputation. Those few pirate crews that make it to the second half of the Grand Line, known as \"the New World\", refer to the first half as \"Paradise\", showing it is all relative. Most believe that it is impossible to safely leave the Grand Line save at its beginning and end. However, the World Government regularly sends ships across the Calm Belts by coating their hulls with Seastone, rendering them invisible to the Sea Kings. The Grand Line is placed similarly to the equator. In fact the main importance of the Grand Line is that it is the only way to circumnavigate the globe. The Grand Line along with the Red Line are what seperate the 4 Blues and as such are key to worldwide trade and travel in that the Lines are placed along the pathes between the Blues. This makes them valuable routes of travel and obstacles for both pirates and civilians.\n\nDespite the reputation of the Grand Line being dangerous and chaotic, many normal people manage a living on individual islands regardless, having adapted to their home land. This indicates that it is actually traveling within the Line itself that is dangerous, as it virtually guarantees facing unpredictable climates and dangerous wildlife. However, there are also several islands, or portions of the islands, which are considered dangerous in their own right, and thus, they are either uninhabited or the citizens have taken precaution to the threat.",
+				"image": "http://3.bp.blogspot.com/-qsuTJuV-fGg/TtxRLbgS9OI/AAAAAAAAADY/7VQviioMIq4/s1600/Grandline+Adventure.jpg"
+			},
+			{
+				"title": "East Blue",
+				"url": "http://onepiece.wikia.com/wiki/East_Blue",
+				"snippet": "The East Blue is an ocean in the One Piece World and was the setting of the first six arcs of the manga and anime and the anime only Warship Island arc. East Blue, like its sister seas, comprises almost entirely of ocean, with a few scattered islands and a border called the Red Line. In One Piece Film: Strong World it is referred to by the citizens of Merveille as the Sea of Schemes. \n\nThe East Blue is commonly known as the weakest of all the seas. Pirates who are considered great and threatening in this sea are regarded as low rate compared to pirates from the other seas and especially in the Grand Line. The sea's weak status was demonstrated by Dracule Mihawk when he single-handedly took out every ship in Don Krieg's armada (except the flagship that was lucky enough to escape, which he later hunted down), recognized as the strongest fleet in the East Blue, when they tried to enter the Grand Line. Ironically, despite its poor fame, the East Blue was the birthplace of the most powerful pirate of all time, the late Pirate King Gol D. Roger, and many other powerful and world renowned characters, such as Monkey D. Dragon, Monkey D. Luffy and Roronoa Zoro.",
+				"image": "http://storeonanimeonline.com/wp-content/uploads/2014/07/East_Blue_Infobox.png"
+			},
+			{
+				"title": "Will of D.",
+				"url": "http://onepiece.wikia.com/wiki/Will_of_the_D.",
+				"snippet": "The \"Will of the D.\", or \"D.'s will\" is a mystery surrounding some people who have the middle initial \"D.\" in their names.\n\nThe initial was first pointed out in Oda's SBS questions and answers corner, when he was asked what the D. in Luffy's name stood for. Oda just replied to read it as a D. for now and that he would reveal the truth behind it in time This was the first time Luffy's \"D.\" was brought up, as well as Oda's first hint toward a bigger mystery.\n\nKureha was the first to mention the \"will of D.\" when she revealed that the true name of the late Pirate King was Gol D. Roger. She told Dalton that Chopper had joined up with a very dangerous man",
+				"image": "http://www.onepiecegold.com/wp-content/uploads/2015/03/one_piece___knowing_will_of_d__by_uchiha275-d8343fs.jpg"
+			},
+			{
+				"title": "Oro Jackson",
+				"url": "http://onepiece.wikia.com/wiki/Oro_Jackson",
+				"snippet": "The Oro Jackson was the ship made by Tom for Gol D. Roger and the Roger Pirates. It is the only ship that has sailed to the end of the Grand Line.\n\nThe Oro Jackson was made from wood hewn from the treasure tree \"Adam\", the same wood is used during the creation of the Thousand Sunny, the ship that belongs to the Straw Hat Pirates. The figurehead of the ship appears to be a pair of mermaids alongside a forward facing cannon. The ship had three masts, with red sails and a jolly roger on the foremast. The sails also have a vertical stripe design.",
+				"image": "http://kaizu.land/attachment.php?attachmentid=90082&stc=1&d=1406001857"
+			},
+			{
+				"title": "Thousand Sunny",
+				"url": "http://onepiece.wikia.com/wiki/Thousand_Sunny",
+				"snippet": "The Thousand Sunny is the second ship of the Straw Hat Pirates, built after the Going Merry was destroyed. She is a brig sloop type ship designed and built by Franky with help from Yokozuna, Iceburg, and the remaining Galley-La foremen. Built from Adam Wood, she is a magnificent ship at least double the size of the Going Merry. Her features include practically all of the various requests the Straw Hats had before arriving in Water 7.\n\nThe Thousand Sunny is a brig sloop, a type of ship that relies on the skills of its navigator. The ship has a lawn on her deck, complete with a swing and a slide, as well as an observation tower for a crow's nest. The huge masts give the ship extreme maneuverability. Like the Going Merry, the figurehead is an animal's head, specifically a lion with a stylized mane. Due to the mane's ambiguity, the lion was mistaken for both a sunflower and a sun during the ship's construction, much to Franky's frustration. The ship holds sixteen cannons: seven traditional cannons on each side of the ship and two specialized air cannons— the Gaon Cannon in the figurehead and the Coup de Burst cannon astern.",
+				"image": "http://3.bp.blogspot.com/-uHJrR6lZ0sI/TVPVACUtewI/AAAAAAAADr8/3xxM8-e-z3Q/s1600/Thousand_Sunny.png"
+			},
+			{
+				"title": "Going Merry",
+				"url": "http://onepiece.wikia.com/wiki/Going_Merry",
+				"snippet": "The Going Merry was the first ship of the Straw Hat Pirates that they used as their main mode of transportation through the East Blue all the way to Water 7, where it was succeeded by the Thousand Sunny. It is a caravel class ship designed by Merry and given by Kaya to the Straw Hats as a reward for saving her. Over time, the ship came to be loved by the crew as a home and as a friend, so much so that she literally took on a life of her own and became just as much a part of the crew as any of them. Unfortunately, the Going Merry took an inordinate amount of damage during her \"lifetime\", being blown up, impaled, and even sliced up multiple times. Eventually, the Going Merry could no longer continue and received a Viking funeral.",
+				"image": "http://66.media.tumblr.com/tumblr_lrqi00s0yi1qktt6u.gif"
+			},
+			{
+				"title": "Wano Country",
+				"url": "http://onepiece.wikia.com/wiki/Wano",
+				"snippet": "The Wano Country is a nation in the New World. It is a country not affiliated with the World Government and is currently being occupied by the Beasts Pirates. \n\n Wano Country has its own warriors, the samurai, who are swordsmen so strong that not even the Marines go near them.\n\nWomen from Wano are expected to be modest and speak gracefully and quietly. In addition, the chonmage is a common hairstyle.\n\nThe country follows a policy of isolationism, meaning that contact with outsiders such as pirates and other countries is prohibited. Leaving the country's borders is also considered a crime.",
+				"image": "http://vignette1.wikia.nocookie.net/onepiece/images/c/ca/Wano_Country_Infobox.png/revision/latest?cb=20140801103451"
+			},
+			{
+				"title": "Impel Down",
+				"url": "http://onepiece.wikia.com/wiki/Impel_Down",
+				"snippet": "Impel Down, also known as The Underwater Prison, is a government-controlled stronghold in Paradise together with Marine Headquarters and formerly, Enies Lobby. It is the World Government's maximum-security prison for the most dangerous criminals and pirates. It is located underwater in the middle of the Calm Belt. \n\nImpel Down is the main setting of the Impel Down Arc.",
+				"image": "https://secure.static.tumblr.com/27ad2659e6f259d5bf4eee412ce1479e/fxjjahe/XhUn3qg60/tumblr_static_af128or6rc0k0ssws44k4w88c.jpg"
+			},
+			{
+				"title": "Raizo",
+				"url": "http://onepiece.wikia.com/wiki/Raizo",
+				"snippet": "Raizo of the Mist is a ninja from Wano Country, a comrade of Kin'emon and Kanjuro, and a retainer of the Kozuki Family. \n\nDue to his connection to the Kozuki Family, the Beasts Pirates hunted him down for over two weeks and even went as far as to torture Zou's citizens to flush him out.",
+				"image": "https://i.ytimg.com/vi/vRjhlRsB0_0/maxresdefault.jpg"
+			},
+			{
+				"title": "Raftel",
+				"url": "http://onepiece.wikia.com/wiki/Raftel",
+				"snippet": "Raftel is the island at the end of the Grand Line which supposedly holds the treasure One Piece.\n\n There are four poneglyphs known as Road Poneglyphs that, when read together, lead to four islands which, if aligned, will lead to Raftel's location. One of these is located on Zou, one is at an unknown location, and the last two are each owned by the Yonko Kaido and Charlotte Linlin.\n\nIt is said that upon reaching Raftel, if one has taken with them along their journey the passages of the poneglyphs, then the Rio Poneglyph will finally be revealed. Furthermore, the Road Poneglyphs, a set of four special red poneglyphs, each reveal a point on a map of the world once read. When all four points are deciphered, it becomes possible to discern the place at the center of these points where they all intersect, and the true path to Raftel will be made known",
+				"image": "http://yudesigns.net/wp-content/uploads/2013/04/Raftel.png"
+			},
+			{
+				"title": "Poneglyphs",
+				"url": "http://onepiece.wikia.com/wiki/Poneglyph",
+				"snippet": "Poneglyphs are mysterious stone blocks with history inscribed on them in the form of strange letters. They are scattered among the islands of the world, and it is said the only person left in the world who can read them is Nico Robin. \n\nPoneglyphs are massive blocks made of an indestructible type of stone. They have text carved on them, written in an ancient language.\n\nThere are a total of three types of poneglyphs within the series; Historical, Instructional and Road Poneglyphs. \"Historical Poneglyphs\" reveal pieces of ancient history as well as messages written by ancient people. \"Instructional Poneglyphs\" contain instructions and/or clues about the locations of Historical Poneglyphs and Ancient Weapons. Both Historical and Instructional Poneglyphs are of a dark blue color. The third and last type of poneglyph is the \"Road Poneglyph\", which gives away a location that, when pieced together with the locations given by the other Road Poneglyphs, allows one to find the path to Raftel. Those poneglyphs are of a deep red color and there are only a total of four of them.",
+				"image": "https://i.ytimg.com/vi/Es4ip-4G_go/hqdefault.jpg"
+			},
+			{
+				"title": "Mink Tribe",
+				"url": "http://onepiece.wikia.com/wiki/Mink",
+				"snippet": "The Mink Tribe is a race in the One Piece world. They were first mentioned in the list of slave prices that Duval showed to Sanji. They live in the Mokomo Dukedom on top of Zou, and have largely remained isolated from other human civilizations for 1000 years.\n\nMinks are humanoids with animal features. Similar to fishmen and merfolk, each individual takes after a specific animal. So far, the animalistic traits of the minks have all been fur-covered mammalian. As such, fur, which they also refer to as \"mink\", covers most of their bodies and is considered their pride and joy. Females tend to look more like humans while males tend to look more bestial. They possess humanoid hands and feet, but those based on animals with paws will also possess paw pads on their palm and up to their first knuckle.",
+				"image": "http://img08.deviantart.net/9f7a/i/2015/302/d/a/one_piece_mink_man_carrot_and_wanda__colored_by_arcxana-d9etoua.png"
+			},
+			{
+				"title": "Fishman Island",
+				"url": "http://onepiece.wikia.com/wiki/Fishman_Island",
+				"snippet": "Fishman Island is the home of the fishmen and merfolk. It serves as an underwater gateway to the New World for those who do not wish (or are not legally permitted) to cross over the Red Line above.\n\nThis was the last island the Straw Hats visited before arriving at the New World. It has also been prophesied by Madam Shyarly that they, or at least their captain Monkey D. Luffy may one day return and destroy the island.",
+				"image": "http://data.whicdn.com/images/190391312/large.png"
+			},
+			{
+				"title": "Fishmen",
+				"url": "http://onepiece.wikia.com/wiki/Fishmen",
+				"snippet": "Fishmen are one of two humanoid species that inhabit and rule the seas (the other being the merfolk). In terms of leadership, King Neptune is the king of Fishman Island. Fisher Tiger, Jinbe, and Arlong were said to have the highest respect amongst their people. They are classified as Type C creatures, \"Big Savage\".\n\nFishmen are more fish-like than merfolk, usually looking like a combination between a man and a fish or other aquatic creature, such as an octopus, manta ray, or sawshark; however, they still have legs. They also have gills between their shoulders and necks, sometimes covered by their clothing, as well as often having webbed hands. Depending on species, they may have multiple limbs (mainly extra arms).",
+				"image": "http://www.desktopimages.org/pictures/2014/0514/1/one-piece-anime-fishman-wallpaper-521393.jpg"
+			},
+			{
+				"title": "Merfolk",
+				"url": "http://onepiece.wikia.com/wiki/Merfolk",
+				"snippet": "Merfolk are one of the two major races that inhabit the sea (the other being the Fishmen). Both races are ruled by the Great Knight of the Sea, King Neptune.\n\nMerfolk are one of the two major races that inhabit the sea (the other being the Fishmen). Both races are ruled by the Great Knight of the Sea, King Neptune.\n\nLike the mermaids and mermen of folklore, their upper half is that of a human while the lower half is that of a fish or other undersea creature. As demonstrated by Kokoro, mermaids may walk normally on land as when they are thirty years old, their tails split into two. Like the fishmen, they are based on the different fish of the sea; for example, Kokoro is an ice fish mermaid and Hyouzou of the New Fishman Pirates is a poisonous blue-ringed octopus merman. Two mermaids of a similar species can also have very different looks; such as Mero and Shirahoshi, who are both smelt-whiting Mermaids.",
+				"image": "http://3.bp.blogspot.com/-wPKkDYxPHvg/TusyOb_kOEI/AAAAAAAAEJU/wxEJ8Cx5z9A/s1600/vlcsnap-111647.png"
+			},
+			{
+				"title": "Kozuki Oden",
+				"url": "http://onepiece.wikia.com/wiki/Kozuki_Oden",
+				"snippet": "Kozuki Oden was the daimyo of Kuri in Wano Country and was Momonosuke's father. He was also a member of the Roger Pirates and Whitebeard Pirates.\n\nDue to the loyalty of their rulers, all the minks on Zou respect Oden and the Kozuki Family enough to sacrifice their lives for one of their retainers.\n\nOden cared deeply for his clan as he sacrificed himself to enable his son and retainers to escape the Beasts Pirates. Kin'emon, Kanjuro, Raizo, and Momonosuke were shown grieving over his death.\n\nIt is known that he had a wife and a son, this one being Momonosuke. His wife was also murdered by the Beasts Pirates.\n\nInuarashi and Nekomamushi\n\nAs retainers, Inuarashi and Nekomamushi are very loyal to Oden. However, when Momonosuke saw Inuarashi and Nekomamushi, he questioned whether Oden was the reason for their bitterness toward each other. Momonosuke claimed that his father would be saddened if he saw them fighting, a remark that caused the two to reconcile their feud, showing their respect toward his father.",
+				"image": "http://www.fakingnews.firstpost.com/wp-content/uploads/2015/01/default.png"
+			},
+			{
+				"title": "Shirahoshi",
+				"url": "http://onepiece.wikia.com/wiki/Shirahoshi",
+				"snippet": "Princess Shirahoshi, also known as the Mermaid Princess, is a giant smelt-whiting mermaid and the youngest of King Neptune's children. She was first mentioned by Pappug, claiming he knew her and even promised to introduce the Straw Hat Pirates to her when they arrived on Fishman Island (though later this is revealed to be a lie). She is also the current form of Poseidon, an Ancient Weapon.",
+				"image": "http://www.onepiecegold.com/wp-content/uploads/2015/06/shirahoshi-mermaid-one-piece-wallpaper-1920x1200.jpg"
+			},
+			{
+				"title": "Ancient Weapons",
+				"url": "http://onepiece.wikia.com/wiki/Ancient_Weapons",
+				"snippet": "The Ancient Weapons are three weapons capable of mass destruction, each taking a different form. They are known as Pluton, Poseidon, and Uranus, each named after a deity for their godly powers. The weapons are not limited only to inanimate objects, but consist of living beings as well. \n\nThe Ancient Weapons are the argument used by the World Government to forbid research of the Void Century, since they fear that knowledge of the weapons could result in a global war. However, this has not stopped members of the World Government, most notably Spandam and former Shichibukai Crocodile, from attempting to gain one of the weapons for themselves. Even without knowledge of the missing years, their power has been known to entice casual observers (as was the case with Vander Decken IX's interest in Shirahoshi, otherwise known as the Ancient Weapon Poseidon).",
+				"image": "http://pre02.deviantart.net/df4a/th/pre/f/2011/347/3/7/poseidon___the_ancient_weapon_by_deiviscc-d4j22ny.jpg"
+			},
+			{
+				"title": "Zeff",
+				"url": "http://onepiece.wikia.com/wiki/Zeff",
+				"snippet": "Zeff is the head chef and owner of Baratie, former captain of the Cook Pirates (in which he was known as \"Red-Leg\"), and is also Sanji's mentor.\n\nWhile Zeff was always harshly critical towards Sanji, he did this to make Sanji into the great chef and tough fighter he is now. Despite objecting to it at first, Sanji seems to come to understand what Zeff was up to. In a way, Sanji is like a son to Zeff; it was Zeff who practically raised Sanji like his own father, including helping him develop his cooking skills and teaching him the value of of a cook's hands. Sanji's signature fighting style was developed as a result of this teaching, which included Zeff beating him up whenever he threatened his hands in combat.",
+				"image": "http://onepiece-treasurecruise.com/en/wp-content/uploads/c0052.png"
+			},
+			{
+				"title": "Void Century",
+				"url": "http://onepiece.wikia.com/wiki/Void_Century",
+				"snippet": "The Void Century is a century-long gap in recorded and archaeological history, the study of which is forbidden by the World Government. These events occurred 900 to 800 years before the current storyline. It was hinted at during the Skypiea arc; the dates were seen in Robin's flashback.\n\nThis period became known as the Void Century because there is nothing left to acknowledge anything that happened in it, aside from the poneglyphs which are written in a language that few know how to read.\n\nHowever, it causes a problem with the known histories of the world as nothing ties up because of that missing period. Though many seem to know there is a gap in the historical record, virtually everyone is unaware that filling in this gap is possible. For example, Nefertari Cobra, after being told by Nico Robin about this missing period, was completely shocked that a way to \"tie the threads of history together\" existed. The fact that filling the gap is possible was proven when \"Dark King\" Silvers Rayleigh revealed that the Roger Pirates discovered the true history.",
+				"image": "http://www.fakingnews.firstpost.com/wp-content/uploads/2015/01/default.png"
+			},
+			{
+				"title": "Pekoms",
+				"url": "http://onepiece.wikia.com/wiki/Pekoms",
+				"snippet": "Pekoms is a combatant of the Big Mom Pirates and a lion mink. He is partnered with Tamago, and both are responsible for collecting the monthly payment of sweets from Fishman Island in exchange for Big Mom's protection.",
+				"image": "http://25.media.tumblr.com/tumblr_mdcaxmzUFB1rgryomo1_500.gif"
+			},
+			{
+				"title": "Skypiea",
+				"url": "http://onepiece.wikia.com/wiki/Skypiea",
+				"snippet": "Skypiea is an island located in the sky above Paradise. It is the primary setting of the Skypiea Arc, and the sixth island visited by the Straw Hat Pirates on the Grand Line.\n\nThe people in there have small wings on their backs, similar to the stereotypical angel which make them really unique, though no use has been revealed for them thus far. The daily life of sky people revolves around the use of Dials, which normally are not available in the Blue Sea. As opposed to the belly of the rest of the world, it uses extols as currency. The people of Skypiea have a religious reverence for soil, because it can yield plant life much better than island cloud can, and also other materials that come from the Blue Sea. Most of the people from the Blue Sea believe that Skypiea is merely a myth.",
+				"image": "http://onepiecegt.it/files//gallerie/tv/Ep_158/Ep158_001.jpg"
+			},
+			{
+				"title": "Zou",
+				"url": "http://onepiece.wikia.com/wiki/Zou",
+				"snippet": "Zou is an island located on the back of a massive, 1000-year-old elephant named Zunisha that roams the New World. It is known as a \"Phantom Island\" due to Log Poses being unable to point to it. It is home to the Mink Tribe as well as where the Heart Pirates resided while waiting for their captain to return from Dressrosa. \n\nZou is the third island visited by the Straw Hats in the New World, and it is the primary setting of the Zou Arc.\n\nZunisha is a massive, living, and sentient elephant; as a result, it cannot be tracked by a Log Pose or Eternal Pose like regular islands can. Having walked through the New World for over 1000 years, Zunisha's body has been left damaged by time and the elements; its ears are torn, its eyes are sunken into its skull, and its skin is frail and weak. Its legs are very tall, making it difficult to scale the elephant and get onto the island.",
+				"image": "http://dzt1km7tv28ex.cloudfront.net/u/638610426019446784_35s_d.jpg"
+			},
+			{
+				"title": "Water 7",
+				"url": "http://onepiece.wikia.com/wiki/Water_7",
+				"snippet": "Water 7 is a city in Paradise known for its shipwrights. It is the main setting of the Water 7 Arc and Post-Enies Lobby Arc. The Straw Hat Pirates stopped here to trade in their gold for Belly, as well as to repair the Going Merry and also to find a new shipwright for their crew. It is part of the route their log was on, heading there directly after Long Ring Long Land, making it the eighth island in Paradise that they visited.\n\nWater 7 is slowly sinking. The current group of houses is built on top of the last group from at most a couple decades before.\n\nWater 7 used to be on dry land, while Shipyard Island would be outside of the city. However, as centuries went by, as the water began to rise, the people of Water 7 would build new houses and buildings on top of the older buildings to survive.\n\nGenerations ago, the ancient weapon Pluton was constructed here, before it was shipped off to Alabasta. The Blueprint, however, remained in Water 7 for generations.\n\nGol D. Roger visited this city, the fishman shipwright Tom built him his ship, Oro Jackson.",
+				"image": "http://f.ptcdn.info/100/027/000/1420270650-WaterSeven-o.jpg"
+			},
+			{
+				"title": "Alabasta",
+				"url": "http://onepiece.wikia.com/wiki/Alabasta",
+				"snippet": "Alabasta Kingdom is a desert kingdom in Paradise. It was the fourth island that the Straw Hat Pirates visited on the Grand Line, and the events here resulted in Luffy's bounty being raised to Beli100,000,000, and Zoro acquiring a bounty of Beli60,000,000. It is where the poneglyph showing the location of Pluton is located, and is one of the twenty founding countries of the World Government.",
+				"image": "http://cdn.mos.cms.futurecdn.net/8cc3625306ada450f251e9fdd8f1e5b0-650-80.png"
+			},
+			{
+				"title": "Dressrosa",
+				"url": "http://onepiece.wikia.com/wiki/Dressrosa",
+				"snippet": "Dressrosa is a kingdom within the New World, and one of the Twenty Kingdoms of the World Government. It was first mentioned by Vergo. Dressrosa is the second island visited by the Straw Hat Pirates in the New World and the primary setting of the Dressrosa Arc.\n\nDressrosa is one of the Twenty Kingdoms that were responsible for founding the World Government after the defeat of the Great Kingdom. It is located in the New World",
+				"image": "http://pm1.narvii.com/5886/65acd2006f2b1da2c75c79830b0db9f929ce2848_hq.jpg"
+			},
+			{
+				"title": "Punk Hazard",
+				"url": "http://onepiece.wikia.com/wiki/Punk_Hazard",
+				"snippet": "Punk Hazard is an island located in the New World and is the first island the Straw Hat Pirates disembark on (after receiving a distress call from someone on the island) after arriving in the New World. According to Trafalgar Law, it is an island that is not possible to \"log\". It is where Akainu and Aokiji battled for the position of fleet admiral for ten days. The island is relatively close to Dressrosa, as travel between the two islands can be performed in a short period of time. It is the main setting of the Punk Hazard Arc.\n\nThe island is surrounded by a sea of fire on one side and icebergs on the other. In the center, there is a hole where seawater flows into it, which separates both halves of the island and has sharks living within. This hole has fierce wind and currents running across it. As touched upon by Robin, the extreme temperature differences between the ice and magma lead to an equally extreme difference in air pressure, forming massive gale-force winds. The lake was originally a crater formed at the epicenter of Akainu and Aokiji's death match and then later filled with seawater, though the aftermath of the duel did leave behind patches of burning and frozen waters in the lake. The entrance is bolted with a danger sign, hazard stripes, and the logos of the Marines and World Government. The external border is heavily fenced in and inside lies a military base.",
+				"image": "http://www.onepiecez.com/wp-content/uploads/2013/01/One-Piece-579-Anime-Screenshot-Punk-Hazard-Entrance-Sign-1024x576.png"
+			},
+			{
+				"title": "Marines",
+				"url": "http://onepiece.wikia.com/wiki/Marines",
+				"snippet": "The Marines are the World Government's military sea force, tasked with law enforcement, international security and military operations. The Marines are one of the three great powers, alongside the Shichibukai and the Yonko.\n\nThey are present in all the seas around the world, as evidenced by their branch offices. The focus of their assets is on the far more dangerous Grand Line.\n\nIn the aftermath of the Battle of Marineford, the base of operations for Marine Headquarters has since been relocated to the New World.\n\nDue to their actions overall, they are one of the main antagonists of the series.",
+				"image": "http://pm1.narvii.com/5644/128e50a10ae67922de67426a49203b631ee63638_hq.jpg"
+			},
+			{
+				"title": "Tom",
+				"url": "http://onepiece.wikia.com/wiki/Tom",
+				"snippet": "Tom was a powerful long-horned cowfish fishman, known as the most skilled shipwright in the world. He was the head of his own company, Tom's Workers. He was also Iceburg and Franky's teacher and Den's older brother. Furthermore, he was well known for being the builder of the Roger Pirates' ship, the Oro Jackson.",
+				"image": "http://onepiece-treasurecruise.com/en/wp-content/uploads/c0848.png"
+			},
+			{
+				"title": "Iceburg",
+				"url": "http://onepiece.wikia.com/wiki/Iceburg",
+				"snippet": "Iceburg is the president of the Galley-La company and the mayor of Water 7. He is formerly one of Tom's Workers.\n\nIceburg was the one who gave him the nickname \"Franky\" because he thought Cutty Flam was a weird name; later, when he passed on the Pluton blueprints, he was the one who asked Franky to use only that name to protect himself from anyone who would want to steal the plans. His relationship with Franky is strange at times as he has never really understood Franky's often weird antics, and Franky was prone to calling him \"Baka-berg\" or \"Ahoberg\" at times, \"Baka\" and \"Aho\" being the Japanese words for \"idiot\" or \"moron\" or something similar; the English dub changed this to \"Ice for brains\". Likewise, Iceburg called him \"Bakanky\", a portmanteau of \"Baka\" and \"Franky\", changed to \"Flunky\" in the English dub. His original goal to build a ship strong enough to kill a Sea King was always shunned by Iceburg who did not understand why he kept building his weird and potentially dangerous ships. When the Battle Franky's were used to hurt the innocent, Iceburg was very angry at Franky. Since then, however, Iceburg has forgiven Franky for the part his Battle Frankys played in the framing of Tom, and despite the differences between Iceburg and Franky, the two former apprentices of Tom are the best of friends; Iceburg was relieved to the point of tears to find out Franky was alive after he was hit by the Sea Train, and likewise, Franky was enraged with CP9 after they told him Iceburg was supposedly dead. Iceburg was also the only person aware that Franky's grief towards Tom's death was the real reason behind Franky's actions in Water 7 and why he refused to leave. In the end, Iceburg was able to help Franky overcome that grief by helping him realize he needed to forgive himself, enabling Franky to join the Straw Hat Pirates. ",
+				"image": "https://img.buzzfeed.com/buzzfeed-static/static/2014-11/9/7/enhanced/webdr05/anigif_enhanced-28322-1415534459-1_preview.gif"
+			},
+			{
+				"title": "Vinsmoke Family",
+				"url": "http://onepiece.wikia.com/wiki/Vinsmoke_Family",
+				"snippet": "The Vinsmoke Family is a powerful and infamous family of Underworld killers, and the family from which Sanji hails. They are also the reigning royal family of the Germa Kingdom, as well as the former dynastic conquerors and rulers of North Blue. As an adjunct to their rule over the Germa Kingdom, they are the commanders of the Kingdom's Underworld army, Germa 66. \n\nAlongside their organization, Big Mom and her crew, the Vinsmoke Family is one of the main antagonist groups of the Totto Land Arc.",
+				"image": "http://orig04.deviantart.net/7dc3/f/2016/157/b/d/vinsmoke_family_from_one_piece_by_sogeflocolo-da575uy.png"
+			},
+			{
+				"title": "Enies Lobby",
+				"url": "http://onepiece.wikia.com/wiki/Enies_Lobby",
+				"snippet": "Enies Lobby, also known as The Judicial Island, was a government-controlled stronghold in Paradise together with the Marine Headquarters and Impel Down, and the headquarters of CP9. Enies Lobby is located on an island referred to as both the \"afternoon island\" and the \"never-night island\".\n\nEnies Lobby led to Impel Down and the Marine Headquarters directly. Because of this, there were many government agents stationed there, roughly 10,000 men, a mix of those from both the World Government and the Marines. The island also had a courthouse, which made it easy to transfer high-level criminals through Enies Lobby and directly into Impel Down, or to the Marine Headquarters. Due to recent events, the island has been completely annihilated and left in ruins due to the effects of a Buster Call. It is unknown if it was rebuilt during the time skip.",
+				"image": "http://pm1.narvii.com/5796/0cfc4af468585ebfd70fcd8d9b2909e0bb982862_hq.jpg"
+			},
+			{
+				"title": "CP9",
+				"url": "http://onepiece.wikia.com/wiki/Cp9",
+				"snippet": "CP9, more properly known as Cipher Pol Number 9, is a \"secret\" Cipher Pol organization, formed of people able to use the Rokushiki techniques. They are the main antagonists of the Water 7 and Enies Lobby Arcs.\n\nUnlike the eight official Cipher Police groups, CP9 members are not based on intelligence gathering, but instead are shadowy assassins who kill anyone that opposes the World Government. Members are gathered at childhood, and are trained both physically and mentally to become powerful killers, discarding emotions in order to become more efficient in missions. Rob Lucci, the most powerful member in the organization's history, had become almost incapable of giving mercy or accepting weakness due to this; Kaku, on the other hand, was regretful that he had to abandon his undercover life in order to continue his duties, proving the mind-molding is not always successful.",
+				"image": "https://i.ytimg.com/vi/De45TfVJvDg/maxresdefault.jpg"
+			},
+			{
+				"title": "Pluton",
+				"url": "http://onepiece.wikia.com/wiki/Pluton",
+				"snippet": "Pluton is one of the three Ancient Weapons, alongside Poseidon and Uranus. Pluton is a huge warship capable of mass destruction, constructed long ago in the city of Water 7 in the Grand Line. It is said to be capable of destroying whole islands. Pluton was first mentioned by Crocodile when he questioned Nefeltari Cobra of its whereabouts.\n\n It is supposed to be a large warship of some kind. Not much else is known about it.",
+				"image": "http://www.fakingnews.firstpost.com/wp-content/uploads/2015/01/default.png"
+			},
+			{
+				"title": "Uranus",
+				"url": "http://onepiece.wikia.com/wiki/Uranus",
+				"snippet": "Uranus is one of the three Ancient Weapons that existed during the Void Century along with Poseidon and Pluton. It was first mentioned during Nico Robin's conversation with King Neptune, when she says there are three ancient weapons that bear the names of 'gods'. \n\n Like Pluton and Poseidon, Uranus is a dangerous weapon which can be used to rule the world or, in the wrong hands, destroy it. But as of yet, absolutely nothing else is known about it.\n\nUranus was a weapon known to have existed during the Void Century. Its actions during this point in history and what became of it since currently remains unknown.",
+				"image": "http://www.fakingnews.firstpost.com/wp-content/uploads/2015/01/default.png"
+			}
+		]
+	};
+
+/***/ },
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(207);
+	module.exports = __webpack_require__(216);
 
 
 /***/ },
-/* 172 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -17056,7 +18584,7 @@
 
 	var _routerWarning2 = _interopRequireDefault(_routerWarning);
 
-	var _InternalPropTypes = __webpack_require__(27);
+	var _InternalPropTypes = __webpack_require__(25);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17080,7 +18608,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 173 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17093,7 +18621,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Link = __webpack_require__(90);
+	var _Link = __webpack_require__(94);
 
 	var _Link2 = _interopRequireDefault(_Link);
 
@@ -17113,7 +18641,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 174 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -17132,11 +18660,11 @@
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
-	var _Redirect = __webpack_require__(91);
+	var _Redirect = __webpack_require__(95);
 
 	var _Redirect2 = _interopRequireDefault(_Redirect);
 
-	var _InternalPropTypes = __webpack_require__(27);
+	var _InternalPropTypes = __webpack_require__(25);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17182,7 +18710,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 175 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -17201,9 +18729,9 @@
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
-	var _RouteUtils = __webpack_require__(24);
+	var _RouteUtils = __webpack_require__(22);
 
-	var _InternalPropTypes = __webpack_require__(27);
+	var _InternalPropTypes = __webpack_require__(25);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17248,7 +18776,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 176 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -17322,7 +18850,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 177 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -17337,9 +18865,9 @@
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
-	var _RouteUtils = __webpack_require__(24);
+	var _RouteUtils = __webpack_require__(22);
 
-	var _InternalPropTypes = __webpack_require__(27);
+	var _InternalPropTypes = __webpack_require__(25);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17385,7 +18913,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 178 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -17436,7 +18964,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 179 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -17445,11 +18973,11 @@
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createHashHistory = __webpack_require__(87);
+	var _createHashHistory = __webpack_require__(91);
 
 	var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
 
-	var _useQueries = __webpack_require__(43);
+	var _useQueries = __webpack_require__(40);
 
 	var _useQueries2 = _interopRequireDefault(_useQueries);
 
@@ -17465,15 +18993,15 @@
 
 	var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-	var _InternalPropTypes = __webpack_require__(27);
+	var _InternalPropTypes = __webpack_require__(25);
 
-	var _RouterContext = __webpack_require__(44);
+	var _RouterContext = __webpack_require__(41);
 
 	var _RouterContext2 = _interopRequireDefault(_RouterContext);
 
-	var _RouteUtils = __webpack_require__(24);
+	var _RouteUtils = __webpack_require__(22);
 
-	var _RouterUtils = __webpack_require__(92);
+	var _RouterUtils = __webpack_require__(96);
 
 	var _routerWarning = __webpack_require__(9);
 
@@ -17666,7 +19194,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 180 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -17677,7 +19205,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _RouterContext = __webpack_require__(44);
+	var _RouterContext = __webpack_require__(41);
 
 	var _RouterContext2 = _interopRequireDefault(_RouterContext);
 
@@ -17702,7 +19230,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 181 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -17830,7 +19358,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 182 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -17843,7 +19371,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _RouterContext = __webpack_require__(44);
+	var _RouterContext = __webpack_require__(41);
 
 	var _RouterContext2 = _interopRequireDefault(_RouterContext);
 
@@ -17893,18 +19421,18 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 183 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _createBrowserHistory = __webpack_require__(166);
+	var _createBrowserHistory = __webpack_require__(174);
 
 	var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
-	var _createRouterHistory = __webpack_require__(94);
+	var _createRouterHistory = __webpack_require__(98);
 
 	var _createRouterHistory2 = _interopRequireDefault(_createRouterHistory);
 
@@ -17914,14 +19442,14 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 184 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _PatternUtils = __webpack_require__(31);
+	var _PatternUtils = __webpack_require__(28);
 
 	function routeParamsChanged(route, prevState, nextState) {
 	  if (!route.path) return false;
@@ -17996,7 +19524,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 185 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18005,7 +19533,7 @@
 
 	var _AsyncUtils = __webpack_require__(57);
 
-	var _makeStateWithLocation = __webpack_require__(95);
+	var _makeStateWithLocation = __webpack_require__(99);
 
 	var _makeStateWithLocation2 = _interopRequireDefault(_makeStateWithLocation);
 
@@ -18047,14 +19575,14 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 186 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _PatternUtils = __webpack_require__(31);
+	var _PatternUtils = __webpack_require__(28);
 
 	/**
 	 * Extracts an object of params the given route cares about from
@@ -18078,18 +19606,18 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 187 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _createHashHistory = __webpack_require__(87);
+	var _createHashHistory = __webpack_require__(91);
 
 	var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
 
-	var _createRouterHistory = __webpack_require__(94);
+	var _createRouterHistory = __webpack_require__(98);
 
 	var _createRouterHistory2 = _interopRequireDefault(_createRouterHistory);
 
@@ -18099,7 +19627,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 188 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18110,7 +19638,7 @@
 
 	exports.default = isActive;
 
-	var _PatternUtils = __webpack_require__(31);
+	var _PatternUtils = __webpack_require__(28);
 
 	function deepEqual(a, b) {
 	  if (a == b) return true;
@@ -18256,7 +19784,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 189 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -18265,13 +19793,13 @@
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _Actions = __webpack_require__(30);
+	var _Actions = __webpack_require__(27);
 
 	var _invariant = __webpack_require__(10);
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
-	var _createMemoryHistory = __webpack_require__(93);
+	var _createMemoryHistory = __webpack_require__(97);
 
 	var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 
@@ -18279,9 +19807,9 @@
 
 	var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-	var _RouteUtils = __webpack_require__(24);
+	var _RouteUtils = __webpack_require__(22);
 
-	var _RouterUtils = __webpack_require__(92);
+	var _RouterUtils = __webpack_require__(96);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18345,7 +19873,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 190 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -18360,17 +19888,17 @@
 
 	var _AsyncUtils = __webpack_require__(57);
 
-	var _makeStateWithLocation = __webpack_require__(95);
+	var _makeStateWithLocation = __webpack_require__(99);
 
 	var _makeStateWithLocation2 = _interopRequireDefault(_makeStateWithLocation);
 
-	var _PatternUtils = __webpack_require__(31);
+	var _PatternUtils = __webpack_require__(28);
 
 	var _routerWarning = __webpack_require__(9);
 
 	var _routerWarning2 = _interopRequireDefault(_routerWarning);
 
-	var _RouteUtils = __webpack_require__(24);
+	var _RouteUtils = __webpack_require__(22);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18602,7 +20130,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 191 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -18611,7 +20139,7 @@
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _useQueries = __webpack_require__(43);
+	var _useQueries = __webpack_require__(40);
 
 	var _useQueries2 = _interopRequireDefault(_useQueries);
 
@@ -18659,7 +20187,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 192 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -18678,7 +20206,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _hoistNonReactStatics = __webpack_require__(170);
+	var _hoistNonReactStatics = __webpack_require__(178);
 
 	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
@@ -18729,7 +20257,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 193 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18747,7 +20275,7 @@
 
 	var ReactDOMComponentTree = __webpack_require__(7);
 
-	var focusNode = __webpack_require__(83);
+	var focusNode = __webpack_require__(85);
 
 	var AutoFocusUtils = {
 	  focusDOMComponent: function () {
@@ -18758,7 +20286,7 @@
 	module.exports = AutoFocusUtils;
 
 /***/ },
-/* 194 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18775,13 +20303,13 @@
 	'use strict';
 
 	var EventConstants = __webpack_require__(18);
-	var EventPropagators = __webpack_require__(37);
+	var EventPropagators = __webpack_require__(34);
 	var ExecutionEnvironment = __webpack_require__(8);
-	var FallbackCompositionState = __webpack_require__(200);
-	var SyntheticCompositionEvent = __webpack_require__(244);
-	var SyntheticInputEvent = __webpack_require__(247);
+	var FallbackCompositionState = __webpack_require__(209);
+	var SyntheticCompositionEvent = __webpack_require__(253);
+	var SyntheticInputEvent = __webpack_require__(256);
 
-	var keyOf = __webpack_require__(23);
+	var keyOf = __webpack_require__(21);
 
 	var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 	var START_KEYCODE = 229;
@@ -19050,8 +20578,10 @@
 	function getFallbackBeforeInputChars(topLevelType, nativeEvent) {
 	  // If we are currently composing (IME) and using a fallback to do so,
 	  // try to extract the composed characters from the fallback object.
+	  // If composition event is available, we extract a string only at
+	  // compositionevent, otherwise extract it at fallback events.
 	  if (currentComposition) {
-	    if (topLevelType === topLevelTypes.topCompositionEnd || isFallbackCompositionEnd(topLevelType, nativeEvent)) {
+	    if (topLevelType === topLevelTypes.topCompositionEnd || !canUseCompositionEvent && isFallbackCompositionEnd(topLevelType, nativeEvent)) {
 	      var chars = currentComposition.getData();
 	      FallbackCompositionState.release(currentComposition);
 	      currentComposition = null;
@@ -19151,7 +20681,7 @@
 	module.exports = BeforeInputEventPlugin;
 
 /***/ },
-/* 195 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -19167,14 +20697,14 @@
 
 	'use strict';
 
-	var CSSProperty = __webpack_require__(97);
+	var CSSProperty = __webpack_require__(101);
 	var ExecutionEnvironment = __webpack_require__(8);
 	var ReactInstrumentation = __webpack_require__(11);
 
-	var camelizeStyleName = __webpack_require__(141);
-	var dangerousStyleValue = __webpack_require__(253);
-	var hyphenateStyleName = __webpack_require__(148);
-	var memoizeStringOnly = __webpack_require__(151);
+	var camelizeStyleName = __webpack_require__(150);
+	var dangerousStyleValue = __webpack_require__(262);
+	var hyphenateStyleName = __webpack_require__(157);
+	var memoizeStringOnly = __webpack_require__(160);
 	var warning = __webpack_require__(3);
 
 	var processStyleName = memoizeStringOnly(function (styleName) {
@@ -19362,7 +20892,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 196 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19379,8 +20909,8 @@
 	'use strict';
 
 	var EventConstants = __webpack_require__(18);
-	var EventPluginHub = __webpack_require__(36);
-	var EventPropagators = __webpack_require__(37);
+	var EventPluginHub = __webpack_require__(33);
+	var EventPropagators = __webpack_require__(34);
 	var ExecutionEnvironment = __webpack_require__(8);
 	var ReactDOMComponentTree = __webpack_require__(7);
 	var ReactUpdates = __webpack_require__(17);
@@ -19388,8 +20918,8 @@
 
 	var getEventTarget = __webpack_require__(76);
 	var isEventSupported = __webpack_require__(78);
-	var isTextInputElement = __webpack_require__(121);
-	var keyOf = __webpack_require__(23);
+	var isTextInputElement = __webpack_require__(125);
+	var keyOf = __webpack_require__(21);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -19422,7 +20952,7 @@
 	var doesChangeEventBubble = false;
 	if (ExecutionEnvironment.canUseDOM) {
 	  // See `handleChange` comment below
-	  doesChangeEventBubble = isEventSupported('change') && (!('documentMode' in document) || document.documentMode > 8);
+	  doesChangeEventBubble = isEventSupported('change') && (!document.documentMode || document.documentMode > 8);
 	}
 
 	function manualDispatchChangeEvent(nativeEvent) {
@@ -19488,7 +21018,7 @@
 	  // deleting text, so we ignore its input events.
 	  // IE10+ fire input events to often, such when a placeholder
 	  // changes or when an input with a placeholder is focused.
-	  isInputEventSupported = isEventSupported('input') && (!('documentMode' in document) || document.documentMode > 11);
+	  isInputEventSupported = isEventSupported('input') && (!document.documentMode || document.documentMode > 11);
 	}
 
 	/**
@@ -19692,7 +21222,7 @@
 	module.exports = ChangeEventPlugin;
 
 /***/ },
-/* 197 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -19710,11 +21240,11 @@
 
 	var _prodInvariant = __webpack_require__(4);
 
-	var DOMLazyTree = __webpack_require__(32);
+	var DOMLazyTree = __webpack_require__(30);
 	var ExecutionEnvironment = __webpack_require__(8);
 
-	var createNodesFromMarkup = __webpack_require__(144);
-	var emptyFunction = __webpack_require__(13);
+	var createNodesFromMarkup = __webpack_require__(153);
+	var emptyFunction = __webpack_require__(12);
 	var invariant = __webpack_require__(2);
 
 	var Danger = {
@@ -19746,7 +21276,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 198 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19762,7 +21292,7 @@
 
 	'use strict';
 
-	var keyOf = __webpack_require__(23);
+	var keyOf = __webpack_require__(21);
 
 	/**
 	 * Module that is injectable into `EventPluginHub`, that specifies a
@@ -19778,7 +21308,7 @@
 	module.exports = DefaultEventPluginOrder;
 
 /***/ },
-/* 199 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19795,11 +21325,11 @@
 	'use strict';
 
 	var EventConstants = __webpack_require__(18);
-	var EventPropagators = __webpack_require__(37);
+	var EventPropagators = __webpack_require__(34);
 	var ReactDOMComponentTree = __webpack_require__(7);
-	var SyntheticMouseEvent = __webpack_require__(50);
+	var SyntheticMouseEvent = __webpack_require__(47);
 
-	var keyOf = __webpack_require__(23);
+	var keyOf = __webpack_require__(21);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -19888,7 +21418,7 @@
 	module.exports = EnterLeaveEventPlugin;
 
 /***/ },
-/* 200 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19906,9 +21436,9 @@
 
 	var _assign = __webpack_require__(6);
 
-	var PooledClass = __webpack_require__(25);
+	var PooledClass = __webpack_require__(23);
 
-	var getTextContentAccessor = __webpack_require__(119);
+	var getTextContentAccessor = __webpack_require__(123);
 
 	/**
 	 * This helper class stores information about text content of a target node,
@@ -19988,7 +21518,7 @@
 	module.exports = FallbackCompositionState;
 
 /***/ },
-/* 201 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20004,7 +21534,7 @@
 
 	'use strict';
 
-	var DOMProperty = __webpack_require__(28);
+	var DOMProperty = __webpack_require__(26);
 
 	var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 	var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -20025,6 +21555,8 @@
 	    allowFullScreen: HAS_BOOLEAN_VALUE,
 	    allowTransparency: 0,
 	    alt: 0,
+	    // specifies target context for links with `preload` type
+	    as: 0,
 	    async: HAS_BOOLEAN_VALUE,
 	    autoComplete: 0,
 	    // autoFocus is polyfilled/normalized by AutoFocusUtils
@@ -20105,6 +21637,7 @@
 	    optimum: 0,
 	    pattern: 0,
 	    placeholder: 0,
+	    playsInline: HAS_BOOLEAN_VALUE,
 	    poster: 0,
 	    preload: 0,
 	    profile: 0,
@@ -20202,7 +21735,7 @@
 	module.exports = HTMLDOMPropertyConfig;
 
 /***/ },
-/* 202 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -20220,16 +21753,16 @@
 
 	var _assign = __webpack_require__(6);
 
-	var ReactChildren = __webpack_require__(100);
+	var ReactChildren = __webpack_require__(104);
 	var ReactComponent = __webpack_require__(65);
-	var ReactPureComponent = __webpack_require__(234);
-	var ReactClass = __webpack_require__(101);
-	var ReactDOMFactories = __webpack_require__(212);
-	var ReactElement = __webpack_require__(15);
-	var ReactPropTypes = __webpack_require__(112);
-	var ReactVersion = __webpack_require__(113);
+	var ReactPureComponent = __webpack_require__(243);
+	var ReactClass = __webpack_require__(105);
+	var ReactDOMFactories = __webpack_require__(221);
+	var ReactElement = __webpack_require__(14);
+	var ReactPropTypes = __webpack_require__(116);
+	var ReactVersion = __webpack_require__(117);
 
-	var onlyChild = __webpack_require__(259);
+	var onlyChild = __webpack_require__(268);
 	var warning = __webpack_require__(3);
 
 	var createElement = ReactElement.createElement;
@@ -20237,7 +21770,7 @@
 	var cloneElement = ReactElement.cloneElement;
 
 	if (process.env.NODE_ENV !== 'production') {
-	  var ReactElementValidator = __webpack_require__(104);
+	  var ReactElementValidator = __webpack_require__(108);
 	  createElement = ReactElementValidator.createElement;
 	  createFactory = ReactElementValidator.createFactory;
 	  cloneElement = ReactElementValidator.cloneElement;
@@ -20297,7 +21830,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 203 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -20313,9 +21846,9 @@
 
 	'use strict';
 
-	var ReactReconciler = __webpack_require__(33);
+	var ReactReconciler = __webpack_require__(31);
 
-	var instantiateReactComponent = __webpack_require__(120);
+	var instantiateReactComponent = __webpack_require__(124);
 	var KeyEscapeUtils = __webpack_require__(63);
 	var shouldUpdateReactComponent = __webpack_require__(79);
 	var traverseAllChildren = __webpack_require__(80);
@@ -20329,7 +21862,7 @@
 	  // https://github.com/facebook/react/issues/7240
 	  // Remove the inline requires when we don't need them anymore:
 	  // https://github.com/facebook/react/pull/7178
-	  ReactComponentTreeHook = __webpack_require__(14);
+	  ReactComponentTreeHook = __webpack_require__(13);
 	}
 
 	function instantiateChild(childInstances, child, name, selfDebugID) {
@@ -20337,7 +21870,7 @@
 	  var keyUnique = childInstances[name] === undefined;
 	  if (process.env.NODE_ENV !== 'production') {
 	    if (!ReactComponentTreeHook) {
-	      ReactComponentTreeHook = __webpack_require__(14);
+	      ReactComponentTreeHook = __webpack_require__(13);
 	    }
 	    if (!keyUnique) {
 	      process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
@@ -20457,7 +21990,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 204 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -20473,7 +22006,7 @@
 
 	'use strict';
 
-	var ReactComponentTreeHook = __webpack_require__(14);
+	var ReactComponentTreeHook = __webpack_require__(13);
 
 	var warning = __webpack_require__(3);
 
@@ -20517,7 +22050,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 205 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20534,7 +22067,7 @@
 	'use strict';
 
 	var DOMChildrenOperations = __webpack_require__(60);
-	var ReactDOMIDOperations = __webpack_require__(214);
+	var ReactDOMIDOperations = __webpack_require__(223);
 
 	/**
 	 * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -20552,7 +22085,7 @@
 	module.exports = ReactComponentBrowserEnvironment;
 
 /***/ },
-/* 206 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -20573,16 +22106,16 @@
 
 	var ReactComponentEnvironment = __webpack_require__(66);
 	var ReactCurrentOwner = __webpack_require__(19);
-	var ReactElement = __webpack_require__(15);
+	var ReactElement = __webpack_require__(14);
 	var ReactErrorUtils = __webpack_require__(67);
-	var ReactInstanceMap = __webpack_require__(38);
+	var ReactInstanceMap = __webpack_require__(35);
 	var ReactInstrumentation = __webpack_require__(11);
-	var ReactNodeTypes = __webpack_require__(111);
-	var ReactPropTypeLocations = __webpack_require__(49);
-	var ReactReconciler = __webpack_require__(33);
+	var ReactNodeTypes = __webpack_require__(115);
+	var ReactPropTypeLocations = __webpack_require__(46);
+	var ReactReconciler = __webpack_require__(31);
 
-	var checkReactTypeSpec = __webpack_require__(116);
-	var emptyObject = __webpack_require__(34);
+	var checkReactTypeSpec = __webpack_require__(120);
+	var emptyObject = __webpack_require__(32);
 	var invariant = __webpack_require__(2);
 	var shallowEqual = __webpack_require__(53);
 	var shouldUpdateReactComponent = __webpack_require__(79);
@@ -20609,34 +22142,29 @@
 	  }
 	}
 
-	function invokeComponentDidMountWithTimer() {
-	  var publicInstance = this._instance;
-	  if (this._debugID !== 0) {
-	    ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'componentDidMount');
-	  }
-	  publicInstance.componentDidMount();
-	  if (this._debugID !== 0) {
-	    ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'componentDidMount');
-	  }
-	}
-
-	function invokeComponentDidUpdateWithTimer(prevProps, prevState, prevContext) {
-	  var publicInstance = this._instance;
-	  if (this._debugID !== 0) {
-	    ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'componentDidUpdate');
-	  }
-	  publicInstance.componentDidUpdate(prevProps, prevState, prevContext);
-	  if (this._debugID !== 0) {
-	    ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'componentDidUpdate');
-	  }
-	}
-
 	function shouldConstruct(Component) {
 	  return !!(Component.prototype && Component.prototype.isReactComponent);
 	}
 
 	function isPureComponent(Component) {
 	  return !!(Component.prototype && Component.prototype.isPureReactComponent);
+	}
+
+	// Separated into a function to contain deoptimizations caused by try/finally.
+	function measureLifeCyclePerf(fn, debugID, timerType) {
+	  if (debugID === 0) {
+	    // Top-level wrappers (see ReactMount) and empty components (see
+	    // ReactDOMEmptyComponent) are invisible to hooks and devtools.
+	    // Both are implementation details that should go away in the future.
+	    return fn();
+	  }
+
+	  ReactInstrumentation.debugTool.onBeginLifeCycleTimer(debugID, timerType);
+	  try {
+	    return fn();
+	  } finally {
+	    ReactInstrumentation.debugTool.onEndLifeCycleTimer(debugID, timerType);
+	  }
 	}
 
 	/**
@@ -20730,6 +22258,8 @@
 	   * @internal
 	   */
 	  mountComponent: function (transaction, hostParent, hostContainerInfo, context) {
+	    var _this = this;
+
 	    this._context = context;
 	    this._mountOrder = nextMountID++;
 	    this._hostParent = hostParent;
@@ -20819,7 +22349,11 @@
 
 	    if (inst.componentDidMount) {
 	      if (process.env.NODE_ENV !== 'production') {
-	        transaction.getReactMountReady().enqueue(invokeComponentDidMountWithTimer, this);
+	        transaction.getReactMountReady().enqueue(function () {
+	          measureLifeCyclePerf(function () {
+	            return inst.componentDidMount();
+	          }, _this._debugID, 'componentDidMount');
+	        });
 	      } else {
 	        transaction.getReactMountReady().enqueue(inst.componentDidMount, inst);
 	      }
@@ -20843,35 +22377,26 @@
 
 	  _constructComponentWithoutOwner: function (doConstruct, publicProps, publicContext, updateQueue) {
 	    var Component = this._currentElement.type;
-	    var instanceOrElement;
+
 	    if (doConstruct) {
 	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'ctor');
-	        }
-	      }
-	      instanceOrElement = new Component(publicProps, publicContext, updateQueue);
-	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'ctor');
-	        }
-	      }
-	    } else {
-	      // This can still be an instance in case of factory components
-	      // but we'll count this as time spent rendering as the more common case.
-	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'render');
-	        }
-	      }
-	      instanceOrElement = Component(publicProps, publicContext, updateQueue);
-	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'render');
-	        }
+	        return measureLifeCyclePerf(function () {
+	          return new Component(publicProps, publicContext, updateQueue);
+	        }, this._debugID, 'ctor');
+	      } else {
+	        return new Component(publicProps, publicContext, updateQueue);
 	      }
 	    }
-	    return instanceOrElement;
+
+	    // This can still be an instance in case of factory components
+	    // but we'll count this as time spent rendering as the more common case.
+	    if (process.env.NODE_ENV !== 'production') {
+	      return measureLifeCyclePerf(function () {
+	        return Component(publicProps, publicContext, updateQueue);
+	      }, this._debugID, 'render');
+	    } else {
+	      return Component(publicProps, publicContext, updateQueue);
+	    }
 	  },
 
 	  performInitialMountWithErrorHandling: function (renderedElement, hostParent, hostContainerInfo, transaction, context) {
@@ -20880,11 +22405,6 @@
 	    try {
 	      markup = this.performInitialMount(renderedElement, hostParent, hostContainerInfo, transaction, context);
 	    } catch (e) {
-	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onError();
-	        }
-	      }
 	      // Roll back to checkpoint, handle error (which may add items to the transaction), and take a new checkpoint
 	      transaction.rollback(checkpoint);
 	      this._instance.unstable_handleError(e);
@@ -20905,17 +22425,19 @@
 
 	  performInitialMount: function (renderedElement, hostParent, hostContainerInfo, transaction, context) {
 	    var inst = this._instance;
+
+	    var debugID = 0;
+	    if (process.env.NODE_ENV !== 'production') {
+	      debugID = this._debugID;
+	    }
+
 	    if (inst.componentWillMount) {
 	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'componentWillMount');
-	        }
-	      }
-	      inst.componentWillMount();
-	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'componentWillMount');
-	        }
+	        measureLifeCyclePerf(function () {
+	          return inst.componentWillMount();
+	        }, debugID, 'componentWillMount');
+	      } else {
+	        inst.componentWillMount();
 	      }
 	      // When mounting, calls to `setState` by `componentWillMount` will set
 	      // `this._pendingStateQueue` without triggering a re-render.
@@ -20935,15 +22457,12 @@
 	    );
 	    this._renderedComponent = child;
 
-	    var selfDebugID = 0;
-	    if (process.env.NODE_ENV !== 'production') {
-	      selfDebugID = this._debugID;
-	    }
-	    var markup = ReactReconciler.mountComponent(child, transaction, hostParent, hostContainerInfo, this._processChildContext(context), selfDebugID);
+	    var markup = ReactReconciler.mountComponent(child, transaction, hostParent, hostContainerInfo, this._processChildContext(context), debugID);
 
 	    if (process.env.NODE_ENV !== 'production') {
-	      if (this._debugID !== 0) {
-	        ReactInstrumentation.debugTool.onSetChildren(this._debugID, child._debugID !== 0 ? [child._debugID] : []);
+	      if (debugID !== 0) {
+	        var childDebugIDs = child._debugID !== 0 ? [child._debugID] : [];
+	        ReactInstrumentation.debugTool.onSetChildren(debugID, childDebugIDs);
 	      }
 	    }
 
@@ -20964,24 +22483,22 @@
 	    if (!this._renderedComponent) {
 	      return;
 	    }
+
 	    var inst = this._instance;
 
 	    if (inst.componentWillUnmount && !inst._calledComponentWillUnmount) {
 	      inst._calledComponentWillUnmount = true;
-	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'componentWillUnmount');
-	        }
-	      }
+
 	      if (safely) {
 	        var name = this.getName() + '.componentWillUnmount()';
 	        ReactErrorUtils.invokeGuardedCallback(name, inst.componentWillUnmount.bind(inst));
 	      } else {
-	        inst.componentWillUnmount();
-	      }
-	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'componentWillUnmount');
+	        if (process.env.NODE_ENV !== 'production') {
+	          measureLifeCyclePerf(function () {
+	            return inst.componentWillUnmount();
+	          }, this._debugID, 'componentWillUnmount');
+	        } else {
+	          inst.componentWillUnmount();
 	        }
 	      }
 	    }
@@ -21068,13 +22585,21 @@
 	  _processChildContext: function (currentContext) {
 	    var Component = this._currentElement.type;
 	    var inst = this._instance;
-	    if (process.env.NODE_ENV !== 'production') {
-	      ReactInstrumentation.debugTool.onBeginProcessingChildContext();
+	    var childContext;
+
+	    if (inst.getChildContext) {
+	      if (process.env.NODE_ENV !== 'production') {
+	        ReactInstrumentation.debugTool.onBeginProcessingChildContext();
+	        try {
+	          childContext = inst.getChildContext();
+	        } finally {
+	          ReactInstrumentation.debugTool.onEndProcessingChildContext();
+	        }
+	      } else {
+	        childContext = inst.getChildContext();
+	      }
 	    }
-	    var childContext = inst.getChildContext && inst.getChildContext();
-	    if (process.env.NODE_ENV !== 'production') {
-	      ReactInstrumentation.debugTool.onEndProcessingChildContext();
-	    }
+
 	    if (childContext) {
 	      !(typeof Component.childContextTypes === 'object') ? process.env.NODE_ENV !== 'production' ? invariant(false, '%s.getChildContext(): childContextTypes must be defined in order to use getChildContext().', this.getName() || 'ReactCompositeComponent') : _prodInvariant('107', this.getName() || 'ReactCompositeComponent') : void 0;
 	      if (process.env.NODE_ENV !== 'production') {
@@ -21169,15 +22694,11 @@
 	    // immediately reconciled instead of waiting for the next batch.
 	    if (willReceive && inst.componentWillReceiveProps) {
 	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'componentWillReceiveProps');
-	        }
-	      }
-	      inst.componentWillReceiveProps(nextProps, nextContext);
-	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'componentWillReceiveProps');
-	        }
+	        measureLifeCyclePerf(function () {
+	          return inst.componentWillReceiveProps(nextProps, nextContext);
+	        }, this._debugID, 'componentWillReceiveProps');
+	      } else {
+	        inst.componentWillReceiveProps(nextProps, nextContext);
 	      }
 	    }
 
@@ -21187,15 +22708,11 @@
 	    if (!this._pendingForceUpdate) {
 	      if (inst.shouldComponentUpdate) {
 	        if (process.env.NODE_ENV !== 'production') {
-	          if (this._debugID !== 0) {
-	            ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'shouldComponentUpdate');
-	          }
-	        }
-	        shouldUpdate = inst.shouldComponentUpdate(nextProps, nextState, nextContext);
-	        if (process.env.NODE_ENV !== 'production') {
-	          if (this._debugID !== 0) {
-	            ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'shouldComponentUpdate');
-	          }
+	          shouldUpdate = measureLifeCyclePerf(function () {
+	            return inst.shouldComponentUpdate(nextProps, nextState, nextContext);
+	          }, this._debugID, 'shouldComponentUpdate');
+	        } else {
+	          shouldUpdate = inst.shouldComponentUpdate(nextProps, nextState, nextContext);
 	        }
 	      } else {
 	        if (this._compositeType === CompositeTypes.PureClass) {
@@ -21261,6 +22778,8 @@
 	   * @private
 	   */
 	  _performComponentUpdate: function (nextElement, nextProps, nextState, nextContext, transaction, unmaskedContext) {
+	    var _this2 = this;
+
 	    var inst = this._instance;
 
 	    var hasComponentDidUpdate = Boolean(inst.componentDidUpdate);
@@ -21275,15 +22794,11 @@
 
 	    if (inst.componentWillUpdate) {
 	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'componentWillUpdate');
-	        }
-	      }
-	      inst.componentWillUpdate(nextProps, nextState, nextContext);
-	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'componentWillUpdate');
-	        }
+	        measureLifeCyclePerf(function () {
+	          return inst.componentWillUpdate(nextProps, nextState, nextContext);
+	        }, this._debugID, 'componentWillUpdate');
+	      } else {
+	        inst.componentWillUpdate(nextProps, nextState, nextContext);
 	      }
 	    }
 
@@ -21297,7 +22812,9 @@
 
 	    if (hasComponentDidUpdate) {
 	      if (process.env.NODE_ENV !== 'production') {
-	        transaction.getReactMountReady().enqueue(invokeComponentDidUpdateWithTimer.bind(this, prevProps, prevState, prevContext), this);
+	        transaction.getReactMountReady().enqueue(function () {
+	          measureLifeCyclePerf(inst.componentDidUpdate.bind(inst, prevProps, prevState, prevContext), _this2._debugID, 'componentDidUpdate');
+	        });
 	      } else {
 	        transaction.getReactMountReady().enqueue(inst.componentDidUpdate.bind(inst, prevProps, prevState, prevContext), inst);
 	      }
@@ -21314,6 +22831,12 @@
 	    var prevComponentInstance = this._renderedComponent;
 	    var prevRenderedElement = prevComponentInstance._currentElement;
 	    var nextRenderedElement = this._renderValidatedComponent();
+
+	    var debugID = 0;
+	    if (process.env.NODE_ENV !== 'production') {
+	      debugID = this._debugID;
+	    }
+
 	    if (shouldUpdateReactComponent(prevRenderedElement, nextRenderedElement)) {
 	      ReactReconciler.receiveComponent(prevComponentInstance, nextRenderedElement, transaction, this._processChildContext(context));
 	    } else {
@@ -21326,15 +22849,12 @@
 	      );
 	      this._renderedComponent = child;
 
-	      var selfDebugID = 0;
-	      if (process.env.NODE_ENV !== 'production') {
-	        selfDebugID = this._debugID;
-	      }
-	      var nextMarkup = ReactReconciler.mountComponent(child, transaction, this._hostParent, this._hostContainerInfo, this._processChildContext(context), selfDebugID);
+	      var nextMarkup = ReactReconciler.mountComponent(child, transaction, this._hostParent, this._hostContainerInfo, this._processChildContext(context), debugID);
 
 	      if (process.env.NODE_ENV !== 'production') {
-	        if (this._debugID !== 0) {
-	          ReactInstrumentation.debugTool.onSetChildren(this._debugID, child._debugID !== 0 ? [child._debugID] : []);
+	        if (debugID !== 0) {
+	          var childDebugIDs = child._debugID !== 0 ? [child._debugID] : [];
+	          ReactInstrumentation.debugTool.onSetChildren(debugID, childDebugIDs);
 	        }
 	      }
 
@@ -21356,17 +22876,14 @@
 	   */
 	  _renderValidatedComponentWithoutOwnerOrContext: function () {
 	    var inst = this._instance;
+	    var renderedComponent;
 
 	    if (process.env.NODE_ENV !== 'production') {
-	      if (this._debugID !== 0) {
-	        ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'render');
-	      }
-	    }
-	    var renderedComponent = inst.render();
-	    if (process.env.NODE_ENV !== 'production') {
-	      if (this._debugID !== 0) {
-	        ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'render');
-	      }
+	      renderedComponent = measureLifeCyclePerf(function () {
+	        return inst.render();
+	      }, this._debugID, 'render');
+	    } else {
+	      renderedComponent = inst.render();
 	    }
 
 	    if (process.env.NODE_ENV !== 'production') {
@@ -21417,7 +22934,7 @@
 	    var publicComponentInstance = component.getPublicInstance();
 	    if (process.env.NODE_ENV !== 'production') {
 	      var componentName = component && component.getName ? component.getName() : 'a component';
-	      process.env.NODE_ENV !== 'production' ? warning(publicComponentInstance != null, 'Stateless function components cannot be given refs ' + '(See ref "%s" in %s created by %s). ' + 'Attempts to access this ref will fail.', ref, componentName, this.getName()) : void 0;
+	      process.env.NODE_ENV !== 'production' ? warning(publicComponentInstance != null || component._compositeType !== CompositeTypes.StatelessFunctional, 'Stateless function components cannot be given refs ' + '(See ref "%s" in %s created by %s). ' + 'Attempts to access this ref will fail.', ref, componentName, this.getName()) : void 0;
 	    }
 	    var refs = inst.refs === emptyObject ? inst.refs = {} : inst.refs;
 	    refs[ref] = publicComponentInstance;
@@ -21478,7 +22995,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 207 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -21497,15 +23014,15 @@
 	'use strict';
 
 	var ReactDOMComponentTree = __webpack_require__(7);
-	var ReactDefaultInjection = __webpack_require__(225);
-	var ReactMount = __webpack_require__(109);
-	var ReactReconciler = __webpack_require__(33);
+	var ReactDefaultInjection = __webpack_require__(234);
+	var ReactMount = __webpack_require__(113);
+	var ReactReconciler = __webpack_require__(31);
 	var ReactUpdates = __webpack_require__(17);
-	var ReactVersion = __webpack_require__(113);
+	var ReactVersion = __webpack_require__(117);
 
-	var findDOMNode = __webpack_require__(254);
-	var getHostComponentFromComposite = __webpack_require__(118);
-	var renderSubtreeIntoContainer = __webpack_require__(261);
+	var findDOMNode = __webpack_require__(263);
+	var getHostComponentFromComposite = __webpack_require__(122);
+	var renderSubtreeIntoContainer = __webpack_require__(270);
 	var warning = __webpack_require__(3);
 
 	ReactDefaultInjection.inject();
@@ -21583,8 +23100,8 @@
 
 	if (process.env.NODE_ENV !== 'production') {
 	  var ReactInstrumentation = __webpack_require__(11);
-	  var ReactDOMUnknownPropertyHook = __webpack_require__(222);
-	  var ReactDOMNullInputValuePropHook = __webpack_require__(216);
+	  var ReactDOMUnknownPropertyHook = __webpack_require__(231);
+	  var ReactDOMNullInputValuePropHook = __webpack_require__(225);
 
 	  ReactInstrumentation.debugTool.addHook(ReactDOMUnknownPropertyHook);
 	  ReactInstrumentation.debugTool.addHook(ReactDOMNullInputValuePropHook);
@@ -21594,7 +23111,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 208 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21610,7 +23127,7 @@
 
 	'use strict';
 
-	var DisabledInputUtils = __webpack_require__(46);
+	var DisabledInputUtils = __webpack_require__(43);
 
 	/**
 	 * Implements a <button> host component that does not receive mouse events
@@ -21623,7 +23140,7 @@
 	module.exports = ReactDOMButton;
 
 /***/ },
-/* 209 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -21644,32 +23161,32 @@
 	var _prodInvariant = __webpack_require__(4),
 	    _assign = __webpack_require__(6);
 
-	var AutoFocusUtils = __webpack_require__(193);
-	var CSSPropertyOperations = __webpack_require__(195);
-	var DOMLazyTree = __webpack_require__(32);
+	var AutoFocusUtils = __webpack_require__(202);
+	var CSSPropertyOperations = __webpack_require__(204);
+	var DOMLazyTree = __webpack_require__(30);
 	var DOMNamespaces = __webpack_require__(61);
-	var DOMProperty = __webpack_require__(28);
-	var DOMPropertyOperations = __webpack_require__(99);
+	var DOMProperty = __webpack_require__(26);
+	var DOMPropertyOperations = __webpack_require__(103);
 	var EventConstants = __webpack_require__(18);
-	var EventPluginHub = __webpack_require__(36);
-	var EventPluginRegistry = __webpack_require__(47);
-	var ReactBrowserEventEmitter = __webpack_require__(48);
-	var ReactDOMButton = __webpack_require__(208);
-	var ReactDOMComponentFlags = __webpack_require__(102);
+	var EventPluginHub = __webpack_require__(33);
+	var EventPluginRegistry = __webpack_require__(44);
+	var ReactBrowserEventEmitter = __webpack_require__(45);
+	var ReactDOMButton = __webpack_require__(217);
+	var ReactDOMComponentFlags = __webpack_require__(106);
 	var ReactDOMComponentTree = __webpack_require__(7);
-	var ReactDOMInput = __webpack_require__(215);
-	var ReactDOMOption = __webpack_require__(217);
-	var ReactDOMSelect = __webpack_require__(103);
-	var ReactDOMTextarea = __webpack_require__(220);
+	var ReactDOMInput = __webpack_require__(224);
+	var ReactDOMOption = __webpack_require__(226);
+	var ReactDOMSelect = __webpack_require__(107);
+	var ReactDOMTextarea = __webpack_require__(229);
 	var ReactInstrumentation = __webpack_require__(11);
-	var ReactMultiChild = __webpack_require__(232);
-	var ReactServerRenderingTransaction = __webpack_require__(237);
+	var ReactMultiChild = __webpack_require__(241);
+	var ReactServerRenderingTransaction = __webpack_require__(246);
 
-	var emptyFunction = __webpack_require__(13);
-	var escapeTextContentForBrowser = __webpack_require__(51);
+	var emptyFunction = __webpack_require__(12);
+	var escapeTextContentForBrowser = __webpack_require__(48);
 	var invariant = __webpack_require__(2);
 	var isEventSupported = __webpack_require__(78);
-	var keyOf = __webpack_require__(23);
+	var keyOf = __webpack_require__(21);
 	var shallowEqual = __webpack_require__(53);
 	var validateDOMNesting = __webpack_require__(81);
 	var warning = __webpack_require__(3);
@@ -21823,9 +23340,9 @@
 	  ReactDOMOption.postMountWrapper(inst);
 	}
 
-	var setContentChildForInstrumentation = emptyFunction;
+	var setAndValidateContentChildDev = emptyFunction;
 	if (process.env.NODE_ENV !== 'production') {
-	  setContentChildForInstrumentation = function (content) {
+	  setAndValidateContentChildDev = function (content) {
 	    var hasExistingContent = this._contentDebugID != null;
 	    var debugID = this._debugID;
 	    // This ID represents the inlined child that has no backing instance:
@@ -21839,6 +23356,7 @@
 	      return;
 	    }
 
+	    validateDOMNesting(null, String(content), this, this._ancestorInfo);
 	    this._contentDebugID = contentDebugID;
 	    if (hasExistingContent) {
 	      ReactInstrumentation.debugTool.onBeforeUpdateComponent(contentDebugID, content);
@@ -22013,7 +23531,7 @@
 	  this._flags = 0;
 	  if (process.env.NODE_ENV !== 'production') {
 	    this._ancestorInfo = null;
-	    setContentChildForInstrumentation.call(this, null);
+	    setAndValidateContentChildDev.call(this, null);
 	  }
 	}
 
@@ -22113,7 +23631,7 @@
 	      if (parentInfo) {
 	        // parentInfo should always be present except for the top-level
 	        // component when server rendering
-	        validateDOMNesting(this._tag, this, parentInfo);
+	        validateDOMNesting(this._tag, null, this, parentInfo);
 	      }
 	      this._ancestorInfo = validateDOMNesting.updatedAncestorInfo(parentInfo, this._tag, this);
 	    }
@@ -22282,7 +23800,7 @@
 	        // TODO: Validate that text is allowed as a child of this node
 	        ret = escapeTextContentForBrowser(contentToUse);
 	        if (process.env.NODE_ENV !== 'production') {
-	          setContentChildForInstrumentation.call(this, contentToUse);
+	          setAndValidateContentChildDev.call(this, contentToUse);
 	        }
 	      } else if (childrenToUse != null) {
 	        var mountImages = this.mountChildren(childrenToUse, transaction, context);
@@ -22319,7 +23837,7 @@
 	      if (contentToUse != null) {
 	        // TODO: Validate that text is allowed as a child of this node
 	        if (process.env.NODE_ENV !== 'production') {
-	          setContentChildForInstrumentation.call(this, contentToUse);
+	          setAndValidateContentChildDev.call(this, contentToUse);
 	        }
 	        DOMLazyTree.queueText(lazyTree, contentToUse);
 	      } else if (childrenToUse != null) {
@@ -22551,7 +24069,7 @@
 	      if (lastContent !== nextContent) {
 	        this.updateTextContent('' + nextContent);
 	        if (process.env.NODE_ENV !== 'production') {
-	          setContentChildForInstrumentation.call(this, nextContent);
+	          setAndValidateContentChildDev.call(this, nextContent);
 	        }
 	      }
 	    } else if (nextHtml != null) {
@@ -22563,7 +24081,7 @@
 	      }
 	    } else if (nextChildren != null) {
 	      if (process.env.NODE_ENV !== 'production') {
-	        setContentChildForInstrumentation.call(this, null);
+	        setAndValidateContentChildDev.call(this, null);
 	      }
 
 	      this.updateChildren(nextChildren, transaction, context);
@@ -22618,7 +24136,7 @@
 	    this._wrapperState = null;
 
 	    if (process.env.NODE_ENV !== 'production') {
-	      setContentChildForInstrumentation.call(this, null);
+	      setAndValidateContentChildDev.call(this, null);
 	    }
 	  },
 
@@ -22634,7 +24152,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 210 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -22673,7 +24191,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 211 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22691,7 +24209,7 @@
 
 	var _assign = __webpack_require__(6);
 
-	var DOMLazyTree = __webpack_require__(32);
+	var DOMLazyTree = __webpack_require__(30);
 	var ReactDOMComponentTree = __webpack_require__(7);
 
 	var ReactDOMEmptyComponent = function (instantiate) {
@@ -22738,7 +24256,7 @@
 	module.exports = ReactDOMEmptyComponent;
 
 /***/ },
-/* 212 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -22754,7 +24272,7 @@
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(15);
+	var ReactElement = __webpack_require__(14);
 
 	/**
 	 * Create a factory that creates HTML tag elements.
@@ -22763,7 +24281,7 @@
 	 */
 	var createDOMFactory = ReactElement.createFactory;
 	if (process.env.NODE_ENV !== 'production') {
-	  var ReactElementValidator = __webpack_require__(104);
+	  var ReactElementValidator = __webpack_require__(108);
 	  createDOMFactory = ReactElementValidator.createFactory;
 	}
 
@@ -22914,7 +24432,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 213 */
+/* 222 */
 /***/ function(module, exports) {
 
 	/**
@@ -22937,7 +24455,7 @@
 	module.exports = ReactDOMFeatureFlags;
 
 /***/ },
-/* 214 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -22976,7 +24494,7 @@
 	module.exports = ReactDOMIDOperations;
 
 /***/ },
-/* 215 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -22995,8 +24513,8 @@
 	var _prodInvariant = __webpack_require__(4),
 	    _assign = __webpack_require__(6);
 
-	var DisabledInputUtils = __webpack_require__(46);
-	var DOMPropertyOperations = __webpack_require__(99);
+	var DisabledInputUtils = __webpack_require__(43);
+	var DOMPropertyOperations = __webpack_require__(103);
 	var LinkedValueUtils = __webpack_require__(64);
 	var ReactDOMComponentTree = __webpack_require__(7);
 	var ReactUpdates = __webpack_require__(17);
@@ -23020,7 +24538,7 @@
 
 	function isControlled(props) {
 	  var usesChecked = props.type === 'checkbox' || props.type === 'radio';
-	  return usesChecked ? props.checked !== undefined : props.value !== undefined;
+	  return usesChecked ? props.checked != null : props.value != null;
 	}
 
 	/**
@@ -23251,7 +24769,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 216 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -23267,7 +24785,7 @@
 
 	'use strict';
 
-	var ReactComponentTreeHook = __webpack_require__(14);
+	var ReactComponentTreeHook = __webpack_require__(13);
 
 	var warning = __webpack_require__(3);
 
@@ -23300,7 +24818,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 217 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -23318,9 +24836,9 @@
 
 	var _assign = __webpack_require__(6);
 
-	var ReactChildren = __webpack_require__(100);
+	var ReactChildren = __webpack_require__(104);
 	var ReactDOMComponentTree = __webpack_require__(7);
-	var ReactDOMSelect = __webpack_require__(103);
+	var ReactDOMSelect = __webpack_require__(107);
 
 	var warning = __webpack_require__(3);
 	var didWarnInvalidOptionChildren = false;
@@ -23429,7 +24947,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 218 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -23447,8 +24965,8 @@
 
 	var ExecutionEnvironment = __webpack_require__(8);
 
-	var getNodeForCharacterOffset = __webpack_require__(257);
-	var getTextContentAccessor = __webpack_require__(119);
+	var getNodeForCharacterOffset = __webpack_require__(266);
+	var getTextContentAccessor = __webpack_require__(123);
 
 	/**
 	 * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -23646,7 +25164,7 @@
 	module.exports = ReactDOMSelection;
 
 /***/ },
-/* 219 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -23666,10 +25184,10 @@
 	    _assign = __webpack_require__(6);
 
 	var DOMChildrenOperations = __webpack_require__(60);
-	var DOMLazyTree = __webpack_require__(32);
+	var DOMLazyTree = __webpack_require__(30);
 	var ReactDOMComponentTree = __webpack_require__(7);
 
-	var escapeTextContentForBrowser = __webpack_require__(51);
+	var escapeTextContentForBrowser = __webpack_require__(48);
 	var invariant = __webpack_require__(2);
 	var validateDOMNesting = __webpack_require__(81);
 
@@ -23724,7 +25242,7 @@
 	      if (parentInfo) {
 	        // parentInfo should always be present except for the top-level
 	        // component when server rendering
-	        validateDOMNesting('#text', this, parentInfo);
+	        validateDOMNesting(null, this._stringText, this, parentInfo);
 	      }
 	    }
 
@@ -23816,7 +25334,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 220 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -23835,7 +25353,7 @@
 	var _prodInvariant = __webpack_require__(4),
 	    _assign = __webpack_require__(6);
 
-	var DisabledInputUtils = __webpack_require__(46);
+	var DisabledInputUtils = __webpack_require__(43);
 	var LinkedValueUtils = __webpack_require__(64);
 	var ReactDOMComponentTree = __webpack_require__(7);
 	var ReactUpdates = __webpack_require__(17);
@@ -23977,7 +25495,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 221 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -24119,7 +25637,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 222 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -24135,9 +25653,9 @@
 
 	'use strict';
 
-	var DOMProperty = __webpack_require__(28);
-	var EventPluginRegistry = __webpack_require__(47);
-	var ReactComponentTreeHook = __webpack_require__(14);
+	var DOMProperty = __webpack_require__(26);
+	var EventPluginRegistry = __webpack_require__(44);
+	var ReactComponentTreeHook = __webpack_require__(13);
 
 	var warning = __webpack_require__(3);
 
@@ -24237,7 +25755,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 223 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -24253,13 +25771,13 @@
 
 	'use strict';
 
-	var ReactInvalidSetStateWarningHook = __webpack_require__(230);
-	var ReactHostOperationHistoryHook = __webpack_require__(228);
-	var ReactComponentTreeHook = __webpack_require__(14);
-	var ReactChildrenMutationWarningHook = __webpack_require__(204);
+	var ReactInvalidSetStateWarningHook = __webpack_require__(239);
+	var ReactHostOperationHistoryHook = __webpack_require__(237);
+	var ReactComponentTreeHook = __webpack_require__(13);
+	var ReactChildrenMutationWarningHook = __webpack_require__(213);
 	var ExecutionEnvironment = __webpack_require__(8);
 
-	var performanceNow = __webpack_require__(153);
+	var performanceNow = __webpack_require__(162);
 	var warning = __webpack_require__(3);
 
 	var hooks = [];
@@ -24480,12 +25998,6 @@
 	    endLifeCycleTimer(debugID, timerType);
 	    emitEvent('onEndLifeCycleTimer', debugID, timerType);
 	  },
-	  onError: function (debugID) {
-	    if (currentTimerDebugID != null) {
-	      endLifeCycleTimer(currentTimerDebugID, currentTimerType);
-	    }
-	    emitEvent('onError', debugID);
-	  },
 	  onBeginProcessingChildContext: function () {
 	    emitEvent('onBeginProcessingChildContext');
 	  },
@@ -24550,7 +26062,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 224 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24569,9 +26081,9 @@
 	var _assign = __webpack_require__(6);
 
 	var ReactUpdates = __webpack_require__(17);
-	var Transaction = __webpack_require__(40);
+	var Transaction = __webpack_require__(37);
 
-	var emptyFunction = __webpack_require__(13);
+	var emptyFunction = __webpack_require__(12);
 
 	var RESET_BATCHED_UPDATES = {
 	  initialize: emptyFunction,
@@ -24623,7 +26135,7 @@
 	module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
-/* 225 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24639,24 +26151,24 @@
 
 	'use strict';
 
-	var BeforeInputEventPlugin = __webpack_require__(194);
-	var ChangeEventPlugin = __webpack_require__(196);
-	var DefaultEventPluginOrder = __webpack_require__(198);
-	var EnterLeaveEventPlugin = __webpack_require__(199);
-	var HTMLDOMPropertyConfig = __webpack_require__(201);
-	var ReactComponentBrowserEnvironment = __webpack_require__(205);
-	var ReactDOMComponent = __webpack_require__(209);
+	var BeforeInputEventPlugin = __webpack_require__(203);
+	var ChangeEventPlugin = __webpack_require__(205);
+	var DefaultEventPluginOrder = __webpack_require__(207);
+	var EnterLeaveEventPlugin = __webpack_require__(208);
+	var HTMLDOMPropertyConfig = __webpack_require__(210);
+	var ReactComponentBrowserEnvironment = __webpack_require__(214);
+	var ReactDOMComponent = __webpack_require__(218);
 	var ReactDOMComponentTree = __webpack_require__(7);
-	var ReactDOMEmptyComponent = __webpack_require__(211);
-	var ReactDOMTreeTraversal = __webpack_require__(221);
-	var ReactDOMTextComponent = __webpack_require__(219);
-	var ReactDefaultBatchingStrategy = __webpack_require__(224);
-	var ReactEventListener = __webpack_require__(227);
-	var ReactInjection = __webpack_require__(229);
-	var ReactReconcileTransaction = __webpack_require__(235);
-	var SVGDOMPropertyConfig = __webpack_require__(239);
-	var SelectEventPlugin = __webpack_require__(240);
-	var SimpleEventPlugin = __webpack_require__(241);
+	var ReactDOMEmptyComponent = __webpack_require__(220);
+	var ReactDOMTreeTraversal = __webpack_require__(230);
+	var ReactDOMTextComponent = __webpack_require__(228);
+	var ReactDefaultBatchingStrategy = __webpack_require__(233);
+	var ReactEventListener = __webpack_require__(236);
+	var ReactInjection = __webpack_require__(238);
+	var ReactReconcileTransaction = __webpack_require__(244);
+	var SVGDOMPropertyConfig = __webpack_require__(248);
+	var SelectEventPlugin = __webpack_require__(249);
+	var SimpleEventPlugin = __webpack_require__(250);
 
 	var alreadyInjected = false;
 
@@ -24712,7 +26224,7 @@
 	};
 
 /***/ },
-/* 226 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24728,7 +26240,7 @@
 
 	'use strict';
 
-	var EventPluginHub = __webpack_require__(36);
+	var EventPluginHub = __webpack_require__(33);
 
 	function runEventQueueInBatch(events) {
 	  EventPluginHub.enqueueEvents(events);
@@ -24750,7 +26262,7 @@
 	module.exports = ReactEventEmitterMixin;
 
 /***/ },
-/* 227 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24768,14 +26280,14 @@
 
 	var _assign = __webpack_require__(6);
 
-	var EventListener = __webpack_require__(82);
+	var EventListener = __webpack_require__(84);
 	var ExecutionEnvironment = __webpack_require__(8);
-	var PooledClass = __webpack_require__(25);
+	var PooledClass = __webpack_require__(23);
 	var ReactDOMComponentTree = __webpack_require__(7);
 	var ReactUpdates = __webpack_require__(17);
 
 	var getEventTarget = __webpack_require__(76);
-	var getUnboundedScrollPosition = __webpack_require__(146);
+	var getUnboundedScrollPosition = __webpack_require__(155);
 
 	/**
 	 * Find the deepest React component completely containing the root of the
@@ -24912,7 +26424,7 @@
 	module.exports = ReactEventListener;
 
 /***/ },
-/* 228 */
+/* 237 */
 /***/ function(module, exports) {
 
 	/**
@@ -24954,7 +26466,7 @@
 	module.exports = ReactHostOperationHistoryHook;
 
 /***/ },
-/* 229 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24970,14 +26482,14 @@
 
 	'use strict';
 
-	var DOMProperty = __webpack_require__(28);
-	var EventPluginHub = __webpack_require__(36);
+	var DOMProperty = __webpack_require__(26);
+	var EventPluginHub = __webpack_require__(33);
 	var EventPluginUtils = __webpack_require__(62);
 	var ReactComponentEnvironment = __webpack_require__(66);
-	var ReactClass = __webpack_require__(101);
-	var ReactEmptyComponent = __webpack_require__(105);
-	var ReactBrowserEventEmitter = __webpack_require__(48);
-	var ReactHostComponent = __webpack_require__(107);
+	var ReactClass = __webpack_require__(105);
+	var ReactEmptyComponent = __webpack_require__(109);
+	var ReactBrowserEventEmitter = __webpack_require__(45);
+	var ReactHostComponent = __webpack_require__(111);
 	var ReactUpdates = __webpack_require__(17);
 
 	var ReactInjection = {
@@ -24995,7 +26507,7 @@
 	module.exports = ReactInjection;
 
 /***/ },
-/* 230 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -25037,7 +26549,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 231 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25053,7 +26565,7 @@
 
 	'use strict';
 
-	var adler32 = __webpack_require__(252);
+	var adler32 = __webpack_require__(261);
 
 	var TAG_END = /\/?>/;
 	var COMMENT_START = /^<\!\-\-/;
@@ -25092,7 +26604,7 @@
 	module.exports = ReactMarkupChecksum;
 
 /***/ },
-/* 232 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -25111,16 +26623,16 @@
 	var _prodInvariant = __webpack_require__(4);
 
 	var ReactComponentEnvironment = __webpack_require__(66);
-	var ReactInstanceMap = __webpack_require__(38);
+	var ReactInstanceMap = __webpack_require__(35);
 	var ReactInstrumentation = __webpack_require__(11);
-	var ReactMultiChildUpdateTypes = __webpack_require__(110);
+	var ReactMultiChildUpdateTypes = __webpack_require__(114);
 
 	var ReactCurrentOwner = __webpack_require__(19);
-	var ReactReconciler = __webpack_require__(33);
-	var ReactChildReconciler = __webpack_require__(203);
+	var ReactReconciler = __webpack_require__(31);
+	var ReactChildReconciler = __webpack_require__(212);
 
-	var emptyFunction = __webpack_require__(13);
-	var flattenChildren = __webpack_require__(255);
+	var emptyFunction = __webpack_require__(12);
+	var flattenChildren = __webpack_require__(264);
 	var invariant = __webpack_require__(2);
 
 	/**
@@ -25549,7 +27061,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 233 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -25649,7 +27161,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 234 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25670,7 +27182,7 @@
 	var ReactComponent = __webpack_require__(65);
 	var ReactNoopUpdateQueue = __webpack_require__(68);
 
-	var emptyObject = __webpack_require__(34);
+	var emptyObject = __webpack_require__(32);
 
 	/**
 	 * Base class helpers for the updating state of a component.
@@ -25696,7 +27208,7 @@
 	module.exports = ReactPureComponent;
 
 /***/ },
-/* 235 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -25714,12 +27226,12 @@
 
 	var _assign = __webpack_require__(6);
 
-	var CallbackQueue = __webpack_require__(98);
-	var PooledClass = __webpack_require__(25);
-	var ReactBrowserEventEmitter = __webpack_require__(48);
-	var ReactInputSelection = __webpack_require__(108);
+	var CallbackQueue = __webpack_require__(102);
+	var PooledClass = __webpack_require__(23);
+	var ReactBrowserEventEmitter = __webpack_require__(45);
+	var ReactInputSelection = __webpack_require__(112);
 	var ReactInstrumentation = __webpack_require__(11);
-	var Transaction = __webpack_require__(40);
+	var Transaction = __webpack_require__(37);
 	var ReactUpdateQueue = __webpack_require__(71);
 
 	/**
@@ -25880,7 +27392,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 236 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25896,7 +27408,7 @@
 
 	'use strict';
 
-	var ReactOwner = __webpack_require__(233);
+	var ReactOwner = __webpack_require__(242);
 
 	var ReactRef = {};
 
@@ -25965,7 +27477,7 @@
 	module.exports = ReactRef;
 
 /***/ },
-/* 237 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -25983,10 +27495,10 @@
 
 	var _assign = __webpack_require__(6);
 
-	var PooledClass = __webpack_require__(25);
-	var Transaction = __webpack_require__(40);
+	var PooledClass = __webpack_require__(23);
+	var Transaction = __webpack_require__(37);
 	var ReactInstrumentation = __webpack_require__(11);
-	var ReactServerUpdateQueue = __webpack_require__(238);
+	var ReactServerUpdateQueue = __webpack_require__(247);
 
 	/**
 	 * Executed within the scope of the `Transaction` instance. Consider these as
@@ -26061,7 +27573,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 238 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -26081,7 +27593,7 @@
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var ReactUpdateQueue = __webpack_require__(71);
-	var Transaction = __webpack_require__(40);
+	var Transaction = __webpack_require__(37);
 	var warning = __webpack_require__(3);
 
 	function warnNoop(publicInstance, callerName) {
@@ -26208,7 +27720,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 239 */
+/* 248 */
 /***/ function(module, exports) {
 
 	/**
@@ -26515,7 +28027,7 @@
 	module.exports = SVGDOMPropertyConfig;
 
 /***/ },
-/* 240 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26532,15 +28044,15 @@
 	'use strict';
 
 	var EventConstants = __webpack_require__(18);
-	var EventPropagators = __webpack_require__(37);
+	var EventPropagators = __webpack_require__(34);
 	var ExecutionEnvironment = __webpack_require__(8);
 	var ReactDOMComponentTree = __webpack_require__(7);
-	var ReactInputSelection = __webpack_require__(108);
+	var ReactInputSelection = __webpack_require__(112);
 	var SyntheticEvent = __webpack_require__(20);
 
-	var getActiveElement = __webpack_require__(84);
-	var isTextInputElement = __webpack_require__(121);
-	var keyOf = __webpack_require__(23);
+	var getActiveElement = __webpack_require__(86);
+	var isTextInputElement = __webpack_require__(125);
+	var keyOf = __webpack_require__(21);
 	var shallowEqual = __webpack_require__(53);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
@@ -26553,7 +28065,7 @@
 	      bubbled: keyOf({ onSelect: null }),
 	      captured: keyOf({ onSelectCapture: null })
 	    },
-	    dependencies: [topLevelTypes.topBlur, topLevelTypes.topContextMenu, topLevelTypes.topFocus, topLevelTypes.topKeyDown, topLevelTypes.topMouseDown, topLevelTypes.topMouseUp, topLevelTypes.topSelectionChange]
+	    dependencies: [topLevelTypes.topBlur, topLevelTypes.topContextMenu, topLevelTypes.topFocus, topLevelTypes.topKeyDown, topLevelTypes.topKeyUp, topLevelTypes.topMouseDown, topLevelTypes.topMouseUp, topLevelTypes.topSelectionChange]
 	  }
 	};
 
@@ -26716,7 +28228,7 @@
 	module.exports = SelectEventPlugin;
 
 /***/ },
-/* 241 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -26735,25 +28247,25 @@
 	var _prodInvariant = __webpack_require__(4);
 
 	var EventConstants = __webpack_require__(18);
-	var EventListener = __webpack_require__(82);
-	var EventPropagators = __webpack_require__(37);
+	var EventListener = __webpack_require__(84);
+	var EventPropagators = __webpack_require__(34);
 	var ReactDOMComponentTree = __webpack_require__(7);
-	var SyntheticAnimationEvent = __webpack_require__(242);
-	var SyntheticClipboardEvent = __webpack_require__(243);
+	var SyntheticAnimationEvent = __webpack_require__(251);
+	var SyntheticClipboardEvent = __webpack_require__(252);
 	var SyntheticEvent = __webpack_require__(20);
-	var SyntheticFocusEvent = __webpack_require__(246);
-	var SyntheticKeyboardEvent = __webpack_require__(248);
-	var SyntheticMouseEvent = __webpack_require__(50);
-	var SyntheticDragEvent = __webpack_require__(245);
-	var SyntheticTouchEvent = __webpack_require__(249);
-	var SyntheticTransitionEvent = __webpack_require__(250);
-	var SyntheticUIEvent = __webpack_require__(39);
-	var SyntheticWheelEvent = __webpack_require__(251);
+	var SyntheticFocusEvent = __webpack_require__(255);
+	var SyntheticKeyboardEvent = __webpack_require__(257);
+	var SyntheticMouseEvent = __webpack_require__(47);
+	var SyntheticDragEvent = __webpack_require__(254);
+	var SyntheticTouchEvent = __webpack_require__(258);
+	var SyntheticTransitionEvent = __webpack_require__(259);
+	var SyntheticUIEvent = __webpack_require__(36);
+	var SyntheticWheelEvent = __webpack_require__(260);
 
-	var emptyFunction = __webpack_require__(13);
+	var emptyFunction = __webpack_require__(12);
 	var getEventCharCode = __webpack_require__(74);
 	var invariant = __webpack_require__(2);
-	var keyOf = __webpack_require__(23);
+	var keyOf = __webpack_require__(21);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -27357,7 +28869,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 242 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27401,7 +28913,7 @@
 	module.exports = SyntheticAnimationEvent;
 
 /***/ },
-/* 243 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27444,7 +28956,7 @@
 	module.exports = SyntheticClipboardEvent;
 
 /***/ },
-/* 244 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27485,7 +28997,7 @@
 	module.exports = SyntheticCompositionEvent;
 
 /***/ },
-/* 245 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27501,7 +29013,7 @@
 
 	'use strict';
 
-	var SyntheticMouseEvent = __webpack_require__(50);
+	var SyntheticMouseEvent = __webpack_require__(47);
 
 	/**
 	 * @interface DragEvent
@@ -27526,7 +29038,7 @@
 	module.exports = SyntheticDragEvent;
 
 /***/ },
-/* 246 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27542,7 +29054,7 @@
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(39);
+	var SyntheticUIEvent = __webpack_require__(36);
 
 	/**
 	 * @interface FocusEvent
@@ -27567,7 +29079,7 @@
 	module.exports = SyntheticFocusEvent;
 
 /***/ },
-/* 247 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27609,7 +29121,7 @@
 	module.exports = SyntheticInputEvent;
 
 /***/ },
-/* 248 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27625,10 +29137,10 @@
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(39);
+	var SyntheticUIEvent = __webpack_require__(36);
 
 	var getEventCharCode = __webpack_require__(74);
-	var getEventKey = __webpack_require__(256);
+	var getEventKey = __webpack_require__(265);
 	var getEventModifierState = __webpack_require__(75);
 
 	/**
@@ -27698,7 +29210,7 @@
 	module.exports = SyntheticKeyboardEvent;
 
 /***/ },
-/* 249 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27714,7 +29226,7 @@
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(39);
+	var SyntheticUIEvent = __webpack_require__(36);
 
 	var getEventModifierState = __webpack_require__(75);
 
@@ -27748,7 +29260,7 @@
 	module.exports = SyntheticTouchEvent;
 
 /***/ },
-/* 250 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27792,7 +29304,7 @@
 	module.exports = SyntheticTransitionEvent;
 
 /***/ },
-/* 251 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27808,7 +29320,7 @@
 
 	'use strict';
 
-	var SyntheticMouseEvent = __webpack_require__(50);
+	var SyntheticMouseEvent = __webpack_require__(47);
 
 	/**
 	 * @interface WheelEvent
@@ -27851,7 +29363,7 @@
 	module.exports = SyntheticWheelEvent;
 
 /***/ },
-/* 252 */
+/* 261 */
 /***/ function(module, exports) {
 
 	/**
@@ -27900,7 +29412,7 @@
 	module.exports = adler32;
 
 /***/ },
-/* 253 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -27916,7 +29428,7 @@
 
 	'use strict';
 
-	var CSSProperty = __webpack_require__(97);
+	var CSSProperty = __webpack_require__(101);
 	var warning = __webpack_require__(3);
 
 	var isUnitlessNumber = CSSProperty.isUnitlessNumber;
@@ -27985,7 +29497,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 254 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -28005,9 +29517,9 @@
 
 	var ReactCurrentOwner = __webpack_require__(19);
 	var ReactDOMComponentTree = __webpack_require__(7);
-	var ReactInstanceMap = __webpack_require__(38);
+	var ReactInstanceMap = __webpack_require__(35);
 
-	var getHostComponentFromComposite = __webpack_require__(118);
+	var getHostComponentFromComposite = __webpack_require__(122);
 	var invariant = __webpack_require__(2);
 	var warning = __webpack_require__(3);
 
@@ -28051,7 +29563,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 255 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -28080,7 +29592,7 @@
 	  // https://github.com/facebook/react/issues/7240
 	  // Remove the inline requires when we don't need them anymore:
 	  // https://github.com/facebook/react/pull/7178
-	  ReactComponentTreeHook = __webpack_require__(14);
+	  ReactComponentTreeHook = __webpack_require__(13);
 	}
 
 	/**
@@ -28096,7 +29608,7 @@
 	    var keyUnique = result[name] === undefined;
 	    if (process.env.NODE_ENV !== 'production') {
 	      if (!ReactComponentTreeHook) {
-	        ReactComponentTreeHook = __webpack_require__(14);
+	        ReactComponentTreeHook = __webpack_require__(13);
 	      }
 	      if (!keyUnique) {
 	        process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
@@ -28133,7 +29645,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 256 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28240,7 +29752,7 @@
 	module.exports = getEventKey;
 
 /***/ },
-/* 257 */
+/* 266 */
 /***/ function(module, exports) {
 
 	/**
@@ -28319,7 +29831,7 @@
 	module.exports = getNodeForCharacterOffset;
 
 /***/ },
-/* 258 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28425,7 +29937,7 @@
 	module.exports = getVendorPrefixedEventName;
 
 /***/ },
-/* 259 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -28442,7 +29954,7 @@
 
 	var _prodInvariant = __webpack_require__(4);
 
-	var ReactElement = __webpack_require__(15);
+	var ReactElement = __webpack_require__(14);
 
 	var invariant = __webpack_require__(2);
 
@@ -28469,7 +29981,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 260 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28485,7 +29997,7 @@
 
 	'use strict';
 
-	var escapeTextContentForBrowser = __webpack_require__(51);
+	var escapeTextContentForBrowser = __webpack_require__(48);
 
 	/**
 	 * Escapes attribute value to prevent scripting attacks.
@@ -28500,7 +30012,7 @@
 	module.exports = quoteAttributeValueForBrowser;
 
 /***/ },
-/* 261 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28516,12 +30028,12 @@
 
 	'use strict';
 
-	var ReactMount = __webpack_require__(109);
+	var ReactMount = __webpack_require__(113);
 
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 262 */
+/* 271 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28533,259 +30045,7 @@
 
 
 /***/ },
-/* 263 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	var stylesInDom = {},
-		memoize = function(fn) {
-			var memo;
-			return function () {
-				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-				return memo;
-			};
-		},
-		isOldIE = memoize(function() {
-			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
-		}),
-		getHeadElement = memoize(function () {
-			return document.head || document.getElementsByTagName("head")[0];
-		}),
-		singletonElement = null,
-		singletonCounter = 0,
-		styleElementsInsertedAtTop = [];
-
-	module.exports = function(list, options) {
-		if(false) {
-			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-		}
-
-		options = options || {};
-		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-		// tags it will allow on a page
-		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
-
-		// By default, add <style> tags to the bottom of <head>.
-		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
-
-		var styles = listToStyles(list);
-		addStylesToDom(styles, options);
-
-		return function update(newList) {
-			var mayRemove = [];
-			for(var i = 0; i < styles.length; i++) {
-				var item = styles[i];
-				var domStyle = stylesInDom[item.id];
-				domStyle.refs--;
-				mayRemove.push(domStyle);
-			}
-			if(newList) {
-				var newStyles = listToStyles(newList);
-				addStylesToDom(newStyles, options);
-			}
-			for(var i = 0; i < mayRemove.length; i++) {
-				var domStyle = mayRemove[i];
-				if(domStyle.refs === 0) {
-					for(var j = 0; j < domStyle.parts.length; j++)
-						domStyle.parts[j]();
-					delete stylesInDom[domStyle.id];
-				}
-			}
-		};
-	}
-
-	function addStylesToDom(styles, options) {
-		for(var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-			if(domStyle) {
-				domStyle.refs++;
-				for(var j = 0; j < domStyle.parts.length; j++) {
-					domStyle.parts[j](item.parts[j]);
-				}
-				for(; j < item.parts.length; j++) {
-					domStyle.parts.push(addStyle(item.parts[j], options));
-				}
-			} else {
-				var parts = [];
-				for(var j = 0; j < item.parts.length; j++) {
-					parts.push(addStyle(item.parts[j], options));
-				}
-				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-			}
-		}
-	}
-
-	function listToStyles(list) {
-		var styles = [];
-		var newStyles = {};
-		for(var i = 0; i < list.length; i++) {
-			var item = list[i];
-			var id = item[0];
-			var css = item[1];
-			var media = item[2];
-			var sourceMap = item[3];
-			var part = {css: css, media: media, sourceMap: sourceMap};
-			if(!newStyles[id])
-				styles.push(newStyles[id] = {id: id, parts: [part]});
-			else
-				newStyles[id].parts.push(part);
-		}
-		return styles;
-	}
-
-	function insertStyleElement(options, styleElement) {
-		var head = getHeadElement();
-		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
-		if (options.insertAt === "top") {
-			if(!lastStyleElementInsertedAtTop) {
-				head.insertBefore(styleElement, head.firstChild);
-			} else if(lastStyleElementInsertedAtTop.nextSibling) {
-				head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
-			} else {
-				head.appendChild(styleElement);
-			}
-			styleElementsInsertedAtTop.push(styleElement);
-		} else if (options.insertAt === "bottom") {
-			head.appendChild(styleElement);
-		} else {
-			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
-		}
-	}
-
-	function removeStyleElement(styleElement) {
-		styleElement.parentNode.removeChild(styleElement);
-		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
-		if(idx >= 0) {
-			styleElementsInsertedAtTop.splice(idx, 1);
-		}
-	}
-
-	function createStyleElement(options) {
-		var styleElement = document.createElement("style");
-		styleElement.type = "text/css";
-		insertStyleElement(options, styleElement);
-		return styleElement;
-	}
-
-	function createLinkElement(options) {
-		var linkElement = document.createElement("link");
-		linkElement.rel = "stylesheet";
-		insertStyleElement(options, linkElement);
-		return linkElement;
-	}
-
-	function addStyle(obj, options) {
-		var styleElement, update, remove;
-
-		if (options.singleton) {
-			var styleIndex = singletonCounter++;
-			styleElement = singletonElement || (singletonElement = createStyleElement(options));
-			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
-			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
-		} else if(obj.sourceMap &&
-			typeof URL === "function" &&
-			typeof URL.createObjectURL === "function" &&
-			typeof URL.revokeObjectURL === "function" &&
-			typeof Blob === "function" &&
-			typeof btoa === "function") {
-			styleElement = createLinkElement(options);
-			update = updateLink.bind(null, styleElement);
-			remove = function() {
-				removeStyleElement(styleElement);
-				if(styleElement.href)
-					URL.revokeObjectURL(styleElement.href);
-			};
-		} else {
-			styleElement = createStyleElement(options);
-			update = applyToTag.bind(null, styleElement);
-			remove = function() {
-				removeStyleElement(styleElement);
-			};
-		}
-
-		update(obj);
-
-		return function updateStyle(newObj) {
-			if(newObj) {
-				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
-					return;
-				update(obj = newObj);
-			} else {
-				remove();
-			}
-		};
-	}
-
-	var replaceText = (function () {
-		var textStore = [];
-
-		return function (index, replacement) {
-			textStore[index] = replacement;
-			return textStore.filter(Boolean).join('\n');
-		};
-	})();
-
-	function applyToSingletonTag(styleElement, index, remove, obj) {
-		var css = remove ? "" : obj.css;
-
-		if (styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = replaceText(index, css);
-		} else {
-			var cssNode = document.createTextNode(css);
-			var childNodes = styleElement.childNodes;
-			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
-			if (childNodes.length) {
-				styleElement.insertBefore(cssNode, childNodes[index]);
-			} else {
-				styleElement.appendChild(cssNode);
-			}
-		}
-	}
-
-	function applyToTag(styleElement, obj) {
-		var css = obj.css;
-		var media = obj.media;
-
-		if(media) {
-			styleElement.setAttribute("media", media)
-		}
-
-		if(styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = css;
-		} else {
-			while(styleElement.firstChild) {
-				styleElement.removeChild(styleElement.firstChild);
-			}
-			styleElement.appendChild(document.createTextNode(css));
-		}
-	}
-
-	function updateLink(linkElement, obj) {
-		var css = obj.css;
-		var sourceMap = obj.sourceMap;
-
-		if(sourceMap) {
-			// http://stackoverflow.com/a/26603875
-			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-		}
-
-		var blob = new Blob([css], { type: "text/css" });
-
-		var oldSrc = linkElement.href;
-
-		linkElement.href = URL.createObjectURL(blob);
-
-		if(oldSrc)
-			URL.revokeObjectURL(oldSrc);
-	}
-
-
-/***/ },
-/* 264 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**

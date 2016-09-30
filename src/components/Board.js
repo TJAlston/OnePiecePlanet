@@ -5,43 +5,22 @@ class Board extends Component {
   render () {
     return (
       <div className='Board'>
-        <h2>ONLY SIX CHANCES</h2>
-        <Alphabet onPlay={this.props.onPlay} />
+        <Alphabet onPlay={this.props.onPlay}/>
       </div>
     )
   }
 }
 
 class Alphabet extends Component {
+  wholeAlphabet () {
+    return [...Array(26).keys()].map(
+      (i,index) => <AlphaLetter onPlay={this.props.onPlay} key={index} character={String.fromCharCode(65 + i)} />
+    )
+  }
   render () {
     return (
-      <div>
-        <AlphaLetter character="A" onPlay={this.props.onPlay} />
-        <AlphaLetter character="B" onPlay={this.props.onPlay} />
-        <AlphaLetter character="C" onPlay={this.props.onPlay} />
-        <AlphaLetter character="D" onPlay={this.props.onPlay} />
-        <AlphaLetter character="E" onPlay={this.props.onPlay} />
-        <AlphaLetter character="F" onPlay={this.props.onPlay} />
-        <AlphaLetter character="G" onPlay={this.props.onPlay} />
-        <AlphaLetter character="H" onPlay={this.props.onPlay} />
-        <AlphaLetter character="I" onPlay={this.props.onPlay} />
-        <AlphaLetter character="J" onPlay={this.props.onPlay} />
-        <AlphaLetter character="K" onPlay={this.props.onPlay} />
-        <AlphaLetter character="L" onPlay={this.props.onPlay} />
-        <AlphaLetter character="M" onPlay={this.props.onPlay} />
-        <AlphaLetter character="N" onPlay={this.props.onPlay} />
-        <AlphaLetter character="O" onPlay={this.props.onPlay} />
-        <AlphaLetter character="P" onPlay={this.props.onPlay} />
-        <AlphaLetter character="Q" onPlay={this.props.onPlay} />
-        <AlphaLetter character="R" onPlay={this.props.onPlay} />
-        <AlphaLetter character="S" onPlay={this.props.onPlay} />
-        <AlphaLetter character="T" onPlay={this.props.onPlay} />
-        <AlphaLetter character="U" onPlay={this.props.onPlay} />
-        <AlphaLetter character="V" onPlay={this.props.onPlay} />
-        <AlphaLetter character="W" onPlay={this.props.onPlay} />
-        <AlphaLetter character="X" onPlay={this.props.onPlay} />
-        <AlphaLetter character="Y" onPlay={this.props.onPlay} />
-        <AlphaLetter character="Z" onPlay={this.props.onPlay} />
+      <div className='AlphaLetter'>
+        {this.wholeAlphabet()}
       </div>
     )
   }
@@ -51,16 +30,25 @@ class AlphaLetter extends Component {
   constructor () {
     super()
     this.state = {
-      used:false
+      disabled: false
     }
   }
-  handleClick = () => {
+  getLetter = () => {
     this.props.onPlay(this.props.character)
-    this.setState({used:true})
-
+    this.setState({ disabled: true })
   }
   render () {
-    return <button disabled={this.state.used} onClick={this.handleClick}>{this.props.character}</button>
+    return <button disabled={this.state.disabled} onClick={this.getLetter}>{this.props.character}</button>;
   }
 }
+
+class Hangman extends Component {
+  render () {
+    return <img src={this.props.image} height='200' width='600'/>
+  }
+}
+Hangman.propTypes = {
+  image: React.PropTypes.string.isRequired
+}
+
  export default Board
