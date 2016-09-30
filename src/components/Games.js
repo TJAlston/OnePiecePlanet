@@ -13,10 +13,6 @@ class Games extends Component {
         <Link className='game1' to='/Memory'>Memory Game</Link>
         <Link className='game2' to='PKExecution'>Pirate King Execution </Link>
       </div>
-      <div className='gameGallery2'>
-        <div className='game3'>GAME 3</div>
-        <div className='game4'>GAME 4</div>
-      </div>
     </main>
   }
 }
