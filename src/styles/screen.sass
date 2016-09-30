@@ -1,12 +1,13 @@
 @import 'utility'
 
-$base-text-size: 20px
+$base-text-size: 16px
 $base-font-family: sans-serif
 $design-font: 'Aguafina Script', cursive
 $a-tags: 'a, a:active, a:hover, a:visited'
 $a-tags-hover: 'a:active, a:hover'
 $black: rgb(52, 53, 57)
 $brown: rgba(227, 196, 144, 0.84)
+
 
 @font-face
   font-family: 'One Piece'
@@ -38,8 +39,8 @@ $brown: rgba(227, 196, 144, 0.84)
 
 @mixin mangaGallery
   background-position: center
-  height: 500px
-  width: 325px
+  height: 75vh
+  width: 100vw
   background-size: cover
 
 @mixin rowsp
@@ -62,14 +63,11 @@ body
 
 main
   overflow: hidden
-  padding-left: 100px
-  padding-right: 100px
 
 h1
   text-align: center
   justify-content: center
   text-transform: uppercase
-  font-family: $design-font
   font-size: 100px
   width: 100vw
   letter-spacing: 15px
@@ -116,22 +114,19 @@ h5
   color: $black
   font-weight: bold
   letter-spacing: 15px
-  font-size: 30px
+  font-size: 1.5em
   text-shadow: 2px 2px 2px white
   width: 500px
   height: 200px
 
 //Header/Navigation Bar
 nav
-  display: flex
   flex-wrap: wrap
-  margin: 0
   margin-top: -5px
-  padding: 10px
-  font-weight: bolder
-  justify-content: space-between
+  padding: 5px
   background-color: rgb(159, 170, 170)
   color: $black
+  width: 100vw
 
 .header1
   margin-top: -50px
@@ -146,12 +141,13 @@ nav
 #Search
   margin: 0
   padding: 0
-  width: 300px
+  width: 325px
   height: 23px
   font-family: 'One Piece'
   color: grey
   font-size: 1em
   font-weight: bolder
+  align-content: space-between
 
 #submit
   width: 80px
@@ -161,6 +157,7 @@ nav
   font-size: 1em
   font-weight: bolder
   text-transform: uppercase
+  align-content: space-between
 
 // Title Page
 .title
@@ -184,8 +181,8 @@ nav
 
 .oplogo
   padding: 20px
-  height: 80vh
-  width: 50vw
+  height: 90vh
+  width: 90vw
   justify-content: center
   align-content: center
   border: 2px sollid black
@@ -197,7 +194,10 @@ nav
 
 //Home Page
 #noDots
+  display: flex
+  flex-wrap: wrap
   margin: 0
+  padding-right: 40px
   @include rowsp
   list-style-type: none
   font-weight: bold
@@ -207,31 +207,28 @@ nav
   text-transform: uppercase
   font-family: 'One Piece'
   font-size: 35px
-
-.homePage
-  @include columnz
-  flex-wrap: wrap
-  justify-content: center
   justify-content: space-around
 
+.homePage
+  // @include columnz
+  flex-wrap: wrap
+
 .homePhotos
+  margin: 50px
   display: flex
   flex-wrap: wrap
   font-family: 'One Piece'
-  width: 80vw
+  width: 90vw
   height: 80vh
   font-size: 50px
-  font-weight: bolder
   color: white
   text-shadow: 5px 5px 5px black
-  margin-top: -25px
   @include rowsp
   justify-content: space-between
-  margin-bottom: 25px
 
 .bigPhoto
   @include columnz
-  width: 50%
+  width: 50vw
 
 .sideLinks
   border: 2px solid black
@@ -239,6 +236,7 @@ nav
   justify-content: flex-end
   padding-top: 20px
   align-self: center
+  width: 50vw
 
 .sideImage1
   @include columnz
@@ -368,28 +366,6 @@ figure:nth-child(8)
   @include gameBg
   @include borderColors
 
-//Forums Page
-.forumLink
-  @include columnz
-  font-family: 'One Piece'
-  font-size: 30px
-  font-weight: bolder
-  letter-spacing: 10px
-  text-transform: uppercase
-  color: $black
-
-.forumLink2
-  @include borderColors
-  text-decoration: none
-  background-image: url('../images/strawhatlogo.png')
-  background-size: contain
-  background-position: center
-  background-repeat: no-repeat
-  display: flex
-  background-color: grey
-  height: 100px
-  width: 200px
-
 //Character Page
 
 .bioPage
@@ -478,8 +454,8 @@ figure:nth-child(8)
   background-repeat: no-repeat
   text-align: center
   justify-content: center
-  height: 500px
-  width: 600px
+  height: 60vh
+  width: 100vw
 
 .videos
   @include columnz
@@ -509,21 +485,14 @@ figure:nth-child(8)
 // MANGA PAGE
 
 .chapterList2
-  @include columnz
   background-image: url('../images/scroll.gif')
   background-size: contain
   background-position: center
   background-repeat: no-repeat
   text-align: center
   justify-content: center
-  height: 500px
-  width: 600px
-  margin-top: -100px
-  margin-left: 300px
 
 .mangaSection
-  display: flex
-  flex-wrap: wrap
   flex-direction: column
   justify-content: space-between
 
@@ -575,39 +544,6 @@ figure:nth-child(8)
   @include borderColors
   background-image: url('../images/chapter836.png')
   @include mangaGallery
-
-
-//Footer Page
-footer
-  @include rowsp
-  height: 15vh
-  bottom: 0
-  padding: 25px
-  align-self: baseline
-  margin-top: 25px
-  columns: 2
-  // height: 30px
-  background-color: rgb(163, 179, 228)
-  border-top: 5px solid rgb(159, 170, 170)
-
-.resources
-  @include columnz
-  line-height: 5%
-  font-size: 12px
-  padding-top: 15px
-
-.credits
-  @include columnz
-  line-height: 5%
-  font-size: 12px
-  padding-top: 15px
-
-.copy
-  color: white
-  font-size: 20px
-  font-weight: bolder
-  display: flex
-  align-self: baseline
 
 //Memory game
 .memoryBoard
@@ -673,3 +609,60 @@ footer
 .Word
   // width: 50vw
   font-size: 10px
+
+
+//Forums Page
+.forumLink
+  @include columnz
+  font-family: 'One Piece'
+  font-size: 30px
+  font-weight: bolder
+  letter-spacing: 10px
+  text-transform: uppercase
+  color: $black
+
+.forumLink2
+  @include borderColors
+  text-decoration: none
+  background-image: url('../images/strawhatlogo.png')
+  background-size: contain
+  background-position: center
+  background-repeat: no-repeat
+  display: flex
+  background-color: grey
+  height: 100px
+  width: 200px
+
+
+
+//Footer Page
+footer
+  @include rowsp
+  height: 10vh
+  bottom: 0
+  padding: 25px
+  align-self: baseline
+  margin-top: 25px
+  columns: 2
+  // height: 30px
+  background-color: rgb(163, 179, 228)
+  border-top: 5px solid rgb(159, 170, 170)
+
+.resources
+  @include columnz
+  line-height: 5%
+  font-size: 12px
+  padding-top: 15px
+
+.credits
+  @include columnz
+  line-height: 5%
+  font-size: 12px
+  padding-top: 15px
+
+.copy
+  color: white
+  font-size: 20px
+  font-weight: bolder
+  display: flex
+  align-self: baseline
