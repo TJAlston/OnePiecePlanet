@@ -8,7 +8,7 @@ class Forums extends Component {
       <main>
         <h1>Forums</h1>
         <div className='forumLink'>
-        ONE PIECE FORUM
+        <h3 id='opfont'>ONE PIECE FORUM</h3>
         <a className='forumLink2' href='http://opforum.net/' />
         </div>
       </main>

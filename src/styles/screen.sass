@@ -34,8 +34,8 @@ $brown: rgba(227, 196, 144, 0.84)
 @mixin gameBg
   background-size: cover
   background-repeat: no-repeat
-  height: 300px
-  width: 500px
+  height: 50vh
+  width: 50vw
 
 @mixin mangaGallery
   display: flex
@@ -56,6 +56,7 @@ html
 body
   @include font-smoothing(on)
   margin: 0
+  padding: 0
   font: $base-text-size / 1 $base-font-family
   background-image: url('../images/oppbkgd.png')
   background-attachment: fixed
@@ -64,17 +65,18 @@ body
   overflow-x: hidden
 
 main
+  margin: 0
+  padding: 0
   overflow: hidden
 
 h1
   text-align: center
   justify-content: center
   text-transform: uppercase
-  font-size: 10vw
+  font-size: 8vw
   width: 100vw
   letter-spacing: 15px
   margin-top: 0
-  margin-bottom: -25px
   color: $black
   text-shadow: 2px 2px grey
   font-family: 'One Piece'
@@ -89,21 +91,21 @@ h2
   font-weight: bold
   text-align: center
   letter-spacing: 15px
-  font-size: 35px
+  font-size: 3vw
   text-shadow: 2px 2px 2px white
 
 h3
   align-content: center
-  font-size: 15px
+  font-size: 1.5vw
   margin-top: -25px
   text-transform: uppercase
 
 h4
   margin: 0
   padding: 0
-  margin-top: -150px
+  margin-top: -125px
   font-family: 'One Piece'
-  font-size: 12em
+  font-size: 20vw
   text-align: center
   color: rgb(46, 139, 198)
   text-shadow: 5px 5px black
@@ -111,15 +113,14 @@ h4
 h5
   margin: 0
   display: flex
-  padding-top: 55px
+  padding-top: 2vw
   font-family: $design-font
   color: $black
-  font-weight: bold
-  letter-spacing: 15px
-  font-size: 1em
+  font-weight: bolder
+  letter-spacing: 1vw
+  font-size: 3.5vw
   text-shadow: 2px 2px 2px white
-  width: 300px
-  height: 200px
+  width: 50vw
 
 //Header/Navigation Bar
 nav
@@ -187,7 +188,6 @@ nav
   width: 90vw
   justify-content: center
   align-content: center
-  border: 2px sollid black
   position: absolute
 
 .titleh4
@@ -207,81 +207,67 @@ nav
   text-decoration: none
   text-transform: uppercase
   font-family: 'One Piece'
-  font-size: 5vw
+  font-size: 3.5vw
   justify-content: space-around
 
 //Home Page
 .homePage
-  // @include columnz
+  @include columnz
   flex-wrap: wrap
 
 .homePhotos
-  margin: 50px
-  // display: flex
-  // flex-wrap: wrap
+  padding-bottom: 10vw
+  padding-left: 17vw
+  padding-right: 15vw
+  display: flex
+  flex-wrap: wrap
   font-family: 'One Piece'
-  width: 100vw
-  height: 90vh
-  font-size: 50px
+  font-size: 4.5vw
+  text-align: center
   color: white
   text-shadow: 5px 5px 5px black
-  @include rowsp
   justify-content: space-between
+  border: 5px solid red
+  width: 90vw
 
 .bigPhoto
   @include columnz
   width: 50vw
 
-.sideLinks
-  @include columnz
-  justify-content: flex-end
-  padding-top: 20px
-  align-self: center
-  width: 50vw
-
-.sideImage1
-  @include columnz
-  padding-bottom: 25px
-
-.sideImage2
-  @include columnz
-
 .characterImageHome
   @include borderColors
-  height: 500px
-  width: 600px
+  height: 50vh
+  width: 60vw
   margin-bottom: 75px
-
-.devilFruitHome
-  @include borderColors
-  height: 200px
-  width: 250px
 
 .css-slideshow
   display: flex
-  max-width: 495px
-  height: 370px
+  flex-wrap: nowrap
+  max-width: 50vw
+  height: 40vh
   justify-content: flex-start
   align-content: center
   @include columnz
 
 .css-slideshow figure
   margin: 0
-  max-width: 555px
-  height: 430px
+  max-width: 70vw
+  height: 60vh
   background: #000
   position: absolute
   @include borderColors
 
 .css-slideshow img
   box-shadow: 0 0 2px #666
+  max-width: 70vw
+  height: 60vh
 
 .css-slideshow figcaption
   position: absolute
   top: 0
   color: #fff
   background: rgba(0,0,0, .3)
-  font-size: .8em
+  font-size: 3vw
   padding: 8px 12px
   opacity: 0
   transition: opacity .5s
@@ -290,11 +276,37 @@ nav
   transition: opacity .5s
   opacity: 1
 
+.sideLinks
+  @include columnz
+  justify-content: flex-end
+  padding-top: 20px
+  align-self: center
+  width: 25vw
+
+.sideImage1
+  @include columnz
+  padding-bottom: 25px
+
+.devilFruitHome
+  @include borderColors
+  height: 20vh
+  width: 17vw
+
+.sideImage2
+  @include columnz
+  width: 17vw
+
+.gamesHome
+  @include borderColors
+  height: 20vh
+  width: 17vw
+
+
 .homeIntro
   @include borderColors
   background-color: $brown
   padding: 15px
-  width: 90vw
+  width: 80vw
   align-content: center
 
 // .css-slideshow figure
@@ -339,34 +351,6 @@ figure:nth-child(8)
 
   100%
     opacity: 1
-
-//Games Page
-.gamesHome
-  @include borderColors
-  height: 200px
-  width: 250px
-
-.gameGallery1
-  @include rowsp
-  padding-bottom: 25px
-
-.gameGallery2
-  @include rowsp
-  padding-bottom: 25px
-
-.gameGallery3
-  @include rowsp
-  padding-bottom: 25px
-
-.game1
-  background-image: url('../images/fill_in_img.jpg')
-  @include gameBg
-  @include borderColors
-
-.game2
-  background-image: url('../images/fill_in_img.jpg')
-  @include gameBg
-  @include borderColors
 
 //CHARACTERS
 
@@ -429,12 +413,12 @@ figure:nth-child(8)
 .devilFruitImage
   @include borderColors
   margin: 0
-  padding: 0
+  padding: 10vw
   justify-content: center
+  background-position: center
   background-image: url('../images/devilfruitimg.jpg')
-  background-repeat: no-repeat
   background-size: cover
-  width: 100vw
+  width: 60vw
   height: 50vh
 
 .devilFruitBio
@@ -458,7 +442,7 @@ figure:nth-child(8)
   text-align: center
   justify-content: center
   height: 60vh
-  width: 100vw
+  width: 80vw
 
 .videos
   @include columnz
@@ -488,12 +472,15 @@ figure:nth-child(8)
 // MANGA PAGE
 .chapterList2
   @include columnz
+  margin-left: 10vw
   background-image: url('../images/scroll.gif')
   background-size: contain
   background-position: center
   background-repeat: no-repeat
   justify-content: center
   text-align: center
+  height: 60vh
+  width: 80vw
 
 .mangaSection
   flex-direction: column
@@ -548,11 +535,32 @@ figure:nth-child(8)
   background-image: url('../images/chapter836.png')
   @include mangaGallery
 
+//GAMES PAGE
+.gameGallery1
+  @include rowsp
+  padding: 5vw
+
+.game1
+  background-image: url('../images/fill_in_img.jpg')
+  @include gameBg
+  @include borderColors
+
+.game2
+  background-image: url('../images/fill_in_img.jpg')
+  @include gameBg
+  @include borderColors
+
+
 //Memory game
+.memoryGame
+  // justify-content: center
+  // margin: 10vw
+
 .memoryBoard
-  padding: 20px
-  height: 800px
-  width: 1000px
+  overflow: scroll
+  padding: 2vw
+  height: 100vh
+  width: 85vw
   align-items: center
   background-color: rgba(177, 80, 21, 0.5)
   border-top: 5px solid rgb(182, 40, 2)
@@ -567,8 +575,8 @@ figure:nth-child(8)
   margin: 5px
   border: solid 3px rgb(198, 232, 233)
     border-radius: 2px
-  height: 250px
-  width: 150px
+  height: 25vh
+  width: 13vw
   text-align: center
   margin-bottom: 5px
   background-size: cover
@@ -583,11 +591,6 @@ figure:nth-child(8)
   justify-content: center
   text-align: center
   align-self: center
-
-.memoryGame
-  @include columnz
-  width: 50%
-  height: 50%
 
 .resetButton
   padding-top: 105px
@@ -623,7 +626,9 @@ figure:nth-child(8)
   font-weight: bolder
   letter-spacing: 10px
   text-transform: uppercase
-  color: $black
+  color: red
+  #opfont
+    font-size: 2.3vw
 
 .forumLink2
   @include borderColors
@@ -644,7 +649,7 @@ footer
   @include rowsp
   height: 13vh
   bottom: 0
-  padding-top: 25px
+  padding: 3vw
   align-self: baseline
   margin-top: 25px
   columns: 2
@@ -653,23 +658,21 @@ footer
 
 .resources
   @include columnz
-  line-height: 5%
-  font-size: 12px
-  padding-top: 15px
+  font-size: 1vw
+  padding-top: 2.5vw
   justify-content: space-around
 
 .credits
   @include columnz
-  line-height: 5%
-  font-size: 12px
-  padding-top: 15px
+  font-size: 1vw
+  padding-top: 2.5vw
   justify-content: space-around
 
 .copy
-  color: white
-  font-size: 14px
-  width: 20vw
-  font-weight: bolder
   display: flex
   flex-wrap: wrap
+  padding-top: 2vw
+  color: white
+  font-size: 2.5vw
+  font-weight: bolder
   // align-self: baseline

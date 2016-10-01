@@ -11,7 +11,7 @@ class Header extends Component {
 
   render () {
     return <div>
-      <Link to='/Home'><img className='header1' src='http://66.media.tumblr.com/a215ef83293db672b3ac04fd96043885/tumblr_nnisl1lHPh1r2hgd5o4_500.gif' alt='header1' /></Link>
+      <Link to='/Home'><img className='header1' src='./images/headerimg.gif' alt='header1' /></Link>
       <nav>
           <ul id='noDots'>
             <li><Link className='noUnders' to='/Home'>Home</Link></li>

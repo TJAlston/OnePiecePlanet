@@ -4507,7 +4507,7 @@
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _queryString = __webpack_require__(178);
+	var _queryString = __webpack_require__(181);
 
 	var _runTransitionHook = __webpack_require__(56);
 
@@ -6027,7 +6027,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'copy' },
-	            '©2016 Tameka J. Alston'
+	            '\xA92016 Tameka J. Alston'
 	          )
 	        )
 	      );
@@ -6208,7 +6208,8 @@
 	  if (x === y) {
 	    // Steps 1-5, 7-10
 	    // Steps 6.b-6.e: +0 != -0
-	    return x !== 0 || 1 / x === 1 / y;
+	    // Added the nonzero y check to make Flow happy, but it is redundant
+	    return x !== 0 || y !== 0 || 1 / x === 1 / y;
 	  } else {
 	    // Step 6.a: NaN == NaN
 	    return x !== x && y !== y;
@@ -15292,7 +15293,7 @@
 	              _react2.default.createElement(
 	                'p',
 	                null,
-	                ' One running theme with Devil Fruits, however, is the fact that they taste unimaginably bad, to the point of making it seem like the user had taken poison. The Devil Fruit, when consumed, gives the consumer a power or special trait, which they will soon become aware of; a person who has eaten a Devil Fruit and gained its powers is known as a Devil Fruit User (能力者 Nōryoku-sha?, literally meaning "Ability User" or "Esper"). The Fruits come in all different shapes and colors, and all Devil Fruits presumably have swirl marks or patterns on them of some kind. The only known exception is the Devil Fruit made by Vegapunk, which had ring patterns on it. There can be only one of each type of Fruit at a time. Only one bite is needed for the user to gain the power of the Devil Fruit, after which the Devil Fruit becomes a simple, useless, disgusting fruit. Despite this, the majority of those who have consumed a Devil Fruit have eaten the entire Fruit, as they are apparently unaware of this fact. Swallowing the Fruit whole, as Buggy did, has the same effect. Peeling off the skin and eating it piece by piece, such as Kaku and Kalifa did, also works. After ingesting the Fruit, the powers within affect the eater\'s lineage factor. '
+	                ' One running theme with Devil Fruits, however, is the fact that they taste unimaginably bad, to the point of making it seem like the user had taken poison. The Devil Fruit, when consumed, gives the consumer a power or special trait, which they will soon become aware of; a person who has eaten a Devil Fruit and gained its powers is known as a Devil Fruit User (\u80FD\u529B\u8005 N\u014Dryoku-sha?, literally meaning "Ability User" or "Esper"). The Fruits come in all different shapes and colors, and all Devil Fruits presumably have swirl marks or patterns on them of some kind. The only known exception is the Devil Fruit made by Vegapunk, which had ring patterns on it. There can be only one of each type of Fruit at a time. Only one bite is needed for the user to gain the power of the Devil Fruit, after which the Devil Fruit becomes a simple, useless, disgusting fruit. Despite this, the majority of those who have consumed a Devil Fruit have eaten the entire Fruit, as they are apparently unaware of this fact. Swallowing the Fruit whole, as Buggy did, has the same effect. Peeling off the skin and eating it piece by piece, such as Kaku and Kalifa did, also works. After ingesting the Fruit, the powers within affect the eater\'s lineage factor. '
 	              ),
 	              _react2.default.createElement(
 	                'p',
@@ -15317,9 +15318,9 @@
 	              _react2.default.createElement(
 	                'p',
 	                null,
-	                'Superiority and UnpredictabilityEdit “ Depending on how you use and train the ability of the Devil Fruit... It can become a strong weapon in battle. ”'
+	                'Superiority and UnpredictabilityEdit \u201C Depending on how you use and train the ability of the Devil Fruit... It can become a strong weapon in battle. \u201D'
 	              ),
-	              '— Crocodile\'s statement on his powers',
+	              '\u2014 Crocodile\'s statement on his powers',
 	              _react2.default.createElement(
 	                'p',
 	                null,
@@ -15688,7 +15689,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'The One Piece Saga has been serialized in Shueisha\'s Weekly Shōnen Jump magazine since July 19, 1997, with the chapters collected into eighty-two tankōbon volumes to date. One Piece follows the adventures of Monkey D. Luffy, a young man whose body gained the properties of rubber after unintentionally eating a Devil Fruit. With his diverse crew of pirates, named the Straw Hat Pirates, Luffy explores the Grand Line in search of the world\'s ultimate treasure known as "One Piece" in order to become the next King of the Pirates..'
+	              'The One Piece Saga has been serialized in Shueisha\'s Weekly Sh\u014Dnen Jump magazine since July 19, 1997, with the chapters collected into eighty-two tank\u014Dbon volumes to date. One Piece follows the adventures of Monkey D. Luffy, a young man whose body gained the properties of rubber after unintentionally eating a Devil Fruit. With his diverse crew of pirates, named the Straw Hat Pirates, Luffy explores the Grand Line in search of the world\'s ultimate treasure known as "One Piece" in order to become the next King of the Pirates..'
 	            ),
 	            _react2.default.createElement(
 	              'p',
@@ -15728,7 +15729,7 @@
 
 	var _ = __webpack_require__(82);
 
-	var _characterinfo = __webpack_require__(180);
+	var _characterinfo = __webpack_require__(179);
 
 	var _characterinfo2 = _interopRequireDefault(_characterinfo);
 
@@ -16018,7 +16019,7 @@
 	              _react2.default.createElement(
 	                'h5',
 	                null,
-	                'Complete List of Chapters Here '
+	                ' Complete List of Chapters Here '
 	              )
 	            )
 	          )
@@ -16214,7 +16215,7 @@
 
 	var _Board2 = _interopRequireDefault(_Board);
 
-	var _words = __webpack_require__(181);
+	var _words = __webpack_require__(180);
 
 	var _words2 = _interopRequireDefault(_words);
 
@@ -16471,7 +16472,7 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'One Piece';\n  src: url(" + __webpack_require__(173) + ") format(\"truetype\"); }\n\na, a:active, a:hover, a:visited {\n  color: rgba(26, 27, 28, 0.94);\n  text-decoration: none; }\n\na:active, a:hover {\n  color: blue; }\n\nhtml {\n  text-size-adjust: 100%; }\n\nbody {\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-font-smoothing: antialiased;\n  margin: 0;\n  font: 16px sans-serif;\n  background-image: url(" + __webpack_require__(171) + ");\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  background-size: cover;\n  overflow-x: hidden; }\n\nmain {\n  overflow: hidden; }\n\nh1 {\n  text-align: center;\n  justify-content: center;\n  text-transform: uppercase;\n  font-size: 100px;\n  width: 100vw;\n  letter-spacing: 15px;\n  margin-top: 0;\n  margin-bottom: -25px;\n  color: #343539;\n  text-shadow: 2px 2px grey;\n  font-family: 'One Piece';\n  margin-bottom: 20px;\n  margin-top: 10px; }\n\nh2 {\n  margin: 0;\n  padding-top: 10px;\n  font-family: \"Aguafina Script\", cursive;\n  color: #343539;\n  font-weight: bold;\n  text-align: center;\n  letter-spacing: 15px;\n  font-size: 35px;\n  text-shadow: 2px 2px 2px white; }\n\nh3 {\n  align-content: center;\n  font-size: 15px;\n  margin-top: -25px;\n  text-transform: uppercase; }\n\nh4 {\n  margin: 0;\n  padding: 0;\n  margin-top: -150px;\n  font-family: 'One Piece';\n  font-size: 12em;\n  text-align: center;\n  color: #2e8bc6;\n  text-shadow: 5px 5px black; }\n\nh5 {\n  margin: 0;\n  display: flex;\n  padding-top: 55px;\n  font-family: \"Aguafina Script\", cursive;\n  color: #343539;\n  font-weight: bold;\n  letter-spacing: 15px;\n  font-size: 1.5em;\n  text-shadow: 2px 2px 2px white;\n  width: 500px;\n  height: 200px; }\n\nnav {\n  flex-wrap: wrap;\n  margin-top: -5px;\n  padding: 5px;\n  background-color: #9faaaa;\n  color: #343539;\n  width: 100vw; }\n\n.header1 {\n  margin-top: -50px;\n  border-bottom: 5px solid grey;\n  height: 50vh;\n  width: 100vw; }\n\n.colHeader {\n  display: flex;\n  flex-direction: row; }\n\n#Search {\n  margin: 0;\n  padding: 0;\n  width: 325px;\n  height: 23px;\n  font-family: 'One Piece';\n  color: grey;\n  font-size: 1em;\n  font-weight: bolder;\n  align-content: space-between; }\n\n#submit {\n  width: 80px;\n  height: 25px;\n  font-family: 'One Piece';\n  color: #1e1e1f;\n  font-size: 1em;\n  font-weight: bolder;\n  text-transform: uppercase;\n  align-content: space-between; }\n\n.title {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  padding-top: 50px;\n  padding-bottom: 80px;\n  justify-content: center;\n  overflow: hidden;\n  text-decoration: none; }\n\n.powerup {\n  display: flex;\n  justify-content: space-between;\n  margin: 0;\n  padding: 0;\n  width: 50vw;\n  height: 50vh;\n  position: relative;\n  margin-top: 200px; }\n\n.oplogo {\n  padding: 20px;\n  height: 90vh;\n  width: 90vw;\n  justify-content: center;\n  align-content: center;\n  border: 2px sollid black;\n  position: absolute; }\n\n.titleh4 {\n  margin-top: 10px;\n  margin-bottom: -10px; }\n\n#noDots {\n  display: flex;\n  flex-wrap: wrap;\n  margin: 0;\n  padding-right: 40px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  list-style-type: none;\n  font-weight: bold; }\n\n.noUnders {\n  text-decoration: none;\n  text-transform: uppercase;\n  font-family: 'One Piece';\n  font-size: 35px;\n  justify-content: space-around; }\n\n.homePage {\n  flex-wrap: wrap; }\n\n.homePhotos {\n  margin: 50px;\n  font-family: 'One Piece';\n  width: 100vw;\n  height: 90vh;\n  font-size: 50px;\n  color: white;\n  text-shadow: 5px 5px 5px black;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  justify-content: space-between; }\n\n.bigPhoto {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 50vw; }\n\n.sideLinks {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  padding-top: 20px;\n  align-self: center;\n  width: 50vw; }\n\n.sideImage1 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding-bottom: 25px; }\n\n.sideImage2 {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterImageHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 500px;\n  width: 600px;\n  margin-bottom: 75px; }\n\n.devilFruitHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 200px;\n  width: 250px; }\n\n.css-slideshow {\n  display: flex;\n  max-width: 495px;\n  height: 370px;\n  justify-content: flex-start;\n  align-content: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.css-slideshow figure {\n  margin: 0;\n  max-width: 555px;\n  height: 430px;\n  background: #000;\n  position: absolute;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.css-slideshow img {\n  box-shadow: 0 0 2px #666; }\n\n.css-slideshow figcaption {\n  position: absolute;\n  top: 0;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.3);\n  font-size: .8em;\n  padding: 8px 12px;\n  opacity: 0;\n  transition: opacity .5s; }\n\n.css-slideshow:hover figure figcaption {\n  transition: opacity .5s;\n  opacity: 1; }\n\n.homeIntro {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(227, 196, 144, 0.84);\n  padding: 15px;\n  width: 90vw;\n  align-content: center; }\n\nfigure:nth-child(1) {\n  animation: xfade 48s 42s infinite; }\n\nfigure:nth-child(2) {\n  animation: xfade 48s 36s infinite; }\n\nfigure:nth-child(3) {\n  animation: xfade 48s 30s infinite; }\n\nfigure:nth-child(4) {\n  animation: xfade 48s 24s infinite; }\n\nfigure:nth-child(5) {\n  animation: xfade 48s 18s infinite; }\n\nfigure:nth-child(6) {\n  animation: xfade 48s 12s infinite; }\n\nfigure:nth-child(7) {\n  animation: xfade 48s 6s infinite; }\n\nfigure:nth-child(8) {\n  animation: xfade 48s 0s infinite; }\n\n@keyframes xfade {\n  0% {\n    opacity: 1; }\n  10.5% {\n    opacity: 1; }\n  12.5% {\n    opacity: 0; }\n  98% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n.gamesHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 200px;\n  width: 250px; }\n\n.gameGallery1 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-bottom: 25px; }\n\n.gameGallery2 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-bottom: 25px; }\n\n.gameGallery3 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-bottom: 25px; }\n\n.game1 {\n  background-image: url(" + __webpack_require__(87) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 500px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.game2 {\n  background-image: url(" + __webpack_require__(87) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 500px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.bioPage {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.bioImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 100%;\n  width: 100%; }\n\n.bio {\n  padding: 15px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  word-wrap: break-word;\n  overflow: auto;\n  background-color: rgba(227, 196, 144, 0.84);\n  margin-top: 25px;\n  font-family: 'helvetica';\n  font-size: 1em;\n  letter-spacing: normal;\n  width: 80vw;\n  height: 50vh; }\n\n.characterBio {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterLayout {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  padding: 20px;\n  background-image: url(" + __webpack_require__(169) + ");\n  background-repeat: no-repeat;\n  background-size: cover;\n  justify-content: center;\n  width: 50vw;\n  height: 300px; }\n\n.characterName {\n  margin: 0;\n  padding: 0;\n  text-align: justify;\n  font-weight: bolder;\n  font-family: 'One Piece';\n  font-size: 60px;\n  color: #1f2021; }\n\n.DV {\n  display: flex;\n  justify-content: center; }\n\n.devilFruits {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n\n.devilFruitImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  margin: 0;\n  padding: 0;\n  justify-content: center;\n  background-image: url(" + __webpack_require__(170) + ");\n  background-repeat: no-repeat;\n  background-size: cover;\n  width: 500px;\n  height: 500px; }\n\n.devilFruitBio {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(246, 240, 209, 0.5);\n  width: 95vw; }\n\n.Beli {\n  height: 20px;\n  width: 20px; }\n\n.chapterList {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  background-image: url(" + __webpack_require__(88) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center;\n  height: 60vh;\n  width: 100vw; }\n\n.videos {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-weight: bolder; }\n\n.video1 {\n  margin: 20px;\n  width: 50%;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video2 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video3 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video4 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.chapterList2 {\n  background-image: url(" + __webpack_require__(88) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center; }\n\n.mangaSection {\n  flex-direction: column;\n  justify-content: space-between; }\n\n.mangaRow1 {\n  margin: 20px 20px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.mangaRow2 {\n  margin: 20px 20px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.recent1 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(168) + ");\n  background-position: center;\n  height: 75vh;\n  width: 100vw;\n  background-size: cover; }\n\n.recent2 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(167) + ");\n  background-position: center;\n  height: 75vh;\n  width: 100vw;\n  background-size: cover; }\n\n.recent3 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(166) + ");\n  background-position: center;\n  height: 75vh;\n  width: 100vw;\n  background-size: cover; }\n\n.recent4 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(165) + ");\n  background-position: center;\n  height: 75vh;\n  width: 100vw;\n  background-size: cover; }\n\n.recent5 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(164) + ");\n  background-position: center;\n  height: 75vh;\n  width: 100vw;\n  background-size: cover;\n  text-decoration: none;\n  font-weight: bolder;\n  color: black;\n  text-align: center; }\n\n.recent6 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(163) + ");\n  background-position: center;\n  height: 75vh;\n  width: 100vw;\n  background-size: cover; }\n\n.memoryBoard {\n  padding: 20px;\n  height: 800px;\n  width: 1000px;\n  align-items: center;\n  background-color: rgba(177, 80, 21, 0.5);\n  border-top: 5px solid #b62802;\n  border-bottom: 5px solid #670a0a;\n  border-left: 5px solid #b62802;\n  border-right: 5px solid #670a0a;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center; }\n\n.card {\n  margin: 5px;\n  border: solid 3px #c6e8e9;\n    border-border-radius: 2px;\n  height: 250px;\n  width: 150px;\n  text-align: center;\n  margin-bottom: 5px;\n  background-size: cover;\n  border: 2px solid black; }\n  .card.up {\n    background-color: #dfe0dd;\n    background-size: cover; }\n\n.youWin {\n  padding-top: 100px;\n  justify-content: center;\n  text-align: center;\n  align-self: center; }\n\n.memoryGame {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  align-content: center; }\n\n.resetButton {\n  padding-top: 105px;\n  background-image: url(\"http://is2.mzstatic.com/image/thumb/Purple5/v4/ff/e8/e1/ffe8e19d-cac3-1aa4-9f79-c827036fb215/mzl.balclcui.png/0x0ss-85.jpg\");\n  height: 200px;\n  width: 200px;\n  background-size: cover;\n  border-radius: 50px;\n  color: red;\n  text-shadow: 3px 3px 3px white;\n  font-weight: bolder;\n  font-size: 30px; }\n\n.hangman {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  align-self: center;\n  height: 100vh;\n  width: 100vw;\n  padding: 20px n; }\n\n.Word {\n  font-size: 10px; }\n\n.forumLink {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-family: 'One Piece';\n  font-size: 30px;\n  font-weight: bolder;\n  letter-spacing: 10px;\n  text-transform: uppercase;\n  color: #343539; }\n\n.forumLink2 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  text-decoration: none;\n  background-image: url(" + __webpack_require__(172) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  display: flex;\n  background-color: grey;\n  height: 100px;\n  width: 200px; }\n\nfooter {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  height: 10vh;\n  bottom: 0;\n  padding: 25px;\n  align-self: baseline;\n  margin-top: 25px;\n  columns: 2;\n  background-color: #a3b3e4;\n  border-top: 5px solid #9faaaa; }\n\n.resources {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  line-height: 5%;\n  font-size: 12px;\n  padding-top: 15px; }\n\n.credits {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  line-height: 5%;\n  font-size: 12px;\n  padding-top: 15px; }\n\n.copy {\n  color: white;\n  font-size: 20px;\n  font-weight: bolder;\n  display: flex;\n  align-self: baseline; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'One Piece';\n  src: url(" + __webpack_require__(173) + ") format(\"truetype\"); }\n\na, a:active, a:hover, a:visited {\n  color: rgba(26, 27, 28, 0.94);\n  text-decoration: none; }\n\na:active, a:hover {\n  color: blue; }\n\nhtml {\n  text-size-adjust: 100%; }\n\nbody {\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-font-smoothing: antialiased;\n  margin: 0;\n  font: 16px sans-serif;\n  background-image: url(" + __webpack_require__(171) + ");\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  background-size: cover;\n  overflow-x: hidden; }\n\nmain {\n  overflow: hidden; }\n\nh1 {\n  text-align: center;\n  justify-content: center;\n  text-transform: uppercase;\n  font-size: 10vw;\n  width: 100vw;\n  letter-spacing: 15px;\n  margin-top: 0;\n  margin-bottom: -25px;\n  color: #343539;\n  text-shadow: 2px 2px grey;\n  font-family: 'One Piece';\n  margin-bottom: 20px;\n  margin-top: 10px; }\n\nh2 {\n  margin: 0;\n  padding-top: 10px;\n  font-family: \"Aguafina Script\", cursive;\n  color: #343539;\n  font-weight: bold;\n  text-align: center;\n  letter-spacing: 15px;\n  font-size: 35px;\n  text-shadow: 2px 2px 2px white; }\n\nh3 {\n  align-content: center;\n  font-size: 15px;\n  margin-top: -25px;\n  text-transform: uppercase; }\n\nh4 {\n  margin: 0;\n  padding: 0;\n  margin-top: -150px;\n  font-family: 'One Piece';\n  font-size: 12em;\n  text-align: center;\n  color: #2e8bc6;\n  text-shadow: 5px 5px black; }\n\nh5 {\n  margin: 0;\n  display: flex;\n  padding-top: 2vw;\n  font-family: \"Aguafina Script\", cursive;\n  color: #343539;\n  font-weight: bolder;\n  letter-spacing: 1vw;\n  font-size: 3vw;\n  text-shadow: 2px 2px 2px white;\n  width: 50vw; }\n\nnav {\n  flex-wrap: wrap;\n  margin-top: -5px;\n  padding: 5px;\n  background-color: #9faaaa;\n  color: #343539;\n  width: 100vw; }\n\n.header1 {\n  margin-top: -50px;\n  border-bottom: 5px solid grey;\n  height: 50vh;\n  width: 100vw; }\n\n.colHeader {\n  display: flex;\n  flex-direction: row; }\n\n#Search {\n  margin: 0;\n  padding: 0;\n  width: 325px;\n  height: 23px;\n  font-family: 'One Piece';\n  color: grey;\n  font-size: 1em;\n  font-weight: bolder;\n  align-content: space-between; }\n\n#submit {\n  width: 80px;\n  height: 25px;\n  font-family: 'One Piece';\n  color: #1e1e1f;\n  font-size: 1em;\n  font-weight: bolder;\n  text-transform: uppercase;\n  align-content: space-between; }\n\n.title {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  padding-top: 50px;\n  padding-bottom: 80px;\n  justify-content: center;\n  overflow: hidden;\n  text-decoration: none; }\n\n.powerup {\n  display: flex;\n  justify-content: space-between;\n  margin: 0;\n  padding: 0;\n  width: 50vw;\n  height: 50vh;\n  position: relative;\n  margin-top: 200px; }\n\n.oplogo {\n  padding: 20px;\n  height: 90vh;\n  width: 90vw;\n  justify-content: center;\n  align-content: center;\n  border: 2px sollid black;\n  position: absolute; }\n\n.titleh4 {\n  margin-top: 10px;\n  margin-bottom: -10px; }\n\n#noDots {\n  display: flex;\n  flex-wrap: wrap;\n  margin: 0;\n  padding-right: 40px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  list-style-type: none;\n  font-weight: bold; }\n\n.noUnders {\n  text-decoration: none;\n  text-transform: uppercase;\n  font-family: 'One Piece';\n  font-size: 5vw;\n  justify-content: space-around; }\n\n.homePage {\n  flex-wrap: wrap; }\n\n.homePhotos {\n  margin: 50px;\n  font-family: 'One Piece';\n  width: 100vw;\n  height: 90vh;\n  font-size: 50px;\n  color: white;\n  text-shadow: 5px 5px 5px black;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  justify-content: space-between; }\n\n.bigPhoto {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 50vw; }\n\n.sideLinks {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  padding-top: 20px;\n  align-self: center;\n  width: 50vw; }\n\n.sideImage1 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding-bottom: 25px; }\n\n.sideImage2 {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterImageHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 500px;\n  width: 600px;\n  margin-bottom: 75px; }\n\n.devilFruitHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 200px;\n  width: 250px; }\n\n.css-slideshow {\n  display: flex;\n  max-width: 495px;\n  height: 370px;\n  justify-content: flex-start;\n  align-content: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.css-slideshow figure {\n  margin: 0;\n  max-width: 555px;\n  height: 430px;\n  background: #000;\n  position: absolute;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.css-slideshow img {\n  box-shadow: 0 0 2px #666; }\n\n.css-slideshow figcaption {\n  position: absolute;\n  top: 0;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.3);\n  font-size: .8em;\n  padding: 8px 12px;\n  opacity: 0;\n  transition: opacity .5s; }\n\n.css-slideshow:hover figure figcaption {\n  transition: opacity .5s;\n  opacity: 1; }\n\n.homeIntro {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(227, 196, 144, 0.84);\n  padding: 15px;\n  width: 90vw;\n  align-content: center; }\n\nfigure:nth-child(1) {\n  animation: xfade 48s 42s infinite; }\n\nfigure:nth-child(2) {\n  animation: xfade 48s 36s infinite; }\n\nfigure:nth-child(3) {\n  animation: xfade 48s 30s infinite; }\n\nfigure:nth-child(4) {\n  animation: xfade 48s 24s infinite; }\n\nfigure:nth-child(5) {\n  animation: xfade 48s 18s infinite; }\n\nfigure:nth-child(6) {\n  animation: xfade 48s 12s infinite; }\n\nfigure:nth-child(7) {\n  animation: xfade 48s 6s infinite; }\n\nfigure:nth-child(8) {\n  animation: xfade 48s 0s infinite; }\n\n@keyframes xfade {\n  0% {\n    opacity: 1; }\n  10.5% {\n    opacity: 1; }\n  12.5% {\n    opacity: 0; }\n  98% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n.gamesHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 200px;\n  width: 250px; }\n\n.gameGallery1 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-bottom: 25px; }\n\n.gameGallery2 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-bottom: 25px; }\n\n.gameGallery3 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-bottom: 25px; }\n\n.game1 {\n  background-image: url(" + __webpack_require__(87) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 500px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.game2 {\n  background-image: url(" + __webpack_require__(87) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 500px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.bioPage {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.bioImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 100%;\n  width: 100%; }\n\n.bio {\n  padding: 15px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  word-wrap: break-word;\n  overflow: auto;\n  background-color: rgba(227, 196, 144, 0.84);\n  margin-top: 25px;\n  font-family: 'helvetica';\n  font-size: 1em;\n  letter-spacing: normal;\n  width: 80vw;\n  height: 50vh; }\n\n.characterBio {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterLayout {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  padding: 20px;\n  background-image: url(" + __webpack_require__(169) + ");\n  background-repeat: no-repeat;\n  background-size: cover;\n  justify-content: center;\n  width: 50vw;\n  height: 300px; }\n\n.characterName {\n  margin: 0;\n  padding: 0;\n  text-align: justify;\n  font-weight: bolder;\n  font-family: 'One Piece';\n  font-size: 60px;\n  color: #1f2021; }\n\n.DV {\n  display: flex;\n  justify-content: center; }\n\n.devilFruits {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n\n.devilFruitImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  margin: 0;\n  padding: 0;\n  justify-content: center;\n  background-image: url(" + __webpack_require__(170) + ");\n  background-repeat: no-repeat;\n  background-size: cover;\n  width: 100vw;\n  height: 50vh; }\n\n.devilFruitBio {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(246, 240, 209, 0.5);\n  width: 95vw;\n  padding: 10px; }\n\n.Beli {\n  height: 20px;\n  width: 20px; }\n\n.chapterList {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  background-image: url(" + __webpack_require__(88) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center;\n  height: 60vh;\n  width: 80vw; }\n\n.videos {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-weight: bolder; }\n\n.video1 {\n  margin: 20px;\n  width: 50%;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video2 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video3 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video4 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.chapterList2 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-left: 10vw;\n  background-image: url(" + __webpack_require__(88) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  justify-content: center;\n  text-align: center;\n  height: 60vh;\n  width: 80vw; }\n\n.mangaSection {\n  flex-direction: column;\n  justify-content: space-between; }\n\n.mangaRow1 {\n  margin: 20px 20px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.mangaRow2 {\n  margin: 20px 20px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.recent1 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(168) + ");\n  display: flex;\n  flex-wrap: wrap;\n  background-position: center;\n  height: 75vh;\n  width: 150vw;\n  background-size: cover; }\n\n.recent2 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(167) + ");\n  display: flex;\n  flex-wrap: wrap;\n  background-position: center;\n  height: 75vh;\n  width: 150vw;\n  background-size: cover; }\n\n.recent3 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(166) + ");\n  display: flex;\n  flex-wrap: wrap;\n  background-position: center;\n  height: 75vh;\n  width: 150vw;\n  background-size: cover; }\n\n.recent4 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(165) + ");\n  display: flex;\n  flex-wrap: wrap;\n  background-position: center;\n  height: 75vh;\n  width: 150vw;\n  background-size: cover; }\n\n.recent5 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(164) + ");\n  display: flex;\n  flex-wrap: wrap;\n  background-position: center;\n  height: 75vh;\n  width: 150vw;\n  background-size: cover;\n  text-decoration: none;\n  font-weight: bolder;\n  color: black;\n  text-align: center; }\n\n.recent6 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(163) + ");\n  display: flex;\n  flex-wrap: wrap;\n  background-position: center;\n  height: 75vh;\n  width: 150vw;\n  background-size: cover; }\n\n.memoryBoard {\n  padding: 20px;\n  height: 800px;\n  width: 1000px;\n  align-items: center;\n  background-color: rgba(177, 80, 21, 0.5);\n  border-top: 5px solid #b62802;\n  border-bottom: 5px solid #670a0a;\n  border-left: 5px solid #b62802;\n  border-right: 5px solid #670a0a;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center; }\n\n.card {\n  margin: 5px;\n  border: solid 3px #c6e8e9;\n    border-border-radius: 2px;\n  height: 250px;\n  width: 150px;\n  text-align: center;\n  margin-bottom: 5px;\n  background-size: cover;\n  border: 2px solid black; }\n  .card.up {\n    background-color: #dfe0dd;\n    background-size: cover; }\n\n.youWin {\n  padding-top: 100px;\n  justify-content: center;\n  text-align: center;\n  align-self: center; }\n\n.memoryGame {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 50%;\n  height: 50%; }\n\n.resetButton {\n  padding-top: 105px;\n  background-image: url(\"http://is2.mzstatic.com/image/thumb/Purple5/v4/ff/e8/e1/ffe8e19d-cac3-1aa4-9f79-c827036fb215/mzl.balclcui.png/0x0ss-85.jpg\");\n  height: 200px;\n  width: 200px;\n  background-size: cover;\n  border-radius: 50px;\n  color: red;\n  text-shadow: 3px 3px 3px white;\n  font-weight: bolder;\n  font-size: 30px; }\n\n.hangman {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  align-self: center;\n  height: 100vh;\n  width: 100vw;\n  padding: 20px n; }\n\n.Word {\n  font-size: 10px; }\n\n.forumLink {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-family: 'One Piece';\n  font-size: 30px;\n  font-weight: bolder;\n  letter-spacing: 10px;\n  text-transform: uppercase;\n  color: #343539; }\n\n.forumLink2 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  text-decoration: none;\n  background-image: url(" + __webpack_require__(172) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  display: flex;\n  background-color: grey;\n  height: 100px;\n  width: 200px; }\n\nfooter {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  height: 13vh;\n  bottom: 0;\n  padding-top: 25px;\n  align-self: baseline;\n  margin-top: 25px;\n  columns: 2;\n  background-color: #a3b3e4;\n  border-top: 5px solid #9faaaa; }\n\n.resources {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  line-height: 5%;\n  font-size: 12px;\n  padding-top: 15px;\n  justify-content: space-around; }\n\n.credits {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  line-height: 5%;\n  font-size: 12px;\n  padding-top: 15px;\n  justify-content: space-around; }\n\n.copy {\n  color: white;\n  font-size: 14px;\n  width: 20vw;\n  font-weight: bolder;\n  display: flex;\n  flex-wrap: wrap; }\n", ""]);
 
 	// exports
 
@@ -17874,78 +17875,6 @@
 
 /***/ },
 /* 178 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var strictUriEncode = __webpack_require__(273);
-
-	exports.extract = function (str) {
-		return str.split('?')[1] || '';
-	};
-
-	exports.parse = function (str) {
-		if (typeof str !== 'string') {
-			return {};
-		}
-
-		str = str.trim().replace(/^(\?|#|&)/, '');
-
-		if (!str) {
-			return {};
-		}
-
-		return str.split('&').reduce(function (ret, param) {
-			var parts = param.replace(/\+/g, ' ').split('=');
-			// Firefox (pre 40) decodes `%3D` to `=`
-			// https://github.com/sindresorhus/query-string/pull/37
-			var key = parts.shift();
-			var val = parts.length > 0 ? parts.join('=') : undefined;
-
-			key = decodeURIComponent(key);
-
-			// missing `=` should be `null`:
-			// http://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
-			val = val === undefined ? null : decodeURIComponent(val);
-
-			if (!ret.hasOwnProperty(key)) {
-				ret[key] = val;
-			} else if (Array.isArray(ret[key])) {
-				ret[key].push(val);
-			} else {
-				ret[key] = [ret[key], val];
-			}
-
-			return ret;
-		}, {});
-	};
-
-	exports.stringify = function (obj) {
-		return obj ? Object.keys(obj).sort().map(function (key) {
-			var val = obj[key];
-
-			if (val === undefined) {
-				return '';
-			}
-
-			if (val === null) {
-				return key;
-			}
-
-			if (Array.isArray(val)) {
-				return val.slice().sort().map(function (val2) {
-					return strictUriEncode(key) + '=' + strictUriEncode(val2);
-				}).join('&');
-			}
-
-			return strictUriEncode(key) + '=' + strictUriEncode(val);
-		}).filter(function (x) {
-			return x.length > 0;
-		}).join('&') : '';
-	};
-
-
-/***/ },
-/* 179 */
 /***/ function(module, exports) {
 
 	/**
@@ -18001,7 +17930,7 @@
 
 
 /***/ },
-/* 180 */
+/* 179 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -18616,7 +18545,7 @@
 	};
 
 /***/ },
-/* 181 */
+/* 180 */
 /***/ function(module, exports) {
 
 	module.exports = [
@@ -18844,6 +18773,78 @@
 		"WORM",
 		"ZORO"
 	];
+
+/***/ },
+/* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var strictUriEncode = __webpack_require__(273);
+
+	exports.extract = function (str) {
+		return str.split('?')[1] || '';
+	};
+
+	exports.parse = function (str) {
+		if (typeof str !== 'string') {
+			return {};
+		}
+
+		str = str.trim().replace(/^(\?|#|&)/, '');
+
+		if (!str) {
+			return {};
+		}
+
+		return str.split('&').reduce(function (ret, param) {
+			var parts = param.replace(/\+/g, ' ').split('=');
+			// Firefox (pre 40) decodes `%3D` to `=`
+			// https://github.com/sindresorhus/query-string/pull/37
+			var key = parts.shift();
+			var val = parts.length > 0 ? parts.join('=') : undefined;
+
+			key = decodeURIComponent(key);
+
+			// missing `=` should be `null`:
+			// http://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
+			val = val === undefined ? null : decodeURIComponent(val);
+
+			if (!ret.hasOwnProperty(key)) {
+				ret[key] = val;
+			} else if (Array.isArray(ret[key])) {
+				ret[key].push(val);
+			} else {
+				ret[key] = [ret[key], val];
+			}
+
+			return ret;
+		}, {});
+	};
+
+	exports.stringify = function (obj) {
+		return obj ? Object.keys(obj).sort().map(function (key) {
+			var val = obj[key];
+
+			if (val === undefined) {
+				return '';
+			}
+
+			if (val === null) {
+				return key;
+			}
+
+			if (Array.isArray(val)) {
+				return val.slice().sort().map(function (val2) {
+					return strictUriEncode(key) + '=' + strictUriEncode(val2);
+				}).join('&');
+			}
+
+			return strictUriEncode(key) + '=' + strictUriEncode(val);
+		}).filter(function (x) {
+			return x.length > 0;
+		}).join('&') : '';
+	};
+
 
 /***/ },
 /* 182 */
@@ -20488,7 +20489,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _hoistNonReactStatics = __webpack_require__(179);
+	var _hoistNonReactStatics = __webpack_require__(178);
 
 	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
