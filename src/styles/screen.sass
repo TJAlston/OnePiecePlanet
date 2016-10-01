@@ -39,11 +39,12 @@ $brown: rgba(227, 196, 144, 0.84)
 
 @mixin mangaGallery
   display: flex
-  flex-wrap: wrap
+  margin: 2vw
+  justify-content: space-between
   background-position: center
-  height: 75vh
-  width: 150vw
   background-size: cover
+  height: 450px
+  width: 300px
 
 @mixin rowsp
   display: flex
@@ -216,9 +217,6 @@ nav
   flex-wrap: wrap
 
 .homePhotos
-  padding-bottom: 10vw
-  padding-left: 17vw
-  padding-right: 15vw
   display: flex
   flex-wrap: wrap
   font-family: 'One Piece'
@@ -227,14 +225,17 @@ nav
   color: white
   text-shadow: 5px 5px 5px black
   justify-content: space-between
-  border: 5px solid red
-  width: 90vw
+  @include borderColors
+  padding: 2vw
+  background-color: rgba(148, 39, 35, 0.74)
+  width: 83vw
 
 .bigPhoto
   @include columnz
   width: 50vw
 
 .characterImageHome
+  display: flex
   @include borderColors
   height: 50vh
   width: 60vw
@@ -285,22 +286,21 @@ nav
 
 .sideImage1
   @include columnz
-  padding-bottom: 25px
+  width: 20vw
+  padding-bottom: 20px
 
-.devilFruitHome
+.mangaHome
   @include borderColors
-  height: 20vh
-  width: 17vw
+  background-image: url('../images/chapter841.jpg')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  height: 40vh
+  width: 25vw
 
 .sideImage2
   @include columnz
   width: 17vw
-
-.gamesHome
-  @include borderColors
-  height: 20vh
-  width: 17vw
-
 
 .homeIntro
   @include borderColors
@@ -308,9 +308,6 @@ nav
   padding: 15px
   width: 80vw
   align-content: center
-
-// .css-slideshow figure
-//   opacity:0
 
 figure:nth-child(1)
   animation: xfade 48s 42s infinite
@@ -353,7 +350,6 @@ figure:nth-child(8)
     opacity: 1
 
 //CHARACTERS
-
 .bioPage
   @include columnz
 
@@ -442,7 +438,7 @@ figure:nth-child(8)
   text-align: center
   justify-content: center
   height: 60vh
-  width: 80vw
+  width: 75vw
 
 .videos
   @include columnz
@@ -472,7 +468,8 @@ figure:nth-child(8)
 // MANGA PAGE
 .chapterList2
   @include columnz
-  margin-left: 10vw
+  margin-left: 20vw
+  margin-top: -10vh
   background-image: url('../images/scroll.gif')
   background-size: contain
   background-position: center
@@ -480,20 +477,16 @@ figure:nth-child(8)
   justify-content: center
   text-align: center
   height: 60vh
-  width: 80vw
+  width: 65vw
 
 .mangaSection
-  flex-direction: column
-  justify-content: space-between
+
 
 .mangaRow1
-  margin: 20px 20px
   @include rowsp
-
-.mangaRow2
-  margin: 20px 20px
-  @include rowsp
-
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
 
 //chapter 841
 .recent1
@@ -553,14 +546,14 @@ figure:nth-child(8)
 
 //Memory game
 .memoryGame
+  @include columnz
   // justify-content: center
   // margin: 10vw
 
 .memoryBoard
-  overflow: scroll
-  padding: 2vw
-  height: 100vh
-  width: 85vw
+  // overflow: scroll
+  height: 82vh
+  width: 67vw
   align-items: center
   background-color: rgba(177, 80, 21, 0.5)
   border-top: 5px solid rgb(182, 40, 2)
@@ -570,13 +563,14 @@ figure:nth-child(8)
   background-repeat: no-repeat
   text-align: center
   justify-content: center
+  margin-bottom: 20px
 
 .card
-  margin: 5px
+  margin: 3px
   border: solid 3px rgb(198, 232, 233)
     border-radius: 2px
   height: 25vh
-  width: 13vw
+  width: 10vw
   text-align: center
   margin-bottom: 5px
   background-size: cover

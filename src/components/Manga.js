@@ -16,8 +16,6 @@ class Manga extends Component {
               <a className='recent2' href='http://www.zingbox.me/manga/One%20Piece/8168/95045980/2/191961/chapter840' />
               {/* Chapter 839 */}
               <a className='recent3' href='http://www.zingbox.me/storyRead/8168?chapterId=191338&flag=2&randomKey=89428835' />
-            </div>
-            <div className='mangaRow2'>
               {/* Chapter 838 */}
               <a className='recent4' href='http://www.zingbox.me/storyRead/8168?chapterId=189583&flag=2&randomKey=41857309' />
               {/* Chapter 837 */}

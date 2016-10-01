@@ -52,15 +52,15 @@ class Home extends Component {
             </div>
             <div className='sideLinks'>
               <div className='sideImage1'>
-              DEVIL FRUITS
-                <Link to='/DevilFruit'>
-                  <img className= 'devilFruitHome' src='https://uploads.disquscdn.com/images/d77648bc56c7e2981e1301128783d02f13f75f7e10ea115dbb844c048ae6f134.jpg' />
+                <Link to='/Anime'>
+                  ANIME
+                  <iframe src="http://www.hulu.com/embed.html?eid=-w7jqpfkr9kpgq9ptollcq&partner=funimation&url=http%3A%2F%2Fwww.hulu.com%2Fwatch%2F986263"scrolling="no" allowFullScreen></iframe>
                 </Link>
               </div>
               <div className='sideImage2'>
-                ONE PIECE GAMES
-                <Link to='/Games'>
-                  <img className='gamesHome' src='https://analogaddiction.files.wordpress.com/2013/09/one-piece-pirate-warriors-2-screen-7.jpg?w=350&h=200&crop=1' />
+                  MANGA
+                <Link to='/Manga'>
+                  <img className='mangaHome' />
                 </Link>
               </div>
              </div>
