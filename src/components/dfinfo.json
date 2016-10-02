@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "title": "Mag-Mag Fruit",
+      "type":"Logia",
+      "url": "http://onepiece.wikia.com/wiki/Magu_Magu_no_Mi",
+      "image": "https://staticdelivery.nexusmods.com/mods/110/images/29662-1-1357673827.jpg",
+      "snippet":"The Magu Magu no Mi is a Logia-type Devil Fruit that allows the user to create, control, and transform into magma at will, turning the user into a Magma Human (マグマ人間 Maguma Ningen?). It was eaten by Fleet Admiral Sakazuki, formerly known as Admiral Akainu.\n\nThe fruit's power was first shown during the Battle of Marineford, but was not named until it was revealed in SBS Volume 62.",
+      "strength":"",
+      "weakness":"",
+      "current":"Sakazuki"
+    },
+    {
+      "title": "Flame-Flame Fruit",
+      "type":"Logia",
+      "url": "http://onepiece.wikia.com/wiki/Mera_Mera_no_Mi",
+      "image":"https://staticdelivery.nexusmods.com/mods/110/images/29662-1-1357673827.jpg",
+      "snippet":"The Mera Mera no Mi[4] is a Logia-type Devil Fruit that allows the user to create, control, and transform into fire at will.\n\nThe Mera Mera no Mi is a round orange fruit, composed of many flame-shaped components with swirl patterns on each one, and has a swirled stem on the top. It is small enough to be held in one hand.\n\n",
+      "strength":"",
+      "weakness":"",
+      "current":"Sabo",
+      "former":"Portgas G Ace"
+    },
+    {
+      "title": "Ice-Ice Fruit",
+      "type":"Logia",
+      "url": "http://onepiece.wikia.com/wiki/Hie_Hie_no_Mi",
+      "image":"",
+      "snippet":"The chilly-Chilly Fruit is a Logia-type Devil Fruit that allows the user to create, control, and transform into ice at will, turning the user into a Freezing Human. It was eaten by Kuzan, better known as former Admiral Aokiji.",
+      "strength":"",
+      "weakness":"",
+      "current":"Kuzan"
+    },
+    {
+      "title": "Snow-Snow Fruit",
+      "type": "Logia",
+      "url": "http://onepiece.wikia.com/wiki/Yuki_Yuki_no_Mi",
+      "image":"",
+      "snippet":"The Yuki Yuki no Mi is a Logia-type Devil Fruit that allows the user to create, control, and transform into the element of \"snow\" at will, turning the user into a Snow Human. The fruit was eaten by Monet, but with her death has returned to circulation.",
+      "strength":"",
+      "weakness":"",
+      "current":"",
+      "former":"Monet"
+    }
+  ]
+}

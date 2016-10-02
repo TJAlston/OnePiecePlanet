@@ -48,6 +48,7 @@ class Home extends Component {
             </div>
               </Link>
             <p className='homeFont'>Learn about your favorite characters</p>
+            <img className='decor1' src='http://thelunarchronicles.com/static/heartless/img/symbol-divider@2x.png'/>
             </div>
             <div className='sideLinks'>
               <div className='sideImage1'>
@@ -57,7 +58,7 @@ class Home extends Component {
                   <p className='homeFont'>View past episodes!</p>
                 </Link>
               </div>
-              <img className='decor' src='http://4.bp.blogspot.com/-IOmo-UQE8LE/VlnvHxNCNgI/AAAAAAAAwyE/ZoPHfVcMeNY/s1600/Divider.A.AB.png'/>
+              <img className='decor2' src='http://thelunarchronicles.com/static/heartless/img/symbol-divider@2x.png'/>
               <div className='sideImage2'>
                   MANGA
                 <Link to='/Manga'>
