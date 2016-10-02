@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import '../styles/screen.sass'
-import Header from './Header'
-import Footer from './Footer'
 import { Link } from 'react-router'
 
 class Home extends Component {
@@ -49,18 +47,22 @@ class Home extends Component {
             </figure>
             </div>
               </Link>
+            <p className='homeFont'>Learn about your favorite characters</p>
             </div>
             <div className='sideLinks'>
               <div className='sideImage1'>
-                <Link to='/Anime'>
                   ANIME
-                  <iframe src="http://www.hulu.com/embed.html?eid=-w7jqpfkr9kpgq9ptollcq&partner=funimation&url=http%3A%2F%2Fwww.hulu.com%2Fwatch%2F986263"scrolling="no" allowFullScreen></iframe>
+                  <Link to='/Anime'>
+                  <iframe className='animeHome' src='http://www.hulu.com/embed.html?eid=-w7jqpfkr9kpgq9ptollcq&partner=funimation&url=http%3A%2F%2Fwww.hulu.com%2Fwatch%2F986263' scrolling='no' allowFullScreen></iframe>
+                  <p className='homeFont'>View past episodes!</p>
                 </Link>
               </div>
+              <img className='decor' src='http://4.bp.blogspot.com/-IOmo-UQE8LE/VlnvHxNCNgI/AAAAAAAAwyE/ZoPHfVcMeNY/s1600/Divider.A.AB.png'/>
               <div className='sideImage2'>
                   MANGA
                 <Link to='/Manga'>
                   <img className='mangaHome' />
+                  <p className='homeFont'>Read previous manga</p>
                 </Link>
               </div>
              </div>

@@ -215,31 +215,38 @@ nav
 .homePage
   @include columnz
   flex-wrap: wrap
+  justify-content: center
 
 .homePhotos
   display: flex
-  flex-wrap: wrap
+  flex-flow: row wrap
+  justify-content: center
   font-family: 'One Piece'
   font-size: 4.5vw
   text-align: center
   color: white
   text-shadow: 5px 5px 5px black
-  justify-content: space-between
   @include borderColors
-  padding: 2vw
-  background-color: rgba(148, 39, 35, 0.74)
+  margin: 50px
+  padding: 10px
+  background-color: rgba(184, 87, 46, 0.74)
   width: 83vw
+
+.homeFont
+  font-family: $design-font
+  font-size: 30px
+  color: white
+  letter-spacing: 3px
 
 .bigPhoto
   @include columnz
-  width: 50vw
-
-.characterImageHome
-  display: flex
-  @include borderColors
-  height: 50vh
-  width: 60vw
-  margin-bottom: 75px
+  justify-content: center
+  width: 500px
+  align-content: center
+  margin-bottom: 50px
+  padding-top: 60px
+  padding-right: 5vw
+  padding-left: 5vw
 
 .css-slideshow
   display: flex
@@ -248,6 +255,7 @@ nav
   height: 40vh
   justify-content: flex-start
   align-content: center
+  padding-bottom: 20vh
   @include columnz
 
 .css-slideshow figure
@@ -279,15 +287,22 @@ nav
 
 .sideLinks
   @include columnz
-  justify-content: flex-end
-  padding-top: 20px
-  align-self: center
-  width: 25vw
+  // width: 25vw
 
 .sideImage1
   @include columnz
-  width: 20vw
-  padding-bottom: 20px
+  width: 30vw
+
+.animeHome
+  height: 200px
+  width: 300px
+
+.decor
+  padding: 20px
+  width: 200px
+
+.sideImage2
+  @include columnz
 
 .mangaHome
   @include borderColors
@@ -295,12 +310,8 @@ nav
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  height: 40vh
-  width: 25vw
-
-.sideImage2
-  @include columnz
-  width: 17vw
+  height: 300px
+  width: 200px
 
 .homeIntro
   @include borderColors
