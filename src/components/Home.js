@@ -47,14 +47,14 @@ class Home extends Component {
             </figure>
             </div>
               </Link>
-            <p className='homeFont'>Learn about your favorite characters</p>
+            <p className='homeFont'>Learn about characters</p>
             <img className='decor1' src='http://thelunarchronicles.com/static/heartless/img/symbol-divider@2x.png'/>
             </div>
             <div className='sideLinks'>
               <div className='sideImage1'>
                   ANIME
                   <Link to='/Anime'>
-                  <iframe className='animeHome' src='http://www.hulu.com/embed.html?eid=-w7jqpfkr9kpgq9ptollcq&partner=funimation&url=http%3A%2F%2Fwww.hulu.com%2Fwatch%2F986263' scrolling='no' allowFullScreen></iframe>
+                  <iframe className='animeHome' src="https://www.youtube.com/embed/WC6_FiGkKJM" frameborder="0" allowfullscreen></iframe>
                   <p className='homeFont'>View past episodes!</p>
                 </Link>
               </div>

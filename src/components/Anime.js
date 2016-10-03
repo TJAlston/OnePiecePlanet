@@ -9,20 +9,20 @@ class Anime extends Component {
           <h1>Anime</h1>
           <div className='videos'>
             <div className='video1'>
-              EPISODE 757
-              <iframe width="500" height="288" src="http://www.hulu.com/embed.html?eid=-w7jqpfkr9kpgq9ptollcq&partner=funimation&url=http%3A%2F%2Fwww.hulu.com%2Fwatch%2F986263"scrolling="no" allowFullScreen></iframe>
+              EPISODE 758
+              <iframe width='500' height='288' src='https://www.youtube.com/embed/WC6_FiGkKJM' scrolling='no' allowFullScreen></iframe>
               </div>
               <div className='video2'>
-              EPISODE 756
-              <iframe width='500' height='288' src='http://www.hulu.com/embed.html?eid=btznonsuogmz0awhehnjia&partner=funimation&url=http%3A%2F%2Fonepieceofficial.com%2Fvideos.aspx' scrolling='no' allowFullScreen></iframe>
+              EPISODE 757
+              <iframe width='500' height='288' src='http://embed.genfb.com/305484966483343' scrolling='no' allowFullScreen></iframe>
               </div>
               <div className='video3'>
-              EPISODE 755
-              <iframe width='500' height='288' src='http://www.hulu.com/embed.html?eid=ey7esovrjarvoelg1uwc0g&partner=funimation&url=http%3A%2F%2Fwww.onepieceofficial.com%2Fvideos.aspx%3F%26v%3D9022' scrolling='no' allowFullScreen></iframe>
+              EPISODE 756
+              <iframe width='500' height='288' src='http://embed.genfb.com/1301042249929192' scrolling='no' allowFullScreen></iframe>
               </div>
               <div className='video4'>
-              EPISODE 754
-              <iframe width='500' height='288' src='http://www.hulu.com/embed.html?eid=ujocuthazsye2s-bqcqb1g&partner=funimation&url=http%3A%2F%2Fwww.onepieceofficial.com%2Fvideos.aspx%3F%26v%3D9021' scrolling='no' allowFullScreen></iframe>
+              EPISODE 755
+              <iframe width='500' height='288' src='http://embed.genfb.com/1294724827227601' scrolling='no' allowFullScreen></iframe>
               </div>
             <div className='chapterList'>
               <a href='http://www.hulu.com/one-piece'>

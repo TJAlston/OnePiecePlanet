@@ -36,7 +36,7 @@ $brown: rgba(227, 196, 144, 0.84)
   background-repeat: no-repeat
   margin: 10px
   height: 300px
-  width: 450px
+  width: 525px
 
 @mixin mangaGallery
   display: flex
@@ -128,7 +128,6 @@ h5
 nav
   flex-wrap: wrap
   margin-top: -5px
-  padding: 5px
   background-color: rgb(159, 170, 170)
   color: $black
   width: 100vw
@@ -136,12 +135,29 @@ nav
 .header1
   margin-top: -50px
   border-bottom: 5px solid grey
-  height: 50vh
+  height: 40vh
   width: 100vw
 
 .colHeader
   display: flex
   flex-direction: row
+
+#noDots
+  display: flex
+  flex-wrap: wrap
+  margin: 0
+  padding: 1vw
+  // padding-right: 40px
+  @include rowsp
+  list-style-type: none
+  font-weight: bold
+
+.noUnders
+  text-decoration: none
+  text-transform: uppercase
+  font-family: 'One Piece'
+  font-size: 4vw
+  justify-content: space-around
 
 #Search
   margin: 0
@@ -195,22 +211,6 @@ nav
 .titleh4
   margin-top: 10px
   margin-bottom: -10px
-
-#noDots
-  display: flex
-  flex-wrap: wrap
-  margin: 0
-  padding-right: 40px
-  @include rowsp
-  list-style-type: none
-  font-weight: bold
-
-.noUnders
-  text-decoration: none
-  text-transform: uppercase
-  font-family: 'One Piece'
-  font-size: 3.5vw
-  justify-content: space-around
 
 //Home Page
 .homePage
@@ -430,8 +430,8 @@ figure:nth-child(8)
   background-position: center
   background-image: url('../images/devilfruitimg.jpg')
   background-size: cover
-  width: 60vw
-  height: 50vh
+  width: 40vw
+  height: 30vh
 
 .devilFruitBio
   @include borderColors
@@ -570,9 +570,9 @@ figure:nth-child(8)
   // margin: 10vw
 
 .memoryBoard
-  // overflow: scroll
-  height: 82vh
-  width: 67vw
+  overflow: scroll
+  height: 90vh
+  width: 80vw
   align-items: center
   background-color: rgba(177, 80, 21, 0.5)
   border-top: 5px solid rgb(182, 40, 2)
@@ -583,15 +583,15 @@ figure:nth-child(8)
   text-align: center
   justify-content: center
   margin-bottom: 20px
+  padding: 2vw
 
 .card
-  margin: 3px
+  margin: 10px
   border: solid 3px rgb(198, 232, 233)
-    border-radius: 2px
+  border-radius: 2px
   height: 25vh
   width: 10vw
   text-align: center
-  margin-bottom: 5px
   background-size: cover
   border: 2px solid black
 
@@ -620,16 +620,42 @@ figure:nth-child(8)
 // HANGMAN
 .hangman
   @include columnz
+
+.hangmanBoard
+  @include columnz
+  // overflow: scroll
+  // height: 90vh
+  // width: 70vw
+  // align-items: center
+  // background-color: rgba(177, 80, 21, 0.5)
+  // border-top: 5px solid rgb(182, 40, 2)
+  // border-bottom: 5px solid rgba(103, 10, 10, 1)
+  // border-left: 5px solid rgb(182, 40, 2)
+  // border-right: 5px solid rgba(103, 10, 10, 1)
   justify-content: space-between
-  align-self: center
-  height: 100vh
-  width: 100vw
-  padding: 20px n
+  align-items: center
+  align-content: center
+  padding-top: 40vh
+
+.resetButton2
+  margin-top: 20px
+  padding: 0
+  background-image: url('http://is2.mzstatic.com/image/thumb/Purple5/v4/ff/e8/e1/ffe8e19d-cac3-1aa4-9f79-c827036fb215/mzl.balclcui.png/0x0ss-85.jpg')
+  height: 200px
+  width: 200px
+  background-size: cover
+  border-radius: 50px
+  color: red
+  text-shadow: 3px 3px 3px white
+  font-weight: bolder
+  font-size: 30px
 
 .Word
-  // width: 50vw
-  font-size: 10px
-
+  width: 75vw
+  padding: 0
+  margin-bottom: -450px
+  font-size: 8px
+  border: 2px solid black
 
 //Forums Page
 .forumPage
