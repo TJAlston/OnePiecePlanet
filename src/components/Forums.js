@@ -12,7 +12,7 @@ class Forums extends Component {
           <h3 id='opfont'>ONE PIECE FORUM</h3>
           <a className='forumLink2' href='http://opforum.net/' />
           </div>
-          <div className='bio'>One Piece Forum is a forum for fans to discuss a plethora of One Piece topics.  Fan will touch on subject like; theories, show their fan art, discuss new One Piece news, fan games and hundreds of topics.
+          <div className='bio'>One Piece Forum is a forum for fans to discuss a plethora of One Piece topics.  Fans will touch on subjects like; theories, show their personal fan art, discuss new One Piece news, fan games and hundreds of other topics.
           </div>
         </div>
       </main>

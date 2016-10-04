@@ -31,13 +31,6 @@ $brown: rgba(227, 196, 144, 0.84)
   flex-direction: column
   align-items: center
 
-@mixin gameBg
-  background-size: cover
-  background-repeat: no-repeat
-  margin: 10px
-  height: 300px
-  width: 525px
-
 @mixin mangaGallery
   display: flex
   margin: 2vw
@@ -407,8 +400,15 @@ figure:nth-child(8)
   width: 70vw
   height: 50vh
 
+.bioInfo
+  font-family: 'helvetica'
+  font-size: 3vw
+  line-height: 1em
+  letter-spacing: 0
+
 .characterBio
   @include columnz
+  margin-bottom: 10em
 
 .characterLayout
   @include columnz
@@ -422,6 +422,10 @@ figure:nth-child(8)
   font-family: 'One Piece'
   font-size: 60px
   color: rgb(31, 32, 33)
+
+.bioLinks
+  text-decoration: underline
+  margin-top: 2vh
 
 
 //DEVIL FRUITS
@@ -565,12 +569,11 @@ figure:nth-child(8)
 
 .game1
   background-image: url('../images/opMemory.png')
-  @include gameBg
-  @include borderColors
-
-.game2
-  background-image: url('../images/fill_in_img.jpg')
-  @include gameBg
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  margin: 10px
+  height: 350px
+  width: 550px
   @include borderColors
 
 

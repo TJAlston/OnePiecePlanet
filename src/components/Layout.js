@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link, browserHistory } from 'react-router'
 import { Footer } from '.'
+import MarkdownIt from 'markdown-it'
 
 import characterInfo from './characterinfo.json'
 
