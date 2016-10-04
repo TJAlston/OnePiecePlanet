@@ -668,24 +668,27 @@ figure:nth-child(8)
 footer
   @include rowsp
   height: 13vh
-  bottom: 0
-  padding: 3vw
+  padding-top: .5vh
+  padding-left: 5vw
+  padding-right: 5vw
+  padding-bottom: 1.5vw
   align-self: baseline
   margin-top: 25px
   columns: 2
   background-color: rgb(163, 179, 228)
   border-top: 5px solid rgb(159, 170, 170)
 
+.noSpace
+  margin: 0em
+
 .resources
   @include columnz
   font-size: .50em
-  padding-top: 2.5vw
   justify-content: space-around
 
 .credits
   @include columnz
   font-size: .50em
-  padding-top: 2.5vw
   justify-content: space-around
 
 .copy
@@ -693,6 +696,5 @@ footer
   flex-wrap: wrap
   padding-top: 2vw
   color: white
-  font-size: 1em
+  font-size: .75em
   font-weight: bolder
-  // align-self: baseline
