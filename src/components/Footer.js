@@ -19,7 +19,7 @@ class Footer extends Component {
         <p>Licensed by FUN</p>
       </div>
       <div className='copy'>
-      &#169;2016 Tameka J. Alston
+      &#169;<a href='http://tjalston.surge.sh/'> 2016 Tameka J. Alston </a>
       </div>
       </footer>
     </div>

@@ -613,13 +613,13 @@
       "image":"http://m.chuing.net/zboard/revol_getimg.php?id=mone1&no=208097&num=7&fc=824e4b9fb50c9033e46dfa914bdf6201"
     },
     {
-      "title":"Broggy",
-      "url":"http://onepiece.wikia.com/wiki/Broggy",
+      "title":"Brogy",
+      "url":"http://onepiece.wikia.com/wiki/Brogy",
       "snippet":"Brogy the Red Ogre is one of the two former captains of the Giant Warrior Pirates from Elbaf. It is from his pirate life that he earned a bounty of Beli100,000,000.",
-      "image":"http://onepiece-treasurecruise.com/en/wp-content/uploads/c0292.png"
+      "image":"http://i.makeagif.com/media/7-15-2015/BqPlVl.gif"
     },
     {
-      "title":"Mr. 2",
+      "title":"Mr 2",
       "url":"http://onepiece.wikia.com/wiki/Mr_2",
       "snippet":"Bentham, alias Mr. 2 Bon Kurei, is a former officer agent of Baroque Works and an okama (a Japanese slang term for a cross dresser). While he was once an enemy of Luffy's as a part of the Baroque Works, the two became quick friends, leading Bon Kurei to sacrifice himself for Luffy both at Alabasta and later at Impel Down. He is currently the new queen of Newkama Land.",
       "image":"http://31.media.tumblr.com/4fefadcbce09e2de182d3993828fef8c/tumblr_mgorwlmvEd1r2sqylo1_500.gif"
@@ -665,6 +665,194 @@
       "url":"http://onepiece.wikia.com/wiki/Germa_Kingdom",
       "snippet":"The Germa Kingdom, also known as the Kingdom of Science is the world's only seafaring kingdom, and a member nation of the World Government. It is ruled by the Vinsmoke Family, a royal family hailing from North Blue, and is serviced militarily by the Underworld army, Germa 66. As the territory of the Vinsmoke Family, it is Sanji's home nation.\n\n Currently, the Germa Kingdom is assembling at Whole Cake Island in the New World.",
       "image":"http://vignette2.wikia.nocookie.net/onepiece/images/0/01/Germa_Kingdom_Infobox.png/revision/latest?cb=20160716174623"
+    },
+    {
+      "title": "Gum Gum Fruit",
+      "japanese":"Japanese Name: Gomu Gomu no mi",
+      "type": "Paramecia",
+      "url": "http://onepiece.wikia.com/wiki/Gomu_Gomu_no_Mi",
+      "image":"http://vignette2.wikia.nocookie.net/onepiece/images/3/3b/Gomu_Gomu_no_Mi.png/revision/latest?cb=20131116130315&path-prefix=fr",
+      "snippet":"The Gomu Gomu no Mi is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was originally a treasure that Shanks and his crew took from an unspecified enemy, but was accidentally eaten by the series protagonist Monkey D. Luffy. In the second version of Romance Dawn, it originally belonged to Luffy's grandpa who took it from an unspecified enemy.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Monkey D. Luffy",
+      "former":""
+    },
+    {
+      "title": "Human Human Fruit",
+      "japanese":"Japanese Name: Hito Hito no Mi",
+      "type":"Zoan",
+      "url": "http://onepiece.wikia.com/wiki/Hito_Hito_no_Mi",
+      "image": "http://vignette1.wikia.nocookie.net/shipoffools/images/8/8a/Mummy_Fruit.png/revision/latest?cb=20160119043911",
+      "snippet":"The Hito Hito no Mi is a Zoan-type Devil Fruit that allows its user to transform into a human hybrid and a full human at will. It was eaten by Tony Tony Chopper.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Tony Tony Chopper"
+    },
+    {
+      "title": "Revive Revive Fruit",
+      "japanese":"Japanese Name: Yomi Yomi no Mi",
+      "type":"Paramecia",
+      "url": "http://onepiece.wikia.com/wiki/Yomi_Yomi_no_Mi",
+      "image": "http://i.imgur.com/KrGr1pz.png",
+      "snippet":"The Yomi Yomi no Mi is a Paramecia-type Devil Fruit which enhances the user's soul to the point where they can come back to life after dying once, remaining alive until their body is sufficiently damaged, and to use several other soul-based abilities, making the user a Reviving Human. It was eaten by Brook.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Brook"
+    },
+    {
+      "title": "Mag Mag Fruit",
+      "japanese":"Japanese Name: Magu Magu no Mi",
+      "type":"Logia",
+      "url": "http://onepiece.wikia.com/wiki/Magu_Magu_no_Mi",
+      "image": "http://img1.wikia.nocookie.net/__cb20110426204650/onepiece/de/images/thumb/1/16/Magu_Magu_no_Mi_F%C3%A4higkeit.jpg/500px-Magu_Magu_no_Mi_F%C3%A4higkeit.jpg",
+      "snippet":"The Magu Magu no Mi is a Logia-type Devil Fruit that allows the user to create, control, and transform into magma at will, turning the user into a Magma Human. It was eaten by Fleet Admiral Sakazuki, formerly known as Admiral Akainu.\n\nThe fruit's power was first shown during the Battle of Marineford, but was not named until it was revealed in SBS Volume 62.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Sakazuki"
+    },
+    {
+      "title": "Flame Flame Fruit",
+      "japanese":"Japanese Name: Mera Mera no Mi",
+      "type":"Logia",
+      "url": "http://onepiece.wikia.com/wiki/Mera_Mera_no_Mi",
+      "image":"https://i.ytimg.com/vi/pb3TPF7s43s/maxresdefault.jpg",
+      "snippet":"The Mera Mera no Mi is a Logia-type Devil Fruit that allows the user to create, control, and transform into fire at will.\n\nThe Mera Mera no Mi is a round orange fruit, composed of many flame-shaped components with swirl patterns on each one, and has a swirled stem on the top. It is small enough to be held in one hand.\n\n",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Sabo",
+      "former":"Portgas G Ace"
+    },
+    {
+      "title": "Ice Ice Fruit",
+      "japanese":"Japanese Name: Hie Hie no Mi",
+      "type":"Logia",
+      "url": "http://onepiece.wikia.com/wiki/Hie_Hie_no_Mi",
+      "image":"http://1.bp.blogspot.com/-jkas44rmvb0/UfAUcLEuyzI/AAAAAAAAEFw/zg6ou_0-CUQ/s1600/hie+hie+no+mi.jpg",
+      "snippet":"The chilly-Chilly Fruit is a Logia-type Devil Fruit that allows the user to create, control, and transform into ice at will, turning the user into a Freezing Human. It was eaten by Kuzan, better known as former Admiral Aokiji.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Kuzan"
+    },
+    {
+      "title": "Snow Snow Fruit",
+      "japanese":"Japanese Name: Yuki Yuki no Mi",
+      "type": "Logia",
+      "url": "http://onepiece.wikia.com/wiki/Yuki_Yuki_no_Mi",
+      "image":"http://vignette1.wikia.nocookie.net/onepiece/images/1/1b/Robin_vs._Monet.png/revision/latest?cb=20130915142152",
+      "snippet":"The Yuki Yuki no Mi is a Logia-type Devil Fruit that allows the user to create, control, and transform into the element of \"snow\" at will, turning the user into a Snow Human. The fruit was eaten by Monet, but with her death has returned to circulation.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Unknown",
+      "former":"Current User: Monet"
+    },
+    {
+      "title": "Ton Ton Fruit",
+      "japanese":"Japanese Name: Ton Ton no mi",
+      "type": "Paramecia",
+      "url": "http://onepiece.wikia.com/wiki/Ton_Ton_no_Mi",
+      "image":"http://vignette4.wikia.nocookie.net/onepiece/images/f/f6/Machvise_vs._Boo.png/revision/latest?cb=20150503134439&path-prefix=es",
+      "snippet":"The Ton Ton no Mi is a Paramecia-type Devil Fruit which  allows the user to increase their weight, making them a Super Weight Human. It was eaten by Machvise. \n\nThe fruit's power was shown during the conflict of Dressrosa, but was not named until it was revealed in SBS Volume 79.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Machvise",
+      "former":""
+    },
+    {
+      "title": "Pound Pound Fruit",
+      "japanese":"Japanese Name: Kilo Kilo no mi",
+      "type": "Paramecia",
+      "url": "http://onepiece.wikia.com/wiki/Kilo_Kilo_no_Mi",
+      "image":"http://vignette2.wikia.nocookie.net/onepiece/images/4/4e/Crescendo_Stone.png/revision/latest?cb=20150414232758",
+      "snippet":"The Kilo Kilo no Mi is a Paramecia-type Devil Fruit that allows the user to change their weight from 1 to 10,000 kilograms without, in any way, affecting the overall size of their bodies. It was eaten by Miss Valentine.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Miss Valentine",
+      "former":""
+    },
+    {
+      "title": "Dark Dark Fruit",
+      "japanese":"Japanese Name: Yami Yami no mi",
+      "type": "Logia",
+      "url": "http://onepiece.wikia.com/wiki/Yami_Yami_no_Mi",
+      "image":"http://2.bp.blogspot.com/-LfhAlSKD-1Y/VQ15vJAOrsI/AAAAAAAAFDY/-NIVELObPc0/s1600/yami1.jpg",
+      "snippet":"The Yami Yami no Mi is a Logia-type Devil Fruit that allows the user to create and control darkness at will, making the user a Darkness Human. It was eaten by Marshall D. Teach, also known as Blackbeard, who stole it from Commander Thatch of the Whitebeard Pirates' 4th division. \n\n This fruit is considered \"unique\" even for a Logia type, and the ability it grants is said to be the \"most evil\".",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Marshall D. Teach",
+      "former":""
+    },
+    {
+      "title": "Glint Glint Fruit",
+      "japanese":"Japanese Name: Pika Pika no mi",
+      "type": "Logia",
+      "url": "http://onepiece.wikia.com/wiki/Pika_Pika_no_Mi",
+      "image":"http://i.skyrock.net/1042/88091042/pics/3227660843_1_20_ZKgy121a.jpg",
+      "snippet":"The Pika Pika no Mi is a Logia-type Devil Fruit that allows the user to create, control, and transform into light at will, turning the user into a Light Human. It enables the user to move at the speed of light and transport him/herself by means of reflection. It was eaten by Borsalino, better known as Admiral Kizaru.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Borsalino",
+      "former":""
+    },
+    {
+      "title": "Op Op Fruit",
+      "japanese":"Japanese Name: Ope Ope no mi",
+      "type": "Paramecia",
+      "url": "http://onepiece.wikia.com/wiki/Pika_Pika_no_Mi",
+      "image":"http://vignette2.wikia.nocookie.net/onepiece/images/b/ba/Rosinante_Force_Feeds_Law_the_Ope_Ope_no_Mi.png/revision/latest?cb=20150817123917",
+      "snippet":"The Ope Ope no Mi is a Paramecia-type Devil Fruit that allows its user to create a spherical space or \"room\", in which the user has complete control over the placement and orientation of the objects inside, making the user a Free Modification Human. It was eaten by Trafalgar D. Water Law.\n\nThe fruit's power was first seen during the Sabaody Archipelago Arc, but the fruit itself was not named or explained in any way until the Punk Hazard Arc.\n\nThis fruit is called the \"Ultimate Devil Fruit\", because of its unique power to grant another person eternal youth in exchange for the current user's life. The Marines were willing to pay as much as Beli5,000,000,000 to buy the fruit from a pirate named Diez Barrels. The fruit is also renowned and coveted for allowing the user to perform miraculous surgeries to cure diseases without known cures and even circumvent physical disabilities.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Trafalgar D. Water Law",
+      "former":""
+    },
+    {
+      "title": "Venom Venom Fruit",
+      "japanese":"Japanese Name: Doku Doku no mi",
+      "type": "Paramecia",
+      "url": "http://onepiece.wikia.com/wiki/Doku_Doku_no_Mi",
+      "image":"http://vignette2.wikia.nocookie.net/onepiece/images/b/b4/Prisonniers_neutralis%C3%A9s_par_le_Poison_de_Magellan.png/revision/latest?cb=20130323202311&path-prefix=fr",
+      "snippet":"The Doku Doku no Mi is a Paramecia-type Devil Fruit that grants the user the ability to produce and control different types of poison, as well as grant immunity to all forms of poison, making the user a Poison Human. It was eaten by Magellan.\n\nThis ability is not to be confused with a Logia-class power, as the user cannot transform their body or any part of their body into poison.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Magellan",
+      "former":""
+    },
+    {
+      "title": "Wax Wax Fruit",
+      "japanese":"Japanese Name: Doru Doru no mi",
+      "type": "Paramecia",
+      "url": "http://onepiece.wikia.com/wiki/Doru_Doru_no_Mi",
+      "image":"http://vignette2.wikia.nocookie.net/fairyonepiecetail/images/4/48/Wax_Fruit.jpg/revision/latest?cb=20120817064030",
+      "snippet":"The Doru Doru no Mi is a Paramecia-type Devil Fruit that allows the user to tap large quantities of wax from their body and create things from it, making the user a Candle Human. Whether the amount of wax that can be produced is infinite is currently unknown. It was eaten by Galdino, better known by his Baroque Works alias Mr. 3. This ability is not to be confused with a Logia power since the user cannot turn his or her body into wax. It is also different from a Logia power since the user is able to generate a small amount of fire, a different element from wax, on top of their head as they produce wax in relation to being a candleman.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Galdino",
+      "former":""
+    },
+    {
+      "title": "Rumble Rumble Fruit",
+      "japanese":"Japanese Name: Goro Goro no Mi",
+      "type": "Logia",
+      "url": "http://onepiece.wikia.com/wiki/Goro_Goro_no_Mi",
+      "image":"http://i46.tinypic.com/6sxcfs.jpg",
+      "snippet":"The Goro Goro no Mi is a Logia-type Devil Fruit that allows the user to create, control, and transform into electricity at will, making the user a Lightning Human. It was eaten by Enel. It was mentioned by Nico Robin to be one of the fruits with the reputation of being \"invincible\".",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Enel",
+      "former":""
+    },
+    {
+      "title": "Smoke Smoke Fruit",
+      "japanese":"Japanese Name: Moku Moku no Mi",
+      "type": "Logia",
+      "url": "http://onepiece.wikia.com/wiki/Moku_Moku_no_Mi",
+      "image":"http://www.onepiecegold.com/wp-content/uploads/2015/06/se.jpg",
+      "snippet":"The Moku Moku no Mi is a Logia-type Devil Fruit that allows the user to create, control, and transform into smoke at will. It was eaten by Smoker.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Smoker",
+      "former":""
     }
   ]
 }
