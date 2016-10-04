@@ -10,8 +10,7 @@ class Games extends Component {
     return <main>
       <h1>One Piece Games</h1>
       <div className='gameGallery1'>
-        <Link className='game1' to='/Memory'>Memory Game</Link>
-        <Link className='game2' to='PKExecution'>Pirate King Execution </Link>
+        <Link className='game1' to='/Memory'></Link>
       </div>
     </main>
   }

@@ -52,6 +52,37 @@ $brown: rgba(227, 196, 144, 0.84)
   flex-direction: row
   justify-content: space-between
 
+// @media only screen and (min-width: 768px)
+//     /* For desktop: */
+//     .col-1 {width: 8.33%;}
+//     .col-2 {width: 16.66%;}
+//     .col-3 {width: 25%;}
+//     .col-4 {width: 33.33%;}
+//     .col-5 {width: 41.66%;}
+//     .col-6 {width: 50%;}
+//     .col-7 {width: 58.33%;}
+//     .col-8 {width: 66.66%;}
+//     .col-9 {width: 75%;}
+//     .col-10 {width: 83.33%;}
+//     .col-11 {width: 91.66%;}
+//     .col-12 {width: 100%;}
+
+@keyframes bounceInDown
+  from, 60%, 75%, 90%, to
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+  0%
+    opacity: 0
+    transform: translate3d(0, -3000px, 0)
+  60%
+    opacity: 1
+    transform: translate3d(0, 25px, 0)
+  75%
+    transform: translate3d(0, -10px, 0)
+  90%
+    transform: translate3d(0, 5px, 0)
+  to
+    transform: none
+
 html
   text-size-adjust: 100%
 
@@ -60,6 +91,7 @@ body
   margin: 0
   padding: 0
   font: $base-text-size / 1 $base-font-family
+  font-size: 1.25em
   background-image: url('../images/oppbkgd.png')
   background-attachment: fixed
   background-repeat: no-repeat
@@ -147,7 +179,6 @@ nav
   flex-wrap: wrap
   margin: 0
   padding: 1vw
-  // padding-right: 40px
   @include rowsp
   list-style-type: none
   font-weight: bold
@@ -156,7 +187,7 @@ nav
   text-decoration: none
   text-transform: uppercase
   font-family: 'One Piece'
-  font-size: 4vw
+  font-size: 3.75vw
   justify-content: space-around
 
 #Search
@@ -165,7 +196,7 @@ nav
   width: 325px
   height: 23px
   font-family: 'One Piece'
-  color: grey
+  color: black
   font-size: 1em
   font-weight: bolder
   align-content: space-between
@@ -202,8 +233,8 @@ nav
 
 .oplogo
   padding: 20px
-  height: 90vh
-  width: 90vw
+  height: 75vh
+  width: 70vw
   justify-content: center
   align-content: center
   position: absolute
@@ -299,8 +330,8 @@ nav
   width: 30vw
 
 .animeHome
-  height: 200px
-  width: 300px
+  height: 300px
+  width: 400px
 
 .decor2
   padding: 20px
@@ -371,8 +402,8 @@ figure:nth-child(8)
 
 .bioImage
   @include borderColors
-  height: 45vh
-  width: 55vw
+  height: 50vh
+  width: 60vw
 
 .bio
   padding: 15px
@@ -381,8 +412,6 @@ figure:nth-child(8)
   overflow: auto
   background-color: $brown
   margin-top: 25px
-  font-family: 'helvetica'
-  font-size: 1em
   letter-spacing: normal
   width: 70vw
   height: 50vh
@@ -393,15 +422,6 @@ figure:nth-child(8)
 .characterLayout
   @include columnz
 
-.characterImage
-  @include borderColors
-  padding: 20px
-  background-image: url('../images/chopper1.gif')
-  background-repeat: no-repeat
-  background-size: cover
-  justify-content: center
-  width: 50vw
-  height: 300px
 
 .characterName
   margin: 0
@@ -553,7 +573,7 @@ figure:nth-child(8)
   padding: 5vw
 
 .game1
-  background-image: url('../images/fill_in_img.jpg')
+  background-image: url('../images/opMemory.png')
   @include gameBg
   @include borderColors
 
@@ -605,6 +625,13 @@ figure:nth-child(8)
   text-align: center
   align-self: center
 
+.aniWin
+    animation-name: bounceInDown
+    animation-duration: 6.5s
+    // animation-delay: 1s
+    // visibility: hidden
+
+
 .resetButton
   padding-top: 105px
   background-image: url('http://is2.mzstatic.com/image/thumb/Purple5/v4/ff/e8/e1/ffe8e19d-cac3-1aa4-9f79-c827036fb215/mzl.balclcui.png/0x0ss-85.jpg')
@@ -616,46 +643,6 @@ figure:nth-child(8)
   text-shadow: 3px 3px 3px white
   font-weight: bolder
   font-size: 30px
-
-// HANGMAN
-.hangman
-  @include columnz
-
-.hangmanBoard
-  @include columnz
-  // overflow: scroll
-  // height: 90vh
-  // width: 70vw
-  // align-items: center
-  // background-color: rgba(177, 80, 21, 0.5)
-  // border-top: 5px solid rgb(182, 40, 2)
-  // border-bottom: 5px solid rgba(103, 10, 10, 1)
-  // border-left: 5px solid rgb(182, 40, 2)
-  // border-right: 5px solid rgba(103, 10, 10, 1)
-  justify-content: space-between
-  align-items: center
-  align-content: center
-  padding-top: 40vh
-
-.resetButton2
-  margin-top: 20px
-  padding: 0
-  background-image: url('http://is2.mzstatic.com/image/thumb/Purple5/v4/ff/e8/e1/ffe8e19d-cac3-1aa4-9f79-c827036fb215/mzl.balclcui.png/0x0ss-85.jpg')
-  height: 200px
-  width: 200px
-  background-size: cover
-  border-radius: 50px
-  color: red
-  text-shadow: 3px 3px 3px white
-  font-weight: bolder
-  font-size: 30px
-
-.Word
-  width: 75vw
-  padding: 0
-  margin-bottom: -450px
-  font-size: 8px
-  border: 2px solid black
 
 //Forums Page
 .forumPage
@@ -700,13 +687,13 @@ footer
 
 .resources
   @include columnz
-  font-size: 1vw
+  font-size: .50em
   padding-top: 2.5vw
   justify-content: space-around
 
 .credits
   @include columnz
-  font-size: 1vw
+  font-size: .50em
   padding-top: 2.5vw
   justify-content: space-around
 
@@ -715,6 +702,6 @@ footer
   flex-wrap: wrap
   padding-top: 2vw
   color: white
-  font-size: 2.5vw
+  font-size: 1em
   font-weight: bolder
   // align-self: baseline

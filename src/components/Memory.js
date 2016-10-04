@@ -88,7 +88,8 @@ class Memory extends React.Component {
       return <div>
         <h1>MEMORY</h1>
         <div className='youWin'>
-          <h4> YOU WIN!!! </h4>
+        <audio src='./src/Luffy.mp3' autoPlay />
+          <h4 className='aniWin'> YOU WIN!!! </h4>
           <button onClick={this.reset} className='resetButton'>
           PLAY AGAIN</button>
         </div>
