@@ -174,6 +174,10 @@ nav
   font-size: 3.75vw
   justify-content: space-around
 
+.searchInput
+  display: flex
+  border: 5px solid black
+
 #Search
   margin: 0
   padding: 0
@@ -210,15 +214,15 @@ nav
   justify-content: space-between
   margin: 0
   padding: 0
-  width: 50vw
-  height: 50vh
+  width: 55vw
+  height: 55vh
   position: relative
   margin-top: 200px
 
 .oplogo
   padding: 20px
-  height: 75vh
-  width: 70vw
+  height: 80vh
+  width: 75vw
   justify-content: center
   align-content: center
   position: absolute
@@ -237,6 +241,7 @@ nav
   display: flex
   flex-flow: row wrap
   justify-content: center
+  align-content: center
   font-family: 'One Piece'
   font-size: 4.5vw
   text-align: center
@@ -246,7 +251,7 @@ nav
   margin: 50px
   padding: 10px
   background-color: rgba(184, 87, 46, 0.74)
-  width: 83vw
+  width: 80vw
 
 .homeFont
   font-family: $design-font
@@ -344,6 +349,9 @@ nav
   padding: 15px
   width: 80vw
   align-content: center
+  font-family: 'One Piece'
+  font-size: 1.50em
+  text-align: center
 
 figure:nth-child(1)
   animation: xfade 48s 42s infinite
@@ -399,6 +407,9 @@ figure:nth-child(8)
   @include borderColors
   word-wrap: break-word
   overflow: auto
+  font-family: 'One Piece'
+  font-size: 1.25em
+  text-align: center
   background-color: $brown
   margin-top: 25px
   letter-spacing: normal
@@ -441,6 +452,10 @@ figure:nth-child(8)
 .devilFruits
   @include columnz
   justify-content: center
+  font-family: 'One Piece'
+  font-size: 1.25em
+  text-align: center
+  font-weight: 200
 
 .devilFruitImage
   @include borderColors
@@ -675,6 +690,7 @@ figure:nth-child(8)
 //Footer Page
 footer
   @include rowsp
+  bottom: 0
   height: 13vh
   padding-top: .5vh
   padding-left: 5vw

@@ -195,7 +195,7 @@
     {
       "title": "Shichibukai",
       "url": "http://onepiece.wikia.com/wiki/Shichibukai",
-      "snippet": "The Shichibukai, the full title being Oka Shichibukai (王下七武海 Ōka Shichibukai?, literally meaning \"Royal Seven Military Seas\"), are seven powerful and notorious pirates who have allied themselves with the World Government.[",
+      "snippet": "The Shichibukai, the full title being Oka Shichibukai (王下七武海 Ōka Shichibukai?, literally meaning \"Royal Seven Military Seas\"), are seven powerful and notorious pirates who have allied themselves with the World Government.",
       "image":"https://myanimelist.cdn-dena.com/s/common/uploaded_files/1446581188-ba7bd7f68e3ac987e1c59805491ca0a9.jpeg"
     },
     {
@@ -852,6 +852,18 @@
       "strength":"",
       "weakness":"",
       "current":"Current User: Smoker",
+      "former":""
+    },
+    {
+      "title": "Stone Stone Fruit",
+      "japanese":"Japanese Name: Ishi Ishi no Mi",
+      "type": "Paramecia",
+      "url": "http://onepiece.wikia.com/wiki/Ishi_Ishi_no_Mi",
+      "image":"http://vignette2.wikia.nocookie.net/powerlisting/images/9/99/Pica_the_Stone_Assimilation_Human.png/revision/latest?cb=20150604234329",
+      "snippet":"The Ishi Ishi no Mi is a Paramecia-type Devil Fruit that allows the user to absorb, manipulate, and merge with stone, making the user a Stone Assimilation Human. It was eaten by Pica. This fruit is not to be confused with a Logia-class power, as the user cannot transform their body parts into stone, nor generate it from their own body.",
+      "strength":"",
+      "weakness":"",
+      "current":"Current User: Pica",
       "former":""
     }
   ]

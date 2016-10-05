@@ -23,7 +23,10 @@ class Header extends Component {
             <li><Link className='noUnders' to='/Forums'>Forums</Link></li>
           </ul>
         </nav>
-      <input id='Search' /><button id='submit'>submit</button>
+        <div className='searchInput'>
+          <input id='Search' />
+          <button id='submit'>submit</button>
+        </div>
     </div>
   }
 }
