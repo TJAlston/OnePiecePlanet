@@ -600,10 +600,10 @@ figure:nth-child(8)
 //Memory game
 .memoryGame
   @include columnz
-  // justify-content: center
-  // margin: 10vw
 
 .memoryBoard
+  display: flex
+  flex-wrap: wrap
   overflow: scroll
   height: 90vh
   width: 80vw
@@ -624,7 +624,7 @@ figure:nth-child(8)
   border: solid 3px rgb(198, 232, 233)
   border-radius: 2px
   height: 25vh
-  width: 10vw
+  width: 11vw
   text-align: center
   background-size: cover
   border: 2px solid black
@@ -642,9 +642,6 @@ figure:nth-child(8)
 .aniWin
     animation-name: bounceInDown
     animation-duration: 6.5s
-    // animation-delay: 1s
-    // visibility: hidden
-
 
 .resetButton
   padding-top: 105px
