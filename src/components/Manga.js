@@ -10,7 +10,6 @@ class Manga extends Component {
           <div className='mangaSection'>
             <div className='mangaRow1'>
               {/* Chapter 841 */}
-              {/* http://www.mangareader.net/one-piece/841 */}
               <a className='recent1' href='http://www.zingbox.me/manga/One%20Piece/8168/960689/2/192915/chapter841' />
               {/* Chapter 840 */}
               <a className='recent2' href='http://www.zingbox.me/manga/One%20Piece/8168/95045980/2/191961/chapter840' />
