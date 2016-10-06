@@ -10,15 +10,15 @@ class Anime extends Component {
           <div className='videos'>
             <div className='video1'>
             EPISODE 758
-            <iframe width='500' height='288' src='http://embed.genfb.com/1319897901376960' scrolling='no' allowFullScreen></iframe>
+            <iframe width='500' height='288' src='http://embed.genfb.com/699167056898007' scrolling='no' allowFullScreen></iframe>
             </div>
               <div className='video2'>
               EPISODE 757
-              <iframe width='500' height='288' src='http://embed.genfb.com/305484966483343' scrolling='no' allowFullScreen></iframe>
+              <iframe width='500' height='288' src='http://embed.genfb.com/695389437275769' scrolling='no' allowFullScreen></iframe>
               </div>
               <div className='video3'>
               EPISODE 756
-              <iframe width='500' height='288' src='http://embed.genfb.com/1301042249929192' scrolling='no' allowFullScreen></iframe>
+              <iframe width='500' height='288' src='http://embed.genfb.com/695264470621599' scrolling='no' allowFullScreen></iframe>
               </div>
             <div className='chapterList'>
               <a href='http://www.hulu.com/one-piece'>

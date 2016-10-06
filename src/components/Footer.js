@@ -14,7 +14,7 @@ class Footer extends Component {
       <div className='credits'>
         <h3 className='noSpace'>Credits:</h3>
         <p className='noSpace'>Eiichiro Oda/Shueisha</p>
-        <p className='noSpace'>Toei Animatio</p>
+        <p className='noSpace'>Toei Animation</p>
         <p className='noSpace'>Licensed by FUN</p>
       </div>
       <div className='copy'>

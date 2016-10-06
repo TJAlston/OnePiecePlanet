@@ -67,6 +67,10 @@ class Memory extends React.Component {
     window.location.reload()
   }
 
+  setHalfVolume = (event) => {
+    event.target.volume = 0.4
+  }
+
   render () {
     if (!this.state.win) {
       const cards = this.state.cards.map((card, index) => {
@@ -88,7 +92,7 @@ class Memory extends React.Component {
       return <div>
         <h1>MEMORY</h1>
         <div className='youWin'>
-        <audio src='./src/Luffy.mp3' autoPlay />
+        <audio id='audio' src='./src/Luffy.mp3' onLoadedData={this.setHalfVolume} autoPlay />
           <h4 className='aniWin'> YOU WIN!!! </h4>
           <button onClick={this.reset} className='resetButton'>
           PLAY AGAIN</button>

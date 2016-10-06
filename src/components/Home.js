@@ -55,7 +55,7 @@ class Home extends Component {
               <div className='sideImage1'>
                   ANIME
                   <Link to='/Anime'>
-                  <iframe className='animeHome' src='http://embed.genfb.com/1319897901376960' frameBorder='0' allowFullScreen></iframe>
+                  <iframe className='animeHome' src='http://embed.genfb.com/699167056898007' frameBorder='0' allowFullScreen></iframe>
                   <p className='homeFont'>View past episodes!</p>
                 </Link>
               </div>
