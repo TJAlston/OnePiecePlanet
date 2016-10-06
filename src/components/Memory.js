@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/screen.sass'
 import Card from './Card'
+import luffy from '../images/Luffy.mp3'
 
 const SHOW_TIME = 1500
 
@@ -92,7 +93,7 @@ class Memory extends React.Component {
       return <div>
         <h1>MEMORY</h1>
         <div className='youWin'>
-        <audio id='audio' src='./src/Luffy.mp3' onLoadedData={this.setHalfVolume} autoPlay />
+        <audio id='audio' src={luffy} onLoadedData={this.setHalfVolume} autoPlay />
           <h4 className='aniWin'> YOU WIN!!! </h4>
           <button onClick={this.reset} className='resetButton'>
           PLAY AGAIN</button>

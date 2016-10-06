@@ -12,7 +12,7 @@ import {
   DevilFruit,
   Games,
   Forums,
-  Memory,
+  Memory
 } from './components'
 
 import './styles/screen.sass'

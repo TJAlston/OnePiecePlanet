@@ -15608,19 +15608,19 @@
 	              'div',
 	              { className: 'video1' },
 	              'EPISODE 758',
-	              _react2.default.createElement('iframe', { width: '500', height: '288', src: 'http://embed.genfb.com/1319897901376960', scrolling: 'no', allowFullScreen: true })
+	              _react2.default.createElement('iframe', { width: '500', height: '288', src: 'http://embed.genfb.com/699167056898007', scrolling: 'no', allowFullScreen: true })
 	            ),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'video2' },
 	              'EPISODE 757',
-	              _react2.default.createElement('iframe', { width: '500', height: '288', src: 'http://embed.genfb.com/305484966483343', scrolling: 'no', allowFullScreen: true })
+	              _react2.default.createElement('iframe', { width: '500', height: '288', src: 'http://embed.genfb.com/695389437275769', scrolling: 'no', allowFullScreen: true })
 	            ),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'video3' },
 	              'EPISODE 756',
-	              _react2.default.createElement('iframe', { width: '500', height: '288', src: 'http://embed.genfb.com/1301042249929192', scrolling: 'no', allowFullScreen: true })
+	              _react2.default.createElement('iframe', { width: '500', height: '288', src: 'http://embed.genfb.com/695264470621599', scrolling: 'no', allowFullScreen: true })
 	            ),
 	            _react2.default.createElement(
 	              'div',
@@ -16098,7 +16098,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'noSpace' },
-	              'Toei Animatio'
+	              'Toei Animation'
 	            ),
 	            _react2.default.createElement(
 	              'p',
@@ -16569,7 +16569,7 @@
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
 	                  { to: '/Anime' },
-	                  _react2.default.createElement('iframe', { className: 'animeHome', src: 'http://embed.genfb.com/1319897901376960', frameBorder: '0', allowFullScreen: true }),
+	                  _react2.default.createElement('iframe', { className: 'animeHome', src: 'http://embed.genfb.com/699167056898007', frameBorder: '0', allowFullScreen: true }),
 	                  _react2.default.createElement(
 	                    'p',
 	                    { className: 'homeFont' },
@@ -16978,6 +16978,10 @@
 	      window.location.reload();
 	    };
 
+	    _this.setHalfVolume = function (event) {
+	      event.target.volume = 0.4;
+	    };
+
 	    _this.state = {
 	      cards: ['http://pm1.narvii.com/5867/eac0f1c5fad2974f75652037ddfa882a6ef7ef5f_hq.jpg', 'http://pm1.narvii.com/5867/eac0f1c5fad2974f75652037ddfa882a6ef7ef5f_hq.jpg', 'http://pm1.narvii.com/5867/0e5b684e2d05c9c18c7a615862c1a01a1764618e_hq.jpg', 'http://pm1.narvii.com/5867/0e5b684e2d05c9c18c7a615862c1a01a1764618e_hq.jpg', 'https://one-piecex.com.br/wp-content/uploads/2014/05/Zoronoa-Zoro.png', 'https://one-piecex.com.br/wp-content/uploads/2014/05/Zoronoa-Zoro.png', 'http://pm1.narvii.com/5867/6bc1dd6f848c81c6c47351fb7da55f00ae655c2d_hq.jpg', 'http://pm1.narvii.com/5867/6bc1dd6f848c81c6c47351fb7da55f00ae655c2d_hq.jpg', 'http://pm1.narvii.com/5867/9ed68cf895236bcd38e76c4f357d8ddf448ebc17_hq.jpg', 'http://pm1.narvii.com/5867/9ed68cf895236bcd38e76c4f357d8ddf448ebc17_hq.jpg', 'http://pm1.narvii.com/5867/e7c3f3b7c0b876a2d191b1a6918c89ce89d00f98_hq.jpg', 'http://pm1.narvii.com/5867/e7c3f3b7c0b876a2d191b1a6918c89ce89d00f98_hq.jpg', 'http://pm1.narvii.com/5867/3c062a602f6fb8420a8330b87a532d3fe794514c_hq.jpg', 'http://pm1.narvii.com/5867/3c062a602f6fb8420a8330b87a532d3fe794514c_hq.jpg', 'http://pm1.narvii.com/5867/7b4c1a0200a881c757b0393833813cf1d1f367d1_hq.jpg', 'http://pm1.narvii.com/5867/7b4c1a0200a881c757b0393833813cf1d1f367d1_hq.jpg', 'http://pm1.narvii.com/5867/d0bacd9de992dc995f27149f925b8449d171b362_hq.jpg', 'http://pm1.narvii.com/5867/d0bacd9de992dc995f27149f925b8449d171b362_hq.jpg'],
 	      matched: [],
@@ -17034,7 +17038,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'youWin' },
-	            _react2.default.createElement('audio', { src: './src/Luffy.mp3', autoPlay: true }),
+	            _react2.default.createElement('audio', { id: 'audio', src: './src/Luffy.mp3', onLoadedData: this.setHalfVolume, autoPlay: true }),
 	            _react2.default.createElement(
 	              'h4',
 	              { className: 'aniWin' },
