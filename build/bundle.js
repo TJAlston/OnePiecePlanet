@@ -410,7 +410,7 @@
 
 	'use strict';
 
-	module.exports = __webpack_require__(269);
+	module.exports = __webpack_require__(270);
 
 
 /***/ },
@@ -674,7 +674,7 @@
 	//
 	exports.lib                 = {};
 	exports.lib.mdurl           = __webpack_require__(101);
-	exports.lib.ucmicro         = __webpack_require__(332);
+	exports.lib.ucmicro         = __webpack_require__(333);
 
 	exports.assign              = assign;
 	exports.isString            = isString;
@@ -1027,7 +1027,7 @@
 	exports.default = routerWarning;
 	exports._resetWarned = _resetWarned;
 
-	var _warning = __webpack_require__(333);
+	var _warning = __webpack_require__(334);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -1136,7 +1136,7 @@
 	var debugTool = null;
 
 	if (process.env.NODE_ENV !== 'production') {
-	  var ReactDebugTool = __webpack_require__(290);
+	  var ReactDebugTool = __webpack_require__(291);
 	  debugTool = ReactDebugTool;
 	}
 
@@ -2898,7 +2898,7 @@
 	var content = __webpack_require__(152);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(330)(content, {});
+	var update = __webpack_require__(331)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -3512,7 +3512,7 @@
 	  }
 	});
 
-	var _Router2 = __webpack_require__(246);
+	var _Router2 = __webpack_require__(247);
 
 	var _Router3 = _interopRequireDefault(_Router2);
 
@@ -3520,19 +3520,19 @@
 
 	var _Link3 = _interopRequireDefault(_Link2);
 
-	var _IndexLink2 = __webpack_require__(240);
+	var _IndexLink2 = __webpack_require__(241);
 
 	var _IndexLink3 = _interopRequireDefault(_IndexLink2);
 
-	var _withRouter2 = __webpack_require__(259);
+	var _withRouter2 = __webpack_require__(260);
 
 	var _withRouter3 = _interopRequireDefault(_withRouter2);
 
-	var _IndexRedirect2 = __webpack_require__(241);
+	var _IndexRedirect2 = __webpack_require__(242);
 
 	var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
 
-	var _IndexRoute2 = __webpack_require__(242);
+	var _IndexRoute2 = __webpack_require__(243);
 
 	var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
 
@@ -3540,23 +3540,23 @@
 
 	var _Redirect3 = _interopRequireDefault(_Redirect2);
 
-	var _Route2 = __webpack_require__(244);
+	var _Route2 = __webpack_require__(245);
 
 	var _Route3 = _interopRequireDefault(_Route2);
 
-	var _History2 = __webpack_require__(239);
+	var _History2 = __webpack_require__(240);
 
 	var _History3 = _interopRequireDefault(_History2);
 
-	var _Lifecycle2 = __webpack_require__(243);
+	var _Lifecycle2 = __webpack_require__(244);
 
 	var _Lifecycle3 = _interopRequireDefault(_Lifecycle2);
 
-	var _RouteContext2 = __webpack_require__(245);
+	var _RouteContext2 = __webpack_require__(246);
 
 	var _RouteContext3 = _interopRequireDefault(_RouteContext2);
 
-	var _useRoutes2 = __webpack_require__(258);
+	var _useRoutes2 = __webpack_require__(259);
 
 	var _useRoutes3 = _interopRequireDefault(_useRoutes2);
 
@@ -3564,13 +3564,13 @@
 
 	var _RouterContext3 = _interopRequireDefault(_RouterContext2);
 
-	var _RoutingContext2 = __webpack_require__(247);
+	var _RoutingContext2 = __webpack_require__(248);
 
 	var _RoutingContext3 = _interopRequireDefault(_RoutingContext2);
 
 	var _PropTypes3 = _interopRequireDefault(_PropTypes2);
 
-	var _match2 = __webpack_require__(256);
+	var _match2 = __webpack_require__(257);
 
 	var _match3 = _interopRequireDefault(_match2);
 
@@ -3578,15 +3578,15 @@
 
 	var _useRouterHistory3 = _interopRequireDefault(_useRouterHistory2);
 
-	var _applyRouterMiddleware2 = __webpack_require__(249);
+	var _applyRouterMiddleware2 = __webpack_require__(250);
 
 	var _applyRouterMiddleware3 = _interopRequireDefault(_applyRouterMiddleware2);
 
-	var _browserHistory2 = __webpack_require__(250);
+	var _browserHistory2 = __webpack_require__(251);
 
 	var _browserHistory3 = _interopRequireDefault(_browserHistory2);
 
-	var _hashHistory2 = __webpack_require__(254);
+	var _hashHistory2 = __webpack_require__(255);
 
 	var _hashHistory3 = _interopRequireDefault(_hashHistory2);
 
@@ -3771,7 +3771,7 @@
 
 	'use strict';
 
-	var ReactRef = __webpack_require__(303);
+	var ReactRef = __webpack_require__(304);
 	var ReactInstrumentation = __webpack_require__(12);
 
 	var warning = __webpack_require__(3);
@@ -4788,7 +4788,7 @@
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _queryString = __webpack_require__(237);
+	var _queryString = __webpack_require__(238);
 
 	var _runTransitionHook = __webpack_require__(56);
 
@@ -5123,7 +5123,7 @@
 
 	var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 
-	var _getRouteParams = __webpack_require__(253);
+	var _getRouteParams = __webpack_require__(254);
 
 	var _getRouteParams2 = _interopRequireDefault(_getRouteParams);
 
@@ -5671,10 +5671,10 @@
 
 	var EventConstants = __webpack_require__(18);
 	var EventPluginRegistry = __webpack_require__(47);
-	var ReactEventEmitterMixin = __webpack_require__(293);
+	var ReactEventEmitterMixin = __webpack_require__(294);
 	var ViewportMetrics = __webpack_require__(126);
 
-	var getVendorPrefixedEventName = __webpack_require__(325);
+	var getVendorPrefixedEventName = __webpack_require__(326);
 	var isEventSupported = __webpack_require__(81);
 
 	/**
@@ -7358,21 +7358,21 @@
 
 	var _routerWarning2 = _interopRequireDefault(_routerWarning);
 
-	var _computeChangedRoutes2 = __webpack_require__(251);
+	var _computeChangedRoutes2 = __webpack_require__(252);
 
 	var _computeChangedRoutes3 = _interopRequireDefault(_computeChangedRoutes2);
 
-	var _TransitionUtils = __webpack_require__(248);
+	var _TransitionUtils = __webpack_require__(249);
 
-	var _isActive2 = __webpack_require__(255);
+	var _isActive2 = __webpack_require__(256);
 
 	var _isActive3 = _interopRequireDefault(_isActive2);
 
-	var _getComponents = __webpack_require__(252);
+	var _getComponents = __webpack_require__(253);
 
 	var _getComponents2 = _interopRequireDefault(_getComponents);
 
-	var _matchRoutes = __webpack_require__(257);
+	var _matchRoutes = __webpack_require__(258);
 
 	var _matchRoutes2 = _interopRequireDefault(_matchRoutes);
 
@@ -7668,7 +7668,7 @@
 	'use strict';
 
 	var DOMLazyTree = __webpack_require__(31);
-	var Danger = __webpack_require__(264);
+	var Danger = __webpack_require__(265);
 	var ReactMultiChildUpdateTypes = __webpack_require__(122);
 	var ReactDOMComponentTree = __webpack_require__(8);
 	var ReactInstrumentation = __webpack_require__(12);
@@ -10537,11 +10537,11 @@
 
 	var _PathUtils = __webpack_require__(25);
 
-	var _AsyncUtils = __webpack_require__(181);
+	var _AsyncUtils = __webpack_require__(182);
 
 	var _Actions = __webpack_require__(28);
 
-	var _createLocation2 = __webpack_require__(183);
+	var _createLocation2 = __webpack_require__(184);
 
 	var _createLocation3 = _interopRequireDefault(_createLocation2);
 
@@ -10982,7 +10982,7 @@
 	'use strict';
 
 	/*eslint quotes:0*/
-	module.exports = __webpack_require__(186);
+	module.exports = __webpack_require__(187);
 
 
 /***/ },
@@ -11282,10 +11282,10 @@
 	'use strict';
 
 
-	module.exports.encode = __webpack_require__(233);
-	module.exports.decode = __webpack_require__(232);
-	module.exports.format = __webpack_require__(234);
-	module.exports.parse  = __webpack_require__(235);
+	module.exports.encode = __webpack_require__(234);
+	module.exports.decode = __webpack_require__(233);
+	module.exports.format = __webpack_require__(235);
+	module.exports.parse  = __webpack_require__(236);
 
 
 /***/ },
@@ -11633,7 +11633,7 @@
 
 	var _useBasename2 = _interopRequireDefault(_useBasename);
 
-	var _createMemoryHistory = __webpack_require__(184);
+	var _createMemoryHistory = __webpack_require__(185);
 
 	var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 
@@ -12046,7 +12046,7 @@
 	var ReactDOMComponentTree = __webpack_require__(8);
 	var ReactInstrumentation = __webpack_require__(12);
 
-	var quoteAttributeValueForBrowser = __webpack_require__(327);
+	var quoteAttributeValueForBrowser = __webpack_require__(328);
 	var warning = __webpack_require__(3);
 
 	var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -13811,7 +13811,7 @@
 
 	'use strict';
 
-	var ReactDOMSelection = __webpack_require__(285);
+	var ReactDOMSelection = __webpack_require__(286);
 
 	var containsNode = __webpack_require__(159);
 	var focusNode = __webpack_require__(88);
@@ -13947,13 +13947,13 @@
 	var ReactBrowserEventEmitter = __webpack_require__(48);
 	var ReactCurrentOwner = __webpack_require__(19);
 	var ReactDOMComponentTree = __webpack_require__(8);
-	var ReactDOMContainerInfo = __webpack_require__(277);
-	var ReactDOMFeatureFlags = __webpack_require__(280);
+	var ReactDOMContainerInfo = __webpack_require__(278);
+	var ReactDOMFeatureFlags = __webpack_require__(281);
 	var ReactElement = __webpack_require__(15);
 	var ReactFeatureFlags = __webpack_require__(118);
 	var ReactInstanceMap = __webpack_require__(36);
 	var ReactInstrumentation = __webpack_require__(12);
-	var ReactMarkupChecksum = __webpack_require__(298);
+	var ReactMarkupChecksum = __webpack_require__(299);
 	var ReactReconciler = __webpack_require__(32);
 	var ReactUpdateQueue = __webpack_require__(74);
 	var ReactUpdates = __webpack_require__(17);
@@ -15320,7 +15320,7 @@
 	var _prodInvariant = __webpack_require__(4),
 	    _assign = __webpack_require__(7);
 
-	var ReactCompositeComponent = __webpack_require__(273);
+	var ReactCompositeComponent = __webpack_require__(274);
 	var ReactEmptyComponent = __webpack_require__(117);
 	var ReactHostComponent = __webpack_require__(119);
 
@@ -16656,11 +16656,11 @@
 
 	var _ = __webpack_require__(86);
 
-	var _markdownIt = __webpack_require__(190);
+	var _markdownIt = __webpack_require__(191);
 
 	var _markdownIt2 = _interopRequireDefault(_markdownIt);
 
-	var _characterinfo = __webpack_require__(187);
+	var _characterinfo = __webpack_require__(188);
 
 	var _characterinfo2 = _interopRequireDefault(_characterinfo);
 
@@ -16921,6 +16921,10 @@
 
 	var _Card2 = _interopRequireDefault(_Card);
 
+	var _Luffy = __webpack_require__(171);
+
+	var _Luffy2 = _interopRequireDefault(_Luffy);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
@@ -17038,7 +17042,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'youWin' },
-	            _react2.default.createElement('audio', { id: 'audio', src: './src/Luffy.mp3', onLoadedData: this.setHalfVolume, autoPlay: true }),
+	            _react2.default.createElement('audio', { id: 'audio', src: _Luffy2.default, onLoadedData: this.setHalfVolume, autoPlay: true }),
 	            _react2.default.createElement(
 	              'h4',
 	              { className: 'aniWin' },
@@ -17070,7 +17074,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(238);
+	var _reactDom = __webpack_require__(239);
 
 	var _reactRouter = __webpack_require__(30);
 
@@ -17109,7 +17113,7 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'One Piece';\n  src: url(" + __webpack_require__(180) + ") format(\"truetype\"); }\n\na, a:active, a:hover, a:visited {\n  color: rgba(26, 27, 28, 0.94);\n  text-decoration: none; }\n\na:active, a:hover {\n  color: blue; }\n\n@keyframes bounceInDown {\n  from, 60%, 75%, 90%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -3000px, 0); }\n  60% {\n    opacity: 1;\n    transform: translate3d(0, 25px, 0); }\n  75% {\n    transform: translate3d(0, -10px, 0); }\n  90% {\n    transform: translate3d(0, 5px, 0); }\n  to {\n    transform: none; } }\n\n@media only screen and (max-width: 768px) {\n  /* For mobile phones: */\n  [class*=\"col-\"] {\n    width: 100%; } }\n\nhtml {\n  text-size-adjust: 100%; }\n\nbody {\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-font-smoothing: antialiased;\n  margin: 0;\n  padding: 0;\n  font: 16px sans-serif;\n  font-size: 1.50em;\n  background-image: url(" + __webpack_require__(178) + ");\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  background-size: cover;\n  overflow-x: hidden; }\n\nmain {\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nh1 {\n  text-align: center;\n  justify-content: center;\n  text-transform: uppercase;\n  font-size: 7vw;\n  width: 100vw;\n  letter-spacing: 15px;\n  margin-top: 0;\n  color: #343539;\n  text-shadow: 2px 2px grey;\n  font-family: 'One Piece';\n  margin-bottom: 20px;\n  margin-top: 10px; }\n\nh2 {\n  margin: 0;\n  padding-top: 10px;\n  font-family: \"Aguafina Script\", cursive;\n  color: #343539;\n  font-weight: bold;\n  text-align: center;\n  letter-spacing: 10px;\n  font-size: 3vw;\n  text-shadow: 2px 2px 2px white; }\n\nh3 {\n  align-content: center;\n  font-size: 1.5vw;\n  margin-top: -25px;\n  text-transform: uppercase; }\n\nh4 {\n  margin: 0;\n  padding: 0;\n  margin-top: -125px;\n  font-family: 'One Piece';\n  font-size: 20vw;\n  text-align: center;\n  color: #2e8bc6;\n  text-shadow: 5px 5px black; }\n\nh5 {\n  margin: 0;\n  display: flex;\n  padding-top: 2vw;\n  font-family: \"Aguafina Script\", cursive;\n  color: #343539;\n  font-weight: bolder;\n  letter-spacing: 1vw;\n  font-size: 3.5vw;\n  text-shadow: 2px 2px 2px white;\n  width: 50vw; }\n\nnav {\n  flex-wrap: wrap;\n  margin-top: -7px;\n  background-color: #9faaaa;\n  color: #343539;\n  width: 100vw; }\n\n.header1 {\n  margin-top: -50px;\n  border-bottom: 5px solid grey;\n  height: 40vh;\n  width: 100vw; }\n\n.colHeader {\n  display: flex;\n  flex-direction: row; }\n\n#noDots {\n  display: flex;\n  flex-wrap: wrap;\n  margin: 0;\n  padding: 1vw;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  list-style-type: none;\n  font-weight: bold; }\n\n.noUnders {\n  text-decoration: none;\n  text-transform: uppercase;\n  font-family: 'One Piece';\n  font-size: 3.75vw;\n  justify-content: space-around; }\n\n#Search {\n  padding-top: -5px;\n  padding: 0;\n  width: 325px;\n  height: 25px;\n  font-family: 'One Piece';\n  color: black;\n  font-size: 1em;\n  font-weight: bolder; }\n\n#submit {\n  padding: .75px;\n  width: 80px;\n  height: 25px;\n  font-family: 'One Piece';\n  color: #1e1e1f;\n  font-size: 1em;\n  font-weight: bolder;\n  text-transform: uppercase;\n  align-content: space-around; }\n\n.title {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  padding-top: 50px;\n  padding-bottom: 80px;\n  justify-content: center;\n  overflow: hidden;\n  text-decoration: none; }\n\n.powerup {\n  display: flex;\n  justify-content: space-between;\n  margin: 0;\n  padding: 0;\n  width: 55vw;\n  height: 55vh;\n  position: relative;\n  margin-top: 200px; }\n\n.oplogo {\n  padding: 20px;\n  height: 80vh;\n  width: 75vw;\n  justify-content: center;\n  align-content: center;\n  position: absolute; }\n\n.titleh4 {\n  margin-top: 10px;\n  margin-bottom: -10px; }\n\n.homePage {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  flex-wrap: wrap;\n  justify-content: center; }\n\n.homePhotos {\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: center;\n  align-content: center;\n  font-family: 'One Piece';\n  font-size: 4.5vw;\n  text-align: center;\n  color: white;\n  text-shadow: 5px 5px 5px black;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  margin: 50px;\n  padding: 10px;\n  background-color: rgba(184, 87, 46, 0.74);\n  width: 80vw; }\n\n.homeFont {\n  font-family: \"Aguafina Script\", cursive;\n  font-size: 30px;\n  color: white;\n  letter-spacing: 3px; }\n\n.secondFont {\n  font-size: 4vw;\n  text-decoration: underline;\n  margin-bottom: -2vh; }\n\n.bigPhoto {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 500px;\n  align-content: center;\n  margin-bottom: 50px;\n  padding-top: 60px;\n  padding-right: 5vw;\n  padding-left: 5vw; }\n\n.css-slideshow {\n  display: flex;\n  flex-wrap: nowrap;\n  max-width: 50vw;\n  height: 40vh;\n  justify-content: flex-start;\n  align-content: center;\n  padding-bottom: 20vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.css-slideshow figure {\n  margin: 0;\n  max-width: 70vw;\n  height: 60vh;\n  background: #000;\n  position: absolute;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.css-slideshow img {\n  box-shadow: 0 0 2px #666;\n  max-width: 70vw;\n  height: 60vh; }\n\n.css-slideshow figcaption {\n  position: absolute;\n  top: 0;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.3);\n  font-size: 3vw;\n  padding: 8px 12px;\n  opacity: 0;\n  transition: opacity .5s; }\n\n.css-slideshow:hover figure figcaption {\n  transition: opacity .5s;\n  opacity: 1; }\n\n.decor1 {\n  padding: 20px;\n  width: 500px; }\n\n.sideLinks {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.sideImage1 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 30vw; }\n\n.animeHome {\n  height: 300px;\n  width: 400px; }\n\n.decor2 {\n  padding: 20px;\n  width: 300px; }\n\n.sideImage2 {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.mangaHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(90) + ");\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 200px; }\n\n.homeIntro {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(227, 196, 144, 0.84);\n  padding: 15px;\n  width: 80vw;\n  align-content: center;\n  font-family: 'One Piece';\n  font-size: 1.50em;\n  text-align: center; }\n\nfigure:nth-child(1) {\n  animation: xfade 48s 42s infinite; }\n\nfigure:nth-child(2) {\n  animation: xfade 48s 36s infinite; }\n\nfigure:nth-child(3) {\n  animation: xfade 48s 30s infinite; }\n\nfigure:nth-child(4) {\n  animation: xfade 48s 24s infinite; }\n\nfigure:nth-child(5) {\n  animation: xfade 48s 18s infinite; }\n\nfigure:nth-child(6) {\n  animation: xfade 48s 12s infinite; }\n\nfigure:nth-child(7) {\n  animation: xfade 48s 6s infinite; }\n\nfigure:nth-child(8) {\n  animation: xfade 48s 0s infinite; }\n\n@keyframes xfade {\n  0% {\n    opacity: 1; }\n  10.5% {\n    opacity: 1; }\n  12.5% {\n    opacity: 0; }\n  98% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n.bioPage {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.bioImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 50vh;\n  width: 60vw; }\n\n.bio {\n  padding: 15px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  word-wrap: break-word;\n  overflow: auto;\n  font-family: 'One Piece';\n  font-size: 1.25em;\n  text-align: center;\n  background-color: rgba(227, 196, 144, 0.84);\n  margin-top: 25px;\n  letter-spacing: normal;\n  width: 70vw;\n  height: 50vh; }\n\n.bioInfo {\n  font-family: 'helvetica';\n  font-size: 3vw;\n  line-height: 1em;\n  letter-spacing: 0; }\n\n.characterBio {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-bottom: 10em; }\n\n.characterLayout {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterName {\n  margin: 0;\n  padding: 0;\n  text-align: justify;\n  font-weight: bolder;\n  font-family: 'One Piece';\n  font-size: 60px;\n  color: #1f2021; }\n\n.bioLinks {\n  text-decoration: underline;\n  margin-top: 2vh; }\n\n.DV {\n  display: flex;\n  justify-content: center; }\n\n.devilFruits {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-family: 'One Piece';\n  font-size: 1.25em;\n  text-align: center;\n  font-weight: 200; }\n\n.devilFruitImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  margin: 0;\n  padding: 10vw;\n  justify-content: center;\n  background-position: center;\n  background-image: url(" + __webpack_require__(176) + ");\n  background-size: cover;\n  width: 40vw;\n  height: 30vh; }\n\n.devilFruitBio {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(246, 240, 209, 0.5);\n  width: 95vw;\n  padding: 10px; }\n\n.Beli {\n  height: 20px;\n  width: 20px; }\n\n.chapterList {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  background-image: url(" + __webpack_require__(91) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center;\n  height: 60vh;\n  width: 75vw; }\n\n.videos {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-weight: bolder; }\n\n.video1 {\n  margin: 20px;\n  width: 50%;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video2 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video3 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video4 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.chapterList2 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-left: 20vw;\n  margin-top: -10vh;\n  background-image: url(" + __webpack_require__(91) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  justify-content: center;\n  text-align: center;\n  height: 60vh;\n  width: 65vw; }\n\n.mangaRow1 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: center; }\n\n.recent1 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(175) + ");\n  display: flex;\n  margin: 2vw;\n  justify-content: space-between;\n  background-position: center;\n  background-size: cover;\n  height: 450px;\n  width: 300px; }\n\n.recent2 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(90) + ");\n  display: flex;\n  margin: 2vw;\n  justify-content: space-between;\n  background-position: center;\n  background-size: cover;\n  height: 450px;\n  width: 300px; }\n\n.recent3 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(174) + ");\n  display: flex;\n  margin: 2vw;\n  justify-content: space-between;\n  background-position: center;\n  background-size: cover;\n  height: 450px;\n  width: 300px; }\n\n.recent4 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(173) + ");\n  display: flex;\n  margin: 2vw;\n  justify-content: space-between;\n  background-position: center;\n  background-size: cover;\n  height: 450px;\n  width: 300px; }\n\n.recent5 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(172) + ");\n  display: flex;\n  margin: 2vw;\n  justify-content: space-between;\n  background-position: center;\n  background-size: cover;\n  height: 450px;\n  width: 300px; }\n\n.recent6 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(171) + ");\n  display: flex;\n  margin: 2vw;\n  justify-content: space-between;\n  background-position: center;\n  background-size: cover;\n  height: 450px;\n  width: 300px; }\n\n.gameGallery1 {\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: center;\n  padding: 5vw; }\n\n.game1 {\n  background-image: url(" + __webpack_require__(177) + ");\n  background-size: 100% 100%;\n  background-repeat: no-repeat;\n  margin: 10px;\n  height: 350px;\n  width: 550px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.memoryGame {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.memoryBoard {\n  display: flex;\n  flex-wrap: wrap;\n  overflow: scroll;\n  height: 90vh;\n  width: 80vw;\n  align-items: center;\n  background-color: rgba(177, 80, 21, 0.5);\n  border-top: 5px solid #b62802;\n  border-bottom: 5px solid #670a0a;\n  border-left: 5px solid #b62802;\n  border-right: 5px solid #670a0a;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center;\n  margin-bottom: 20px;\n  padding: 2vw; }\n\n.card {\n  margin: 10px;\n  border: solid 3px #c6e8e9;\n  border-radius: 2px;\n  height: 25vh;\n  width: 11vw;\n  text-align: center;\n  background-size: cover;\n  border: 2px solid black; }\n  .card.up {\n    background-color: #dfe0dd;\n    background-size: cover; }\n\n.youWin {\n  padding-top: 100px;\n  justify-content: center;\n  text-align: center;\n  align-self: center; }\n\n.aniWin {\n  animation-name: bounceInDown;\n  animation-duration: 6.5s; }\n\n.resetButton {\n  padding-top: 105px;\n  background-image: url(\"http://is2.mzstatic.com/image/thumb/Purple5/v4/ff/e8/e1/ffe8e19d-cac3-1aa4-9f79-c827036fb215/mzl.balclcui.png/0x0ss-85.jpg\");\n  height: 200px;\n  width: 200px;\n  background-size: cover;\n  border-radius: 50px;\n  color: red;\n  text-shadow: 3px 3px 3px white;\n  font-weight: bolder;\n  font-size: 30px; }\n\n.forumPage {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.forumLink {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-family: 'One Piece';\n  font-size: 30px;\n  font-weight: bolder;\n  letter-spacing: 10px;\n  text-transform: uppercase;\n  color: red; }\n  .forumLink #opfont {\n    font-size: 2.3vw; }\n\n.forumLink2 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  text-decoration: none;\n  background-image: url(" + __webpack_require__(179) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  display: flex;\n  background-color: grey;\n  height: 100px;\n  width: 200px; }\n\nfooter {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  bottom: 0;\n  height: 13vh;\n  padding-top: .5vh;\n  padding-left: 5vw;\n  padding-right: 5vw;\n  padding-bottom: 1.5vw;\n  align-self: baseline;\n  margin-top: 25px;\n  columns: 2;\n  background-color: #a3b3e4;\n  border-top: 5px solid #9faaaa; }\n\n.noSpace {\n  margin: 0em; }\n\n.resources {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: .50em;\n  justify-content: space-around; }\n\n.credits {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: .50em;\n  justify-content: space-around; }\n\n.copy {\n  display: flex;\n  flex-wrap: wrap;\n  padding-top: 2vw;\n  color: white;\n  font-size: .75em;\n  font-weight: bolder; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'One Piece';\n  src: url(" + __webpack_require__(181) + ") format(\"truetype\"); }\n\na, a:active, a:hover, a:visited {\n  color: rgba(26, 27, 28, 0.94);\n  text-decoration: none; }\n\na:active, a:hover {\n  color: blue; }\n\n@keyframes bounceInDown {\n  from, 60%, 75%, 90%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -3000px, 0); }\n  60% {\n    opacity: 1;\n    transform: translate3d(0, 25px, 0); }\n  75% {\n    transform: translate3d(0, -10px, 0); }\n  90% {\n    transform: translate3d(0, 5px, 0); }\n  to {\n    transform: none; } }\n\n@media only screen and (max-width: 768px) {\n  /* For mobile phones: */\n  [class*=\"col-\"] {\n    width: 100%; } }\n\nhtml {\n  text-size-adjust: 100%; }\n\nbody {\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-font-smoothing: antialiased;\n  margin: 0;\n  padding: 0;\n  font: 16px sans-serif;\n  font-size: 1.50em;\n  background-image: url(" + __webpack_require__(179) + ");\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  background-size: cover;\n  overflow-x: hidden; }\n\nmain {\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nh1 {\n  text-align: center;\n  justify-content: center;\n  text-transform: uppercase;\n  font-size: 7vw;\n  width: 100vw;\n  letter-spacing: 15px;\n  margin-top: 0;\n  color: #343539;\n  text-shadow: 2px 2px grey;\n  font-family: 'One Piece';\n  margin-bottom: 20px;\n  margin-top: 10px; }\n\nh2 {\n  margin: 0;\n  padding-top: 10px;\n  font-family: \"Aguafina Script\", cursive;\n  color: #343539;\n  font-weight: bold;\n  text-align: center;\n  letter-spacing: 10px;\n  font-size: 3vw;\n  text-shadow: 2px 2px 2px white; }\n\nh3 {\n  align-content: center;\n  font-size: 1.5vw;\n  margin-top: -25px;\n  text-transform: uppercase; }\n\nh4 {\n  margin: 0;\n  padding: 0;\n  margin-top: -125px;\n  font-family: 'One Piece';\n  font-size: 20vw;\n  text-align: center;\n  color: #2e8bc6;\n  text-shadow: 5px 5px black; }\n\nh5 {\n  margin: 0;\n  display: flex;\n  padding-top: 2vw;\n  font-family: \"Aguafina Script\", cursive;\n  color: #343539;\n  font-weight: bolder;\n  letter-spacing: 1vw;\n  font-size: 3.5vw;\n  text-shadow: 2px 2px 2px white;\n  width: 50vw; }\n\nnav {\n  flex-wrap: wrap;\n  margin-top: -7px;\n  background-color: #9faaaa;\n  color: #343539;\n  width: 100vw; }\n\n.header1 {\n  margin-top: -50px;\n  border-bottom: 5px solid grey;\n  height: 40vh;\n  width: 100vw; }\n\n.colHeader {\n  display: flex;\n  flex-direction: row; }\n\n#noDots {\n  display: flex;\n  flex-wrap: wrap;\n  margin: 0;\n  padding: 1vw;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  list-style-type: none;\n  font-weight: bold; }\n\n.noUnders {\n  text-decoration: none;\n  text-transform: uppercase;\n  font-family: 'One Piece';\n  font-size: 3.75vw;\n  justify-content: space-around; }\n\n#Search {\n  padding-top: -5px;\n  padding: 0;\n  width: 325px;\n  height: 25px;\n  font-family: 'One Piece';\n  color: black;\n  font-size: 1em;\n  font-weight: bolder; }\n\n#submit {\n  padding: .75px;\n  width: 80px;\n  height: 25px;\n  font-family: 'One Piece';\n  color: #1e1e1f;\n  font-size: 1em;\n  font-weight: bolder;\n  text-transform: uppercase;\n  align-content: space-around; }\n\n.title {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  padding-top: 50px;\n  padding-bottom: 80px;\n  justify-content: center;\n  overflow: hidden;\n  text-decoration: none; }\n\n.powerup {\n  display: flex;\n  justify-content: space-between;\n  margin: 0;\n  padding: 0;\n  width: 55vw;\n  height: 55vh;\n  position: relative;\n  margin-top: 200px; }\n\n.oplogo {\n  padding: 20px;\n  height: 80vh;\n  width: 75vw;\n  justify-content: center;\n  align-content: center;\n  position: absolute; }\n\n.titleh4 {\n  margin-top: 10px;\n  margin-bottom: -10px; }\n\n.homePage {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  flex-wrap: wrap;\n  justify-content: center; }\n\n.homePhotos {\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: center;\n  align-content: center;\n  font-family: 'One Piece';\n  font-size: 4.5vw;\n  text-align: center;\n  color: white;\n  text-shadow: 5px 5px 5px black;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  margin: 50px;\n  padding: 10px;\n  background-color: rgba(184, 87, 46, 0.74);\n  width: 80vw; }\n\n.homeFont {\n  font-family: \"Aguafina Script\", cursive;\n  font-size: 30px;\n  color: white;\n  letter-spacing: 3px; }\n\n.secondFont {\n  font-size: 4vw;\n  text-decoration: underline;\n  margin-bottom: -2vh; }\n\n.bigPhoto {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 500px;\n  align-content: center;\n  margin-bottom: 50px;\n  padding-top: 60px;\n  padding-right: 5vw;\n  padding-left: 5vw; }\n\n.css-slideshow {\n  display: flex;\n  flex-wrap: nowrap;\n  max-width: 50vw;\n  height: 40vh;\n  justify-content: flex-start;\n  align-content: center;\n  padding-bottom: 20vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.css-slideshow figure {\n  margin: 0;\n  max-width: 70vw;\n  height: 60vh;\n  background: #000;\n  position: absolute;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.css-slideshow img {\n  box-shadow: 0 0 2px #666;\n  max-width: 70vw;\n  height: 60vh; }\n\n.css-slideshow figcaption {\n  position: absolute;\n  top: 0;\n  color: #fff;\n  background: rgba(0, 0, 0, 0.3);\n  font-size: 3vw;\n  padding: 8px 12px;\n  opacity: 0;\n  transition: opacity .5s; }\n\n.css-slideshow:hover figure figcaption {\n  transition: opacity .5s;\n  opacity: 1; }\n\n.decor1 {\n  padding: 20px;\n  width: 500px; }\n\n.sideLinks {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.sideImage1 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 30vw; }\n\n.animeHome {\n  height: 300px;\n  width: 400px; }\n\n.decor2 {\n  padding: 20px;\n  width: 300px; }\n\n.sideImage2 {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.mangaHome {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(90) + ");\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n  height: 300px;\n  width: 200px; }\n\n.homeIntro {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(227, 196, 144, 0.84);\n  padding: 15px;\n  width: 80vw;\n  align-content: center;\n  font-family: 'One Piece';\n  font-size: 1.50em;\n  text-align: center; }\n\nfigure:nth-child(1) {\n  animation: xfade 48s 42s infinite; }\n\nfigure:nth-child(2) {\n  animation: xfade 48s 36s infinite; }\n\nfigure:nth-child(3) {\n  animation: xfade 48s 30s infinite; }\n\nfigure:nth-child(4) {\n  animation: xfade 48s 24s infinite; }\n\nfigure:nth-child(5) {\n  animation: xfade 48s 18s infinite; }\n\nfigure:nth-child(6) {\n  animation: xfade 48s 12s infinite; }\n\nfigure:nth-child(7) {\n  animation: xfade 48s 6s infinite; }\n\nfigure:nth-child(8) {\n  animation: xfade 48s 0s infinite; }\n\n@keyframes xfade {\n  0% {\n    opacity: 1; }\n  10.5% {\n    opacity: 1; }\n  12.5% {\n    opacity: 0; }\n  98% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n.bioPage {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.bioImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  height: 50vh;\n  width: 60vw; }\n\n.bio {\n  padding: 15px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  word-wrap: break-word;\n  overflow: auto;\n  font-family: 'One Piece';\n  font-size: 1.25em;\n  text-align: center;\n  background-color: rgba(227, 196, 144, 0.84);\n  margin-top: 25px;\n  letter-spacing: normal;\n  width: 70vw;\n  height: 50vh; }\n\n.bioInfo {\n  font-family: 'helvetica';\n  font-size: 3vw;\n  line-height: 1em;\n  letter-spacing: 0; }\n\n.characterBio {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-bottom: 10em; }\n\n.characterLayout {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.characterName {\n  margin: 0;\n  padding: 0;\n  text-align: justify;\n  font-weight: bolder;\n  font-family: 'One Piece';\n  font-size: 60px;\n  color: #1f2021; }\n\n.bioLinks {\n  text-decoration: underline;\n  margin-top: 2vh; }\n\n.DV {\n  display: flex;\n  justify-content: center; }\n\n.devilFruits {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-family: 'One Piece';\n  font-size: 1.25em;\n  text-align: center;\n  font-weight: 200; }\n\n.devilFruitImage {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  margin: 0;\n  padding: 10vw;\n  justify-content: center;\n  background-position: center;\n  background-image: url(" + __webpack_require__(177) + ");\n  background-size: cover;\n  width: 40vw;\n  height: 30vh; }\n\n.devilFruitBio {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-color: rgba(246, 240, 209, 0.5);\n  width: 95vw;\n  padding: 10px; }\n\n.Beli {\n  height: 20px;\n  width: 20px; }\n\n.chapterList {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  background-image: url(" + __webpack_require__(91) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center;\n  height: 60vh;\n  width: 75vw; }\n\n.videos {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-weight: bolder; }\n\n.video1 {\n  margin: 20px;\n  width: 50%;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video2 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video3 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.video4 {\n  margin: 20px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.chapterList2 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-left: 20vw;\n  margin-top: -10vh;\n  background-image: url(" + __webpack_require__(91) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  justify-content: center;\n  text-align: center;\n  height: 60vh;\n  width: 65vw; }\n\n.mangaRow1 {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: center; }\n\n.recent1 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(176) + ");\n  display: flex;\n  margin: 2vw;\n  justify-content: space-between;\n  background-position: center;\n  background-size: cover;\n  height: 450px;\n  width: 300px; }\n\n.recent2 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(90) + ");\n  display: flex;\n  margin: 2vw;\n  justify-content: space-between;\n  background-position: center;\n  background-size: cover;\n  height: 450px;\n  width: 300px; }\n\n.recent3 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(175) + ");\n  display: flex;\n  margin: 2vw;\n  justify-content: space-between;\n  background-position: center;\n  background-size: cover;\n  height: 450px;\n  width: 300px; }\n\n.recent4 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(174) + ");\n  display: flex;\n  margin: 2vw;\n  justify-content: space-between;\n  background-position: center;\n  background-size: cover;\n  height: 450px;\n  width: 300px; }\n\n.recent5 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(173) + ");\n  display: flex;\n  margin: 2vw;\n  justify-content: space-between;\n  background-position: center;\n  background-size: cover;\n  height: 450px;\n  width: 300px; }\n\n.recent6 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  background-image: url(" + __webpack_require__(172) + ");\n  display: flex;\n  margin: 2vw;\n  justify-content: space-between;\n  background-position: center;\n  background-size: cover;\n  height: 450px;\n  width: 300px; }\n\n.gameGallery1 {\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: center;\n  padding: 5vw; }\n\n.game1 {\n  background-image: url(" + __webpack_require__(178) + ");\n  background-size: 100% 100%;\n  background-repeat: no-repeat;\n  margin: 10px;\n  height: 350px;\n  width: 550px;\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858; }\n\n.memoryGame {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.memoryBoard {\n  display: flex;\n  flex-wrap: wrap;\n  overflow: scroll;\n  height: 90vh;\n  width: 80vw;\n  align-items: center;\n  background-color: rgba(177, 80, 21, 0.5);\n  border-top: 5px solid #b62802;\n  border-bottom: 5px solid #670a0a;\n  border-left: 5px solid #b62802;\n  border-right: 5px solid #670a0a;\n  background-repeat: no-repeat;\n  text-align: center;\n  justify-content: center;\n  margin-bottom: 20px;\n  padding: 2vw; }\n\n.card {\n  margin: 10px;\n  border: solid 3px #c6e8e9;\n  border-radius: 2px;\n  height: 25vh;\n  width: 11vw;\n  text-align: center;\n  background-size: cover;\n  border: 2px solid black; }\n  .card.up {\n    background-color: #dfe0dd;\n    background-size: cover; }\n\n.youWin {\n  padding-top: 100px;\n  justify-content: center;\n  text-align: center;\n  align-self: center; }\n\n.aniWin {\n  animation-name: bounceInDown;\n  animation-duration: 6.5s; }\n\n.resetButton {\n  padding-top: 105px;\n  background-image: url(\"http://is2.mzstatic.com/image/thumb/Purple5/v4/ff/e8/e1/ffe8e19d-cac3-1aa4-9f79-c827036fb215/mzl.balclcui.png/0x0ss-85.jpg\");\n  height: 200px;\n  width: 200px;\n  background-size: cover;\n  border-radius: 50px;\n  color: red;\n  text-shadow: 3px 3px 3px white;\n  font-weight: bolder;\n  font-size: 30px; }\n\n.forumPage {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.forumLink {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-family: 'One Piece';\n  font-size: 30px;\n  font-weight: bolder;\n  letter-spacing: 10px;\n  text-transform: uppercase;\n  color: red; }\n  .forumLink #opfont {\n    font-size: 2.3vw; }\n\n.forumLink2 {\n  border-top: 5px solid #adacab;\n  border-bottom: 5px solid #585858;\n  border-left: 5px solid #adacab;\n  border-right: 5px solid #585858;\n  text-decoration: none;\n  background-image: url(" + __webpack_require__(180) + ");\n  background-size: contain;\n  background-position: center;\n  background-repeat: no-repeat;\n  display: flex;\n  background-color: grey;\n  height: 100px;\n  width: 200px; }\n\nfooter {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  bottom: 0;\n  height: 13vh;\n  padding-top: .5vh;\n  padding-left: 5vw;\n  padding-right: 5vw;\n  padding-bottom: 1.5vw;\n  align-self: baseline;\n  margin-top: 25px;\n  columns: 2;\n  background-color: #a3b3e4;\n  border-top: 5px solid #9faaaa; }\n\n.noSpace {\n  margin: 0em; }\n\n.resources {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: .50em;\n  justify-content: space-around; }\n\n.credits {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: .50em;\n  justify-content: space-around; }\n\n.copy {\n  display: flex;\n  flex-wrap: wrap;\n  padding-top: 2vw;\n  color: white;\n  font-size: .75em;\n  font-weight: bolder; }\n", ""]);
 
 	// exports
 
@@ -18038,64 +18042,70 @@
 /* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "156048bfc7f8122f63a0b46b6d127db8.jpg";
+	module.exports = __webpack_require__.p + "35fc3daaf38d52d6cd9345125d3ef0d2.mp3";
 
 /***/ },
 /* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "9baf297c595ef2eb0be73d819fd6aeeb.png";
+	module.exports = __webpack_require__.p + "156048bfc7f8122f63a0b46b6d127db8.jpg";
 
 /***/ },
 /* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "34cd0cf54d0d8a896eeeb2de5db74a70.png";
+	module.exports = __webpack_require__.p + "9baf297c595ef2eb0be73d819fd6aeeb.png";
 
 /***/ },
 /* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "81d891eaa42446fc5be9c5057c427794.jpg";
+	module.exports = __webpack_require__.p + "34cd0cf54d0d8a896eeeb2de5db74a70.png";
 
 /***/ },
 /* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "4528a16e3b8d49163950715b55299696.jpg";
+	module.exports = __webpack_require__.p + "81d891eaa42446fc5be9c5057c427794.jpg";
 
 /***/ },
 /* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "e572776d1fad6db4be81c390d6b88430.jpg";
+	module.exports = __webpack_require__.p + "4528a16e3b8d49163950715b55299696.jpg";
 
 /***/ },
 /* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "12cfb888fa3ec2e894b5ae4a73c35242.png";
+	module.exports = __webpack_require__.p + "e572776d1fad6db4be81c390d6b88430.jpg";
 
 /***/ },
 /* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "72aadd2ed4504b7ca5165df8d42949d1.png";
+	module.exports = __webpack_require__.p + "12cfb888fa3ec2e894b5ae4a73c35242.png";
 
 /***/ },
 /* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "a3fb884ebd65cf9c8424fa559c2cdce2.png";
+	module.exports = __webpack_require__.p + "72aadd2ed4504b7ca5165df8d42949d1.png";
 
 /***/ },
 /* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "82848488b73a87d72f2436c02b9ab608.ttf";
+	module.exports = __webpack_require__.p + "a3fb884ebd65cf9c8424fa559c2cdce2.png";
 
 /***/ },
 /* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "82848488b73a87d72f2436c02b9ab608.ttf";
+
+/***/ },
+/* 182 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -18158,7 +18168,7 @@
 	}
 
 /***/ },
-/* 182 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -18344,7 +18354,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -18401,7 +18411,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -18561,7 +18571,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports) {
 
 	/**
@@ -18617,7 +18627,7 @@
 
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -20749,7 +20759,7 @@
 	};
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -21624,7 +21634,7 @@
 	};
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21779,7 +21789,7 @@
 	function compile(self) {
 
 	  // Load & clone RE patterns.
-	  var re = self.re = __webpack_require__(189)(self.__opts__);
+	  var re = self.re = __webpack_require__(190)(self.__opts__);
 
 	  // Define dynamic patterns
 	  var tlds = self.__tlds__.slice();
@@ -22267,7 +22277,7 @@
 
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22446,17 +22456,17 @@
 
 
 /***/ },
-/* 190 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	module.exports = __webpack_require__(193);
+	module.exports = __webpack_require__(194);
 
 
 /***/ },
-/* 191 */
+/* 192 */
 /***/ function(module, exports) {
 
 	// List of valid html blocks names, accorting to commonmark spec
@@ -22530,7 +22540,7 @@
 
 
 /***/ },
-/* 192 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Just a shortcut for bulk export
@@ -22543,7 +22553,7 @@
 
 
 /***/ },
-/* 193 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Main parser class
@@ -22552,20 +22562,20 @@
 
 
 	var utils        = __webpack_require__(6);
-	var helpers      = __webpack_require__(192);
-	var Renderer     = __webpack_require__(200);
-	var ParserCore   = __webpack_require__(195);
-	var ParserBlock  = __webpack_require__(194);
-	var ParserInline = __webpack_require__(196);
-	var LinkifyIt    = __webpack_require__(188);
+	var helpers      = __webpack_require__(193);
+	var Renderer     = __webpack_require__(201);
+	var ParserCore   = __webpack_require__(196);
+	var ParserBlock  = __webpack_require__(195);
+	var ParserInline = __webpack_require__(197);
+	var LinkifyIt    = __webpack_require__(189);
 	var mdurl        = __webpack_require__(101);
-	var punycode     = __webpack_require__(236);
+	var punycode     = __webpack_require__(237);
 
 
 	var config = {
-	  'default': __webpack_require__(198),
-	  zero: __webpack_require__(199),
-	  commonmark: __webpack_require__(197)
+	  'default': __webpack_require__(199),
+	  zero: __webpack_require__(200),
+	  commonmark: __webpack_require__(198)
 	};
 
 	////////////////////////////////////////////////////////////////////////////////
@@ -23126,7 +23136,7 @@
 
 
 /***/ },
-/* 194 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** internal
@@ -23143,17 +23153,17 @@
 	var _rules = [
 	  // First 2 params - rule name & source. Secondary array - list of rules,
 	  // which can be terminated by this one.
-	  [ 'table',      __webpack_require__(212),      [ 'paragraph', 'reference' ] ],
-	  [ 'code',       __webpack_require__(202) ],
-	  [ 'fence',      __webpack_require__(203),      [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
-	  [ 'blockquote', __webpack_require__(201), [ 'paragraph', 'reference', 'list' ] ],
-	  [ 'hr',         __webpack_require__(205),         [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
-	  [ 'list',       __webpack_require__(208),       [ 'paragraph', 'reference', 'blockquote' ] ],
-	  [ 'reference',  __webpack_require__(210) ],
-	  [ 'heading',    __webpack_require__(204),    [ 'paragraph', 'reference', 'blockquote' ] ],
-	  [ 'lheading',   __webpack_require__(207) ],
-	  [ 'html_block', __webpack_require__(206), [ 'paragraph', 'reference', 'blockquote' ] ],
-	  [ 'paragraph',  __webpack_require__(209) ]
+	  [ 'table',      __webpack_require__(213),      [ 'paragraph', 'reference' ] ],
+	  [ 'code',       __webpack_require__(203) ],
+	  [ 'fence',      __webpack_require__(204),      [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
+	  [ 'blockquote', __webpack_require__(202), [ 'paragraph', 'reference', 'list' ] ],
+	  [ 'hr',         __webpack_require__(206),         [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
+	  [ 'list',       __webpack_require__(209),       [ 'paragraph', 'reference', 'blockquote' ] ],
+	  [ 'reference',  __webpack_require__(211) ],
+	  [ 'heading',    __webpack_require__(205),    [ 'paragraph', 'reference', 'blockquote' ] ],
+	  [ 'lheading',   __webpack_require__(208) ],
+	  [ 'html_block', __webpack_require__(207), [ 'paragraph', 'reference', 'blockquote' ] ],
+	  [ 'paragraph',  __webpack_require__(210) ]
 	];
 
 
@@ -23247,14 +23257,14 @@
 	};
 
 
-	ParserBlock.prototype.State = __webpack_require__(211);
+	ParserBlock.prototype.State = __webpack_require__(212);
 
 
 	module.exports = ParserBlock;
 
 
 /***/ },
-/* 195 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** internal
@@ -23270,12 +23280,12 @@
 
 
 	var _rules = [
-	  [ 'normalize',      __webpack_require__(216)      ],
-	  [ 'block',          __webpack_require__(213)          ],
-	  [ 'inline',         __webpack_require__(214)         ],
-	  [ 'linkify',        __webpack_require__(215)        ],
-	  [ 'replacements',   __webpack_require__(217)   ],
-	  [ 'smartquotes',    __webpack_require__(218)    ]
+	  [ 'normalize',      __webpack_require__(217)      ],
+	  [ 'block',          __webpack_require__(214)          ],
+	  [ 'inline',         __webpack_require__(215)         ],
+	  [ 'linkify',        __webpack_require__(216)        ],
+	  [ 'replacements',   __webpack_require__(218)   ],
+	  [ 'smartquotes',    __webpack_require__(219)    ]
 	];
 
 
@@ -23311,14 +23321,14 @@
 	  }
 	};
 
-	Core.prototype.State = __webpack_require__(219);
+	Core.prototype.State = __webpack_require__(220);
 
 
 	module.exports = Core;
 
 
 /***/ },
-/* 196 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** internal
@@ -23336,24 +23346,24 @@
 	// Parser rules
 
 	var _rules = [
-	  [ 'text',            __webpack_require__(230) ],
-	  [ 'newline',         __webpack_require__(228) ],
-	  [ 'escape',          __webpack_require__(224) ],
-	  [ 'backticks',       __webpack_require__(221) ],
+	  [ 'text',            __webpack_require__(231) ],
+	  [ 'newline',         __webpack_require__(229) ],
+	  [ 'escape',          __webpack_require__(225) ],
+	  [ 'backticks',       __webpack_require__(222) ],
 	  [ 'strikethrough',   __webpack_require__(100).tokenize ],
 	  [ 'emphasis',        __webpack_require__(99).tokenize ],
-	  [ 'link',            __webpack_require__(227) ],
-	  [ 'image',           __webpack_require__(226) ],
-	  [ 'autolink',        __webpack_require__(220) ],
-	  [ 'html_inline',     __webpack_require__(225) ],
-	  [ 'entity',          __webpack_require__(223) ]
+	  [ 'link',            __webpack_require__(228) ],
+	  [ 'image',           __webpack_require__(227) ],
+	  [ 'autolink',        __webpack_require__(221) ],
+	  [ 'html_inline',     __webpack_require__(226) ],
+	  [ 'entity',          __webpack_require__(224) ]
 	];
 
 	var _rules2 = [
-	  [ 'balance_pairs',   __webpack_require__(222) ],
+	  [ 'balance_pairs',   __webpack_require__(223) ],
 	  [ 'strikethrough',   __webpack_require__(100).postProcess ],
 	  [ 'emphasis',        __webpack_require__(99).postProcess ],
-	  [ 'text_collapse',   __webpack_require__(231) ]
+	  [ 'text_collapse',   __webpack_require__(232) ]
 	];
 
 
@@ -23494,14 +23504,14 @@
 	};
 
 
-	ParserInline.prototype.State = __webpack_require__(229);
+	ParserInline.prototype.State = __webpack_require__(230);
 
 
 	module.exports = ParserInline;
 
 
 /***/ },
-/* 197 */
+/* 198 */
 /***/ function(module, exports) {
 
 	// Commonmark default options
@@ -23587,7 +23597,7 @@
 
 
 /***/ },
-/* 198 */
+/* 199 */
 /***/ function(module, exports) {
 
 	// markdown-it default options
@@ -23634,7 +23644,7 @@
 
 
 /***/ },
-/* 199 */
+/* 200 */
 /***/ function(module, exports) {
 
 	// "Zero" preset, with nothing enabled. Useful for manual configuring of simple
@@ -23702,7 +23712,7 @@
 
 
 /***/ },
-/* 200 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -24043,7 +24053,7 @@
 
 
 /***/ },
-/* 201 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Block quotes
@@ -24299,7 +24309,7 @@
 
 
 /***/ },
-/* 202 */
+/* 203 */
 /***/ function(module, exports) {
 
 	// Code block (4 spaces padded)
@@ -24339,7 +24349,7 @@
 
 
 /***/ },
-/* 203 */
+/* 204 */
 /***/ function(module, exports) {
 
 	// fences (``` lang, ~~~ lang)
@@ -24436,7 +24446,7 @@
 
 
 /***/ },
-/* 204 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// heading (#, ##, ...)
@@ -24494,7 +24504,7 @@
 
 
 /***/ },
-/* 205 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Horizontal rule
@@ -24542,7 +24552,7 @@
 
 
 /***/ },
-/* 206 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// HTML block
@@ -24550,7 +24560,7 @@
 	'use strict';
 
 
-	var block_names = __webpack_require__(191);
+	var block_names = __webpack_require__(192);
 	var HTML_OPEN_CLOSE_TAG_RE = __webpack_require__(98).HTML_OPEN_CLOSE_TAG_RE;
 
 	// An array of opening and corresponding closing sequences for html tags,
@@ -24619,7 +24629,7 @@
 
 
 /***/ },
-/* 207 */
+/* 208 */
 /***/ function(module, exports) {
 
 	// lheading (---, ===)
@@ -24705,7 +24715,7 @@
 
 
 /***/ },
-/* 208 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Lists
@@ -25046,7 +25056,7 @@
 
 
 /***/ },
-/* 209 */
+/* 210 */
 /***/ function(module, exports) {
 
 	// Paragraph
@@ -25104,7 +25114,7 @@
 
 
 /***/ },
-/* 210 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25307,7 +25317,7 @@
 
 
 /***/ },
-/* 211 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Parser state class
@@ -25543,7 +25553,7 @@
 
 
 /***/ },
-/* 212 */
+/* 213 */
 /***/ function(module, exports) {
 
 	// GFM table, non-standard
@@ -25723,7 +25733,7 @@
 
 
 /***/ },
-/* 213 */
+/* 214 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -25745,7 +25755,7 @@
 
 
 /***/ },
-/* 214 */
+/* 215 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -25764,7 +25774,7 @@
 
 
 /***/ },
-/* 215 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Replace link-like texts with link nodes.
@@ -25903,7 +25913,7 @@
 
 
 /***/ },
-/* 216 */
+/* 217 */
 /***/ function(module, exports) {
 
 	// Normalize input string
@@ -25929,7 +25939,7 @@
 
 
 /***/ },
-/* 217 */
+/* 218 */
 /***/ function(module, exports) {
 
 	// Simple typographyc replacements
@@ -26042,7 +26052,7 @@
 
 
 /***/ },
-/* 218 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Convert straight quotation marks to typographic ones
@@ -26241,7 +26251,7 @@
 
 
 /***/ },
-/* 219 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Core state object
@@ -26267,7 +26277,7 @@
 
 
 /***/ },
-/* 220 */
+/* 221 */
 /***/ function(module, exports) {
 
 	// Process autolinks '<protocol:...>'
@@ -26345,7 +26355,7 @@
 
 
 /***/ },
-/* 221 */
+/* 222 */
 /***/ function(module, exports) {
 
 	// Parse backticks
@@ -26394,7 +26404,7 @@
 
 
 /***/ },
-/* 222 */
+/* 223 */
 /***/ function(module, exports) {
 
 	// For each opening emphasis-like marker find a matching closing one
@@ -26444,7 +26454,7 @@
 
 
 /***/ },
-/* 223 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Process html entity - &#123;, &#xAF;, &quot;, ...
@@ -26498,7 +26508,7 @@
 
 
 /***/ },
-/* 224 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Proceess escaped chars and hardbreaks
@@ -26556,7 +26566,7 @@
 
 
 /***/ },
-/* 225 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Process html tags
@@ -26609,7 +26619,7 @@
 
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Process ![image](<src> "title")
@@ -26770,7 +26780,7 @@
 
 
 /***/ },
-/* 227 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Process [link](<to> "stuff")
@@ -26923,7 +26933,7 @@
 
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports) {
 
 	// Proceess '\n'
@@ -26968,7 +26978,7 @@
 
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Inline parser state
@@ -27104,7 +27114,7 @@
 
 
 /***/ },
-/* 230 */
+/* 231 */
 /***/ function(module, exports) {
 
 	// Skip text characters for text token, place those to pending buffer
@@ -27199,7 +27209,7 @@
 
 
 /***/ },
-/* 231 */
+/* 232 */
 /***/ function(module, exports) {
 
 	// Merge adjacent text nodes into one, and re-calculate all token levels
@@ -27238,7 +27248,7 @@
 
 
 /***/ },
-/* 232 */
+/* 233 */
 /***/ function(module, exports) {
 
 	
@@ -27366,7 +27376,7 @@
 
 
 /***/ },
-/* 233 */
+/* 234 */
 /***/ function(module, exports) {
 
 	
@@ -27470,7 +27480,7 @@
 
 
 /***/ },
-/* 234 */
+/* 235 */
 /***/ function(module, exports) {
 
 	
@@ -27501,7 +27511,7 @@
 
 
 /***/ },
-/* 235 */
+/* 236 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -27819,7 +27829,7 @@
 
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -28354,14 +28364,14 @@
 
 	}(this));
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(334)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(335)(module), (function() { return this; }())))
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strictUriEncode = __webpack_require__(329);
+	var strictUriEncode = __webpack_require__(330);
 
 	exports.extract = function (str) {
 		return str.split('?')[1] || '';
@@ -28429,16 +28439,16 @@
 
 
 /***/ },
-/* 238 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(274);
+	module.exports = __webpack_require__(275);
 
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -28473,7 +28483,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28506,7 +28516,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -28575,7 +28585,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -28641,7 +28651,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -28715,7 +28725,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 244 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -28778,7 +28788,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 245 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -28829,7 +28839,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 246 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -29059,7 +29069,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 247 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -29095,7 +29105,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -29223,7 +29233,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 249 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -29286,14 +29296,14 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.__esModule = true;
 
-	var _createBrowserHistory = __webpack_require__(182);
+	var _createBrowserHistory = __webpack_require__(183);
 
 	var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
@@ -29307,7 +29317,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29389,7 +29399,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 252 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29440,7 +29450,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 253 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29471,7 +29481,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29492,7 +29502,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29649,7 +29659,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 256 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -29738,7 +29748,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 257 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -29995,7 +30005,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 258 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -30052,7 +30062,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 259 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -30071,7 +30081,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _hoistNonReactStatics = __webpack_require__(185);
+	var _hoistNonReactStatics = __webpack_require__(186);
 
 	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
@@ -30122,7 +30132,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 260 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -30151,7 +30161,7 @@
 	module.exports = AutoFocusUtils;
 
 /***/ },
-/* 261 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -30170,9 +30180,9 @@
 	var EventConstants = __webpack_require__(18);
 	var EventPropagators = __webpack_require__(35);
 	var ExecutionEnvironment = __webpack_require__(9);
-	var FallbackCompositionState = __webpack_require__(267);
-	var SyntheticCompositionEvent = __webpack_require__(311);
-	var SyntheticInputEvent = __webpack_require__(314);
+	var FallbackCompositionState = __webpack_require__(268);
+	var SyntheticCompositionEvent = __webpack_require__(312);
+	var SyntheticInputEvent = __webpack_require__(315);
 
 	var keyOf = __webpack_require__(21);
 
@@ -30546,7 +30556,7 @@
 	module.exports = BeforeInputEventPlugin;
 
 /***/ },
-/* 262 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -30567,7 +30577,7 @@
 	var ReactInstrumentation = __webpack_require__(12);
 
 	var camelizeStyleName = __webpack_require__(158);
-	var dangerousStyleValue = __webpack_require__(320);
+	var dangerousStyleValue = __webpack_require__(321);
 	var hyphenateStyleName = __webpack_require__(165);
 	var memoizeStringOnly = __webpack_require__(168);
 	var warning = __webpack_require__(3);
@@ -30757,7 +30767,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 263 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -31087,7 +31097,7 @@
 	module.exports = ChangeEventPlugin;
 
 /***/ },
-/* 264 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -31141,7 +31151,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 265 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -31173,7 +31183,7 @@
 	module.exports = DefaultEventPluginOrder;
 
 /***/ },
-/* 266 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -31283,7 +31293,7 @@
 	module.exports = EnterLeaveEventPlugin;
 
 /***/ },
-/* 267 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -31383,7 +31393,7 @@
 	module.exports = FallbackCompositionState;
 
 /***/ },
-/* 268 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -31600,7 +31610,7 @@
 	module.exports = HTMLDOMPropertyConfig;
 
 /***/ },
-/* 269 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -31620,14 +31630,14 @@
 
 	var ReactChildren = __webpack_require__(112);
 	var ReactComponent = __webpack_require__(68);
-	var ReactPureComponent = __webpack_require__(301);
+	var ReactPureComponent = __webpack_require__(302);
 	var ReactClass = __webpack_require__(113);
-	var ReactDOMFactories = __webpack_require__(279);
+	var ReactDOMFactories = __webpack_require__(280);
 	var ReactElement = __webpack_require__(15);
 	var ReactPropTypes = __webpack_require__(124);
 	var ReactVersion = __webpack_require__(125);
 
-	var onlyChild = __webpack_require__(326);
+	var onlyChild = __webpack_require__(327);
 	var warning = __webpack_require__(3);
 
 	var createElement = ReactElement.createElement;
@@ -31695,7 +31705,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 270 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -31855,7 +31865,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 271 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -31915,7 +31925,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 272 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -31932,7 +31942,7 @@
 	'use strict';
 
 	var DOMChildrenOperations = __webpack_require__(63);
-	var ReactDOMIDOperations = __webpack_require__(281);
+	var ReactDOMIDOperations = __webpack_require__(282);
 
 	/**
 	 * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -31950,7 +31960,7 @@
 	module.exports = ReactComponentBrowserEnvironment;
 
 /***/ },
-/* 273 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -32860,7 +32870,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 274 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -32879,15 +32889,15 @@
 	'use strict';
 
 	var ReactDOMComponentTree = __webpack_require__(8);
-	var ReactDefaultInjection = __webpack_require__(292);
+	var ReactDefaultInjection = __webpack_require__(293);
 	var ReactMount = __webpack_require__(121);
 	var ReactReconciler = __webpack_require__(32);
 	var ReactUpdates = __webpack_require__(17);
 	var ReactVersion = __webpack_require__(125);
 
-	var findDOMNode = __webpack_require__(321);
+	var findDOMNode = __webpack_require__(322);
 	var getHostComponentFromComposite = __webpack_require__(130);
-	var renderSubtreeIntoContainer = __webpack_require__(328);
+	var renderSubtreeIntoContainer = __webpack_require__(329);
 	var warning = __webpack_require__(3);
 
 	ReactDefaultInjection.inject();
@@ -32965,8 +32975,8 @@
 
 	if (process.env.NODE_ENV !== 'production') {
 	  var ReactInstrumentation = __webpack_require__(12);
-	  var ReactDOMUnknownPropertyHook = __webpack_require__(289);
-	  var ReactDOMNullInputValuePropHook = __webpack_require__(283);
+	  var ReactDOMUnknownPropertyHook = __webpack_require__(290);
+	  var ReactDOMNullInputValuePropHook = __webpack_require__(284);
 
 	  ReactInstrumentation.debugTool.addHook(ReactDOMUnknownPropertyHook);
 	  ReactInstrumentation.debugTool.addHook(ReactDOMNullInputValuePropHook);
@@ -32976,7 +32986,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 275 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -33005,7 +33015,7 @@
 	module.exports = ReactDOMButton;
 
 /***/ },
-/* 276 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -33026,8 +33036,8 @@
 	var _prodInvariant = __webpack_require__(4),
 	    _assign = __webpack_require__(7);
 
-	var AutoFocusUtils = __webpack_require__(260);
-	var CSSPropertyOperations = __webpack_require__(262);
+	var AutoFocusUtils = __webpack_require__(261);
+	var CSSPropertyOperations = __webpack_require__(263);
 	var DOMLazyTree = __webpack_require__(31);
 	var DOMNamespaces = __webpack_require__(64);
 	var DOMProperty = __webpack_require__(27);
@@ -33036,16 +33046,16 @@
 	var EventPluginHub = __webpack_require__(34);
 	var EventPluginRegistry = __webpack_require__(47);
 	var ReactBrowserEventEmitter = __webpack_require__(48);
-	var ReactDOMButton = __webpack_require__(275);
+	var ReactDOMButton = __webpack_require__(276);
 	var ReactDOMComponentFlags = __webpack_require__(114);
 	var ReactDOMComponentTree = __webpack_require__(8);
-	var ReactDOMInput = __webpack_require__(282);
-	var ReactDOMOption = __webpack_require__(284);
+	var ReactDOMInput = __webpack_require__(283);
+	var ReactDOMOption = __webpack_require__(285);
 	var ReactDOMSelect = __webpack_require__(115);
-	var ReactDOMTextarea = __webpack_require__(287);
+	var ReactDOMTextarea = __webpack_require__(288);
 	var ReactInstrumentation = __webpack_require__(12);
-	var ReactMultiChild = __webpack_require__(299);
-	var ReactServerRenderingTransaction = __webpack_require__(304);
+	var ReactMultiChild = __webpack_require__(300);
+	var ReactServerRenderingTransaction = __webpack_require__(305);
 
 	var emptyFunction = __webpack_require__(13);
 	var escapeTextContentForBrowser = __webpack_require__(51);
@@ -34017,7 +34027,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 277 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -34056,7 +34066,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 278 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -34121,7 +34131,7 @@
 	module.exports = ReactDOMEmptyComponent;
 
 /***/ },
-/* 279 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -34297,7 +34307,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 280 */
+/* 281 */
 /***/ function(module, exports) {
 
 	/**
@@ -34320,7 +34330,7 @@
 	module.exports = ReactDOMFeatureFlags;
 
 /***/ },
-/* 281 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -34359,7 +34369,7 @@
 	module.exports = ReactDOMIDOperations;
 
 /***/ },
-/* 282 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -34634,7 +34644,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 283 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -34683,7 +34693,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 284 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -34812,7 +34822,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 285 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -34830,7 +34840,7 @@
 
 	var ExecutionEnvironment = __webpack_require__(9);
 
-	var getNodeForCharacterOffset = __webpack_require__(324);
+	var getNodeForCharacterOffset = __webpack_require__(325);
 	var getTextContentAccessor = __webpack_require__(131);
 
 	/**
@@ -35029,7 +35039,7 @@
 	module.exports = ReactDOMSelection;
 
 /***/ },
-/* 286 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -35199,7 +35209,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 287 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -35360,7 +35370,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 288 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -35502,7 +35512,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 289 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -35620,7 +35630,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 290 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -35636,10 +35646,10 @@
 
 	'use strict';
 
-	var ReactInvalidSetStateWarningHook = __webpack_require__(297);
-	var ReactHostOperationHistoryHook = __webpack_require__(295);
+	var ReactInvalidSetStateWarningHook = __webpack_require__(298);
+	var ReactHostOperationHistoryHook = __webpack_require__(296);
 	var ReactComponentTreeHook = __webpack_require__(14);
-	var ReactChildrenMutationWarningHook = __webpack_require__(271);
+	var ReactChildrenMutationWarningHook = __webpack_require__(272);
 	var ExecutionEnvironment = __webpack_require__(9);
 
 	var performanceNow = __webpack_require__(170);
@@ -35927,7 +35937,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 291 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -36000,7 +36010,7 @@
 	module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
-/* 292 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -36016,24 +36026,24 @@
 
 	'use strict';
 
-	var BeforeInputEventPlugin = __webpack_require__(261);
-	var ChangeEventPlugin = __webpack_require__(263);
-	var DefaultEventPluginOrder = __webpack_require__(265);
-	var EnterLeaveEventPlugin = __webpack_require__(266);
-	var HTMLDOMPropertyConfig = __webpack_require__(268);
-	var ReactComponentBrowserEnvironment = __webpack_require__(272);
-	var ReactDOMComponent = __webpack_require__(276);
+	var BeforeInputEventPlugin = __webpack_require__(262);
+	var ChangeEventPlugin = __webpack_require__(264);
+	var DefaultEventPluginOrder = __webpack_require__(266);
+	var EnterLeaveEventPlugin = __webpack_require__(267);
+	var HTMLDOMPropertyConfig = __webpack_require__(269);
+	var ReactComponentBrowserEnvironment = __webpack_require__(273);
+	var ReactDOMComponent = __webpack_require__(277);
 	var ReactDOMComponentTree = __webpack_require__(8);
-	var ReactDOMEmptyComponent = __webpack_require__(278);
-	var ReactDOMTreeTraversal = __webpack_require__(288);
-	var ReactDOMTextComponent = __webpack_require__(286);
-	var ReactDefaultBatchingStrategy = __webpack_require__(291);
-	var ReactEventListener = __webpack_require__(294);
-	var ReactInjection = __webpack_require__(296);
-	var ReactReconcileTransaction = __webpack_require__(302);
-	var SVGDOMPropertyConfig = __webpack_require__(306);
-	var SelectEventPlugin = __webpack_require__(307);
-	var SimpleEventPlugin = __webpack_require__(308);
+	var ReactDOMEmptyComponent = __webpack_require__(279);
+	var ReactDOMTreeTraversal = __webpack_require__(289);
+	var ReactDOMTextComponent = __webpack_require__(287);
+	var ReactDefaultBatchingStrategy = __webpack_require__(292);
+	var ReactEventListener = __webpack_require__(295);
+	var ReactInjection = __webpack_require__(297);
+	var ReactReconcileTransaction = __webpack_require__(303);
+	var SVGDOMPropertyConfig = __webpack_require__(307);
+	var SelectEventPlugin = __webpack_require__(308);
+	var SimpleEventPlugin = __webpack_require__(309);
 
 	var alreadyInjected = false;
 
@@ -36089,7 +36099,7 @@
 	};
 
 /***/ },
-/* 293 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -36127,7 +36137,7 @@
 	module.exports = ReactEventEmitterMixin;
 
 /***/ },
-/* 294 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -36289,7 +36299,7 @@
 	module.exports = ReactEventListener;
 
 /***/ },
-/* 295 */
+/* 296 */
 /***/ function(module, exports) {
 
 	/**
@@ -36331,7 +36341,7 @@
 	module.exports = ReactHostOperationHistoryHook;
 
 /***/ },
-/* 296 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -36372,7 +36382,7 @@
 	module.exports = ReactInjection;
 
 /***/ },
-/* 297 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -36414,7 +36424,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 298 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -36430,7 +36440,7 @@
 
 	'use strict';
 
-	var adler32 = __webpack_require__(319);
+	var adler32 = __webpack_require__(320);
 
 	var TAG_END = /\/?>/;
 	var COMMENT_START = /^<\!\-\-/;
@@ -36469,7 +36479,7 @@
 	module.exports = ReactMarkupChecksum;
 
 /***/ },
-/* 299 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -36494,10 +36504,10 @@
 
 	var ReactCurrentOwner = __webpack_require__(19);
 	var ReactReconciler = __webpack_require__(32);
-	var ReactChildReconciler = __webpack_require__(270);
+	var ReactChildReconciler = __webpack_require__(271);
 
 	var emptyFunction = __webpack_require__(13);
-	var flattenChildren = __webpack_require__(322);
+	var flattenChildren = __webpack_require__(323);
 	var invariant = __webpack_require__(2);
 
 	/**
@@ -36926,7 +36936,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 300 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -37026,7 +37036,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 301 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -37073,7 +37083,7 @@
 	module.exports = ReactPureComponent;
 
 /***/ },
-/* 302 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -37257,7 +37267,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 303 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -37273,7 +37283,7 @@
 
 	'use strict';
 
-	var ReactOwner = __webpack_require__(300);
+	var ReactOwner = __webpack_require__(301);
 
 	var ReactRef = {};
 
@@ -37342,7 +37352,7 @@
 	module.exports = ReactRef;
 
 /***/ },
-/* 304 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -37363,7 +37373,7 @@
 	var PooledClass = __webpack_require__(23);
 	var Transaction = __webpack_require__(38);
 	var ReactInstrumentation = __webpack_require__(12);
-	var ReactServerUpdateQueue = __webpack_require__(305);
+	var ReactServerUpdateQueue = __webpack_require__(306);
 
 	/**
 	 * Executed within the scope of the `Transaction` instance. Consider these as
@@ -37438,7 +37448,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 305 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -37585,7 +37595,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 306 */
+/* 307 */
 /***/ function(module, exports) {
 
 	/**
@@ -37892,7 +37902,7 @@
 	module.exports = SVGDOMPropertyConfig;
 
 /***/ },
-/* 307 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -38093,7 +38103,7 @@
 	module.exports = SelectEventPlugin;
 
 /***/ },
-/* 308 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -38115,17 +38125,17 @@
 	var EventListener = __webpack_require__(87);
 	var EventPropagators = __webpack_require__(35);
 	var ReactDOMComponentTree = __webpack_require__(8);
-	var SyntheticAnimationEvent = __webpack_require__(309);
-	var SyntheticClipboardEvent = __webpack_require__(310);
+	var SyntheticAnimationEvent = __webpack_require__(310);
+	var SyntheticClipboardEvent = __webpack_require__(311);
 	var SyntheticEvent = __webpack_require__(20);
-	var SyntheticFocusEvent = __webpack_require__(313);
-	var SyntheticKeyboardEvent = __webpack_require__(315);
+	var SyntheticFocusEvent = __webpack_require__(314);
+	var SyntheticKeyboardEvent = __webpack_require__(316);
 	var SyntheticMouseEvent = __webpack_require__(50);
-	var SyntheticDragEvent = __webpack_require__(312);
-	var SyntheticTouchEvent = __webpack_require__(316);
-	var SyntheticTransitionEvent = __webpack_require__(317);
+	var SyntheticDragEvent = __webpack_require__(313);
+	var SyntheticTouchEvent = __webpack_require__(317);
+	var SyntheticTransitionEvent = __webpack_require__(318);
 	var SyntheticUIEvent = __webpack_require__(37);
-	var SyntheticWheelEvent = __webpack_require__(318);
+	var SyntheticWheelEvent = __webpack_require__(319);
 
 	var emptyFunction = __webpack_require__(13);
 	var getEventCharCode = __webpack_require__(77);
@@ -38734,7 +38744,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 309 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -38778,7 +38788,7 @@
 	module.exports = SyntheticAnimationEvent;
 
 /***/ },
-/* 310 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -38821,7 +38831,7 @@
 	module.exports = SyntheticClipboardEvent;
 
 /***/ },
-/* 311 */
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -38862,7 +38872,7 @@
 	module.exports = SyntheticCompositionEvent;
 
 /***/ },
-/* 312 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -38903,7 +38913,7 @@
 	module.exports = SyntheticDragEvent;
 
 /***/ },
-/* 313 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -38944,7 +38954,7 @@
 	module.exports = SyntheticFocusEvent;
 
 /***/ },
-/* 314 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -38986,7 +38996,7 @@
 	module.exports = SyntheticInputEvent;
 
 /***/ },
-/* 315 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -39005,7 +39015,7 @@
 	var SyntheticUIEvent = __webpack_require__(37);
 
 	var getEventCharCode = __webpack_require__(77);
-	var getEventKey = __webpack_require__(323);
+	var getEventKey = __webpack_require__(324);
 	var getEventModifierState = __webpack_require__(78);
 
 	/**
@@ -39075,7 +39085,7 @@
 	module.exports = SyntheticKeyboardEvent;
 
 /***/ },
-/* 316 */
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -39125,7 +39135,7 @@
 	module.exports = SyntheticTouchEvent;
 
 /***/ },
-/* 317 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -39169,7 +39179,7 @@
 	module.exports = SyntheticTransitionEvent;
 
 /***/ },
-/* 318 */
+/* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -39228,7 +39238,7 @@
 	module.exports = SyntheticWheelEvent;
 
 /***/ },
-/* 319 */
+/* 320 */
 /***/ function(module, exports) {
 
 	/**
@@ -39277,7 +39287,7 @@
 	module.exports = adler32;
 
 /***/ },
-/* 320 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -39362,7 +39372,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 321 */
+/* 322 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -39428,7 +39438,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 322 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -39510,7 +39520,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 323 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -39617,7 +39627,7 @@
 	module.exports = getEventKey;
 
 /***/ },
-/* 324 */
+/* 325 */
 /***/ function(module, exports) {
 
 	/**
@@ -39696,7 +39706,7 @@
 	module.exports = getNodeForCharacterOffset;
 
 /***/ },
-/* 325 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -39802,7 +39812,7 @@
 	module.exports = getVendorPrefixedEventName;
 
 /***/ },
-/* 326 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -39846,7 +39856,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 327 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -39877,7 +39887,7 @@
 	module.exports = quoteAttributeValueForBrowser;
 
 /***/ },
-/* 328 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -39898,7 +39908,7 @@
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 329 */
+/* 330 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -39910,7 +39920,7 @@
 
 
 /***/ },
-/* 330 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -40162,26 +40172,26 @@
 
 
 /***/ },
-/* 331 */
+/* 332 */
 /***/ function(module, exports) {
 
 	module.exports=/[\xAD\u0600-\u0605\u061C\u06DD\u070F\u08E2\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF\uFFF9-\uFFFB]|\uD804\uDCBD|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F]/
 
 /***/ },
-/* 332 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	exports.Any = __webpack_require__(137);
 	exports.Cc  = __webpack_require__(135);
-	exports.Cf  = __webpack_require__(331);
+	exports.Cf  = __webpack_require__(332);
 	exports.P   = __webpack_require__(85);
 	exports.Z   = __webpack_require__(136);
 
 
 /***/ },
-/* 333 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -40248,7 +40258,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-/* 334 */
+/* 335 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {

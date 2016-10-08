@@ -38,7 +38,7 @@ module.exports = {
       test: /\.json$/,
       loader: 'json'
     }, {
-      test: /\.(png|jpe?g|gif|svg|ttf|eot|otf|woff|woff2)$/,
+      test: /\.(png|jpe?g|gif|svg|mp3|ttf|eot|otf|woff|woff2)$/,
       loader: 'file'
     }]
   }

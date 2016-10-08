@@ -21,7 +21,7 @@ class Anime extends Component {
               <iframe width='500' height='288' src='http://embed.genfb.com/695264470621599' scrolling='no' allowFullScreen></iframe>
               </div>
             <div className='chapterList'>
-              <a href='http://www.hulu.com/one-piece'>
+              <a href='http://www2.watchop.io/'>
               <h5>Complete List of Episodes Here</h5>
               </a>
             </div>
